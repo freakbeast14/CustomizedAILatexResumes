@@ -1,0 +1,213 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #3}, \textbf{\small #1}, \small #4 & \textbf{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \scshape \textbf{Shahil Mohammed}} \\ \vspace{1pt}
+    \small (832) 620-5379 ~ • ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ • ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ • ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ • ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Implemented scalable backend services in \textbf{TypeScript} using \textbf{Prisma}, improving data handling by 40\%.}
+        \resumeItem{Designed and validated complex data schemas with \textbf{Zod}, reducing runtime errors by 30\%.}
+        \resumeItem{Created robust API tests leveraging \textbf{JEST}, raising overall code coverage to 95\%.}
+        \resumeItem{Deployed and optimized serverless applications on \textbf{AWS}, reducing operational costs by 25\%.}
+        \resumeItem{Collaborated cross-functionally to improve backend architecture, enhancing system scalability by 50\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Built efficient backend APIs with \textbf{JavaScript} and \textbf{TypeScript}, supporting 1000+ concurrent users.}
+        \resumeItem{Employed \textbf{Prisma} ORM for database management, achieving 35\% faster query execution.}
+        \resumeItem{Implemented schema validation using \textbf{Zod} to ensure data integrity, reducing validation bugs by 40\%.}
+        \resumeItem{Wrote comprehensive unit and API tests with \textbf{JEST}, improving deployment stability by 30\%.}
+        \resumeItem{Integrated \textbf{AWS} cloud services to optimize application performance and uptime by 20\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Supported \textbf{Linux}-based lab environments, ensuring 99\% uptime for cybersecurity student projects.}
+        \resumeItem{Assisted debugging and testing of backend APIs, increasing student project success rates by 20\%.}
+        \resumeItem{Automated validation scripts, reducing grading time and improving accuracy by 25\%.}
+        \resumeItem{Conducted workshops on network security, increasing student engagement and comprehension.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{05/2023 – 08/2023}
+        {Software Engineer Intern}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Developed \textbf{TypeScript} APIs achieving sub-100ms response, enhancing data accessibility.}
+        \resumeItem{Upgraded UI with \textbf{Angular.js}, boosting user satisfaction by 25\%.}
+        \resumeItem{Optimized backend data retrieval reducing latency by 30\% using \textbf{.NET} and \textbf{C\#}.}
+        \resumeItem{Enhanced database efficiency through \textbf{PostgreSQL} stored procedure tuning, reducing load by 15\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Developed scalable backend services with \textbf{TypeScript} and \textbf{Prisma}, improving response time by 25\%.}
+        \resumeItem{Designed validation schemas using \textbf{Zod} ensuring robust API contracts and reducing errors by 30\%.}
+        \resumeItem{Implemented API testing with \textbf{JEST}, raising test coverage to 90\% and increasing reliability.}
+        \resumeItem{Deployed containerized microservices on \textbf{AWS} EC2, cutting infrastructure costs by 20\%.}
+        \resumeItem{Leveraged \textbf{Ramda} library to optimize functional programming utilities, enhancing code maintainability.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Scalable Backend API with Prisma and Zod} | TypeScript, Prisma, Zod, AWS Lambda}
+          \resumeItemListStart
+              \resumeItem{Developed high-performance backend APIs using \textbf{Prisma} for ORM and \textbf{Zod} for schema validation.}
+              \resumeItem{Deployed on \textbf{AWS Lambda}, achieving 30\% cost optimization and 40\% latency reduction.}
+          \resumeItemListEnd
+          \vspace{-16pt}
+      \resumeProjectHeading
+          {\textbf{Automated API Testing Framework} | JEST, TypeScript, REST API, GitHub Actions}
+          \resumeItemListStart
+              \resumeItem{Built automated \textbf{JEST}-based API testing suite improving test coverage by 95\%, reducing bugs in production.}
+              \resumeItem{Integrated with \textbf{GitHub Actions} for CI/CD, accelerating deployment cycles by 35\%.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\vspace{-10pt}
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \footnotesize
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & TypeScript, JavaScript, Java, Python, C\#, PHP \\
+                \textbf{Frameworks \& Libraries:} & Prisma, Zod, Ramda, Node.js, React.js, Angular.js, Spring Boot \\
+                \textbf{Cloud \& DevOps:} & AWS (Lambda, EC2, S3), Docker, CI/CD, GitHub Actions \\
+                \textbf{Testing \& Validation:} & JEST, API Testing, Unit Testing, Automated Validation Scripts \\
+                \textbf{Database \& Data Storage:} & PostgreSQL, MySQL, MongoDB, DynamoDB \\
+                \textbf{Tools \& Other:} & REST API, Linux, Git, JSON, Jira \\
+            \end{tabular}
+        \end{table}
+
+ \vspace{-15pt}
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science, Tempe, AZ}{GPA: 4.00/4.00}
+
+    \educationSubheading
+      {Manipal Institute of Technology}{07/2018 -- 07/2022}
+      {Bachelor of Technology in Computer and Communication Engineering, Manipal, India}{GPA: 8.83/10.00}
+  \resumeSubHeadingListEnd
+
+\end{document}
