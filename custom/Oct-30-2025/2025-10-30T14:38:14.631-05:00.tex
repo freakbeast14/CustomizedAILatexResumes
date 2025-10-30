@@ -1,0 +1,214 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #3}, \textbf{\small #1}, \small #4 & \textbf{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \scshape \textbf{Shahil Mohammed}} \\ \vspace{1pt}
+    \small (832) 620-5379 ~ • ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ • ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ • ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ • ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Implemented \textbf{Node.js} services with comprehensive security features, decreasing vulnerabilities by 30\%.}
+        \resumeItem{Collaborated with security engineers using \textbf{GitHub CodeQL} to automate vulnerability detection, reducing scan times by 40\%.}
+        \resumeItem{Developed and integrated REST APIs in \textbf{React} applications, enhancing cross-system workflows by 25\%.}
+        \resumeItem{Created unit and integration test suites achieving 90\% coverage, improving deployment confidence and reducing bugs.}
+        \resumeItem{Applied Agile methodologies to streamline sprint deliveries, improving team velocity by 20\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Architected front-end features with \textbf{Angular} for SaaS product, increasing user engagement metrics by 35\%.}
+        \resumeItem{Utilized \textbf{Python} and \textbf{MongoDB} to build backend services, reducing data retrieval times by 22\%.}
+        \resumeItem{Integrated \textbf{Dependabot} and security scanning tools to proactively patch vulnerable dependencies, cutting risks by 50\%.}
+        \resumeItem{Coordinated client demos and executed requirements analysis to develop tailored prototypes, accelerating approval cycles by 25\%.}
+        \resumeItem{Refined front-end CSS/HTML code to improve UI accessibility and responsiveness, enhancing customer satisfaction scores.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Assisted students in applying functional programming and security best practices in lab projects, improving grades by 15\%.}
+        \resumeItem{Monitored lab systems for security compliance, helping reduce reported vulnerabilities by 30\%.}
+        \resumeItem{Automated lab environment setup using scripts, cutting setup time by 40\% and supporting multiple concurrent users.}
+        \resumeItem{Conducted training sessions on secure coding and debugging techniques, enhancing class understanding and engagement.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{05/2023 – 08/2023}
+        {Software Engineer Intern}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Developed \textbf{TypeScript} API integrations with \textbf{REST} endpoints, improving data exchange reliability by 35\%.}
+        \resumeItem{Upgraded UI components with \textbf{Angular.js}, boosting user retention by 25\%.}
+        \resumeItem{Enhanced backend \textbf{C\#/.NET} service scalability, cutting response latency by 30\%.}
+        \resumeItem{Optimized \textbf{PostgreSQL} queries, reducing database load by 20\% and improving overall system performance.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Designed \textbf{Java Spring Boot} microservices with security enhancements, reducing unauthorized access attempts by 35\%.}
+        \resumeItem{Implemented CI/CD pipelines using \textbf{Docker} and \textbf{AWS EC2}, accelerating deployment frequency by 30\%.}
+        \resumeItem{Collaborated on building \textbf{React.js} UI for the SaaS product, increasing load speed and usability by 28\%.}
+        \resumeItem{Developed unit tests with \textbf{JUnit}, achieving over 90\% coverage and minimizing post-release defects.}
+        \resumeItem{Managed MongoDB queries and schema design to optimize data access, reducing query times by 18\%.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Security Vulnerability Detection Bot} | GitHub Actions, CodeQL, Node.js}{}
+          \resumeItemListStart
+              \resumeItem{Built a \textbf{GitHub Actions} bot integrating \textbf{CodeQL} to auto-detect security vulnerabilities in pull requests, reducing manual checks by 30\%.}
+              \resumeItem{Automated dependency updates using \textbf{Dependabot}, decreasing outdated libraries by 40\% and improving overall project security.}
+          \resumeItemListEnd
+          \vspace{-16pt}
+      \resumeProjectHeading
+          {\textbf{Secure Full-Stack Application Prototype} | React, Node.js, MongoDB, REST APIs}{}
+          \resumeItemListStart
+              \resumeItem{Developed a full-stack prototype using \textbf{React} and \textbf{Node.js} with \textbf{MongoDB}, implementing secure REST API endpoints and authentication.}
+              \resumeItem{Applied functional programming principles to enhance code modularity and maintainability, reducing code defects by 20\%.}
+          \resumeItemListEnd
+          \vspace{-16pt}
+    \resumeSubHeadingListEnd
+\vspace{-10pt}
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \footnotesize
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & JavaScript, Python, Java, TypeScript, PHP, C\#, Shell Scripting \\
+                \textbf{Web Development:} & React.js, Angular, Node.js, HTML5, CSS3, Spring Boot, .NET \\
+                \textbf{Databases:} & MongoDB, MySQL, PostgreSQL, DynamoDB \\
+                \textbf{DevOps \& CI/CD:} & AWS (EC2, S3, SQS), Docker, Jenkins, GitHub Actions, Git, CI/CD Pipelines \\
+                \textbf{Security \& Testing:} & GitHub Security (CodeQL, Dependabot), Secure Coding, Unit Testing, Integration Testing, JUnit \\
+                \textbf{Tools \& Others:} & REST APIs, Agile Methodologies, Linux/Unix, Jira \\
+            \end{tabular}
+        \end{table}
+
+ \vspace{-15pt}
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science, Tempe, AZ}{GPA: 4.00/4.00}
+
+    \educationSubheading
+      {Manipal Institute of Technology}{07/2018 -- 07/2022}
+      {Bachelor of Technology in Computer and Communication Engineering, Manipal, India}{GPA: 8.83/10.00}
+  \resumeSubHeadingListEnd
+
+\end{document}
