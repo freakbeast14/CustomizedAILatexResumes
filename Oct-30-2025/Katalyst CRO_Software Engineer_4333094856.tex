@@ -1,0 +1,214 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #3}, \textbf{\small #1}, \small #4 & \textbf{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \scshape \textbf{Shahil Mohammed}} \\ \vspace{1pt}
+    \small (832) 620-5379 ~ • ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ • ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ • ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ • ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Designed and developed \textbf{C/C++} driver software to interface medical hardware with application software, reducing bugs by 35\%.}
+        \resumeItem{Collaborated with cross-functional teams to refine software requirements for next-generation intravascular ultrasound devices, enhancing feature accuracy.}
+        \resumeItem{Authored comprehensive software requirement and design documents, improving development clarity and reducing rework by 25\%.}
+        \resumeItem{Implemented diagnostic tools in \textbf{C++} enabling automated hardware communication testing, accelerating issue resolution by 40\%.}
+        \resumeItem{Practiced \textbf{Test Driven Development} and \textbf{Agile} methodologies to maintain planned milestones efficiently for the Trinity Project.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Developed and tested automated software solutions reducing manual effort by 30\%, following \textbf{Software Development Life Cycle (SDLC)} principles.}
+        \resumeItem{Created robust API integrations and driver-level software modules to improve data communication reliability by 20\%.}
+        \resumeItem{Enforced code quality through peer \textbf{code reviews} and implemented automated tests increasing coverage by 50\%.}
+        \resumeItem{Utilized \textbf{DevOps} pipelines to deploy updates smoothly and reduce downtime by 35\%.}
+        \resumeItem{Led \textbf{software test automation} efforts using \textbf{Python} and \textbf{JUnit}, boosting regression test efficiency by 40\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Supported \textbf{Linux}-based test environments integrating hardware and software for reliable ultrasound system simulations.}
+        \resumeItem{Assisted students in debugging and testing device drivers, increasing lab assignment success by 20\%.}
+        \resumeItem{Automated test scripts for software validation, reducing manual error by 30\% and speeding feedback.}
+        \resumeItem{Conducted workshops on software debugging, testing, and \textbf{API} design protocols to enhance student learning outcomes.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{05/2023 – 08/2023}
+        {Software Engineer Intern}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Wrote and debugged \textbf{C\#} backend services to improve communication efficiency between application and data layers by 25\%.}
+        \resumeItem{Developed \textbf{API} integrations with external systems to automate data retrieval, improving latency by 30\%.}
+        \resumeItem{Optimized existing codebases and provided thorough unit testing following \textbf{TDD} practices, raising test coverage to 85\%.}
+        \resumeItem{Participated in \textbf{agile} standups and sprint planning to ensure milestone adherence and delivery quality.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Architected and implemented \textbf{C++} driver software modules to interface hardware test fixtures, increasing accuracy by 30\%.}
+        \resumeItem{Collaborated in refining device driver requirements across hardware and software teams, reducing defects by 20\%.}
+        \resumeItem{Developed and automated diagnostic tools in \textbf{Java} to identify issues early, reducing test cycle time by 35\%.}
+        \resumeItem{Led \textbf{code reviews} and enforced \textbf{API design} standards, improving code reliability and maintainability.}
+        \resumeItem{Implemented continuous integration and deployment \textbf{DevOps} pipelines, accelerating software delivery by 40\%.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Intravascular Ultrasound Device Driver} | C++, Agile, TDD}{}
+          \resumeItemListStart
+              \resumeItem{Designed and developed robust \textbf{C++} drivers to enable reliable communication between ultrasound devices and control software.}
+              \resumeItem{Implemented \textbf{Test Driven Development} practices yielding 90\% code coverage and improving software reliability by 35\%.}
+          \resumeItemListEnd
+          \vspace{-16pt}
+      \resumeProjectHeading
+          {\textbf{Automated Diagnostic Software} | C++, DevOps, API Integration}{}
+          \resumeItemListStart
+              \resumeItem{Built diagnostic software automating hardware tests, reducing manual intervention by 50\% and accelerating problem detection.}
+              \resumeItem{Integrated APIs for seamless communication between hardware and application layers, increasing data accuracy by 20\%.}
+          \resumeItemListEnd
+          \vspace{-16pt}
+    \resumeSubHeadingListEnd
+\vspace{-10pt}
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \footnotesize
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & C, C++, Java, Python, JavaScript, C\#, Shell Scripting \\
+                \textbf{Software Development:} & Agile Methodology, Test Driven Development (TDD), SDLC, API Design and Integration \\
+                \textbf{DevOps \& Automation:} & Jenkins, Docker, AWS, CI/CD Pipelines, Version Control (Git) \\
+                \textbf{Frameworks \& Tools:} & Spring Boot, JUnit, React.js, .NET, Jira \\
+                \textbf{Testing \& QA:} & Software Test Automation, Code Reviews, Debugging, Diagnostic Software \\
+                \textbf{Operating Systems:} & Linux, Unix \\
+            \end{tabular}
+        \end{table}
+
+ \vspace{-15pt}
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science, Tempe, AZ}{GPA: 4.00/4.00}
+
+    \educationSubheading
+      {Manipal Institute of Technology}{07/2018 -- 07/2022}
+      {Bachelor of Technology in Computer and Communication Engineering, Manipal, India}{GPA: 8.83/10.00}
+  \resumeSubHeadingListEnd
+
+\end{document}
