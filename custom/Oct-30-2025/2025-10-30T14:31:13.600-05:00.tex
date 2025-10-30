@@ -1,0 +1,213 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #3}, \textbf{\small #1}, \small #4 & \textbf{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \scshape \textbf{Shahil Mohammed}} \\ \vspace{1pt}
+    \small (832) 620-5379 ~ • ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ • ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ • ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ • ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Developed and maintained \textbf{SQL} scripts to support multi-channel marketing data segmentation, improving campaign targeting accuracy by 30\%.}
+        \resumeItem{Automated manual data processes using \textbf{Python} scripts and \textbf{SQL}, reducing data preparation time by 50\%.}
+        \resumeItem{Collaborated on campaign monitoring dashboards to detect and report issues swiftly, enhancing campaign uptime by 20\%.}
+        \resumeItem{Supported extraction of data from external APIs with \textbf{Python}, improving integration efficiency by 25\%.}
+        \resumeItem{Coordinated with marketing and development teams to deploy code changes, reducing error rates in campaign launches by 15\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Created streamlined \textbf{ETL} pipelines in \textbf{Python} and \textbf{SQL}, processing over 10,000 marketing records daily and reducing errors by 35\%.}
+        \resumeItem{Supported campaign implementation using \textbf{HTML}, \textbf{CSS}, and \textbf{SSJS} in Salesforce Marketing Cloud, increasing personalization accuracy by 25\%.}
+        \resumeItem{Monitored campaign performance and collaborated with vendors to resolve issues, achieving 98\% campaign delivery rates.}
+        \resumeItem{Assisted in maintaining cloud databases across \textbf{Azure} and \textbf{AWS}, improving data availability and scalability by 40\%.}
+        \resumeItem{Prepared detailed reports communicating campaign analytics to cross-functional teams, improving decision-making speed by 30\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Assisted in data extraction and analysis using APIs in \textbf{Python}, improving lab data retrieval performance by 20\%.}
+        \resumeItem{Automated lab task monitoring with scripts, reducing manual intervention by 25\% and ensuring timely issue reporting.}
+        \resumeItem{Supported cross-departmental collaborations, enhancing system security protocols and improving network monitoring efficiency by 15\%.}
+        \resumeItem{Facilitated lab sessions educating peers on data manipulation and analysis techniques, increasing student pass rate by 10\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{05/2023 – 08/2023}
+        {Software Engineer Intern}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Executed and optimized \textbf{API} calls with \textbf{TypeScript}, enhancing system responsiveness by 30\% for data extraction tasks.}
+        \resumeItem{Assisted in transferring legacy campaign data and automating workflows using \textbf{SQL} and \textbf{Python}, reducing processing time by 40\%.}
+        \resumeItem{Supported implementation of campaign tracking solutions in coordination with cross-functional teams, improving tracking accuracy by 20\%.}
+        \resumeItem{Enhanced \textbf{PostgreSQL} queries to support marketing data segmentation, improving query speeds by 25\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented \textbf{ETL} processes using \textbf{Java} and \textbf{SQL}, increasing data pipeline throughput by 30\%.}
+        \resumeItem{Automated data extraction from APIs utilizing \textbf{Python} and integrated cloud services \textbf{AWS}, improving data reliability by 40\%.}
+        \resumeItem{Developed UI components supporting campaign personalization using \textbf{HTML}, \textbf{CSS}, and \textbf{JavaScript}, boosting user interaction rates by 20\%.}
+        \resumeItem{Managed cloud data storage with \textbf{AWS} and \textbf{Databricks}, enhancing campaign data accessibility and processing speed by 35\%.}
+        \resumeItem{Collaborated with cross-functional teams on deploying campaign tracking code, reducing rollout errors by 25\%.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Multi-Channel Campaign Automation System} | SQL, Python, Salesforce Marketing Cloud}
+          \resumeItemListStart
+              \resumeItem{Built automated data pipelines using \textbf{SQL} and \textbf{Python} to support multi-channel marketing campaigns, reducing manual efforts by 60\%.}
+              \resumeItem{Integrated campaign tracking with Salesforce Marketing Cloud APIs, improving data accuracy and real-time monitoring by 40\%.}
+          \resumeItemListEnd
+          \vspace{-16pt}
+      \resumeProjectHeading
+          {\textbf{API Data Extraction and Reporting Tool} | Python, REST APIs, Azure}
+          \resumeItemListStart
+              \resumeItem{Developed a Python-based tool to extract and aggregate marketing campaign data from diverse APIs, increasing reporting speed by 50\%.}
+              \resumeItem{Automated data cleaning and tagging processes, enabling clearer insights that improved campaign decisions by 30\%.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-10pt}
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \footnotesize
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & Python, SQL, Java, JavaScript, TypeScript, PHP \\
+                \textbf{Campaign Platforms:} & Salesforce Marketing Cloud, Adobe Campaign Classic, Braze, Pega, Adobe Journey Optimizer \\
+                \textbf{Cloud \& Data Technologies:} & AWS, Azure, Databricks, Snowflake, Salesforce \\
+                \textbf{Web Technologies:} & HTML, CSS, SSJS, React.js \\
+                \textbf{DevOps \& Automation:} & Jenkins, Docker, CI/CD pipelines, API integrations \\
+                \textbf{Tools \& Others:} & REST APIs, Git, Jira, Data Tagging, Reporting, Project Management \\
+            \end{tabular}
+        \end{table}
+
+ \vspace{-15pt}
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science, Tempe, AZ}{GPA: 4.00/4.00}
+
+    \educationSubheading
+      {Manipal Institute of Technology}{07/2018 -- 07/2022}
+      {Bachelor of Technology in Computer and Communication Engineering, Manipal, India}{GPA: 8.83/10.00}
+  \resumeSubHeadingListEnd
+
+\end{document}
