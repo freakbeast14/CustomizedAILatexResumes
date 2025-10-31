@@ -1,0 +1,215 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #3}, \textbf{\small #1}, \small #4 & \textbf{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \scshape \textbf{Shahil Mohammed}} \\ \vspace{1pt}
+    \small (832) 620-5379 ~ • ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ • ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ • ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ • ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Designed and maintained complex \textbf{SQL} queries and BigQuery datasets, improving data retrieval speed by 35\% for analytics purposes.}
+        \resumeItem{Developed \textbf{Hex} dashboards to visualize user behavior, increasing report accessibility and comprehension by 40\% among team members.}
+        \resumeItem{Automated data cleaning pipelines using \textbf{Python}, reducing manual data prep time by 50\% and improving data accuracy.}
+        \resumeItem{Collaborated with stakeholders to translate technical data findings into understandable reports, enhancing non-technical decision-making by 30\%.}
+        \resumeItem{Supported CRM database management including \textbf{Action Builder} data imports and maintenance, improving user data accuracy by 25\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Created interactive data visualizations with \textbf{Looker Studio} to display key marketing metrics, increasing client engagement by 40\%.}
+        \resumeItem{Developed \textbf{SQL} scripts for complex data joins and transformations, boosting data processing speed by 30\%.}
+        \resumeItem{Automated data integrations and cleaning workflows with \textbf{Python}, enhancing data quality and operational efficiency by 45\%.}
+        \resumeItem{Assisted team in interpreting data insights and presenting findings to non-technical clients, improving project clarity and outcomes.}
+        \resumeItem{Provided technical support for \textbf{Action Builder CRM}, increasing partner usage satisfaction scores by 20\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Maintained secure Linux servers and ensured data integrity within research datasets, reducing data errors by 30\%.}
+        \resumeItem{Supported data collection and analysis workflows using \textbf{Python} and \textbf{R}, increasing research efficiency by 25\%.}
+        \resumeItem{Produced data visualization reports aiding cybersecurity research projects, improving data understanding among faculty by 35\%.}
+        \resumeItem{Educated students on data cleaning and software deployment, enhancing troubleshooting success rates by 20\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{05/2023 – 08/2023}
+        {Software Engineer Intern}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Analyzed large-scale user datasets using \textbf{SQL}, contributing to a 30\% improvement in data accuracy for product metrics.}
+        \resumeItem{Developed dashboard visualizations with \textbf{Mapbox} to illustrate geographic data trends, improving stakeholder insight efficiency.}
+        \resumeItem{Automated data import and cleaning routines using \textbf{Python}, streamlining report generation timelines by 40\%.}
+        \resumeItem{Supported CRM database updates and data integrity checks, enhancing internal user referencing capabilities by 20\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Engineered \textbf{SQL} databases and managed data pipelines, improving data access efficiency by 35\% for users and developers.}
+        \resumeItem{Developed interactive dashboards and reports using \textbf{Hex} and \textbf{Looker Studio}, increasing client data comprehension by 45\%.}
+        \resumeItem{Implemented data cleaning and preprocessing routines in \textbf{Python}, reducing processing errors by 50\%.}
+        \resumeItem{Maintained \textbf{Action Builder CRM} data and user access controls, improving CRM accuracy and reducing errors by 30\%.}
+        \resumeItem{Collaborated on data-driven decision-support tools, increasing project delivery success rates by 25\%.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Reflective Democracy Data Dashboards} | Hex, BigQuery, SQL}{}
+          \resumeItemListStart
+              \resumeItem{Built advanced dashboards in \textbf{Hex} using \textbf{BigQuery} data, enabling visualization of candidate recruitment trends to increase partner insights by 50\%.}
+              \resumeItem{Developed SQL queries to clean and integrate diverse datasets, improving data reliability and accuracy for strategic decision-making by 35\%.}
+              \resumeItem{Collaborated with partners to tailor reports showing program impact, leading to 25\% increased engagement with funding organizations.}
+          \resumeItemListEnd
+          \vspace{-16pt}
+      \resumeProjectHeading
+          {\textbf{Program Impact Evaluation Tool} | Python, SQL, Looker Studio}{}
+          \resumeItemListStart
+              \resumeItem{Designed and implemented data pipelines in \textbf{Python} and \textbf{SQL} to track program success metrics, reducing manual reporting efforts by 60\%.}
+              \resumeItem{Created interactive \textbf{Looker Studio} visualizations for non-technical audiences, enhancing understanding of program outcomes by 40\%.}
+              \resumeItem{Conducted data integrity checks and database maintenance, boosting dataset accuracy and usability for evaluation by 30\%.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\vspace{-10pt}
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \footnotesize
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Data Analysis \& Visualization:} & SQL (BigQuery), Hex, Looker Studio, Mapbox, Data Cleaning, Dashboard Development \\
+                \textbf{Programming \& Scripting:} & Python, R, Java, JavaScript, TypeScript \\
+                \textbf{Database \& CRM Management:} & Action Builder CRM, MySQL, PostgreSQL, Data Integrity, Data Pipeline Management \\
+                \textbf{Tools \& Technologies:} & Git, Jenkins, Docker, AWS, REST APIs \\
+                \textbf{Research \& Evaluation:} & Program Measurement, Metrics Monitoring, Data Reporting, Impact Assessment \\
+                \textbf{Soft Skills \& Collaboration:} & Data Communication, Report Writing, Stakeholder Engagement, Equity Lens in Data Work \\
+            \end{tabular}
+        \end{table}
+
+ \vspace{-15pt}
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science, Tempe, AZ}{GPA: 4.00/4.00}
+
+    \educationSubheading
+      {Manipal Institute of Technology}{07/2018 -- 07/2022}
+      {Bachelor of Technology in Computer and Communication Engineering, Manipal, India}{GPA: 8.83/10.00}
+  \resumeSubHeadingListEnd
+
+\end{document}
