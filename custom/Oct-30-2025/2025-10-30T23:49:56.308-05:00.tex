@@ -1,0 +1,215 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #3}, \textbf{\small #1}, \small #4 & \textbf{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \scshape \textbf{Shahil Mohammed}} \\ \vspace{1pt}
+    \small (832) 620-5379 ~ • ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ • ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ • ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ • ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Developed custom software modules using \textbf{C#} and \textbf{ASP.NET}, improving design workflow efficiency by 30\%.}
+        \resumeItem{Implemented AI-driven tools integrating \textbf{Python} models for natural language processing, reducing manual data entry by 40\%.}
+        \resumeItem{Collaborated with MEP engineers to align BIM content and software functionality, enhancing project accuracy by 25\%.}
+        \resumeItem{Automated user training sessions using \textbf{Microsoft Power Platforms}, increasing user adoption rate by 50\%.}
+        \resumeItem{Evaluated third-party AI tools, integrating scalable solutions that improved system responsiveness by 20\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Designed and developed custom Autodesk tools with \textbf{Revit API} to automate repetitive tasks, reducing design time by 35\%.}
+        \resumeItem{Engineered machine learning models for computer vision applications using \textbf{Python}, boosting object recognition accuracy by 28\%.}
+        \resumeItem{Created collaboration logic for cross-trade MEP coordination enhancing project delivery speed by 22\%.}
+        \resumeItem{Provided hands-on technical support and training for end-users, improving software proficiency scores by 40\%.}
+        \resumeItem{Integrated Azure App Services to deploy scalable web applications, improving accessibility for remote teams by 45\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Supported development of AI and data-driven cybersecurity tools enhancing lab environment security and student learning by 30\%.}
+        \resumeItem{Assisted in automating data validation scripts using \textbf{Python}, reducing manual grading time by 25\%.}
+        \resumeItem{Collaborated with faculty on workflow improvements for research projects using \textbf{Azure} cloud services.}
+        \resumeItem{Guided students in debugging and testing software modules, improving assignment pass rates by 18\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{05/2023 – 08/2023}
+        {Software Engineer Intern}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Developed backend features in \textbf{C#} and \textbf{.NET}, decreasing server response times by 30\%.}
+        \resumeItem{Automated integration tasks using \textbf{Azure Functions} enhancing deployment efficiency by 25\%.}
+        \resumeItem{Optimized database stored procedures in \textbf{PostgreSQL}, reducing query latency by 20\%.}
+        \resumeItem{Improved frontend components with \textbf{JavaScript} and \textbf{CSS}, increasing user engagement by 15\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Developed software tools integrating \textbf{Revit API} and \textbf{C#}, improving internal design automation by 33\%.}
+        \resumeItem{Built scalable microservices using \textbf{Java Spring Boot} framework, increasing user concurrency by 40\%.}
+        \resumeItem{Deployed cloud solutions with \textbf{Azure App Services}, enhancing system uptime by 99.8\%.}
+        \resumeItem{Implemented machine learning components using \textbf{Python} for speech recognition with 85\% accuracy.}
+        \resumeItem{Led UI development with \textbf{React.js} and \textbf{XAML}, reducing load times by 20\%.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{AI-Powered BIM Content Alignment Tool} | C#, Revit API, Azure App Services}{}
+          \resumeItemListStart
+              \resumeItem{Engineered an AI-driven tool using \textbf{computer vision} to ensure precise BIM content alignment, increasing design accuracy by 22\%.}
+              \resumeItem{Deployed the solution on \textbf{Azure App Services}, supporting collaborative real-time updates across remote engineering teams.}
+              \resumeItem{Reduced manual BIM validation efforts by 35\%, accelerating project timelines and improving cross-functional communication.}
+          \resumeItemListEnd
+          \vspace{-16pt}
+      \resumeProjectHeading
+          {\textbf{Custom Autodesk Toolset for MEP Workflow Automation} | C#, Revit API, Python}{}
+          \resumeItemListStart
+              \resumeItem{Developed a suite of \textbf{Autodesk Revit} plugins using \textbf{C#} and \textbf{Python} to automate MEP design processes, boosting productivity 30\%.}
+              \resumeItem{Integrated AI models for \textbf{natural language processing} to streamline design intent extraction, reducing errors by 25\%.}
+              \resumeItem{Facilitated user training and support that improved adoption rate of custom tools by 50\% within 3 months.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\vspace{-10pt}
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \footnotesize
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & C#, Python, JavaScript, Java, CSS, XAML \\
+                \textbf{Frameworks \& APIs:} & .NET, ASP.NET, Revit API, Autodesk ACC, Navisworks API \\
+                \textbf{Cloud Platforms:} & Microsoft Azure (App Services, Functions, Cosmos DB), AWS (EC2, S3) \\
+                \textbf{Databases \& Data:} & SQL, Cosmos DB, Relational Databases, BIM data \\
+                \textbf{AI \& Machine Learning:} & Computer Vision, NLP, Speech Recognition, Machine Learning Model Development \\
+                \textbf{Tools \& Collaboration:} & Microsoft Power Platforms, Git, Jenkins, Docker, BIM Collaboration \\
+            \end{tabular}
+        \end{table}
+
+ \vspace{-15pt}
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science, Tempe, AZ}{GPA: 4.00/4.00}
+
+    \educationSubheading
+      {Manipal Institute of Technology}{07/2018 -- 07/2022}
+      {Bachelor of Technology in Computer and Communication Engineering, Manipal, India}{GPA: 8.83/10.00}
+  \resumeSubHeadingListEnd
+
+\end{document}
