@@ -1,0 +1,217 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #3}, \textbf{\small #1}, \small #4 & \textbf{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \scshape \textbf{Shahil Mohammed}} \\ \vspace{1pt}
+    \small (832) 620-5379 ~ • ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ • ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ • ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ • ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Engineered scalable \textbf{microservices} in \textbf{Java Spring Boot} improving throughput by 35\% for AI agent infrastructure support.}
+        \resumeItem{Implemented AI-driven code review assistant with \textbf{LLMs}, reducing manual review time by 45\% and accelerating deployment.}
+        \resumeItem{Optimized \textbf{Spring Security} authentication and access control, decreasing unauthorized access attempts by 40\%.}
+        \resumeItem{Automated \textbf{CI/CD} pipelines using \textbf{Jenkins} and \textbf{Docker}, cutting release cycle time by 40\%.}
+        \resumeItem{Collaborated on AI tool integration improving system reliability and supporting real-time agentic tool deployments at scale.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Architected \textbf{SaaS} platform with \textbf{Laravel} and \textbf{React}, supporting 50+ concurrent users, boosting reliability.}
+        \resumeItem{Automated stock data pipelines with \textbf{Python}, processing 10,000+ entries daily and reducing manual workload by 80\%.}
+        \resumeItem{Developed AI agents using \textbf{LLMs} to automate FINRA broker data tasks, saving 80\% manual processing effort.}
+        \resumeItem{Created AI-driven LinkedIn outreach bot increasing qualified leads by 40\% through optimized targeting and automation.}
+        \resumeItem{Enhanced \textbf{React} components for 25\% faster page loads, significantly improving user engagement metrics.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Maintained secure \textbf{Linux}-based infrastructure, ensuring stable operation for cybersecurity application environments.}
+        \resumeItem{Supported students in coding, testing, and deploying projects, improving success rates by 20\%.}
+        \resumeItem{Automated grading scripts, increasing accuracy by 25\% and reducing manual review workload significantly.}
+        \resumeItem{Conducted 15+ teaching sessions on Cryptography, Networking Protocols, and Web Security aiding student comprehension.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{05/2023 – 08/2023}
+        {Software Engineer Intern}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Developed efficient \textbf{TypeScript} APIs achieving sub-100ms response times, improving application responsiveness.}
+        \resumeItem{Revamped front-end with \textbf{Angular.js}, increasing user engagement and satisfaction by 25\%.}
+        \resumeItem{Built high-performance backend services in \textbf{C\#}/\textbf{.NET}, reducing data retrieval latency by 30\%.}
+        \resumeItem{Optimized \textbf{PostgreSQL} stored procedures, offloading frontend and improving database throughput by 15\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Developed \textbf{Java Spring Boot} microservices supporting 1000+ concurrent users, reducing response time below 200ms.}
+        \resumeItem{Orchestrated seamless deployment with \textbf{Docker} and \textbf{CI/CD} pipelines on \textbf{AWS EC2} servers.}
+        \resumeItem{Built project management UI in \textbf{React.js} boosting usability and page load speed by 30\%.}
+        \resumeItem{Implemented robust unit tests with \textbf{JUnit}, achieving approximately 90\% code coverage on critical modules.}
+        \resumeItem{Collaborated on SaaS tool automating \textbf{SDLC} processes, increasing development efficiency and deployment speed.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Scalable AI Agent Infrastructure} | Kubernetes, Docker, Python, LangChain}
+          {}
+          \resumeItemListStart
+              \resumeItem{Designed containerized AI microservices with \textbf{Kubernetes}, improving system scalability and stability by 40\%.}
+              \resumeItem{Integrated \textbf{LangChain} agent frameworks to orchestrate LLM-driven workflows, reducing task automation latency by 30\%.}
+              \resumeItem{Implemented monitoring tools to enhance real-time performance and reliability of AI agents for production use.}
+          \resumeItemListEnd
+          \vspace{-16pt}
+      \resumeProjectHeading
+          {\textbf{AI-Powered Chatbot Infrastructure} | Python, Flask, OpenAI API, Microservices}
+          {}
+          \resumeItemListStart
+              \resumeItem{Developed microservice backend in \textbf{Python Flask} using \textbf{OpenAI API} to handle 1000+ queries daily efficiently.}
+              \resumeItem{Optimized event-driven architecture using \textbf{Kafka} enabling asynchronous message processing and scaling message throughput by 50\%.}
+              \resumeItem{Implemented CI/CD pipeline for automated testing and deployment reducing integration errors by 35\%.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-10pt}
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \footnotesize
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming Languages:} & Python, Java, JavaScript, TypeScript, C\#, PHP, Go \\
+                \textbf{Frameworks \& Tools:} & Spring Boot, React.js, Angular.js, Flask, LangChain, OpenAI API, .NET \\
+                \textbf{DevOps \& Containerization:} & Docker, Kubernetes, Jenkins, CI/CD, AWS EC2, S3, Lambda \\
+                \textbf{Databases \& Messaging:} & MySQL, PostgreSQL, MongoDB, Kafka, SQL, NoSQL \\
+                \textbf{AI \& Automation:} & LLMs, AI Agents, Prompt Engineering, n8n, Zapier, Automation Workflows \\
+                \textbf{Other Tools:} & Linux, Git, GitHub, REST APIs, Event-Driven Architectures, Microservices \\
+            \end{tabular}
+        \end{table}
+
+ \vspace{-15pt}
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science, Tempe, AZ}{GPA: 4.00/4.00}
+
+    \educationSubheading
+      {Manipal Institute of Technology}{07/2018 -- 07/2022}
+      {Bachelor of Technology in Computer and Communication Engineering, Manipal, India}{GPA: 8.83/10.00}
+  \resumeSubHeadingListEnd
+
+\end{document}
