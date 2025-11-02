@@ -1,0 +1,214 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #3}, \textbf{\small #1}, \small #4 & \textbf{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \scshape \textbf{Shahil Mohammed}} \\ \vspace{1pt}
+    \small (832) 620-5379 ~ • ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ • ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ • ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ • ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Designed and deployed \textbf{AWS EC2} infrastructure with VPC and security groups, ensuring 99.9\% uptime.}
+        \resumeItem{Implemented \textbf{Terraform} scripts for automated provisioning, reducing manual setup time by 60\%.}
+        \resumeItem{Configured \textbf{CloudWatch} monitoring and alarms enabling rapid detection and response to system issues.}
+        \resumeItem{Managed \textbf{IAM} roles and policies to enforce least privilege access, decreasing security risks by 40\%.}
+        \resumeItem{Automated SSL certificate installation on load balancers, enhancing secure application delivery and reducing errors.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Developed \textbf{AWS S3} storage solutions and automated backups to maintain data durability and recovery.}
+        \resumeItem{Implemented network ACLs and subnet configurations within \textbf{VPC} for secure and efficient traffic routing.}
+        \resumeItem{Integrated monitoring agents like \textbf{Splunk} and \textbf{Qualys} for enhanced infrastructure security visibility.}
+        \resumeItem{Orchestrated \textbf{CloudFormation} templates for scalable environment setup, increasing deploy speed by 50\%.}
+        \resumeItem{Deployed bastion hosts and hardened access points to secure administrative entry, reducing attack surface.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Configured and maintained \textbf{Linux} lab environments with secure subnetting and firewall rules.}
+        \resumeItem{Assisted in setting up \textbf{AWS IAM} policies for student projects, ensuring controlled and auditable access.}
+        \resumeItem{Monitored lab infrastructure using logging tools to identify security events, improving incident detection by 30\%.}
+        \resumeItem{Supported deployment of backup solutions, validating recoverability and data integrity for lab exercises.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{05/2023 – 08/2023}
+        {Software Engineer Intern}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Configured \textbf{AWS EC2} instances and implemented load balancers to optimize application availability.}
+        \resumeItem{Enhanced platform security by setting up \textbf{IAM} roles and policies and applying SSL certificates.}
+        \resumeItem{Automated monitoring setups with \textbf{CloudWatch} and alerting, improving response times to failures.}
+        \resumeItem{Validated backup and storage solutions to ensure business continuity and data protection.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Engineered and maintained \textbf{AWS EC2} environments with secured subnets and routing for SaaS products.}
+        \resumeItem{Authored \textbf{CloudFormation} templates and \textbf{Jenkins} jobs to streamline environment provisioning.}
+        \resumeItem{Managed \textbf{IAM} user roles and permissions across projects, enhancing cloud security compliance.}
+        \resumeItem{Integrated monitoring tools like \textbf{New Relic} to track application health and performance.}
+        \resumeItem{Deployed secure load balancers with \textbf{SSL} certificates automating traffic distribution and encryption.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Infrastructure as Code Automation} | Terraform, AWS EC2, CloudFormation}{}
+          \resumeItemListStart
+              \resumeItem{Developed reusable \textbf{Terraform} modules to provision secure \textbf{VPCs}, subnets, and IAM roles, reducing setup time by 50\%.}
+              \resumeItem{Implemented \textbf{CloudFormation} templates to automate scalable deployment of load balancers and EC2 instances.}
+          \resumeItemListEnd
+          \vspace{-16pt}
+      \resumeProjectHeading
+          {\textbf{Cloud Security Monitoring Framework} | AWS CloudWatch, Splunk, IAM}{}
+          \resumeItemListStart
+              \resumeItem{Built a centralized security monitoring solution using \textbf{CloudWatch} and \textbf{Splunk} for real-time incident detection.}
+              \resumeItem{Configured comprehensive \textbf{IAM} policies enforcing least privilege, enhancing system security posture by 40\%.}
+          \resumeItemListEnd
+          \vspace{-16pt}
+    \resumeSubHeadingListEnd
+\vspace{-10pt}
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \footnotesize
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Cloud Platforms \& Services:} & AWS (EC2, S3, VPC, IAM, CloudFormation, CloudWatch, Load Balancers, Subnets, Routing, Security Groups), Azure \\
+                \textbf{Infrastructure as Code \& Automation:} & Terraform, CloudFormation, Jenkins, Chef, Git, Docker \\
+                \textbf{Security \& Monitoring:} & IAM, Network ACLs, SSL Certificates, Qualys, CrowdStrike, Splunk, New Relic, Prisma \\
+                \textbf{Programming \& Scripting:} & Python, Java, JavaScript, Shell Scripting \\
+                \textbf{DevOps \& CI/CD:} & Jenkins, GitHub Actions, Docker, Kubernetes \\
+                \textbf{Operating Systems \& Tools:} & Linux/Unix, Git, REST APIs, JSON, Jira \\
+            \end{tabular}
+        \end{table}
+
+ \vspace{-15pt}
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science, Tempe, AZ}{GPA: 4.00/4.00}
+
+    \educationSubheading
+      {Manipal Institute of Technology}{07/2018 -- 07/2022}
+      {Bachelor of Technology in Computer and Communication Engineering, Manipal, India}{GPA: 8.83/10.00}
+  \resumeSubHeadingListEnd
+
+\end{document}
