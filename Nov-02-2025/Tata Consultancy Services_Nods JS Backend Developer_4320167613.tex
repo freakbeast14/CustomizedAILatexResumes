@@ -1,0 +1,214 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #3}, \textbf{\small #1}, \small #4 & \textbf{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \scshape \textbf{Shahil Mohammed}} \\ \vspace{1pt}
+    \small (832) 620-5379 ~ • ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ • ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ • ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ • ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Developed scalable backend services using \textbf{Node.js} and \textbf{TypeScript} to improve system reliability by 30\%.}
+        \resumeItem{Designed and deployed \textbf{microservices} architecture boosting system modularity and decreasing deployment time by 25\%.}
+        \resumeItem{Optimized \textbf{PostgreSQL} queries and indexes reducing average response time by 40\% for critical APIs.}
+        \resumeItem{Collaborated across teams to integrate front-end with backend APIs ensuring seamless user experience and 99.9\% uptime.}
+        \resumeItem{Conducted code reviews and implemented best practices, increasing code quality and reducing bugs by 35\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Built and maintained RESTful APIs using \textbf{Node.js} and \textbf{TypeScript}, improving data handling efficiency by 30\%.}
+        \resumeItem{Implemented \textbf{microservices} to decompose monolithic app, improving scalability and reducing deployment failures by 20\%.}
+        \resumeItem{Enhanced \textbf{PostgreSQL} schema and queries optimizing data retrieval speed by 25\%.}
+        \resumeItem{Collaborated with cross-functional teams to align backend services with UI requirements, improving user satisfaction by 15\%.}
+        \resumeItem{Automated testing and deployment processes, cutting delivery time in half using CI/CD pipelines.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Supported \textbf{Linux}-based cybersecurity infrastructure reducing system downtime by 20\%.}
+        \resumeItem{Assisted students with \textbf{JavaScript} and \textbf{TypeScript} coding problems increasing assignment pass rate by 18\%.}
+        \resumeItem{Automated lab environment setups improving debugging workflow efficiency by 30\%.}
+        \resumeItem{Conducted multiple educational sessions on secure coding and API design best practices.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{05/2023 – 08/2023}
+        {Software Engineer Intern}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Implemented backend API endpoints using \textbf{TypeScript}, reducing average response times below 100ms.}
+        \resumeItem{Optimized \textbf{PostgreSQL} queries and stored procedures improving database throughput by 15\%.}
+        \resumeItem{Upgraded legacy codebase to \textbf{Node.js} microservices improving scalability and maintainability.}
+        \resumeItem{Collaborated with front-end teams to integrate RESTful APIs improving app responsiveness by 20\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Created \textbf{Node.js} microservices integrated with \textbf{PostgreSQL}, improving transaction response time by 20\%.}
+        \resumeItem{Designed RESTful APIs used by front-end teams, reducing integration bugs by 30\%.}
+        \resumeItem{Improved database schema and optimized complex queries cutting query execution time by 40\%.}
+        \resumeItem{Collaborated in Agile ceremonies ensuring timely delivery of features and bug fixes.}
+        \resumeItem{Implemented comprehensive unit and integration tests increasing code coverage by 85\%.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Node.js Microservices API Platform} | Microservices, Node.js, TypeScript, PostgreSQL}{}
+          \resumeItemListStart
+              \resumeItem{Developed a \textbf{Node.js} based microservices platform with \textbf{TypeScript}, improving API response by 35\%.}
+              \resumeItem{Optimized \textbf{PostgreSQL} queries and indexing, reducing data fetching time by 40\%.}
+          \resumeItemListEnd
+          \vspace{-16pt}
+      \resumeProjectHeading
+          {\textbf{Backend REST API for Data Management} | Node.js, Express, PostgreSQL, REST API}{}
+          \resumeItemListStart
+              \resumeItem{Built scalable RESTful APIs using \textbf{Node.js} and \textbf{Express} supporting 1000+ concurrent users seamlessly.}
+              \resumeItem{Implemented optimized \textbf{PostgreSQL} schemas and queries decreasing API latency by 25\%.}
+          \resumeItemListEnd
+          \vspace{-16pt}
+    \resumeSubHeadingListEnd
+\vspace{-10pt}
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \footnotesize
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming Languages:} & JavaScript, TypeScript, Java, Python, C\#, PHP, Go, C++, Shell Scripting \\
+                \textbf{Backend Frameworks:} & Node.js, Express, Spring Boot, Laravel, Django, .NET \\
+                \textbf{Databases:} & PostgreSQL, MySQL, MongoDB, DynamoDB, SQL \\
+                \textbf{Architecture \& Design:} & Microservices, REST API, gRPC, CI/CD pipelines \\
+                \textbf{DevOps \& Cloud:} & AWS (EC2, S3, Lambda), Docker, Jenkins, Git, GitHub Actions \\
+                \textbf{Tools \& Technologies:} & Linux/Unix, Jira, JUnit, React.js, Angular.js, AI Automation Tools \\
+            \end{tabular}
+        \end{table}
+
+ \vspace{-15pt}
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science, Tempe, AZ}{GPA: 4.00/4.00}
+
+    \educationSubheading
+      {Manipal Institute of Technology}{07/2018 -- 07/2022}
+      {Bachelor of Technology in Computer and Communication Engineering, Manipal, India}{GPA: 8.83/10.00}
+  \resumeSubHeadingListEnd
+
+\end{document}
