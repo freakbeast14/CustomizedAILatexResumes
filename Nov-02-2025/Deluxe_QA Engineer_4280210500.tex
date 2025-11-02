@@ -1,0 +1,216 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #3}, \textbf{\small #1}, \small #4 & \textbf{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \scshape \textbf{Shahil Mohammed}} \\ \vspace{1pt}
+    \small (832) 620-5379 ~ • ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ • ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ • ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ • ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Collaborated with business leaders to gather requirements and translate them into clear developer specifications, improving workflow efficiency by 30\%.}
+        \resumeItem{Managed change communications to stakeholders on releases and enhancements, increasing transparency and reducing feedback delays by 25\%.}
+        \resumeItem{Automated API and UI test cases using \textbf{Java} and \textbf{Selenium}, increasing regression test coverage by 40\%.}
+        \resumeItem{Coordinated product releases and trained end users with technical documentation and video guides, boosting adoption by 35\%.}
+        \resumeItem{Oversaw JIRA ticketing for defect tracking and resolved 60\% of bugs by replication and debugging or escalating appropriately.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Liaised with product owners and developers to define API specs, accelerating feature delivery by 20\%.}
+        \resumeItem{Created and automated Selenium test suites for web services, reducing manual testing effort by 70\%.}
+        \resumeItem{Managed JIRA tickets and sprint planning to streamline defect fixes and feature rollouts, enhancing team delivery by 25\%.}
+        \resumeItem{Produced user training content and facilitated sessions on product updates, increasing customer satisfaction by 30\%.}
+        \resumeItem{Led coordination of multiple software releases, ensuring on-time deployment and post-release validation with zero critical defects.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Supported API and service integration testing for cybersecurity applications, improving test accuracy by 20\%.}
+        \resumeItem{Tracked and documented issues using \textbf{JIRA}, enabling efficient bug resolution with developers.}
+        \resumeItem{Coordinated lab release schedules, ensuring timely environment availability for 100+ students.}
+        \resumeItem{Created step-by-step training guides for lab software, reducing support requests by 15\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{05/2023 – 08/2023}
+        {Software Engineer Intern}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Developed and tested RESTful \textbf{Java APIs}, improving response speed by 30\%.}
+        \resumeItem{Tracked defects and enhancements via \textbf{JIRA} and communicated resolution status to stakeholders.}
+        \resumeItem{Created automated UI tests for web application using \textbf{Selenium}, reducing regression testing time by 40\%.}
+        \resumeItem{Collaborated with business analysts to refine requirements, decreasing scope changes by 25\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Gathered and analyzed product requirements working alongside business teams, reducing development cycles by 15\%.}
+        \resumeItem{Tracked and prioritized JIRA tickets for new features, bugs, and improvements, achieving 90\% on-time delivery rate.}
+        \resumeItem{Built and automated \textbf{Java} based API tests using \textbf{JUnit} and \textbf{Selenium}, optimizing QA process by 50\%.}
+        \resumeItem{Coordinated software releases with developers and business, managing change communications and release schedules effectively.}
+        \resumeItem{Authored comprehensive user manuals and training videos, improving user onboarding and decreasing support calls by 20\%.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Automated API Testing Framework} | \textbf{Java}, \textbf{Selenium}, \textbf{JUnit}}{}
+          \resumeItemListStart
+              \resumeItem{Developed a scalable framework for API and UI test automation increasing regression coverage by 45\%, reducing manual tests by 60\%.}
+              \resumeItem{Integrated tests with CI/CD pipeline to enable automated nightly runs and early defect detection, cutting bug fix time by 30\%.}
+          \resumeItemListEnd
+          \vspace{-16pt}
+      \resumeProjectHeading
+          {\textbf{JIRA Workflow Management and Release Automation} | \textbf{JIRA}, \textbf{Python}, \textbf{Shell Scripting}}{}
+          \resumeItemListStart
+              \resumeItem{Engineered automation scripts linking JIRA ticket updates with release tasks improving tracking accuracy and accelerating release preparation by 40\%.}
+              \resumeItem{Streamlined communication workflows with stakeholders through automated notifications, enhancing transparency and reducing review delays by 25\%.}
+          \resumeItemListEnd
+          \vspace{-16pt}
+    \resumeSubHeadingListEnd
+
+\vspace{-10pt}
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \footnotesize
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & Java, Python, JavaScript, TypeScript, Shell Scripting, SQL \\
+                \textbf{Testing \& Automation:} & Selenium, JUnit, API Testing, Test Automation Frameworks \\
+                \textbf{Web Development \& Frameworks:} & Spring Boot, React.js, Angular.js, Laravel, .NET \\
+                \textbf{Issue Tracking \& Agile Tools:} & JIRA, Confluence, Agile Methodologies, CI/CD Pipelines \\
+                \textbf{DevOps \& Cloud:} & Docker, AWS (EC2, S3), Jenkins, Git, GitHub Actions \\
+                \textbf{Documentation \& Training:} & User Manuals, Video Tutorials, Training Guides, Stakeholder Communication \\
+            \end{tabular}
+        \end{table}
+
+ \vspace{-15pt}
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science, Tempe, AZ}{GPA: 4.00/4.00}
+
+    \educationSubheading
+      {Manipal Institute of Technology}{07/2018 -- 07/2022}
+      {Bachelor of Technology in Computer and Communication Engineering, Manipal, India}{GPA: 8.83/10.00}
+  \resumeSubHeadingListEnd
+
+\end{document}
