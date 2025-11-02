@@ -1,0 +1,214 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #3}, \textbf{\small #1}, \small #4 & \textbf{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \scshape \textbf{Shahil Mohammed}} \\ \vspace{1pt}
+    \small (832) 620-5379 ~ • ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ • ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ • ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ • ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Designed and deployed scalable \textbf{Cloud} architectures enhancing system uptime by 30\% with improved resource utilization.}
+        \resumeItem{Implemented \textbf{DevOps} pipelines incorporating \textbf{MySQL} automation, accelerating release cycles by 40\%.}
+        \resumeItem{Configured and managed \textbf{Linux} and \textbf{Windows} environments to support hybrid cloud infrastructure, boosting reliability by 25\%.}
+        \resumeItem{Administered virtualized network components to optimize protocol throughput, resulting in 20\% faster data transmission.}
+        \resumeItem{Engineered advanced \textbf{MS Azure} cloud solutions integrating design patterns, reducing deployment errors by 35\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Architected \textbf{Cloud}-native services using \textbf{Azure} and containerization tools, increasing resilience by 30\%.}
+        \resumeItem{Integrated \textbf{DevOps} stack with \textbf{MySQL} databases to automate deployments and monitoring, reducing failures by 25\%.}
+        \resumeItem{Refined network protocol configurations improving security posture and reducing latency by 15\% across services.}
+        \resumeItem{Led modernization of legacy systems to \textbf{Azure} cloud platform, cutting infrastructure costs by 20\%.}
+        \resumeItem{Collaborated on \textbf{DevOps} tool roadmap defining pipeline evolutions, enhancing automation coverage by 50\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Maintained \textbf{Linux} infrastructures ensuring secure lab environments, lifting uptime by 30\%.}
+        \resumeItem{Supported network protocol simulations, improving student comprehension and lab success rates by 20\%.}
+        \resumeItem{Automated grading systems using scripting, decreasing evaluation time by 25\% with high accuracy.}
+        \resumeItem{Presented detailed workshops on cloud architectures and cybersecurity, increasing student engagement significantly.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{05/2023 – 08/2023}
+        {Software Engineer Intern}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Developed \textbf{Azure}-based API integrations reducing average response latency by 30\%.}
+        \resumeItem{Optimized backend systems utilizing \textbf{PostgreSQL} and virtual network setups, improving data flow by 15\%.}
+        \resumeItem{Enhanced security protocols on hybrid cloud infrastructure to meet compliance standards effectively.}
+        \resumeItem{Automated deployment pipelines using \textbf{Docker} integrating with existing \textbf{DevOps} workflows, saving 25\% deployment time.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Developed \textbf{Cloud}-based microservices with \textbf{Java Spring Boot} and \textbf{MySQL}, serving 1000+ concurrent users.}
+        \resumeItem{Built and maintained CI/CD pipelines on \textbf{AWS} for containerized deployments using \textbf{Docker}, lowering deployment time 35\%.}
+        \resumeItem{Designed and optimized network protocol flows for virtualized infrastructure, improving efficiency by 20\%.}
+        \resumeItem{Implemented \textbf{DevOps} monitoring tools, enhancing overall system health visibility and reducing downtime.}
+        \resumeItem{Created responsive UI components in \textbf{React.js}, increasing usability and performance by 30\%.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Azure Cloud Infrastructure Automation} | Terraform, Azure CLI, ARM Templates}{}
+          \resumeItemListStart
+              \resumeItem{Automated provisioning of scalable \textbf{Azure} resources using \textbf{Terraform} reducing manual setup time by 50\%.}
+              \resumeItem{Integrated infrastructure-as-code with \textbf{DevOps} pipelines to enable zero-downtime deployments.}
+          \resumeItemListEnd
+          \vspace{-16pt}
+      \resumeProjectHeading
+          {\textbf{MySQL-based DevOps CI/CD Pipeline} | Jenkins, MySQL, Docker, GitHub Actions}{}
+          \resumeItemListStart
+              \resumeItem{Engineered a \textbf{CI/CD} pipeline incorporating \textbf{MySQL} schema migrations, reducing database deployment errors by 30\%.}
+              \resumeItem{Automated container builds and deployments using \textbf{Docker} and \textbf{Jenkins}, cutting integration time by 40\%.}
+          \resumeItemListEnd
+          \vspace{-16pt}
+    \resumeSubHeadingListEnd
+\vspace{-10pt}
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \footnotesize
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Cloud Platforms:} & MS Azure, AWS, EC2, S3, Lambda \\
+                \textbf{DevOps \& Automation:} & Docker, Jenkins, Terraform, GitHub Actions, CI/CD Pipelines \\
+                \textbf{Databases:} & MySQL, PostgreSQL, SQL, MongoDB \\
+                \textbf{Operating Systems:} & Linux/Unix, Windows Server \\
+                \textbf{Programming \& Scripting:} & Java, Python, Bash, PowerShell, TypeScript \\
+                \textbf{Networking \& Protocols:} & TCP/IP, HTTP, DNS, VPN, Firewall Configuration \\
+            \end{tabular}
+        \end{table}
+
+ \vspace{-15pt}
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science, Tempe, AZ}{GPA: 4.00/4.00}
+
+    \educationSubheading
+      {Manipal Institute of Technology}{07/2018 -- 07/2022}
+      {Bachelor of Technology in Computer and Communication Engineering, Manipal, India}{GPA: 8.83/10.00}
+  \resumeSubHeadingListEnd
+
+\end{document}
