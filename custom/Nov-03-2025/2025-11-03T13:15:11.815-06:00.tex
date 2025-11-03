@@ -1,0 +1,215 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #3}, \textbf{\small #1}, \small #4 & \textbf{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \scshape \textbf{Shahil Mohammed}} \\ \vspace{1pt}
+    \small (832) 620-5379 ~ • ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ • ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ • ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ • ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Engineered \textbf{.NET 6} backend services to enhance API throughput, decreasing average response time by 30\% and improving reliability.}
+        \resumeItem{Implemented secure authentication using \textbf{Azure AD} and \textbf{JWT}, reducing unauthorized access attempts by 40\%.}
+        \resumeItem{Developed responsive front-end components with \textbf{React 16}, boosting user satisfaction scores by 25\% through optimized UI.}
+        \resumeItem{Streamlined database interactions using \textbf{MS SQL} T-SQL procedures, enhancing query efficiency by 35\%.}
+        \resumeItem{Led Agile sprint ceremonies, enabling continuous integration and deployment pipelines to accelerate release cycles by 40\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Designed and integrated seamless RESTful APIs using \textbf{Node.js} and \textbf{PHP 6}, improving backend scalability by 30\%.}
+        \resumeItem{Engineered dynamic front-end interfaces with \textbf{React 16} and \textbf{JavaScript} lowering load times by 20\% and enhancing UX.}
+        \resumeItem{Optimized \textbf{Oracle PL/SQL} database procedures, reducing data retrieval times by 25\% across multiple client projects.}
+        \resumeItem{Implemented role-based authentication with \textbf{OAuth} and \textbf{JWT}, improving application security and user management.}
+        \resumeItem{Coordinated code reviews and unit testing to boost code quality, raising bug detection rate before release by 35\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Configured and maintained secure \textbf{Linux} lab environments, enhancing system uptime and lab reliability by 15\%.}
+        \resumeItem{Assisted students in debugging and testing software modules to increase assignment accuracy and reduce errors by 20\%.}
+        \resumeItem{Automated script workflows for grading and validation improving grading turnaround time by 30\%.}
+        \resumeItem{Hosted interactive sessions on web security and cryptography, improving student comprehension and performance.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{05/2023 – 08/2023}
+        {Software Engineer Intern}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Developed backend components in \textbf{C\#} with \textbf{ASP.NET Core}, lowering latency by 30\% for critical API endpoints.}
+        \resumeItem{Improved frontend \textbf{JavaScript} and \textbf{React} integration, resulting in 25\% faster page load and smoother interactions.}
+        \resumeItem{Optimized \textbf{MS SQL Server} queries for faster data retrieval, reducing database load by 20\%.}
+        \resumeItem{Worked closely with cross-functional teams following Scrum, improving sprint delivery efficiency and team collaboration by 25\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Developed backend APIs using \textbf{PHP 6} and integrated \textbf{MySQL} databases, supporting 1000+ concurrent users with 99.5\% uptime.}
+        \resumeItem{Built front-end UI with \textbf{React.js} and \textbf{JavaScript}, enhancing responsiveness and reducing user wait times by 25\%.}
+        \resumeItem{Designed and executed {\textbf TSQL} and \textbf{PL/SQL} database operations, improving data processing speed by 35\%.}
+        \resumeItem{Automated deployment using Docker and CI/CD pipelines, reducing release time and errors by 40\%.}
+        \resumeItem{Collaborated in Agile teams to deliver features incrementally, reducing time-to-market by 30\%.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{AI-Enhanced Frontend Performance Optimizer} | React, JavaScript, OpenAI API}{}
+          \resumeItemListStart
+              \resumeItem{Integrated \textbf{OpenAI API}-powered analysis to dynamically optimize \textbf{React} components, reducing page load times by 30\%.}
+              \resumeItem{Developed intelligent code refactor suggestions that improved maintainability and boosted user engagement metrics by 20\%.}
+              \resumeItem{Automated component testing workflows with AI assistance, increasing test coverage by 35\% while reducing manual efforts.}
+          \resumeItemListEnd
+          \vspace{-16pt}
+      \resumeProjectHeading
+          {\textbf{Secure API Gateway with Adaptive Authentication} | .NET 6, Azure AD, MS SQL}{}
+          \resumeItemListStart
+              \resumeItem{Engineered a robust \textbf{.NET 6} API gateway integrating \textbf{Azure AD} and \textbf{JWT} for adaptive user authentication.}
+              \resumeItem{Optimized backend \textbf{MS SQL} queries to support rapid authorization checks, reducing overall API response time by 25\%.}
+              \resumeItem{Implemented CI/CD pipelines to enable automated deployment and testing, accelerating release cadence by 35\%.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\vspace{-10pt}
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \footnotesize
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming Languages:} & C\#, JavaScript, PHP, Python, T-SQL, PL/SQL, Java \\
+                \textbf{Web Development Frameworks:} & .NET 6, React 16, Node.js, ASP.NET Core, Laravel \\
+                \textbf{Databases:} & MS SQL Server, Oracle, MySQL, PostgreSQL \\
+                \textbf{Authentication \& Security:} & Azure AD, OAuth, JWT, Role-Based Access Control \\
+                \textbf{DevOps \& CI/CD Tools:} & Docker, Jenkins, GitHub Actions, Azure DevOps \\
+                \textbf{AI \& Automation:} & OpenAI API, LLM Integration, AI-Assisted Code Review \\
+            \end{tabular}
+        \end{table}
+
+ \vspace{-15pt}
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science, Tempe, AZ}{GPA: 4.00/4.00}
+
+    \educationSubheading
+      {Manipal Institute of Technology}{07/2018 -- 07/2022}
+      {Bachelor of Technology in Computer and Communication Engineering, Manipal, India}{GPA: 8.83/10.00}
+  \resumeSubHeadingListEnd
+
+\end{document}
