@@ -1,0 +1,214 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #3}, \textbf{\small #1}, \small #4 & \textbf{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \scshape \textbf{Shahil Mohammed}} \\ \vspace{1pt}
+    \small (832) 620-5379 ~ • ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ • ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ • ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ • ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Engineered modular \textbf{Java Spring Boot} microservices improving scalability by 35\% and throughput for mission-critical applications.}
+        \resumeItem{Enhanced security by integrating \textbf{Spring Security} for authentication, reducing unauthorized access attempts by 40\%.}
+        \resumeItem{Deployed an \textbf{AI-driven} code review assistant that cut manual review time by 45\% and accelerated development velocity by 25\%.}
+        \resumeItem{Automated \textbf{Jenkins} and \textbf{Docker} pipelines, reducing deployment cycle time by 40\% and increasing release reliability.}
+        \resumeItem{Collaborated cross-functionally to design robust APIs supporting seamless integration and enhanced data flow across platforms.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Led development of dynamic \textbf{SaaS} data visualization tools in \textbf{Laravel} and \textbf{React}, supporting 50+ simultaneous users.}
+        \resumeItem{Streamlined data processing pipelines with \textbf{Python}, automating 10,000+ daily stock entries and reducing manual effort by 80\%.}
+        \resumeItem{Implemented role-based access and subscription features using \textbf{PHP}, \textbf{Stripe}, and \textbf{WooCommerce} improving customer retention.}
+        \resumeItem{Built AI agents leveraging \textbf{LLMs} automating FINRA broker data downloads, cutting manual data handling time by 80\%.}
+        \resumeItem{Optimized \textbf{React} component state management, reducing load times by 25\% and increasing user engagement metrics significantly.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Maintained secure \textbf{Linux} lab infrastructure ensuring consistent and reliable execution environments for cybersecurity research.}
+        \resumeItem{Assisted students in debugging, deploying, and testing, improving software module completion rates by 20\%.}
+        \resumeItem{Developed automation scripts for grading and validation, increasing grading accuracy by 25\% and decreasing workload.}
+        \resumeItem{Facilitated 15+ technical sessions on cryptography, networking protocols, and web security, enhancing student learning engagement.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{05/2023 – 08/2023}
+        {Software Engineer Intern}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Implemented efficient \textbf{TypeScript} API calls achieving under 100ms response times and improving frontend responsiveness.}
+        \resumeItem{Refined frontend with \textbf{Angular.js}, boosting user engagement by 25\% through improved UI/UX design and interaction.}
+        \resumeItem{Engineered scalable \textbf{C\# .NET} backend services reducing data retrieval latency by 30\%.}
+        \resumeItem{Optimized \textbf{PostgreSQL} stored procedures, reducing frontend database load by 15\% and improving query efficiency.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented \textbf{Java Spring Boot} microservices for SDLC automation, supporting 1000 concurrent users with sub-200ms latency.}
+        \resumeItem{Developed \textbf{React.js} project tracking UI enhancing usability and speeding page load times by 30\%.}
+        \resumeItem{Managed CI/CD pipelines utilizing \textbf{Docker} on \textbf{AWS EC2}, enabling smooth deployments of multiple microservices.}
+        \resumeItem{Wrote unit tests with \textbf{JUnit} achieving 90\% coverage and improving pipeline reliability and maintainability.}
+        \resumeItem{Collaborated within a 5-member team to evolve SaaS tools, driving process optimization and enhanced system modularity.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{AI-Assisted Code Review Bot} | GitHub Actions, OpenAI API, Python}
+          \resumeItemListStart
+              \resumeItem{Created an AI-powered bot analyzing pull requests for issues and auto-generating docstrings, cutting review time by 25\%.}
+              \resumeItem{Integrated with \textbf{GitHub Actions} to enforce code standards and maintain 100\% documentation coverage across Python projects.}
+          \resumeItemListEnd
+          \vspace{-16pt}
+      \resumeProjectHeading
+          {\textbf{Modular Web UI Components for SaaS Platform} | TypeScript, Vue.js, Node.js}
+          \resumeItemListStart
+              \resumeItem{Developed reusable \textbf{Vue.js} components with TypeScript enhancing frontend scalability and reducing development overhead by 30\%.}
+              \resumeItem{Collaborated on API design enabling seamless interaction between backend \textbf{Node.js} services and dynamic UI components.}
+              \resumeItem{Implemented automated testing and continuous integration to ensure code quality and reliable deployment pipelines.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\vspace{-10pt}
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \footnotesize
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & TypeScript, JavaScript, Java, Python, C\#, PHP \\
+                \textbf{Web Development \& Frameworks:} & Vue.js (v3), Node.js, React.js, Angular.js, Laravel, Spring Boot, HTML5, CSS3 \\
+                \textbf{Databases \& Storage:} & PostgreSQL, MySQL, MongoDB \\
+                \textbf{Cloud \& DevOps:} & AWS (EC2, S3), Docker, Jenkins, CI/CD pipelines \\
+                \textbf{AI \& Automation:} & OpenAI API, LLMs, AI Agents, Automation workflows \\
+                \textbf{Tools \& Others:} & Git, GitHub, REST APIs, Webpack, VueCLI, Linux/Unix \\
+            \end{tabular}
+        \end{table}
+
+ \vspace{-15pt}
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science, Tempe, AZ}{GPA: 4.00/4.00}
+
+    \educationSubheading
+      {Manipal Institute of Technology}{07/2018 -- 07/2022}
+      {Bachelor of Technology in Computer and Communication Engineering, Manipal, India}{GPA: 8.83/10.00}
+  \resumeSubHeadingListEnd
+
+\end{document}
