@@ -1,0 +1,220 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #3}, \textbf{\small #1}, \small #4 & \textbf{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \scshape \textbf{Shahil Mohammed}} \\ \vspace{1pt}
+    \small (832) 620-5379 ~ • ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ • ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ • ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ • ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Engineered and optimized scalable data pipelines using \textbf{Python} and \textbf{SQL} to improve data processing efficiency by 30\%.}
+        \resumeItem{Collaborated with cross-functional teams to design metrics dashboards that increased decision-making speed by 25\%.}
+        \resumeItem{Developed and maintained robust ETL workflows ensuring reliable data flow and 99.9\% data accuracy across platforms.}
+        \resumeItem{Implemented data validation controls that reduced errors in critical reports by 40\%, enhancing business reliability.}
+        \resumeItem{Communicated technical results and insights clearly to stakeholders, facilitating timely business strategy adaptations.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Automated daily data aggregation from 10,000+ sources using \textbf{Python}, saving 80\% of manual data processing effort.}
+        \resumeItem{Created interactive dashboards with \textbf{React} and \textbf{SQL} that delivered actionable insights, boosting user engagement by 20\%.}
+        \resumeItem{Built predictive data models using statistical methods to forecast customer churn, improving retention strategies by 15\%.}
+        \resumeItem{Collaborated with data science and product teams to translate complex business needs into solvable data problems.}
+        \resumeItem{Developed and deployed analytics solutions integrating \textbf{Stripe} payment data to track revenue growth and anomalies.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Automated grading pipelines using \textbf{Python} scripts that increased accuracy of software assessment outcomes by 25\%.}
+        \resumeItem{Maintained Linux infrastructure supporting cybersecurity labs to ensure secure, stable environments with 99\% uptime.}
+        \resumeItem{Optimized lab data collection processes to enable rapid analysis and feedback, reducing turnaround times by 20\%.}
+        \resumeItem{Instructed students on data analysis and debugging procedures, enhancing their technical skills and lab success rates.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{05/2023 – 08/2023}
+        {Software Engineer Intern}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Improved API data retrieval performance by 30\% using optimized \textbf{TypeScript} and \textbf{PostgreSQL} stored procedures.}
+        \resumeItem{Developed dashboard interfaces with \textbf{Angular.js} to visualize real-time analytics, increasing operational efficiency by 20\%.}
+        \resumeItem{Implemented scalable backend microservices in \textbf{C\#} and \textbf{.NET} to handle high-throughput data workflows.}
+        \resumeItem{Collaborated in cross-team code reviews and testing, improving code quality and reducing bugs by 25\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Designed and built highly performant \textbf{Java Spring Boot} microservices handling 1000+ concurrent users with sub-200ms latency.}
+        \resumeItem{Developed and maintained robust \textbf{SQL} data pipelines to support data analytics, reducing load times by 35\%.}
+        \resumeItem{Implemented continuous integration pipelines with \textbf{Docker} and \textbf{AWS EC2}, decreasing deployment times by 40\%.}
+        \resumeItem{Collaborated on frontend \textbf{React.js} development for analytics dashboards boosting data accessibility and user experience.}
+        \resumeItem{Authored unit and integration tests achieving 90\% coverage, enhancing system reliability and maintainability.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{AI-Driven Data Quality Monitoring System} | Python, SQL, AWS}{}
+          \resumeItemListStart
+              \resumeItem{Developed an AI-based system to automatically detect anomalies in data pipelines, reducing error rates by 35\%.}
+              \resumeItem{Integrated data quality alerts with dashboards providing real-time insights and enabling prompt corrective actions.}
+          \resumeItemListEnd
+          \vspace{-16pt}
+      \resumeProjectHeading
+          {\textbf{Customer Behavior Analytics Dashboard} | React, SQL, Python}{}
+          \resumeItemListStart
+              \resumeItem{Built a comprehensive dashboard tracking key metrics and customer behaviors, increasing data-driven decisions by 40\%.}
+              \resumeItem{Implemented predictive analytics models to identify growth opportunities, raising forecast accuracy by 20\%.}
+          \resumeItemListEnd
+          \vspace{-16pt}
+      \resumeProjectHeading
+          {\textbf{Automated AI Insights Bot for Business Reporting} | OpenAI API, Python, GitHub Actions}{}
+          \resumeItemListStart
+              \resumeItem{Engineered an AI agent using \textbf{OpenAI API} to generate natural language summaries of key business metrics daily.}
+              \resumeItem{Reduced manual report generation time by 50\%, increasing efficiency and reliability of business insights delivery.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-10pt}
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \footnotesize
+            \begin{tabular}{p{0.34\linewidth} p{0.66\linewidth}}
+                \textbf{Programming \& Scripting:} & Python, SQL, Java, JavaScript, TypeScript, C\#, PHP \\
+                \textbf{Data Technologies \& Frameworks:} & Hadoop, Spark, PostgreSQL, MySQL, MongoDB, DynamoDB, ETL Pipelines \\
+                \textbf{Data Visualization \& BI Tools:} & React.js, Angular.js, Dashboards, Data Storytelling \\
+                \textbf{Cloud \& DevOps:} & AWS (EC2, S3, Lambda), Docker, Jenkins, CI/CD Pipelines \\
+                \textbf{Statistical \& Analytical Skills:} & Statistical Modeling, Predictive Analytics, Data Mining \\
+                \textbf{AI \& Automation Tools:} & OpenAI API, LLM Integration, AI Agents, Automation Workflows \\
+            \end{tabular}
+        \end{table}
+
+ \vspace{-15pt}
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science, Tempe, AZ}{GPA: 4.00/4.00}
+
+    \educationSubheading
+      {Manipal Institute of Technology}{07/2018 -- 07/2022}
+      {Bachelor of Technology in Computer and Communication Engineering, Manipal, India}{GPA: 8.83/10.00}
+  \resumeSubHeadingListEnd
+
+\end{document}
