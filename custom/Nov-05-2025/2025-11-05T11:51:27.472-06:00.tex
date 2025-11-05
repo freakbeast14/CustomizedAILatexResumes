@@ -1,0 +1,220 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #3}, \textbf{\small #1}, \small #4 & \textbf{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \scshape \textbf{Shahil Mohammed}} \\ \vspace{1pt}
+    \small (832) 620-5379 ~ • ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ • ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ • ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ • ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Analyzed user traffic and engagement on websites using \textbf{Google Analytics}, driving a 20\% improvement in UI/UX performance.}
+        \resumeItem{Developed automated dashboards integrating \textbf{SQL} and \textbf{Excel}, reducing manual reporting time by 40\% and increasing data accuracy.}
+        \resumeItem{Collaborated with marketing teams to interpret digital behavior, influencing a 15\% increase in customer retention rates month-over-month.}
+        \resumeItem{Identified and eliminated site friction points, increasing conversion rates by 12\% through targeted A/B testing and usability analyses.}
+        \resumeItem{Maintained competitor benchmarking reports using web data, providing actionable insights that influenced quarterly business strategy.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Automated collection and visualization of eCommerce KPIs using \textbf{Adobe Analytics} and \textbf{Excel}, improving report generation speed by 50\%.}
+        \resumeItem{Enhanced digital customer journey mapping contributing to a 10\% uplift in average order value and a 25\% increase in engagement metrics.}
+        \resumeItem{Instituted SQL-powered data pipelines to track and report web behaviors, optimizing marketing campaign effectiveness by 18\%.}
+        \resumeItem{Developed and presented monthly performance reports to stakeholders, enabling data-driven decision making and strategic prioritization.}
+        \resumeItem{Researched emerging web analytics and automation trends, integrating AI-based tools that reduced manual efforts by 30\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Supported secure deployment of Linux-based lab environments, improving system uptime by 15\% for cybersecurity coursework.}
+        \resumeItem{Automated lab performance data reporting using scripting, cutting manual compilation time by 35\% and reducing errors.}
+        \resumeItem{Documented and communicated performance trends, assisting faculty in optimizing lab assignments and student learning outcomes.}
+        \resumeItem{Trained 30+ students on data tracking and debugging techniques to enhance understanding of digital system performance and security.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{05/2023 – 08/2023}
+        {Software Engineer Intern}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Developed APIs in \textbf{TypeScript} to capture user engagement data, achieving under 100ms response times for seamless experience.}
+        \resumeItem{Optimized database queries and \textbf{PostgreSQL} stored procedures, boosting data retrieval efficiency by 20\%.}
+        \resumeItem{Collaborated with UX team to analyze site user paths, implementing changes that improved task completion rates by 14\%.}
+        \resumeItem{Generated detailed weekly reports on site performance trends using \textbf{Excel} and SQL to inform product development decisions.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Built data integration microservices with \textbf{Java Spring Boot} supporting real-time analytics for 1000+ daily active users.}
+        \resumeItem{Implemented \textbf{SQL}-driven reporting tools, increasing automation of analytics processes by 40\%, enhancing team productivity.}
+        \resumeItem{Designed web dashboards in \textbf{React.js} to visualize customer interaction metrics, increasing decision-making efficiency by 30\%.}
+        \resumeItem{Partnered with QA teams to monitor web usability and identify friction, achieving a 15\% reduction in user drop-offs.}
+        \resumeItem{Enhanced pipeline automation using \textbf{Docker} and AWS \textbf{EC2}, reducing deployment times by 35\% for analytics solutions.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{AI-Powered Web Analytics Assistant} | Python, Google Analytics API, LLMs}{}
+          \resumeItemListStart
+              \resumeItem{Developed an AI assistant to automate analysis of user engagement data, reducing manual processing time by 50\% and improving insights.}
+              \resumeItem{Integrated \textbf{LLMs} to generate automated reports highlighting key trends and actionable metrics for stakeholder presentations.}
+          \resumeItemListEnd
+          \vspace{-16pt}
+      \resumeProjectHeading
+          {\textbf{Ecommerce Conversion Optimization Dashboard} | SQL, Excel, Tableau}{}
+          \resumeItemListStart
+              \resumeItem{Created a dynamic dashboard utilizing \textbf{SQL} and \textbf{Tableau} to track ecommerce KPIs, increasing analysis efficiency by 40\%.}
+              \resumeItem{Enabled identification of site friction points through detailed metric visualization, contributing to a 12\% uplift in conversions.}
+          \resumeItemListEnd
+          \vspace{-16pt}
+      \resumeProjectHeading
+          {\textbf{Customer Behavior Trend Analyzer} | Adobe Analytics, Python, Excel}{}
+          \resumeItemListStart
+              \resumeItem{Built automated scripts in \textbf{Python} to extract and analyze extensive user data sets, improving trend detection accuracy by 30\%.}
+              \resumeItem{Presented organized metrics using advanced \textbf{Excel} visualizations, facilitating faster decisions and optimizing marketing targeting strategies.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\vspace{-10pt}
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \footnotesize
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Web Analytics Platforms:} & Google Analytics, Adobe Analytics, SimilarWeb \\
+                \textbf{Data Management \& Visualization:} & SQL, Excel, Tableau, Power BI \\
+                \textbf{Programming \& Scripting:} & Python, Java, JavaScript \\
+                \textbf{Database Technologies:} & MySQL, PostgreSQL, MongoDB \\
+                \textbf{Automation \& DevOps:} & Docker, Jenkins, AWS EC2, GitHub Actions \\
+                \textbf{AI \& Data Analytics Tools:} & Python scripting, LLM Integration, AI Automation, Data Pipelines \\
+            \end{tabular}
+        \end{table}
+
+ \vspace{-15pt}
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science, Tempe, AZ}{GPA: 4.00/4.00}
+
+    \educationSubheading
+      {Manipal Institute of Technology}{07/2018 -- 07/2022}
+      {Bachelor of Technology in Computer and Communication Engineering, Manipal, India}{GPA: 8.83/10.00}
+  \resumeSubHeadingListEnd
+
+\end{document}
