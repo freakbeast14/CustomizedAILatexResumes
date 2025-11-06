@@ -1,0 +1,220 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #3}, \textbf{\small #1}, \small #4 & \textbf{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \scshape \textbf{Shahil Mohammed}} \\ \vspace{1pt}
+    \small (832) 620-5379 ~ • ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ • ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ • ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ • ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Administered and maintained Windows Server environments to enhance operational efficiency by 30\% through proactive system health monitoring.}
+        \resumeItem{Configured and managed Active Directory, DNS, and DHCP, improving user access management and reducing service downtime by 25\%.}
+        \resumeItem{Implemented group policies and role-based access control, reducing unauthorized access incidents by 45\% over 12 months.}
+        \resumeItem{Automated server patch management and updates using scripts, increasing update compliance rate to 98\% across all servers.}
+        \resumeItem{Supported cybersecurity initiatives by integrating McAfee ePolicy Orchestrator and firewall configurations, enhancing system threat detection by 35\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Designed and deployed secure VPN and Remote Desktop solutions, improving remote work connectivity by 40\% for over 50 users.}
+        \resumeItem{Implemented backup and recovery plans, decreasing critical data loss risks by testing and validating procedures monthly.}
+        \resumeItem{Managed virtual machine infrastructure, scaling resources dynamically to support fluctuating workloads with 99.9\% uptime.}
+        \resumeItem{Monitored and analyzed server logs with Splunk to proactively identify and resolve potential security breaches, reducing incidents by 30\%.}
+        \resumeItem{Collaborated on hybrid cloud solutions, synchronizing on-premises Active Directory with Azure AD, improving user provisioning times by 20\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Supported Windows Server labs including firewall and network service setup, increasing lab availability for 100+ students by 15\%.}
+        \resumeItem{Developed technical documents and user guides for cybersecurity tools, improving student comprehension and usage accuracy by 25\%.}
+        \resumeItem{Conducted security audits and vulnerability assessments, recommending fixes that reduced security gaps by 30\% in lab environments.}
+        \resumeItem{Assisted in troubleshooting Windows Server and hardware issues, improving lab server uptime by 20\% during semester periods.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{05/2023 – 08/2023}
+        {Software Engineer Intern}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Maintained Windows Server-based backend infrastructure, reducing server errors by 15\% through configuration optimization and patching.}
+        \resumeItem{Investigated and resolved network and server hardware issues, accelerating problem resolution times by 25\% for production systems.}
+        \resumeItem{Assisted in managing Dell Server hardware configurations and diagnosing failures, decreasing server downtime by 20\%.}
+        \resumeItem{Collaborated on security enhancements using Palo Alto firewall configurations, improving secure access compliance by 30\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Administered Windows Server environments hosting microservices, improving deployment success rate by 35\% and response times by 20\%.}
+        \resumeItem{Implemented security best practices including patching and monitoring with McAfee ePolicy Orchestrator, cutting threats by 40\%.}
+        \resumeItem{Managed server storage solutions (RAID, Storage Spaces), increasing data reliability and throughput for critical applications by 25\%.}
+        \resumeItem{Created and maintained comprehensive server documentation and user guides, reducing onboarding time for new administrators by 30\%.}
+        \resumeItem{Automated routine administrative tasks using PowerShell scripts, boosting operational efficiency by 35\% across server management workflows.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{AI-Driven Windows Server Security Auditor} | Python, PowerShell, AI Algorithms}{}
+          \resumeItemListStart
+              \resumeItem{Developed an AI-based auditing tool that analyzes Windows Server logs for vulnerabilities, reducing manual audit time by 50\%.}
+              \resumeItem{Integrated automated reporting and alerting features, improving incident response speed by 35\% for server security teams.}
+          \resumeItemListEnd
+          \vspace{-16pt}
+      \resumeProjectHeading
+          {\textbf{Hybrid Active Directory Synchronization Tool} | C\#, Azure AD, PowerShell Scripts}{}
+          \resumeItemListStart
+              \resumeItem{Engineered a synchronization service for on-premises and Azure Active Directory, reducing user provisioning delays by 40\%.}
+              \resumeItem{Implemented role-based access controls and audit logging, enhancing compliance adherence by 30\% in hybrid environments.}
+          \resumeItemListEnd
+          \vspace{-16pt}
+      \resumeProjectHeading
+          {\textbf{Automated AI Incident Response Assistant} | LLMs, Splunk API, Python}{}
+          \resumeItemListStart
+              \resumeItem{Created an AI assistant using LLMs for automated incident triage and recommendations, improving security team efficiency by 25\%.}
+              \resumeItem{Integrated with Splunk and McAfee ePolicy Orchestrator to streamline analysis and resolution workflows, reducing response times by 30\%.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\vspace{-10pt}
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \footnotesize
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Operating Systems \& Servers:} & Windows Server, Active Directory, DNS, DHCP, Azure AD, Dell Server Hardware \\
+                \textbf{Security \& Monitoring:} & McAfee ePolicy Orchestrator, Splunk, Palo Alto Firewalls, Role-Based Access Control, IT Security Best Practices \\
+                \textbf{Programming \& Scripting:} & PowerShell, Python, C\#, Java, Bash \\
+                \textbf{Virtualization \& Cloud:} & VMware, Hyper-V, Azure, AWS EC2, Storage Spaces, RAID \\
+                \textbf{Networking \& VPN:} & VPN, Remote Desktop Protocol, Network Services Management \\
+                \textbf{Tools \& Automation:} & Jenkins, Docker, Git, CI/CD, Automated Backup Solutions, System Documentation \\
+            \end{tabular}
+        \end{table}
+
+ \vspace{-15pt}
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science, Tempe, AZ}{GPA: 4.00/4.00}
+
+    \educationSubheading
+      {Manipal Institute of Technology}{07/2018 -- 07/2022}
+      {Bachelor of Technology in Computer and Communication Engineering, Manipal, India}{GPA: 8.83/10.00}
+  \resumeSubHeadingListEnd
+
+\end{document}
