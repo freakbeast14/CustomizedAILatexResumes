@@ -1,0 +1,218 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #3}, \textbf{\small #1}, \small #4 & \textbf{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \scshape \textbf{Shahil Mohammed}} \\ \vspace{1pt}
+    \small (832) 620-5379 ~ • ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ • ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ • ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ • ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Developed and maintained complex \textbf{C\#} modules in \textbf{.NET} environment, increasing performance efficiency by 30\%.}
+        \resumeItem{Implemented front-end features using \textbf{HTML}, \textbf{CSS}, and \textbf{JavaScript}, improving user engagement by 20\%.}
+        \resumeItem{Collaborated in Agile scrum teams to deliver quality software releases on sprint deadlines, enhancing team velocity by 25\%.}
+        \resumeItem{Optimized \textbf{SQL Server} queries and schemas, reducing database response time by 15\%.}
+        \resumeItem{Utilized \textbf{ADO} for version control and applied bug fixes, increasing software reliability and reducing defects by 35\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Designed and developed scalable \textbf{ASP.NET} and \textbf{Entity Framework} backends with robust authentication, improving security by 30\%.}
+        \resumeItem{Built responsive user interfaces using \textbf{React} and optimized client-side interactions, reducing load time by 25\%.}
+        \resumeItem{Wrote complex \textbf{MySQL} queries and optimized database performance, improving data processing speed by 20\%.}
+        \resumeItem{Created unit tests with \textbf{NUnit}, improving code coverage to 85\% and decreasing bugs in production by 40\%.}
+        \resumeItem{Implemented CI/CD pipelines using automated tools, reducing deployment time by 30\% and increasing release frequency.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Supported \textbf{Linux}-based environments and assisted debugging during lab software testing, increasing student success by 20\%.}
+        \resumeItem{Developed instructional materials on \textbf{OOP} concepts and \textbf{design patterns}, helping students grasp complex programming principles.}
+        \resumeItem{Automated grading scripts to improve assessment consistency and reduced manual effort by 25\%.}
+        \resumeItem{Collaborated with faculty to troubleshoot software defects, enhancing lab module stability by 30\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{05/2023 – 08/2023}
+        {Software Engineer Intern}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Developed backend API endpoints using \textbf{C\#} and \textbf{.NET}, reducing average data retrieval latency by 30\%.}
+        \resumeItem{Enhanced existing \textbf{Angular.js} frontend components, increasing application responsiveness and user engagement by 22\%.}
+        \resumeItem{Wrote optimized \textbf{PostgreSQL} queries, streamlining database access and reducing frontend load by 15\%.}
+        \resumeItem{Participated in Agile ceremonies and contributed to sprint planning, increasing team productivity by 18\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Engineered \textbf{Java Spring Boot} microservices integrated with \textbf{MySQL}, handling 1000+ concurrent users with sub-200ms latency.}
+        \resumeItem{Implemented \textbf{CI/CD} pipelines using \textbf{Docker} and \textbf{AWS EC2}, reducing deployment errors by 40\%.}
+        \resumeItem{Developed frontend UI with \textbf{React.js}, enhancing usability and speeding page load times by 30\%.}
+        \resumeItem{Authored unit tests with \textbf{JUnit} framework, achieving 90\% code coverage and improving code reliability.}
+        \resumeItem{Applied \textbf{OOP} principles and design patterns to develop scalable modules, improving maintainability by 35\%.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{AI Code Quality Analyzer and Documentation Generator} | GitHub Actions, OpenAI API, LLMs}{}
+          \resumeItemListStart
+              \resumeItem{Developed a \textbf{CI/CD} bot using \textbf{LLMs} to automatically detect code issues and generate documentation, reducing review time by 30\%.}
+          \resumeItemListEnd
+          \vspace{-16pt}
+      \resumeProjectHeading
+          {\textbf{Secure Sales Automation Platform} | .NET, C\#, SQL Server, Angular}{}
+          \resumeItemListStart
+              \resumeItem{Built a secure and scalable \textbf{.NET} sales automation system with role-based access, improving sales process efficiency by 40\%.}
+              \resumeItem{Optimized database queries and application logic, reducing latency by 20\% and improving end-user satisfaction.}
+          \resumeItemListEnd
+          \vspace{-16pt}
+      \resumeProjectHeading
+          {\textbf{Customer Support AI Email Bot} | Gmail API, LLMs, n8n Automation}{}
+          \resumeItemListStart
+              \resumeItem{Designed an AI agent using \textbf{LLMs} and automated workflows to interpret and respond to 60\% of customer queries, cutting response time by 40\%.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\vspace{-10pt}
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \footnotesize
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & C\#, Java, Python, JavaScript, TypeScript, SQL, HTML, CSS \\
+                \textbf{Frameworks \& Libraries:} & .NET, ASP.NET, Entity Framework, Angular, React, Spring Boot \\
+                \textbf{Database Technologies:} & SQL Server, MySQL, PostgreSQL \\
+                \textbf{Development Tools:} & Git, Azure DevOps (ADO), JIRA, NUnit, MSTest, Jenkins \\
+                \textbf{DevOps \& Automation:} & Docker, CI/CD pipelines, AWS EC2 \\
+                \textbf{AI \& Automation:} & OpenAI API, LLM Integration, n8n Automation, AI agents \\
+            \end{tabular}
+        \end{table}
+
+ \vspace{-15pt}
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science, Tempe, AZ}{GPA: 4.00/4.00}
+
+    \educationSubheading
+      {Manipal Institute of Technology}{07/2018 -- 07/2022}
+      {Bachelor of Technology in Computer and Communication Engineering, Manipal, India}{GPA: 8.83/10.00}
+  \resumeSubHeadingListEnd
+
+\end{document}
