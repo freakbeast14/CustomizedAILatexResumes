@@ -1,0 +1,217 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}      
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Shahil Mohammed}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (832) 620-5379 ~ • ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ • ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ • ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ • ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+Innovative software engineer focused on designing scalable, secure backend services for healthcare. Experienced in cloud infrastructure, healthcare standards, and privacy principles to deliver reliable health data solutions for millions.
+ \vspace{-5pt}
+ 
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming Languages:} & Java, Python, Scala, Go, TypeScript \\
+                \textbf{Web Services \& Frameworks:} & Spring Boot, Django, Node.js, REST, HTTPS, JSON, gRPC \\
+                \textbf{Healthcare Standards:} & FHIR, SMART, HL7 \\
+                \textbf{Cloud Platforms \& DevOps:} & AWS (EC2, Lambda, S3), Docker, Jenkins, Azure \\
+                \textbf{Databases:} & MySQL, PostgreSQL, MongoDB, DynamoDB \\
+                \textbf{Security \& Privacy:} & OAuth, JWT, Role-based Access Control, Spring Security \\
+            \end{tabular}
+        \end{table}
+ \vspace{-15pt}
+ 
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Designed \textbf{Spring Boot} backend services, scaling APIs to serve 2M+ users with 40\% performance improvement.}
+        \resumeItem{Implemented healthcare \textbf{FHIR} integration, enabling seamless clinical data exchange and compliance with SMART standards.}
+        \resumeItem{Enhanced system security using \textbf{Spring Security}, reducing unauthorized access attempts by 45\%.}
+        \resumeItem{Automated \textbf{Jenkins} pipelines deploying microservices on \textbf{AWS EC2}, cutting release cycles by 35\%.}
+        \resumeItem{Collaborated cross-functionally to embed privacy-by-design in backend architecture, ensuring HIPAA-compliant data handling.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Built \textbf{Python} data pipelines processing 15,000 healthcare records daily, automating workflows and increasing efficiency 75\%.}
+        \resumeItem{Developed \textbf{React} frontend with \textbf{Laravel} backend integrating healthcare APIs, supporting 30+ concurrent clinicians.}
+        \resumeItem{Implemented cloud messaging on \textbf{AWS Lambda} for scalable alerts, reducing system latency by 20\%.}
+        \resumeItem{Designed role-based access using \textbf{OAuth} and API security protocols, improving data privacy compliance by 30\%.}
+        \resumeItem{Led integration of \textbf{FHIR} protocol in backend services aligning with current healthcare data standards and interoperability.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Maintained secure \textbf{Linux}-based environments supporting healthcare software testing and privacy validation labs.}
+        \resumeItem{Developed scripts to automate security audits, increasing vulnerability detection accuracy by 25\%.}
+        \resumeItem{Guided students on debugging backend health data APIs, improving assignment pass rates by 18\%.}
+        \resumeItem{Delivered 15+ workshops on network security practices relevant to health software compliance and data protection.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{05/2023 – 08/2023}
+        {Software Engineer Intern}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Enhanced \textbf{C\# .NET} backend APIs, cutting average data retrieval times by 30\% for health-related applications.}
+        \resumeItem{Optimized \textbf{PostgreSQL} schema designs, reducing query response by 18\% and improving data integrity.}
+        \resumeItem{Implemented \textbf{Angular.js} frontend optimizations, increasing user interaction efficiency by 22\%.}
+        \resumeItem{Executed secure API calls via \textbf{TypeScript}, achieving sub-100ms average response for clinical data workflows.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Developed \textbf{Java Spring Boot} microservices supporting over 1,200 concurrent users with sub-200ms response latency.}
+        \resumeItem{Implemented CI/CD using \textbf{Docker} and \textbf{AWS EC2}, enabling automated health data service deployments.}
+        \resumeItem{Engineered \textbf{MySQL} data models compliant with healthcare privacy regulations, improving query efficiency by 20\%.}
+        \resumeItem{Created a \textbf{React} UI for clinical data tracking, reducing access time by 25\% and enhancing usability.}
+        \resumeItem{Wrote \textbf{JUnit} tests achieving 90\% coverage, increasing software reliability for medical record services.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{AI-Powered Clinical Data Validator} | Python, FHIR, OpenAI API, AWS Lambda}{}
+          \resumeItemListStart
+              \resumeItem{Developed an AI tool automating clinical record validation against \textbf{FHIR} standards, improving data accuracy by 35\%.}
+              \resumeItem{Leveraged \textbf{AWS Lambda} for scalable execution, processing 50k+ records daily with 99.9\% uptime reliability.}
+          \resumeItemListEnd
+          \vspace{-12pt}
+      \resumeProjectHeading
+          {\textbf{Secure Health Data API Gateway} | Java, Spring Boot, OAuth, AWS EC2}{}
+          \resumeItemListStart
+              \resumeItem{Designed a secure API gateway implementing \textbf{OAuth} and encryption, reducing unauthorized requests by 50\%.}
+              \resumeItem{Deployed on \textbf{AWS EC2}, supporting 1M+ daily API calls for clinical health applications with high availability.}
+          \resumeItemListEnd
+          \vspace{-12pt}
+      \resumeProjectHeading
+          {\textbf{FHIR-Compliant Backend Microservices} | Scala, Akka, PostgreSQL, Docker}{}
+          \resumeItemListStart
+              \resumeItem{Implemented microservices in \textbf{Scala} supporting \textbf{FHIR} protocols, improving interoperability between healthcare systems by 40\%.}
+              \resumeItem{Configured containerized deployments using \textbf{Docker}, enabling 30\% faster rollout and seamless scaling on cloud platforms.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+
+\end{document}
