@@ -1,0 +1,228 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}      
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Shahil Mohammed}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (832) 620-5379 ~ • ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ • ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ • ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ • ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+Resourceful software engineer with 5+ years experience developing high-performance C++ libraries and debugging tools for low latency environments. Skilled in building scalable RESTful APIs and cross-platform solutions on Linux and Windows. Adept at collaborating with quant teams to deliver optimized, data-driven trading technology. Proficient in Python automation and market data analysis.
+
+ \vspace{-5pt}
+ 
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & C++, Python, C, Shell Scripting, JavaScript, TypeScript \\
+                \textbf{Tools \& Frameworks:} & Boost, STL, RESTful APIs, gRPC, Git, Jenkins, Docker \\
+                \textbf{Operating Systems:} & Linux, Windows, Unix \\
+                \textbf{Data Structures \& Markets:} & Orderbook Management, Market Data Parsing, Low Latency Systems \\
+                \textbf{Cloud \& DevOps:} & AWS, Jenkins, Docker, CI/CD Pipelines \\
+                \textbf{Collaboration \& Others:} & Agile Methods, Jira, Code Review, Cross-team Communication \\
+            \end{tabular}
+        \end{table}
+ \vspace{-15pt}
+ 
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Engineered C++ libraries to parse high-frequency market data with 30\% faster processing speeds for real-time trading applications.}
+        \resumeItem{Designed debugging tools that reduced troubleshooting time by 50\% through enhanced traceability and error analysis capabilities.}
+        \resumeItem{Developed RESTful service interfaces for C++ applications enabling seamless data integrations in Windows and Linux environments.}
+        \resumeItem{Collaborated across teams implementing advanced data structures optimized for low latency and high throughput trading scenarios.}
+        \resumeItem{Automated test suites in Python decreasing manual debugging efforts by 40\% while improving code coverage and reliability.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Built Python and C++ tools for analyzing market data streams that increased decoding accuracy and reduced latency by 25\%.}
+        \resumeItem{Integrated orderbook management libraries with frontend applications, achieving 20\% faster updates and improved UI responsiveness.}
+        \resumeItem{Optimized multi-platform deployment process, streamlining releases for Linux and Windows with Docker and Jenkins automation.}
+        \resumeItem{Partnered with quants to translate trading strategies into efficient software components used firm-wide.}
+        \resumeItem{Implemented Python scripts for data validation and automated report generation, cutting manual processing time by 30\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Supported Linux-based research environments, ensuring stable execution of market data parsing and debugging tools for student projects.}
+        \resumeItem{Automated grading scripts using Python that improved evaluation speed and accuracy for data handling assignments by 25\%.}
+        \resumeItem{Guided students in debugging and troubleshooting complex C++ and Python software to strengthen their technical problem-solving skills.}
+        \resumeItem{Led workshops covering real-world applications of low latency data structures and market analysis techniques.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{05/2023 – 08/2023}
+        {Software Engineer Intern}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Enhanced backend data processing in C\# .NET, achieving 30\% faster retrieval time for high-volume transactional data sets.}
+        \resumeItem{Implemented asynchronous API calls improving reliability and reducing average response latency to under 100ms.}
+        \resumeItem{Refactored SQL procedures to streamline data queries, increasing efficiency by 15\% in complex report generation.}
+        \resumeItem{Contributed to Angular.js frontend improvements reducing page load times by 20\% and boosting user engagement.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Developed microservices in \textbf{Java Spring Boot} that handled 1000+ concurrent users with sub-200ms response times.}
+        \resumeItem{Built RESTful APIs consumed by multiple clients improving cross-team data sharing and real-time communication.}
+        \resumeItem{Automated deployment pipelines with \textbf{Docker} and \textbf{Jenkins}, cutting release cycles by 35\%.}
+        \resumeItem{Created interactive data visualization components in \textbf{React.js}, enhancing user comprehension of complex datasets by 30\%.}
+        \resumeItem{Implemented unit and integration tests achieving 90\% code coverage, reducing production bugs by 25\%.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{GPA: 4.0/4.0}
+  \resumeSubHeadingListEnd
+\vspace{-10pt}
+%%%%%%
+  
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{AI-Powered Market Data Debugger} | Python, C++, REST API}{}
+          \resumeItemListStart
+              \resumeItem{Developed an AI-driven debugger leveraging \textbf{Python} and \textbf{C++} to quickly identify and resolve market data anomalies, reducing debug time by 45\%.}
+              \resumeItem{Integrated RESTful services for real-time data analysis, enabling traders to monitor orderbook states with 30\% improved accuracy and speed.}
+          \resumeItemListEnd
+          \vspace{-12pt}
+      \resumeProjectHeading
+          {\textbf{Low Latency Orderbook Library} | C++, Boost, Linux}{}
+          \resumeItemListStart
+              \resumeItem{Engineered a high-performance C++ library for orderbook management capable of sustaining sub-millisecond latency in live trading environments.}
+              \resumeItem{Optimized data structures and parsing routines achieving 35\% reduction in memory usage and 25\% faster event processing.}
+          \resumeItemListEnd
+          \vspace{-12pt}
+      \resumeProjectHeading
+          {\textbf{Cross-Platform Market Data Toolkit} | C++, Python, Jenkins, Docker}{}
+          \resumeItemListStart
+              \resumeItem{Built tools supporting both Linux and Windows platforms to facilitate market data debugging and analysis, increasing operational efficiency by 40\%.}
+              \resumeItem{Automated testing and deployment workflows using \textbf{Jenkins} and \textbf{Docker}, accelerating integration cycles by 30\%.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+
+\end{document}
