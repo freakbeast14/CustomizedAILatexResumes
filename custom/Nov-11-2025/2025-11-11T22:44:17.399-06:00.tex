@@ -1,0 +1,228 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}      
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Shahil Mohammed}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (832) 620-5379 ~ • ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ • ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ • ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ • ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+Highly skilled software engineer with 4+ years in designing scalable, low-latency distributed systems for data-driven advertising platforms. Expert in cloud-native \textbf{AWS} deployments, microservices, and real-time data processing. Proven success delivering impactful, high-performance solutions collaborating with cross-functional teams and mentoring engineers.
+
+ \vspace{-5pt}
+ 
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & Java, Python, Go, TypeScript, C\#, SQL \\
+                \textbf{Cloud \& DevOps:} & AWS (EC2, S3, Lambda, DynamoDB, EMR, Athena), Docker, Kubernetes, Jenkins \\
+                \textbf{Frameworks \& Tools:} & Spring Boot, React.js, Angular.js, Node.js, JUnit, RESTful APIs, Microservices \\
+                \textbf{Databases \& Messaging:} & MySQL, PostgreSQL, MongoDB, DynamoDB, Kafka, RabbitMQ \\
+                \textbf{Data Processing \& Analytics:} & Real-time streaming, Batch processing, Data pipelines, EMR, Athena \\
+                \textbf{Ad Tech \& Machine Learning:} & Programmatic advertising (DSP, SSP), RTB protocols, ML algorithms, Privacy frameworks (GDPR, CCPA) \\
+            \end{tabular}
+        \end{table}
+ \vspace{-15pt}
+ 
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Engineered scalable \textbf{Java Spring Boot} microservices weighted for low-latency, increasing ad platform throughput by 30\% under peak load.}
+        \resumeItem{Integrated \textbf{Kafka}-based streaming pipelines handling real-time user segmentation enhancing campaign targeting accuracy by 25\%.}
+        \resumeItem{Collaborated with data scientists and product owners to deploy personalization features boosting user engagement metrics by 20\%.}
+        \resumeItem{Led cloud migration to \textbf{AWS Lambda} and containerized services via \textbf{Docker}/\textbf{Kubernetes}, cutting infrastructure costs by 18\%.}
+        \resumeItem{Mentored junior engineers on software best practices and microservice architecture, improving team velocity and code quality.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Developed a high-throughput \textbf{Python} ETL pipeline processing 20K+ daily ad performance records, reducing data latency by 40\%.}
+        \resumeItem{Designed and implemented a modular \textbf{React} dashboard for real-time ad analytics, increasing user adoption by 35\%.}
+        \resumeItem{Automated deployment of microservices using \textbf{Jenkins} and \textbf{Docker}, improving release frequency by 50\%.}
+        \resumeItem{Built AI-powered campaign recommendation agents leveraging \textbf{LLMs}, improving advertisers' ROI by 22\%.}
+        \resumeItem{Enhanced RESTful APIs for ad bidding and reporting, reducing response times by 30\% and improving throughput.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Managed secure \textbf{Linux} environments critical for cybersecurity experiments, ensuring 100\% lab uptime during semester.}
+        \resumeItem{Developed debugging tools and automated test scripts to increase student software delivery success by 20\%.}
+        \resumeItem{Streamlined grading automation scripts using \textbf{Python}, enhancing accuracy and reducing turnaround time by 30\%.}
+        \resumeItem{Conducted technical workshops clarifying secure coding and network protocols to 100+ students.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{05/2023 – 08/2023}
+        {Software Engineer Intern}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Implemented sub-100ms latency \textbf{TypeScript} APIs for real-time data services boosting client satisfaction 15\%.}
+        \resumeItem{Refactored \textbf{Angular.js} UI components yielding a 20\% increase in user retention and engagement.}
+        \resumeItem{Built efficient \textbf{C\#} backend logic on \textbf{.NET} decreasing data retrieval time by 28\%.}
+        \resumeItem{Optimized \textbf{PostgreSQL} queries and data schema, reducing overall query time by 18\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Devised \textbf{Spring Boot} microservices architecture supporting 1000+ concurrent users, improving response times under 200ms.}
+        \resumeItem{Established \textbf{AWS EC2} based CI/CD pipelines with \textbf{Docker}, accelerating deployment frequency by 45\%.}
+        \resumeItem{Implemented robust \textbf{MySQL} data models and integrated them with microservices for reliable transaction handling.}
+        \resumeItem{Created dynamic project management front-end in \textbf{React.js}, increasing team task tracking efficiency by 35\%.}
+        \resumeItem{Wrote comprehensive \textbf{JUnit} unit tests achieving 90\% code coverage, enhancing pipeline reliability.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{GPA: 4.0/4.0}
+  \resumeSubHeadingListEnd
+\vspace{-10pt}
+%%%%%%
+  
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{AI-Driven Real-Time Bid Optimizer} $|$ Java, AWS Lambda, Kafka, Spring Boot}{}
+          \resumeItemListStart
+              \resumeItem{Built a \textbf{Java} based real-time bidding system integrating \textbf{Kafka} streams and \textbf{AWS Lambda}, improving bid decision speed by 35\%.}
+              \resumeItem{Implemented campaign performance analytics enabling data-driven bidding strategies, increasing ad ROI by 20\%.}
+          \resumeItemListEnd
+          \vspace{-12pt}
+      \resumeProjectHeading
+          {\textbf{Personalized Audience Segmentation Platform} $|$ Python, React, DynamoDB, EMR}{}
+          \resumeItemListStart
+              \resumeItem{Designed an \textbf{EMR} and \textbf{DynamoDB} powered pipeline for large-scale user segmentation, enhancing targeting precision by 30\%.}
+              \resumeItem{Developed a \textbf{React} UI for real-time segmentation insights, improving marketer decision-making speed by 25\%.}
+          \resumeItemListEnd
+          \vspace{-12pt}
+      \resumeProjectHeading
+          {\textbf{AI-Powered Ad Campaign Recommender} $|$ Python, OpenAI API, RESTful APIs}{}
+          \resumeItemListStart
+              \resumeItem{Engineered an AI recommender using \textbf{OpenAI API} analyzing historical ad data to suggest optimized campaign parameters, increasing conversions by 18\%.}
+              \resumeItem{Built a REST API backend in \textbf{Python} to serve recommendations with <150ms latency, supporting real-time user interactions.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\end{document}
