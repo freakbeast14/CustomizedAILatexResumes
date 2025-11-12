@@ -1,0 +1,227 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}      
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Shahil Mohammed}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (832) 620-5379 ~ • ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ • ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ • ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ • ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+Skilled software engineer specializing in Linux user-space development, API integration, and multi-threaded processing for high-performance AI accelerators. Experienced in C/C++ and Python programming for AI frameworks such as PyTorch, focusing on architectural design, performance optimization, and seamless software integration in Linux environments.
+\vspace{-5pt}
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & C, C++, Python, Java, Shell Scripting \\
+                \textbf{Operating Systems \& Frameworks:} & Linux User-Space Development, RTOS Concepts, PyTorch, Multi-threading \\
+                \textbf{Hardware \& Architecture Knowledge:} & SoC Architecture, Cache, Memory, Bus Architecture, PCIe, LPDDR, IO Interfaces \\
+                \textbf{APIs \& Integration:} & API Design, RESTful Services, gRPC, Source Code and Configuration Management (\textbf{Git}) \\
+                \textbf{Development Tools \& Methodologies:} & CI/CD, Debugging, Functional and Performance Testing, Agile Practices \\
+                \textbf{Cloud \& Miscellaneous:} & AWS, Docker, Jenkins, Automation, Performance Optimization \\
+            \end{tabular}
+        \end{table}
+ \vspace{-15pt}
+ 
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented multi-threaded APIs in \textbf{C++} for scalable data processing, boosting throughput by 30\% under high concurrency workloads.}
+        \resumeItem{Developed Linux user-space modules in \textbf{Python} to enable seamless communication with backend \textbf{AI} acceleration hardware, improving integration efficiency by 40\%.}
+        \resumeItem{Collaborated in architectural design and code reviews to optimize \textbf{API} usability, reducing client-side latency by 25\% across multiple \textbf{ML} inference tasks.}
+        \resumeItem{Implemented performance testing pipelines using automated frameworks, detecting and fixing bottlenecks that increased system responsiveness by 35\%.}
+        \resumeItem{Utilized \textbf{Git} and configuration management tools to maintain codebase integrity and streamline development cycles, reducing integration conflicts by 50\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Engineered user-friendly APIs in \textbf{Python} and \textbf{C++} to interface with cloud services, improving \textbf{AI} workflow automation by 50\%.}
+        \resumeItem{Developed multi-threaded data processing services running on \textbf{Linux}, increasing throughput by 30\% while maintaining resource efficiency.}
+        \resumeItem{Optimized backend performance using \textbf{C++} and integrated \textbf{PyTorch} based inference kernels on Linux user-space environments.}
+        \resumeItem{Automated continuous integration workflows with \textbf{Docker} and \textbf{Jenkins}, accelerating deployment cycles by 40\%.}
+        \resumeItem{Enhanced system reliability by debugging and tuning \textbf{API} interfaces for high-speed data exchange on PCIe and memory-efficient operations.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Supported Linux-based infrastructure and maintained secure network configurations for lab experiments, improving stability by 20\%.}
+        \resumeItem{Helped students debug multi-threaded applications, improving their software reliability and assignment completion success by 25\%.}
+        \resumeItem{Automated grading scripts in \textbf{Python} that boosted accuracy by 30\% and reduced manual intervention by 50\%.}
+        \resumeItem{Conducted lectures on operating systems concepts, including RTOS and \textbf{SoC} architectures, enhancing students’ practical understanding.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{05/2023 – 08/2023}
+        {Software Engineer Intern}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Implemented high-performance APIs in \textbf{TypeScript} supporting sub-100ms response times for real-time financial data processing.}
+        \resumeItem{Refactored frontend with \textbf{Angular.js} leading to a 25\% increase in user interaction and system responsiveness.}
+        \resumeItem{Developed backend data access layers in \textbf{C\#} with \textbf{.NET}, improving data retrieval speed by 30\%.}
+        \resumeItem{Optimized \textbf{PostgreSQL} queries that reduced server workload by 15\% and improved application stability.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Built API services in \textbf{Java} and \textbf{Spring Boot} to interface with hardware accelerators, reducing latency by 20\%.}
+        \resumeItem{Implemented microservice architecture supporting multi-threaded processing that handled 1000+ concurrent users with 99.9\% uptime.}
+        \resumeItem{Set up \textbf{Docker} containerization and AWS deployment pipelines, decreasing release cycles by 35\%.}
+        \resumeItem{Developed React-based frontends improving usability and decreasing load times by 30\%.}
+        \resumeItem{Applied unit and integration testing using \textbf{JUnit} to ensure 90\% code coverage and reduce bugs before production.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{GPA: 4.0/4.0}
+  \resumeSubHeadingListEnd
+\vspace{-10pt}
+%%%%%%
+  
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{AI-Accelerated PyTorch Kernel API} | C++, Python, Linux User-space}{}
+          \resumeItemListStart
+              \resumeItem{Developed a multi-threaded \textbf{C++} API to efficiently run \textbf{PyTorch} ML kernels on custom Linux-based AI acceleration hardware, improving throughput 30\%.}
+              \resumeItem{Implemented a Python wrapper facilitating seamless user interaction with low-level inference functions, reducing development complexity by 40\%.}
+          \resumeItemListEnd
+          \vspace{-12pt}
+      \resumeProjectHeading
+          {\textbf{Linux Performance Monitoring Tool} | C, Python, Multi-threading}{}
+          \resumeItemListStart
+              \resumeItem{Created a multi-threaded Linux user-space application in \textbf{C} to monitor and log SoC hardware performance metrics with 95\% accuracy under load.}
+              \resumeItem{Automated data visualization using \textbf{Python}, enabling near real-time system health reports and reducing diagnostics time by 50\%.}
+          \resumeItemListEnd
+          \vspace{-12pt}
+      \resumeProjectHeading
+          {\textbf{Automated AI Inference Deployment Pipeline} | Docker, Jenkins, AWS, Python}{}
+          \resumeItemListStart
+              \resumeItem{Engineered an automated CI/CD pipeline deploying \textbf{AI} inference services on cloud instances using \textbf{Docker} and \textbf{Jenkins}, improving deployment speed by 60\%.}
+              \resumeItem{Integrated performance testing scripts to validate AI model throughput and latency on target hardware, increasing detection of regressions by 30\%.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+
+\end{document}
