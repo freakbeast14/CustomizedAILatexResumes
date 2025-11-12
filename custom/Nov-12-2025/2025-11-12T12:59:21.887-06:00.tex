@@ -1,0 +1,227 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}      
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Shahil Mohammed}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (832) 620-5379 ~ • ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ • ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ • ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ • ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+Innovative software engineer specializing in high-performance C/C++ development for complex physical design and routing algorithms. Experienced in Linux environments and multi-threaded programming with strong analytical skills. Adept at collaborating with global teams to optimize semiconductor design flows and implement scalable, efficient solutions in cutting-edge IC design contexts.
+ \vspace{-5pt}
+ 
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & C, C++, Python, Tcl, Shell Scripting, Java \\
+                \textbf{Physical Design Tools:} & Timing Analysis, Routing Algorithms, Physical Synthesis Flows \\
+                \textbf{System \& Platforms:} & Linux, Multi-threaded Programming, Distributed Systems \\
+                \textbf{Software Engineering:} & Data Structures, Algorithms, Performance Optimization, Debugging \\
+                \textbf{Cloud \& DevOps:} & Docker, Jenkins, AWS \\
+                \textbf{EDA & IC Design Environment:} & Exposure to EDA Tools, IC Design Methodologies \\
+            \end{tabular}
+        \end{table}
+ \vspace{-15pt}
+ 
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Developed and optimized multi-threaded \textbf{C++} algorithms for data processing, improving throughput by 40\% in Linux-based systems.}
+        \resumeItem{Engineered scalable software modules focused on routing and synthesis, reducing latency in complex distributed environments by 30\%.}
+        \resumeItem{Collaborated cross-functionally with global teams to integrate physical design solutions, enhancing interoperability across multiple semiconductor flows.}
+        \resumeItem{Debugged and resolved concurrency issues in large-scale multi-threaded systems, boosting system stability and reducing crashes by 25\%.}
+        \resumeItem{Automated test suites using \textbf{Python} and \textbf{Tcl} scripts, increasing testing coverage and reducing manual workload by 35\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented performance critical components in \textbf{C++} that accelerated digital routing workflows by 20\%.}
+        \resumeItem{Built automation scripts in \textbf{Python} and \textbf{Tcl} to streamline physical synthesis tasks, improving engineering productivity by 30\%.}
+        \resumeItem{Collaborated with engineers to optimize multi-threaded algorithms, resulting in 25\% faster runtimes on Linux platforms.}
+        \resumeItem{Created monitoring tools to detect routing inefficiencies, contributing to 15\% improvement in design cycle durations.}
+        \resumeItem{Led debugging of complex integration bugs between routing engines and synthesis tools, reducing defect turnaround time by 40\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Supported Linux infrastructure and assisted debugging of multi-threaded software used to simulate network routing and security scenarios.}
+        \resumeItem{Enhanced lab automation scripts in \textbf{Python} to validate system configurations, decreasing setup time by 25\%.}
+        \resumeItem{Guided users in performance profiling and optimization for concurrent applications in a distributed environment.}
+        \resumeItem{Resolved technical issues involving data structures and algorithmic efficiency, improving lab software reliability by 20\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{05/2023 – 08/2023}
+        {Software Engineer Intern}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Implemented \textbf{C\#} backend components to optimize data routing, achieving a 30\% gain in API response efficiency.}
+        \resumeItem{Upgraded performance of distributed system modules on Linux servers, contributing to 15\% reduction in resource utilization.}
+        \resumeItem{Collaborated on debugging and improving large-scale database queries, enhancing throughput by 20\%.}
+        \resumeItem{Developed and tested automated scripts in \textbf{Python} to support system monitoring and alerting processes.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented multi-threaded \textbf{C++} modules for physical synthesis engines, optimizing critical paths by 35\%.}
+        \resumeItem{Participated in developing routing algorithms for IC design environment, boosting design tool accuracy by 18\%.}
+        \resumeItem{Built and maintained backend microservices using \textbf{Java Spring Boot} deployed on \textbf{Linux} servers with \textbf{Docker}.}
+        \resumeItem{Automated testing and deployment pipelines integrating \textbf{Jenkins} for continuous delivery, reducing deployment errors by 50\%.}
+        \resumeItem{Collaborated in global teams to refine data structures and algorithms, enhancing software reliability and scalability.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{GPA: 4.0/4.0}
+  \resumeSubHeadingListEnd
+\vspace{-10pt}
+%%%%%%
+  
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{AI-assisted Routing Optimization} | C++, Python, Linux, Multi-threading}{}
+          \resumeItemListStart
+              \resumeItem{Developed multi-threaded \textbf{C++} algorithms for optimizing routing paths in IC design, improving runtime efficiency by 30\%.}
+              \resumeItem{Implemented \textbf{Python} automation scripts to generate input test cases and analyze performance metrics, reducing manual effort by 40\%.}
+          \resumeItemListEnd
+          \vspace{-12pt}
+      \resumeProjectHeading
+          {\textbf{Physical Synthesis Automation Framework} | Tcl, Python, C++, Linux}{}
+          \resumeItemListStart
+              \resumeItem{Built modular \textbf{C++} components integrated with \textbf{Tcl} and \textbf{Python} to automate physical synthesis flows, cutting design cycle time by 25\%.}
+              \resumeItem{Developed diagnostic tools to identify synthesis bottlenecks, increasing design throughput and quality by 20\%.}
+          \resumeItemListEnd
+          \vspace{-12pt}
+      \resumeProjectHeading
+          {\textbf{AI-Driven Code Analysis Bot} | OpenAI API, GitHub Actions, Python}{}
+          \resumeItemListStart
+              \resumeItem{Engineered an AI bot leveraging \textbf{OpenAI} models to automatically review \textbf{C++} and \textbf{Python} code, reducing review time by 35\%.}
+              \resumeItem{Integrated with \textbf{GitHub Actions} to provide real-time feedback on pull requests, improving code quality and documentation coverage.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+
+\end{document}
