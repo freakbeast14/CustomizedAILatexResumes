@@ -1,0 +1,227 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}      
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Shahil Mohammed}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (832) 620-5379 ~ • ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ • ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ • ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ • ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+Experienced Full Stack Developer specializing in building scalable microservices using \textbf{Java/Spring Boot} and rich client applications with \textbf{Angular}. Proficient in developing REST APIs, leveraging asynchronous messaging with \textbf{Kafka}, and managing cloud-based storage via \textbf{AWS S3}. Adept at collaborating cross-functionally to deliver user-focused, maintainable solutions that drive business objectives and improve system performance.
+ \vspace{-5pt}
+ 
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Backend \& Microservices:} & Java, Spring Boot, REST APIs, Microservices Architecture, Kafka \\
+                \textbf{Frontend:} & Angular, TypeScript, HTML, CSS, Components, Services, Routing \\
+                \textbf{Cloud \& Storage:} & AWS S3, EC2, Lambda, Docker, Jenkins, AWS IAM \\
+                \textbf{Databases:} & MySQL, PostgreSQL, MongoDB, DynamoDB \\
+                \textbf{DevOps \& Tools:} & Git, GitHub, Jenkins, Docker, Jira, JUnit \\
+                \textbf{Other Technologies:} & JSON, HTTP, RESTful APIs, Agile Methodologies \\
+            \end{tabular}
+        \end{table}
+ \vspace{-15pt}
+ 
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Developed scalable \textbf{Java Spring Boot} microservices integrating \textbf{REST APIs} to enhance application responsiveness by 40\%.}
+        \resumeItem{Implemented robust security features with \textbf{Spring Security}, decreasing unauthorized access attempts by 38\%.}
+        \resumeItem{Automated deployment workflows with \textbf{Jenkins} and \textbf{Docker}, reducing release cycle times by 45\%.}
+        \resumeItem{Collaborated in asynchronous message processing with \textbf{Kafka}, improving event handling efficiency by 30\%.}
+        \resumeItem{Integrated \textbf{AWS S3} for asset storage, enhancing data retrieval speeds by 25\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Engineered modular \textbf{Java Spring Boot} backend services supporting scalable API endpoints for a SaaS platform serving 100+ users.}
+        \resumeItem{Built interactive \textbf{Angular} frontend features consuming backend APIs, increasing UI responsiveness and user satisfaction by 18\%.}
+        \resumeItem{Implemented \textbf{Kafka}-based event-driven communication to optimize real-time data processing, improving latency by 27\%.}
+        \resumeItem{Managed cloud storage using \textbf{AWS S3} to handle digital assets, enhancing data durability and accessibility.}
+        \resumeItem{Enhanced frontend state management and routing in \textbf{Angular}, reducing load times by 22\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Supported secure infrastructure setups on \textbf{Linux} VMs, ensuring lab environments adhered to cybersecurity best practices.}
+        \resumeItem{Assisted students in debugging \textbf{RESTful APIs} and microservices, improving pass rates by 15\%.}
+        \resumeItem{Automated grading systems using scripting, reducing manual evaluation time by 30\%.}
+        \resumeItem{Conducted educational sessions on web security and backend service development concepts.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{05/2023 – 08/2023}
+        {Software Engineer Intern}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Developed \textbf{TypeScript} API integrations to boost frontend-backend communication speed to sub-100ms response times.}
+        \resumeItem{Updated \textbf{Angular.js} UI components to improve user engagement by 25\%.}
+        \resumeItem{Designed backend services in \textbf{C\# .NET} achieving a 30\% data access latency reduction.}
+        \resumeItem{Optimized database queries in \textbf{PostgreSQL}, decreasing load on frontend by 15\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Developed \textbf{microservices} with \textbf{Java} \textbf{Spring Boot}, handling 1200+ users with average response time under 200ms.}
+        \resumeItem{Deployed containerized services using \textbf{Docker} on \textbf{AWS EC2} instances, improving deployment speed by 50\%.}
+        \resumeItem{Created \textbf{RESTful APIs} enabling seamless communication between frontend and backend applications.}
+        \resumeItem{Built user interfaces with \textbf{React.js}, improving project tracking efficiency by 35\%.}
+        \resumeItem{Wrote unit tests using \textbf{JUnit}, achieving 90\%+ code coverage and reducing bugs pre-release by 40\%.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{GPA: 4.0/4.0}
+  \resumeSubHeadingListEnd
+\vspace{-10pt}
+%%%%%%
+  
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Intelligent API Performance Analyzer} | Java, Spring Boot, OpenAI API}{}
+          \resumeItemListStart
+              \resumeItem{Developed an AI-augmented tool to monitor \textbf{REST API} performance and suggest improvements, reducing latency by 20\%.}
+              \resumeItem{Implemented automated code analysis leveraging \textbf{OpenAI API} to detect inefficiencies within \textbf{Java Spring Boot} microservices.}
+          \resumeItemListEnd
+          \vspace{-12pt}
+      \resumeProjectHeading
+          {\textbf{Real-Time Event Stream Processor} | Kafka, Java, AWS S3}{}
+          \resumeItemListStart
+              \resumeItem{Built a scalable \textbf{Kafka}-based streaming processor to handle real-time data ingestion and storage in \textbf{AWS S3}, improving throughput by 30\%.}
+              \resumeItem{Designed fault-tolerant microservices in \textbf{Java Spring Boot} to process and persist events efficiently across distributed systems.}
+          \resumeItemListEnd
+          \vspace{-12pt}
+      \resumeProjectHeading
+          {\textbf{Interactive Angular Dashboard} | Angular, REST API, AWS S3}{}
+          \resumeItemListStart
+              \resumeItem{Created an \textbf{Angular} frontend application consuming multiple backend \textbf{REST APIs}, enhancing user interaction speed by 28\%.}
+              \resumeItem{Integrated \textbf{AWS S3} for asset management, facilitating seamless upload and retrieval of user content in real time.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\end{document}
