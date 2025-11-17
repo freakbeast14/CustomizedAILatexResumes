@@ -1,0 +1,230 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}      
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Shahil Mohammed}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (832) 620-5379 ~ | ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ | ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ | ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ | ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+Dynamic software engineer with 3+ years experience in designing, testing, and automating robust software solutions in Agile environments. Skilled in Java-based test automation, API validation using Postman and Rest Assured, and continuous integration with GitHub and Jenkins. Adept at cross-browser testing, database validation, and debugging complex issues to ensure high product quality and seamless deployments.
+ \vspace{-5pt}
+ 
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & Java, Python, JavaScript, SQL, Shell Scripting \\
+                \textbf{Testing \& Automation:} & Selenium WebDriver, TestNG, Maven, Postman, Rest Assured, JUnit \\
+                \textbf{Web Development \& Frameworks:} & Spring Boot, React.js, Angular.js, Node.js, Laravel \\
+                \textbf{Database \& Data Storage:} & MongoDB, MySQL, PostgreSQL, Oracle \\
+                \textbf{DevOps \& CI/CD:} & Jenkins, GitHub, GitHub Copilot, Docker, Kubernetes \\
+                \textbf{Tools \& Platforms:} & Rally, Splunk, Intellij, Eclipse, VS Code, Kafka, AWS \\
+            \end{tabular}
+        \end{table}
+ \vspace{-15pt}
+ 
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented automated test suites using \textbf{Java Selenium WebDriver} and \textbf{TestNG}, improving test coverage by 40\%.}
+        \resumeItem{Integrated test automation pipelines with \textbf{GitHub} and \textbf{Jenkins}, reducing release cycle times by 30\%.}
+        \resumeItem{Executed API testing using \textbf{Postman} and \textbf{Rest Assured}, validating service endpoints and reducing defects by 25\%.}
+        \resumeItem{Performed cross-browser testing across \textbf{Chrome}, \textbf{Firefox}, \textbf{Edge}, and \textbf{Safari}, identifying and resolving 15+ critical UI bugs.}
+        \resumeItem{Collaborated with product owners and managed \textbf{Rally} backlogs, grooming user stories for automation and manual testing efforts.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Developed automation scripts using \textbf{Page Object Model} pattern in \textbf{Java} with \textbf{Selenium WebDriver}, increasing regression test efficiency by 50\%.}
+        \resumeItem{Performed data-driven and API testing using \textbf{Postman}, handling \textbf{JSON} and \textbf{XML} responses to ensure correctness across environments.}
+        \resumeItem{Implemented \textbf{Kafka} event validations and database assertions with \textbf{MongoDB Compass}, improving end-to-end data integrity checks by 35\%.}
+        \resumeItem{Created detailed Rally test cases with \textbf{Story Craft} and \textbf{Gen AI} tools, streamlining test documentation and iteration planning.}
+        \resumeItem{Managed and monitored automation schedules with \textbf{Jenkins}, generating \textbf{Allure} reports to verify test results and defect occurrence.}
+        \resumeItem{Reviewed code, enforced version control protocols, and integrated with \textbf{GitHub Copilot} to enhance test script maintainability and collaboration.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Designed and executed functional, regression, and API tests, improving lab software reliability by 20\%.}
+        \resumeItem{Automated test data creation based on specified requirements, reducing manual preparation time by 30\%.}
+        \resumeItem{Supported cross-browser testing and monitored application logs using \textbf{Splunk} to detect and troubleshoot security anomalies.}
+        \resumeItem{Assisted students with writing and executing test cases using Agile lifecycle concepts, improving their practical understanding by 25\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{01/2023 – 08/2023}
+        {Software Engineer}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Developed backend API test automation using \textbf{Java} and \textbf{Rest Assured}, reducing manual testing efforts by 40\%.}
+        \resumeItem{Validated \textbf{Kafka} event streams and related database transactions using \textbf{MongoDB} queries and log analysis in \textbf{Splunk}.}
+        \resumeItem{Conducted integration and smoke testing across multiple environments including Test, Stage, and Production with different user roles.}
+        \resumeItem{Collaborated on defect tracking and task management using \textbf{Rally}, improving sprint planning accuracy by 30\%.}
+        \resumeItem{Enhanced frontend user experience by optimizing Angular.js components and performing cross-browser compatibility testing.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Developed and maintained automated test scripts with \textbf{Selenium WebDriver} and \textbf{TestNG}, increasing test execution speed by 35\%.}
+        \resumeItem{Performed database validations and CRUD operation verifications on \textbf{MongoDB}, ensuring data accuracy after test runs.}
+        \resumeItem{Implemented version control and codebase management using \textbf{GitHub} alongside \textbf{Jenkins} to automate daily test suite executions.}
+        \resumeItem{Contributed to full Agile SDLC by refining user stories, participating in sprint planning, and producing detailed test documentation.}
+        \resumeItem{Debugged and troubleshooted software issues in collaboration with developers, improving production code quality by 25\%.}
+        \resumeItem{Utilized \textbf{Splunk} for detailed log analysis, identifying root causes for complex test failures and enabling timely fixes.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{GPA: 4.0/4.0}
+  \resumeSubHeadingListEnd
+\vspace{-10pt}
+%%%%%%
+  
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{AI-Driven Test Case Generator} | Java, Selenium WebDriver, Gen AI, Rally}{}
+          \resumeItemListStart
+              \resumeItem{Built a tool that auto-generates detailed test cases in Rally using Gen AI, improving test documentation speed by 60\%.}
+              \resumeItem{Integrated the generator within Agile workflows to enhance collaboration and reduce manual test creation errors by 35\%.}
+          \resumeItemListEnd
+          \vspace{-12pt}
+      \resumeProjectHeading
+          {\textbf{Comprehensive API Automation Suite} | Rest Assured, Postman, Jenkins, Java}{}
+          \resumeItemListStart
+              \resumeItem{Created a robust API test suite automating validation for authentication, roles, and status flags across multiple deployment environments.}
+              \resumeItem{Configured \textbf{Jenkins} to schedule and run tests daily, producing comprehensive \textbf{Allure} reports to detect and track defects.}
+          \resumeItemListEnd
+          \vspace{-12pt}
+      \resumeProjectHeading
+          {\textbf{Cross-Browser Automation Framework} | Selenium, Java, Maven, VS Code, GitHub}{}
+          \resumeItemListStart
+              \resumeItem{Developed a scalable cross-browser testing framework supporting Chrome, Firefox, Edge, and Safari, reducing UI-related bugs by 45\%.}
+              \resumeItem{Integrated \textbf{GitHub Copilot} for automated code suggestions, enhancing code quality and developer productivity during test script creation.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+
+\end{document}
