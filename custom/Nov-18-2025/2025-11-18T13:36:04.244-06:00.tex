@@ -1,0 +1,227 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}      
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Shahil Mohammed}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (832) 620-5379 ~ | ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ | ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ | ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ | ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+Resourceful full stack developer with 3+ years experience designing and implementing scalable, compliant Python FastAPI microservices and robust backend solutions. Adept in PostgreSQL, Git workflows, and automated testing within Agile teams. Demonstrated ability to engineer maintainable, high-performance applications integrating event-driven architectures and CI/CD pipelines to enhance system reliability and accelerate delivery.
+ \vspace{-5pt}
+ 
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Frameworks:} & Python, \textbf{FastAPI}, Java, C\#, .NET Core, Spring Boot \\
+                \textbf{Databases \& Modeling:} & PostgreSQL, MySQL, SQL, NoSQL, Data Modeling, Query Optimization \\
+                \textbf{DevOps \& Automation:} & Git, Jenkins, Docker, Ansible, MSBuild, CI/CD Pipelines, Kubernetes \\
+                \textbf{Messaging \& Eventing:} & Kafka, RabbitMQ, Event-Driven Architecture, Microservices Integration \\
+                \textbf{Testing \& Agile Tools:} & Unit Testing, Integration Testing, JUnit, Agile, Scrum, Kanban, Jira \\
+                \textbf{Cloud \& Platforms:} & AWS, Azure, EC2, S3, Lambda, REST APIs, Security Workflow Implementation \\
+            \end{tabular}
+        \end{table}
+ \vspace{-15pt}
+ 
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Developed scalable \textbf{Python FastAPI} microservices aligned with complex requirements, improving system maintainability by 30\%.}
+        \resumeItem{Implemented PostgreSQL schema and query optimizations resulting in 25\% faster database responses for critical services.}
+        \resumeItem{Created comprehensive unit and integration tests improving coverage to 95\%, reducing production defects by 40\%.}
+        \resumeItem{Collaborated in Agile ceremonies to refine requirements and mitigate risks through spikes, accelerating delivery by 20\%.}
+        \resumeItem{Automated deployment pipelines using \textbf{Jenkins} and \textbf{Docker}, reducing release cycle time by 35\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Designed and deployed RESTful \textbf{FastAPI} services integrated with PostgreSQL, boosting data consistency by 30\%.}
+        \resumeItem{Built event-driven modules using \textbf{Kafka} to enhance asynchronous processing, reducing message loss by over 90\%.}
+        \resumeItem{Refined Git branching strategies improving team code integration and reducing conflicts by 25\%.}
+        \resumeItem{Enhanced unit test suites leading to 90\% automation coverage, accelerating feedback cycles by 30\%.}
+        \resumeItem{Integrated cyber security best practices into APIs, mitigating vulnerabilities and improving compliance audits by 40\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Maintained secure \textbf{Linux} environments ensuring cybersecurity labs operated with over 99\% uptime.}
+        \resumeItem{Developed automated validation scripts that improved assignment grading accuracy by 25\%, reducing manual workload.}
+        \resumeItem{Led troubleshooting efforts for students, increasing software deployment success rate by 20\%.}
+        \resumeItem{Delivered interactive cybersecurity workshops covering cryptography and network protocols, educating 50+ students.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{01/2023 – 08/2023}
+        {Software Engineer}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Engineered microservices backend using \textbf{.NET Core}, enhancing data retrieval speed by 30\%.}
+        \resumeItem{Optimized \textbf{PostgreSQL} queries and stored procedures, reducing frontend latency by 15\%.}
+        \resumeItem{Implemented Kafka-based event processing solutions handling 1000+ daily events, boosting reliability by 95\%.}
+        \resumeItem{Migrated legacy Angular.js frontend components, raising user engagement by 25\% through UI optimizations.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Developed \textbf{FastAPI} microservices replacing monolithic modules improving system scalability by 35\%.}
+        \resumeItem{Designed and optimized relational databases with \textbf{PostgreSQL}, reducing complex query times by 20\%.}
+        \resumeItem{Implemented CI/CD pipelines automating deployments on AWS EC2 with \textbf{Docker} and \textbf{Jenkins}, accelerating releases by 40\%.}
+        \resumeItem{Built React.js UI components for management tools, improving user experience and reducing latency by 30\%.}
+        \resumeItem{Integrated automated unit and integration tests boosting code quality and reducing bugs by 25\%.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{GPA: 4.0/4.0}
+  \resumeSubHeadingListEnd
+\vspace{-10pt}
+%%%%%%
+  
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{AI-Powered Code Compliance Bot} | GitHub Actions, OpenAI API, FastAPI}{}
+          \resumeItemListStart
+              \resumeItem{Built an AI bot integrating \textbf{FastAPI} and OpenAI APIs to review pull requests and suggest fixes, accelerating code audits by 40\%.}
+              \resumeItem{Automated docstring generation and compliance checks, improving documentation coverage to 98\% and reducing manual reviews by 50\%.}
+          \resumeItemListEnd
+          \vspace{-12pt}
+      \resumeProjectHeading
+          {\textbf{Event-Driven Microservices with Kafka} | Python, Kafka, PostgreSQL, Docker}{}
+          \resumeItemListStart
+              \resumeItem{Designed a scalable message broker system using \textbf{Kafka} and \textbf{Python FastAPI} to handle 1000+ daily events reliably with 99.9\% uptime.}
+              \resumeItem{Implemented robust PostgreSQL schemas supporting event data to optimize query performance by 30\%.}
+          \resumeItemListEnd
+          \vspace{-12pt}
+      \resumeProjectHeading
+          {\textbf{Secure Financial Data API Platform} | FastAPI, PostgreSQL, Jenkins, Ansible}{}
+          \resumeItemListStart
+              \resumeItem{Developed secure \textbf{FastAPI} based RESTful services with PostgreSQL backend, implementing role-based access and reducing unauthorized access by 40\%.}
+              \resumeItem{Established \textbf{CI/CD} pipelines with \textbf{Jenkins} and \textbf{Ansible} for automated deployments, cutting release time by 35\%.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+
+\end{document}
