@@ -1,0 +1,228 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}      
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Shahil Mohammed}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (832) 620-5379 ~ | ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ | ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ | ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ | ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+Versatile software engineer with 3+ years’ experience creating scalable, reliable solutions in finance and logistics domains. Skilled at building data-driven products that improve operational efficiency in complex global trade workflows. Adept at rapid development, cross-team collaboration, and transforming intricate business needs into clear technical implementations. Passionate about crafting quality code and driving impact at scale.
+
+ \vspace{-5pt}
+ 
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & Java, C++, Python, Ruby, TypeScript, Shell Scripting \\
+                \textbf{Frameworks \& Libraries:} & Spring Boot, React.js, Node.js, Django, Ruby on Rails \\
+                \textbf{Databases \& Storage:} & PostgreSQL, MySQL, MongoDB, Redis \\
+                \textbf{DevOps \& Cloud:} & AWS (EC2, Lambda, S3), Docker, Kubernetes, Jenkins \\
+                \textbf{Tools \& APIs:} & Git, REST API, gRPC, JSON, Splunk, Jira \\
+                \textbf{AI \& Automation:} & OpenAI API, LangChain, AI Agents, Prompt Engineering, n8n \\
+            \end{tabular}
+        \end{table}
+ \vspace{-15pt}
+ 
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Engineered robust \textbf{Java Spring Boot} services to enhance transactional data accuracy, cutting critical errors in billing by 30\%.}
+        \resumeItem{Collaborated with finance teams to model and automate invoice processing, accelerating billing cycles by 25\% through \textbf{microservices} architecture.}
+        \resumeItem{Developed real-time shipment cost tracking features, improving financial visibility and forecasting with \textbf{React.js} and \textbf{PostgreSQL}.}
+        \resumeItem{Introduced CI/CD pipelines using \textbf{Docker} and \textbf{Jenkins}, reducing deployment time and enhancing operational uptime by 20\%.}
+        \resumeItem{Implemented automated reconciliation workflows with embedded \textbf{Python} scripts, decreasing manual audit time by 40\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Designed \textbf{React} and \textbf{Laravel} modules to automate payment processing and vendor auditing, increasing throughput by 50\%.}
+        \resumeItem{Built dynamic billing dashboards integrating multiple data sources, enabling actionable insights and reducing discrepancies by 35\%.}
+        \resumeItem{Created AI-powered tools using \textbf{LLMs} to audit transaction data, automating 60\% of manual validation tasks and boosting accuracy.}
+        \resumeItem{Streamlined subscription management with \textbf{Stripe} integration, improving customer retention and supporting 1000+ active subscriptions.}
+        \resumeItem{Optimized cloud resource usage with \textbf{AWS} monitoring tools, cutting costs by 15\% while maintaining application scalability.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Supported secure \textbf{Linux} environments for lab systems, improving uptime and integrity of finance-related simulations by 20\%.}
+        \resumeItem{Automated grading workflows for coding assignments, increasing evaluation accuracy and reducing manual review time by 30\%.}
+        \resumeItem{Guided students through debugging and deploying cloud native apps using containers, improving practical knowledge outcomes by 25\%.}
+        \resumeItem{Delivered workshops on secure software development and testing, boosting student engagement and understanding of finance software systems.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{01/2023 – 08/2023}
+        {Software Engineer}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Developed scalable backend features in \textbf{C\#} and \textbf{.NET} that improved financial data processing speeds by 30\%.}
+        \resumeItem{Implemented \textbf{TypeScript} APIs with sub-100ms responses, ensuring seamless communication across billing and shipment microservices.}
+        \resumeItem{Revamped frontend features with \textbf{Angular.js}, raising user satisfaction and transaction throughput by over 20\%.}
+        \resumeItem{Optimized \textbf{PostgreSQL} queries reducing database load by 15\%, accelerating invoice generation and reporting processes.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Built \textbf{Java Spring Boot} microservices managing order-to-cash workflows, improving data reliability and reducing errors by 25\%.}
+        \resumeItem{Architected and optimized \textbf{MySQL} databases, cutting query latency by 20\% and enhancing invoice record accuracy.}
+        \resumeItem{Developed secure payment and credit management modules integrated with external APIs, reducing fraud risk and enhancing transaction speed.}
+        \resumeItem{Automated deployment pipelines using \textbf{Docker} and \textbf{AWS EC2}, improving release cycles and system stability by 30\%.}
+        \resumeItem{Engineered user-friendly management dashboards in \textbf{React.js} enhancing operational insights and reducing manual auditing time by 35\%.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{GPA: 4.0/4.0}
+  \resumeSubHeadingListEnd
+\vspace{-10pt}
+%%%%%%
+  
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{AI-Driven Invoice Verification System} | Python, OpenAI API, AWS Lambda}{}
+          \resumeItemListStart
+              \resumeItem{Developed an AI system for real-time invoice validation, reducing billing errors by 40\% and accelerating client payment cycles.}
+              \resumeItem{Implemented serverless functions on \textbf{AWS Lambda} to automate data extraction and anomaly detection from financial documents.}
+          \resumeItemListEnd
+          \vspace{-12pt}
+      \resumeProjectHeading
+          {\textbf{Global Freight Cost Estimation Tool} | Java, Spring Boot, PostgreSQL}{}
+          \resumeItemListStart
+              \resumeItem{Built a real-time pricing model for freight shipments, integrating global data to predict costs with 95\% accuracy and improving quoting speed.}
+              \resumeItem{Optimized \textbf{PostgreSQL} queries and data caching to support fast, scalable transaction processing within the order-to-cash lifecycle.}
+          \resumeItemListEnd
+          \vspace{-12pt}
+      \resumeProjectHeading
+          {\textbf{Automated Financial Workflow Automation Bot} | Node.js, LangChain, n8n}{}
+          \resumeItemListStart
+              \resumeItem{Engineered a workflow automation bot using \textbf{LangChain} and \textbf{n8n}, improving payment reconciliation efficiency by 50\%.}
+              \resumeItem{Integrated multi-source data pipelines to seamlessly audit vendor transactions, reducing manual labor and increasing process accuracy.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\end{document}
