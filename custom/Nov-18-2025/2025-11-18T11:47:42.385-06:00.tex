@@ -1,0 +1,227 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}      
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Shahil Mohammed}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (832) 620-5379 ~ | ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ | ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ | ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ | ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+Detail-oriented software engineer with a strong foundation in building and maintaining video playback technologies across multiple platforms. Experienced collaborating with senior engineers, writing clean code, and debugging complex streaming issues. Passionate about continuous learning and advancing cutting-edge media streaming solutions in dynamic remote teams.
+ \vspace{-5pt}
+ 
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming Languages:} & JavaScript, TypeScript, Swift, Kotlin, Java, C++ \\
+                \textbf{Web \& Streaming Technologies:} & HTML, CSS, React.js, Node.js, Video.js, HLS, DASH \\
+                \textbf{Mobile \& Connected Devices:} & Android, iOS, React Native, Chromecast, Roku SDK \\
+                \textbf{Testing \& Debugging:} & Jest, Mocha, Chrome DevTools, Charles Proxy \\
+                \textbf{Tools \& Collaboration:} & Git, Jira, Confluence, Slack, Confluence \\
+                \textbf{Cloud \& DevOps:} & AWS, Docker, Jenkins, CI/CD pipelines \\
+            \end{tabular}
+        \end{table}
+ \vspace{-15pt}
+ 
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Developed video playback features in \textbf{JavaScript} enhancing streaming stability, reducing buffering incidents by 30\% across web and mobile platforms.}
+        \resumeItem{Collaborated with senior engineers to debug and optimize video pipeline, improving stream start times by 25\% on average for end users.}
+        \resumeItem{Implemented unit tests and integration tests using \textbf{Jest}, increasing code coverage for video modules to 90\% and decreasing bugs by 22\%.}
+        \resumeItem{Automated daily deployment processes using \textbf{Jenkins} and \textbf{Docker}, reducing release cycle time by 40\% for media playback services.}
+        \resumeItem{Documented technical specifications and troubleshooting guides to improve team knowledge, supporting easier onboarding and issue resolution.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Enhanced streaming media functionality for mobile devices using \textbf{React Native}, increasing user retention by 18\% through improved UX performance.}
+        \resumeItem{Assisted QA teams in reproducing and diagnosing video playback issues, reducing average bug resolution time by 35\%.}
+        \resumeItem{Refined playback buffering algorithm leading to 20\% lower startup latency and smoother video transitions on diverse network conditions.}
+        \resumeItem{Supported implementation of DRM and adaptive bitrate streaming using HLS and DASH, enhancing content security and quality.}
+        \resumeItem{Researched and incorporated emerging streaming tech trends, contributing to product roadmap discussions and innovation initiatives.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Maintained secure Linux-based systems supporting video streaming projects, ensuring stable lab environments for 30+ students.}
+        \resumeItem{Assisted students in coding, debugging, and testing multimedia applications, improving assignment success rates by 15\%.}
+        \resumeItem{Automated lab software installation and updates, reducing setup times for media playback tools by 40\%.}
+        \resumeItem{Conducted workshops explaining streaming protocols and video codecs, enhancing student understanding of media technologies.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{01/2023 – 08/2023}
+        {Software Engineer}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Developed \textbf{TypeScript}-based API clients for streaming data services, achieving response times under 80ms consistently.}
+        \resumeItem{Debugged and optimized frontend video features using \textbf{Angular.js}, leading to a 15\% improvement in playback smoothness.}
+        \resumeItem{Enhanced database queries to support real-time video analytics, reducing lag by 20\% during peak use.}
+        \resumeItem{Built streaming event message pipelines with \textbf{Kafka}, ensuring 95\% reliability in event delivery for application monitoring.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Developed scalable video playback microservices in \textbf{Java} using \textbf{Spring Boot}, supporting 500+ concurrent streams reliably.}
+        \resumeItem{Designed responsive user interfaces with \textbf{React.js} for multimedia content management, improving load speed by 25\%.}
+        \resumeItem{Implemented continuous integration workflows incorporating video test automation, reducing deployment errors by 30\%.}
+        \resumeItem{Optimized SQL queries for video content metadata retrieval, enhancing loading performance by 18\%.}
+        \resumeItem{Monitored application logs with \textbf{Splunk}, identifying and resolving 15+ production streaming issues preemptively.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{GPA: 4.0/4.0}
+  \resumeSubHeadingListEnd
+\vspace{-10pt}
+%%%%%%
+  
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{AI-Powered Video Playback Optimizer} $|$ Python, OpenAI API, React.js}{}
+          \resumeItemListStart
+              \resumeItem{Built an AI model using \textbf{OpenAI API} to dynamically adjust video buffering parameters, reducing lag by 30\% during variable network conditions.}
+              \resumeItem{Integrated optimizer into \textbf{React} frontend, improving streaming quality and reducing playback interruptions across devices.}
+          \resumeItemListEnd
+          \vspace{-12pt}
+      \resumeProjectHeading
+          {\textbf{Cross-Platform Streaming Player} $|$ JavaScript, Video.js, HLS, DASH}{}
+          \resumeItemListStart
+              \resumeItem{Engineered a cross-device video player supporting HLS and DASH protocols, achieving 99.8\% playback success rate on desktop and mobile.}
+              \resumeItem{Implemented adaptive bitrate streaming logic, enhancing user experience with smooth playback on fluctuating network speeds.}
+          \resumeItemListEnd
+          \vspace{-12pt}
+      \resumeProjectHeading
+          {\textbf{Automated Video QA and Debugging Tool} $|$ Node.js, Selenium, Jest}{}
+          \resumeItemListStart
+              \resumeItem{Developed a testing framework in \textbf{Node.js} to automate video playback validation across browsers, reducing manual QA time by 50\%.}
+              \resumeItem{Used \textbf{Jest} and \textbf{Selenium} for continuous integration testing, increasing bug detection before production deployment.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+
+\end{document}
