@@ -1,0 +1,227 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}      
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small#2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Shahil Mohammed}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (832) 620-5379 ~ | ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ | ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ | ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ | ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+Results-driven software engineer with 3+ years designing secure, scalable identity and access management solutions for enterprise SaaS platforms. Expertise in authentication, authorization, encryption, and threat detection using modern tools including Python, TypeScript, React, and GraphQL. Skilled at collaborating with cross-functional and security teams to deliver robust products that improve user security and compliance in fast-paced environments.
+ \vspace{-5pt}
+ 
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & Python, TypeScript, Java, JavaScript, Go, C\#, C++ \\
+                \textbf{Frameworks \& Web:} & React, Spring Boot, GraphQL, Node.js, Django, Angular.js \\
+                \textbf{Cloud \& DevOps:} & AWS (EC2, Lambda, S3, IAM), Docker, Kubernetes, Jenkins, CI/CD pipelines \\
+                \textbf{Security \& Compliance:} & OAuth, JWT, Spring Security, Encryption Key Management, Identity Management \\
+                \textbf{Database \& Storage:} & MySQL, PostgreSQL, MongoDB, DynamoDB, Redis \\
+                \textbf{Tools \& Others:} & Git, REST APIs, gRPC, Splunk, Jira, OpenAI API, LLM Integration, Automation \\
+            \end{tabular}
+        \end{table}
+ \vspace{-15pt}
+ 
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Implemented \textbf{Python} microservices for identity verification, reducing authentication latency by 30\% while enhancing user security compliance.}
+        \resumeItem{Developed AI-powered anomaly detection algorithms to flag payment fraud, improving fraud detection rates by over 25\%.}
+        \resumeItem{Enhanced role-based access control using \textbf{Spring Security}, decreasing unauthorized access incidents by 40\%.}
+        \resumeItem{Collaborated with product teams to define secure user account features, delivering key identity management modules on schedule.}
+        \resumeItem{Automated security testing pipelines with \textbf{Jenkins} and \textbf{Docker}, cutting deployment vulnerabilities by 35\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Designed and shipped \textbf{React.js} frontends enabling granular access control for enterprise clients, boosting platform security ratings.}
+        \resumeItem{Built APIs for user authentication and authorization with \textbf{Node.js} and \textbf{GraphQL}, reducing average login errors by 20\%.}
+        \resumeItem{Partnered with client security teams to customize encryption key management solutions, increasing data confidentiality adherence by 30\%.}
+        \resumeItem{Led integration of AI agents to automate security anomaly reporting, improving incident response time by 40\%.}
+        \resumeItem{Optimized cloud resource usage on \textbf{AWS}, reducing operational costs by 15\% without impacting security posture.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Maintained Linux-based lab environments focusing on secure configurations, raising system integrity by 25\%.}
+        \resumeItem{Guided students in developing secure authentication and encryption modules, increasing lab project pass rates by 20\%.}
+        \resumeItem{Automated validation scripts for cryptographic exercises, reducing manual grading time by 30\% with improved consistency.}
+        \resumeItem{Hosted workshops on identity and access management concepts, increasing student engagement and knowledge retention.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{01/2023 – 08/2023}
+        {Software Engineer}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Developed secure backend services in \textbf{C\#} with \textbf{.NET} focusing on data confidentiality, reducing data leak risk by 30\%.}
+        \resumeItem{Implemented TypeScript API endpoints with sub-100ms latency, improving real-time user authentication workflows and experience.}
+        \resumeItem{Upgraded Angular.js frontend with dynamic role-based UI components, increasing customer satisfaction scores by 25\%.}
+        \resumeItem{Refined \textbf{PostgreSQL} queries optimizing user data retrieval, cutting page load times by 15\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Created \textbf{Java Spring Boot} microservices for authentication workflows, supporting over 1000 concurrent users with sub-200ms response.}
+        \resumeItem{Engineered secure key management and user session handling, enhancing security compliance and reducing breaches by 25\%.}
+        \resumeItem{Developed React.js frontend modules managing user identities and access controls, improving ease-of-use and reducing errors by 30\%.}
+        \resumeItem{Implemented CI/CD pipelines with automated security testing using \textbf{Docker} and \textbf{AWS EC2}, accelerating release cycles by 40\%.}
+        \resumeItem{Leveraged \textbf{Splunk} to analyze security logs and user activities, improving incident detection efficiency by 20\%.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{GPA: 4.0/4.0}
+  \resumeSubHeadingListEnd
+\vspace{-10pt}
+%%%%%%
+  
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{AI-Driven Fraud Detection Tool} | Python, React, AWS, AI Models}{}
+          \resumeItemListStart
+              \resumeItem{Built an AI-powered anomaly detection system analyzing transactions, reducing payment fraud by 30\% through real-time alerts and insights.}
+              \resumeItem{Integrated React frontend with Python backend to enable smooth user access control and fraud monitoring for enterprise clients.}
+          \resumeItemListEnd
+          \vspace{-12pt}
+      \resumeProjectHeading
+          {\textbf{Secure Identity Management Platform} | Spring Boot, GraphQL, TypeScript, JWT}{}
+          \resumeItemListStart
+              \resumeItem{Developed scalable authentication and authorization microservices handling user roles and permissions, improving security compliance by 35\%.}
+              \resumeItem{Implemented encryption key lifecycle management and session security features to protect data confidentiality across distributed services.}
+          \resumeItemListEnd
+          \vspace{-12pt}
+      \resumeProjectHeading
+          {\textbf{Automated Security Policy Compliance Bot} | GitHub Actions, OpenAI API, LLMs}{}
+          \resumeItemListStart
+              \resumeItem{Created a CI/CD integrated bot using LLM to scan pull requests for security risks and enforce compliance, reducing vulnerabilities by 40\%.}
+              \resumeItem{Automated generation of documentation and security reviews, improving developer efficiency and policy adherence in production workflows.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+
+\end{document}
