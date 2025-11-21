@@ -1,0 +1,230 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}      
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Shahil Mohammed}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (832) 620-5379 ~ | ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ | ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ | ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ | ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+Dynamic software engineer with 3+ years experience specializing in building scalable data pipelines and cloud-based applications. Skilled in \textbf{Python}, \textbf{SQL}, and \textbf{AWS} services to automate data acquisition and enhance data quality. Adept at leveraging machine learning and NLP techniques for content innovation and predictive modeling. Proven collaborator with strong problem-solving and communication abilities, focused on delivering robust and maintainable solutions that drive analytical insights and client value.
+ \vspace{-5pt}
+ 
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & Python, SQL, Java, JavaScript, TypeScript, Shell Scripting \\
+                \textbf{Data Engineering \& Analytics:} & Pandas, NumPy, PostgreSQL, MySQL, DynamoDB, Terraform, Apache Kafka \\
+                \textbf{Cloud \& DevOps:} & AWS (EC2, S3, RDS, SQS, SageMaker, MLflow, API Gateway, ECS), Docker, Jenkins, Kubernetes \\
+                \textbf{Machine Learning \& NLP:} & Neural Networks, Deep Learning, NLP libraries (SpaCy, nltk), ML Frameworks, LLMs, LangChain \\
+                \textbf{Visualization \& BI Tools:} & Tableau, PowerBI, React, VueJS \\
+                \textbf{Development \& Collaboration:} & Agile Methodology, Git, REST APIs, CI/CD, JIRA \\                
+            \end{tabular}
+        \end{table}
+ \vspace{-15pt}
+ 
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Engineered and scaled automated \textbf{Python} data pipelines to ingest diverse sources, increasing data throughput by 40\%.}
+        \resumeItem{Developed cloud infrastructure using \textbf{Terraform} and \textbf{AWS} services, reducing deployment time by 30\%.}
+        \resumeItem{Implemented machine learning models with \textbf{SageMaker}, boosting prediction accuracy for company classification by 25\%.}
+        \resumeItem{Created dashboards utilizing \textbf{React} and \textbf{PowerBI} that enhanced financial data visualization efficiency by 35\%.}
+        \resumeItem{Collaborated in Agile teams to streamline data acquisition workflows, improving pipeline stability by 20\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Built \textbf{Python}-based ETL pipelines automating stock data ingestion, reducing manual effort by 80\%.}
+        \resumeItem{Developed AI agents with \textbf{LLMs} to automate data extraction, achieving 60\% faster processing speeds.}
+        \resumeItem{Enhanced AWS resource monitoring with \textbf{CloudWatch}, reducing cloud cost by 15\%.}
+        \resumeItem{Constructed \textbf{VueJS} dashboards to present analytics, increasing user engagement by 20\%.}
+        \resumeItem{Implemented NLP pipelines using \textbf{SpaCy} for tag extraction, improving metadata accuracy by 30\%.}
+        \resumeItem{Led Agile sprint planning to integrate new data sources, accelerating product iterations by 25\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Maintained \textbf{Linux}-based lab systems, improving uptime and user experience by 20\%.}
+        \resumeItem{Automated grading scripts in \textbf{Python}, cutting manual review time by 25\%.}
+        \resumeItem{Supported students in debugging and testing code, increasing assignment success rate by 15\%.}
+        \resumeItem{Facilitated lab workshops covering cryptography and network security to 50+ students.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{01/2023 – 08/2023}
+        {Software Engineer}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Developed high-throughput backend services in \textbf{C\#} and \textbf{.NET}, reducing latency by 30\%.}
+        \resumeItem{Optimized \textbf{PostgreSQL} stored procedures improving query speed by 20\%.}
+        \resumeItem{Built \textbf{Kafka} event streaming for processing 1000+ daily transactions, ensuring 99.5\% delivery reliability.}
+        \resumeItem{Enhanced \textbf{Angular.js} frontend, improving user retention by 25\%.}
+        \resumeItem{Streamlined API communication with \textbf{TypeScript}, lowering response times to under 100ms.} 
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Designed \textbf{Java Spring Boot} microservices and optimized \textbf{MySQL} databases, improving response time by 20\%.}
+        \resumeItem{Developed CI/CD pipelines utilizing \textbf{Docker} and \textbf{AWS EC2}, reducing deployment times by 35\%.}
+        \resumeItem{Built React.js UIs enhancing user experience and load times by 30\%.}
+        \resumeItem{Analyzed logs with \textbf{Splunk} to reduce production incident resolution by 20\%.}
+        \resumeItem{Implemented unit tests with \textbf{JUnit}, achieving 90\% code coverage and improving code stability.}
+        \resumeItem{Collaborated on cloud data ingestion automation projects boosting data pipeline efficiency by 40\%.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{GPA: 4.0/4.0}
+  \resumeSubHeadingListEnd
+\vspace{-10pt}
+%%%%%%
+  
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Automated Data Pipeline for Private Market} | Python, AWS S3, Lambda, PostgreSQL}{}
+          \resumeItemListStart
+              \resumeItem{Engineered scalable \textbf{Python} pipelines ingesting heterogeneous private market data, reducing manual processing by 70\%.}
+              \resumeItem{Deployed serverless workflows with \textbf{AWS Lambda} to automate data validation and storage, cutting ingestion time by 40\%.}
+          \resumeItemListEnd
+          \vspace{-12pt}
+      \resumeProjectHeading
+          {\textbf{NLP-based Company Tag Extraction} | SpaCy, NLTK, Python, AWS SageMaker}{}
+          \resumeItemListStart
+              \resumeItem{Built NLP pipelines for entity extraction and classification, improving tag extraction accuracy by 35\% on complex financial datasets.}
+              \resumeItem{Implemented \textbf{machine learning} models in \textbf{AWS SageMaker}, enhancing automated relationship mapping between companies.}
+          \resumeItemListEnd
+          \vspace{-12pt}
+      \resumeProjectHeading
+          {\textbf{AI-powered Financial Data Visualization} | React, PowerBI, AWS RDS}{}
+          \resumeItemListStart
+              \resumeItem{Developed interactive dashboards connecting to \textbf{AWS RDS}, reducing report generation time by 50\%.}
+              \resumeItem{Integrated predictive analytics visualizations improving data-driven decision-making efficiency for financial analysts.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+
+\end{document}
