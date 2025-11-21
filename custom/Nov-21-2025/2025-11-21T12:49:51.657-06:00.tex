@@ -1,0 +1,230 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}      
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Shahil Mohammed}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (832) 620-5379 ~ | ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ | ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ | ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ | ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+Innovative software engineer with over 3 years of experience delivering scalable, cloud-native applications using Kubernetes and Go. Skilled in container orchestration, microservices, and DevOps practices to enhance platform resilience and application performance. Adept at collaborating cross-functionally to drive technology improvements in fast-paced fintech environments.
+ \vspace{-5pt}
+ 
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & Go, Java, Python, C++, Shell Scripting, TypeScript \\
+                \textbf{Cloud Platforms \& DevOps:} & Kubernetes, Microsoft Azure, AWS, Docker, Jenkins, GitOps (ArgoCD, ADO) \\
+                \textbf{Networking \& Security:} & DNS, Ingress Controllers, Edge Routing, OAuth, Keycloak, EntraID \\
+                \textbf{Web \& Application Frameworks:} & Spring Boot, React.js, Node.js, Flask \\
+                \textbf{Databases \& Tools:} & MySQL, PostgreSQL, MongoDB, Git, Linux/Unix, REST APIs \\
+                \textbf{Automation \& AI:} & CI/CD pipelines, AI-driven bots, OpenAI API, LLM integration \\
+            \end{tabular}
+        \end{table}
+ \vspace{-15pt}
+ 
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Engineered \textbf{Go}-based microservices on Kubernetes, improving platform scalability and increasing application uptime by 30\%.}
+        \resumeItem{Implemented container orchestration automation with \textbf{ArgoCD}, reducing deployment errors by 40\% across environments.}
+        \resumeItem{Enhanced CI/CD pipelines using \textbf{Jenkins} and \textbf{Docker}, accelerating release cycles by 35\% while maintaining quality.}
+        \resumeItem{Integrated monitoring and logging for cloud-native apps on \textbf{AWS} and \textbf{Azure}, cutting issue resolution time by 25\%.}
+        \resumeItem{Collaborated on security protocols using OAuth and token-based authentication, decreasing unauthorized access attempts by 40\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Developed Kubernetes operators in \textbf{Go} to automate cloud application lifecycle management, improving deployment efficiency by 30\%.}
+        \resumeItem{Designed and deployed microservices on \textbf{Azure Kubernetes Service}, supporting 1000+ concurrent users seamlessly.}
+        \resumeItem{Automated infrastructure provisioning with \textbf{GitOps} workflows using \textbf{ArgoCD}, reducing manual interventions by 50\%.}
+        \resumeItem{Built secure APIs implementing token-based authentication with \textbf{Keycloak} and \textbf{OAuth}, increasing security compliance.}
+        \resumeItem{Optimized cloud monitoring with \textbf{AWS CloudWatch} and log aggregation, decreasing resource wastage by 15\%.}
+        \resumeItem{Enhanced UI using \textbf{React.js} and integrated backend in \textbf{Python}, improving user response times by 20\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Configured and maintained \textbf{Linux} Kubernetes clusters in lab environments, boosting lab availability by 25\%.}
+        \resumeItem{Guided 40+ students on containerization and orchestration concepts, enhancing assignment success rates by 20\%.}
+        \resumeItem{Automated test validation scripts using shell scripting, improving grading speed and accuracy by 30\%.}
+        \resumeItem{Conducted workshops on network security fundamentals and container security best practices, increasing attendance by 50\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{01/2023 – 08/2023}
+        {Software Engineer}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Implemented backend services in \textbf{C++} and \textbf{Go}, reducing data retrieval latency by 28\% in distributed systems.}
+        \resumeItem{Built containerized \textbf{Kubernetes} deployments to improve scalability and maintainability of critical microservices by 35\%.}
+        \resumeItem{Refined \textbf{TypeScript} API clients with sub-100ms response times, enhancing real-time data exchange reliability.}
+        \resumeItem{Optimized PostgreSQL queries and indexes, reducing application load times by 18\% and improving database throughput.}
+        \resumeItem{Developed secure message bus using \textbf{Kafka}, ensuring 99.9\% event delivery rate across distributed services.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Developed scalable microservices in \textbf{Java Spring Boot} and containerized them using \textbf{Docker} on \textbf{AWS EC2}.}
+        \resumeItem{Created Kubernetes manifests and helm charts automating deployment and updates, reducing manual release time by 40\%.}
+        \resumeItem{Optimized SQL queries on \textbf{Oracle}, reducing data access latency by 25\% and improving transaction throughput.}
+        \resumeItem{Set up \textbf{CI/CD} pipelines using Jenkins integrating with Git, improving deployment frequency and rollback ability.}
+        \resumeItem{Built interactive React.js frontend with responsive design, increasing user retention by 30\%.}
+        \resumeItem{Analyzed production logs using Splunk, accelerating fault detection and reducing downtime by 20\%.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{GPA: 4.0/4.0}
+  \resumeSubHeadingListEnd
+\vspace{-10pt}
+%%%%%%
+  
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Kubernetes Control Plane Automation} | Go, Kubernetes, ArgoCD, Jenkins}{}
+          \resumeItemListStart
+              \resumeItem{Developed a control plane module in \textbf{Go} to automate Kubernetes cluster maintenance tasks, increasing uptime by 20\%.}
+              \resumeItem{Integrated \textbf{ArgoCD} for GitOps-based deployment, reducing manual rollback incidents by 35\%.}
+          \resumeItemListEnd
+          \vspace{-12pt}
+      \resumeProjectHeading
+          {\textbf{AI-Powered Deployment Assistant} | OpenAI API, GitHub Actions, CI/CD, Kubernetes}{}
+          \resumeItemListStart
+              \resumeItem{Created a bot integrating \textbf{OpenAI API} to review Kubernetes deployment manifests, reducing configuration errors by 40\%.}
+              \resumeItem{Automated pull request analysis and rollout testing via GitHub Actions, decreasing deployment failures by 25\%.}
+          \resumeItemListEnd
+          \vspace{-12pt}
+      \resumeProjectHeading
+          {\textbf{Cloud-Native Application Hosting Platform} | Azure, Docker, React.js, Python}{}
+          \resumeItemListStart
+              \resumeItem{Engineered cloud-native hosting platform on \textbf{Azure} supporting 500+ applications, improving load balancing and scaling efficiency by 30\%.}
+              \resumeItem{Developed frontend in \textbf{React.js} and backend services in \textbf{Python} focused on security and seamless user experience.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+
+\end{document}
