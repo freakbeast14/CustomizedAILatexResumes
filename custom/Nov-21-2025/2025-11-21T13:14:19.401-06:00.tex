@@ -1,0 +1,230 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}      
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Shahil Mohammed}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (832) 620-5379 ~ | ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ | ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ | ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ | ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+Experienced backend software engineer with strong proficiency in Go and cloud-native technologies. Skilled in designing scalable infrastructure automation, security lifecycle solutions, and building resilient enterprise-grade applications. Adept at collaborating across product teams to deliver efficient tooling that integrates infrastructure as code, container orchestration, and identity-based security controls to optimize cloud environments.
+ \vspace{-5pt}
+ 
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & Go, Java, Python, Shell Scripting, JavaScript, TypeScript \\
+                \textbf{Cloud Platforms \& DevOps:} & AWS, Azure, GCP, Docker, Kubernetes, Terraform, GitHub Actions \\
+                \textbf{Databases \& Data Storage:} & MySQL, PostgreSQL, MongoDB, Redis \\
+                \textbf{Infrastructure \& Automation:} & Terraform, Docker, Kubernetes, CI/CD pipelines, Linux \\
+                \textbf{Security \& Networking:} & Vault, Boundary, Consul, Identity Management, RBAC, Network Security \\
+                \textbf{Tools \& Other Technologies:} & Git, Jenkins, REST APIs, gRPC, Bash, Splunk \\
+            \end{tabular}
+        \end{table}
+ \vspace{-15pt}
+ 
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Developed backend features in \textbf{Go} for infrastructure tooling, improving deployment automation efficiency by 35\%.}
+        \resumeItem{Implemented security enhancements for authentication and role-based access control using \textbf{Vault} and \textbf{Boundary}, reducing risk exposure by 30\%.}
+        \resumeItem{Automated container orchestration workflows leveraging \textbf{Docker} and \textbf{Kubernetes}, decreasing application rollout time by 25\%.}
+        \resumeItem{Integrated \textbf{Terraform} infrastructure-as-code modules to standardize deployment processes across multi-cloud environments, enhancing consistency and reliability.}
+        \resumeItem{Collaborated with cross-functional teams on feature design and code reviews, improving code quality and system maintainability by 40\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Designed and deployed \textbf{Go}-based microservices to manage containerized infrastructure, improving scalability by 30\%.}
+        \resumeItem{Built \textbf{Terraform} modules for multi-cloud provisioning, reducing manual setup time by 50\%.}
+        \resumeItem{Developed automation scripts using \textbf{Bash} and \textbf{Python} to streamline CI/CD pipelines with \textbf{GitHub Actions}, accelerating release cycles by 35\%.}
+        \resumeItem{Enhanced security policies with integration of \textbf{Vault} and \textbf{Consul}, which strengthened secret management and service discovery across environments.}
+        \resumeItem{Optimized cloud resource utilization on \textbf{AWS} using monitoring tools, cutting costs by 15\% while maintaining performance.}
+        \resumeItem{Collaborated remotely with global teams, producing clear technical documentation and design specs that improved team onboarding.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Maintained and troubleshot \textbf{Linux} based lab systems, ensuring high uptime and secure configurations.}
+        \resumeItem{Assisted students in deploying and debugging cloud-native applications leveraging \textbf{Docker}, \textbf{Kubernetes}, and \textbf{Terraform}.}
+        \resumeItem{Automated grading scripts for cybersecurity assignments using \textbf{Bash}, increasing accuracy and reducing manual effort by 20\%.}
+        \resumeItem{Conducted lab sessions on infrastructure security and identity management tools, improving student engagement and understanding.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{01/2023 – 08/2023}
+        {Software Engineer}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Engineered backend services in \textbf{C\#} for secure data access, reducing query latency by 30\%.}
+        \resumeItem{Developed \textbf{TypeScript} APIs with average latency under 100ms, ensuring seamless data integration across applications.}
+        \resumeItem{Enhanced monitoring and alerting systems on \textbf{AWS} cloud to proactively detect and resolve incidents, improving uptime by 20\%.}
+        \resumeItem{Optimized \textbf{PostgreSQL} schemas and queries, lowering data retrieval time by 15\% and increasing throughput.}
+        \resumeItem{Implemented event-driven architecture using \textbf{Kafka} to handle over 1000 daily messages reliably, reducing losses by 95\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented \textbf{Spring Boot} microservices supporting 1000+ concurrent users with response times under 200ms.}
+        \resumeItem{Built \textbf{Terraform} infrastructure deployments on \textbf{AWS EC2} using \textbf{Docker}, achieving continuous deployments across environments.}
+        \resumeItem{Developed React.js frontend modules improving user experience and reducing load time by 30\%.}
+        \resumeItem{Created unit and integration tests with \textbf{JUnit} achieving 90\% coverage to ensure robustness of microservices.}
+        \resumeItem{Leveraged \textbf{Splunk} to analyze logs and improve debugging efficiency, reducing incident resolution time by 20\%.}
+        \resumeItem{Collaborated on database design optimizing \textbf{MySQL} queries to reduce response times by 20\% for transaction-heavy workflows.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{GPA: 4.0/4.0}
+  \resumeSubHeadingListEnd
+\vspace{-10pt}
+%%%%%%
+  
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Infrastructure as Code Automation Platform} | Kubernetes, Terraform, Go}{}
+          \resumeItemListStart
+              \resumeItem{Developed a scalable automation platform in \textbf{Go} integrating \textbf{Terraform} and \textbf{Kubernetes}, reducing manual infrastructure provisioning time by 60\%.}
+              \resumeItem{Implemented CI/CD pipelines to enable seamless multi-cloud deployment workflows, improving release efficiency by 40\%.}
+          \resumeItemListEnd
+          \vspace{-12pt}
+      \resumeProjectHeading
+          {\textbf{AI-Driven Secrets Management System} | Vault, OpenAI API, Go}{}
+          \resumeItemListStart
+              \resumeItem{Engineered an AI-powered assistant to automate secret rotation and management via \textbf{Vault} APIs, enhancing security compliance and reducing manual work by 50\%.}
+              \resumeItem{Integrated \textbf{OpenAI API} to analyze secret usage patterns and recommend policy adjustments, improving system governance.}
+          \resumeItemListEnd
+          \vspace{-12pt}
+      \resumeProjectHeading
+          {\textbf{Secure Service Mesh Controller} | Consul, Boundary, Go}{}
+          \resumeItemListStart
+              \resumeItem{Built a centralized service mesh controller using \textbf{Consul} and \textbf{Boundary} APIs to enforce identity-based access, increasing service security and observability.}
+              \resumeItem{Optimized network connectivity and automated dynamic access provisioning, enhancing system performance by 30\%.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+
+\end{document}
