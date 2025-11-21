@@ -1,0 +1,230 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}      
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Shahil Mohammed}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (832) 620-5379 ~ | ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ | ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ | ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ | ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+Detail-oriented software engineer skilled in system integration, automation, and post-silicon validation with 3+ years of experience. Proficient in scripting, embedded software interfaces, and test methodology development to ensure seamless hardware-software synergy and robust product qualification. Excels in cross-functional collaboration and driving efficient, scalable testing frameworks.
+ \vspace{-5pt}
+ 
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & Python, Shell Scripting, C, C++, Java, JavaScript \\
+                \textbf{Embedded Systems \& Firmware:} & Microcontrollers, JTAG, I2C, SPI, SERDES, FPGA interfaces \\
+                \textbf{Protocols \& Networking:} & PCIe, InfiniBand, Ethernet, PXE booting, RPC calls, Sockets \\
+                \textbf{Automation \& Validation:} & Test Automation, CI/CD, Jenkins, Validation Methodologies \\
+                \textbf{Operating Systems \& Tools:} & Linux/Unix, Git, Docker, Debugging, Splunk \\
+                \textbf{Databases \& Miscellaneous:} & SQL, MongoDB, REST APIs, Virtual Machines, Secure Networking \\
+            \end{tabular}
+        \end{table}
+ \vspace{-15pt}
+ 
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Designed and executed automated integration tests, improving post-silicon validation coverage and reducing testing time by 30\%.}
+        \resumeItem{Developed Python scripts to streamline post-silicon data analysis, enabling faster identification of hardware and firmware issues.}
+        \resumeItem{Collaborated with cross-functional teams to integrate ASIC, firmware, and system software into complex multi-interface environments.}
+        \resumeItem{Implemented continuous validation frameworks supporting PCIe, InfiniBand, and Ethernet protocols, increasing test reliability by 25\%.}
+        \resumeItem{Analyzed system-level logs from customers to isolate silicon and firmware defects, accelerating issue resolution by 40\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Created automated test suites in Python to validate embedded firmware functionality, reducing manual testing efforts by 50\%.}
+        \resumeItem{Integrated hardware components with system software leveraging PXE boot and virtual machines, improving system bring-up efficiency.}
+        \resumeItem{Developed monitoring tools for network interfaces including Ethernet-over-InfiniBand, boosting error detection accuracy by 35\%.}
+        \resumeItem{Collaborated with global teams on FPGA and microcontroller interfaces integration, shortening development cycles by 20\%.}
+        \resumeItem{Packaged and maintained silicon stress tests for production release, enhancing product qualification in field environments.}
+        \resumeItem{Designed secure automated workflows for system validation, improving consistency and reducing regression defects by 30\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Managed Linux-based lab environments supporting embedded software projects, improving lab uptime and student access by 15\%.}
+        \resumeItem{Developed and automated validation scripts in Python for system software, increasing testing throughput by 40\%.}
+        \resumeItem{Assisted in debugging complex embedded interfaces including JTAG and I2C, aiding students to achieve higher debugging success rates.}
+        \resumeItem{Conducted workshops on hardware-software integration methodologies for cybersecurity and system engineering students.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{01/2023 – 08/2023}
+        {Software Engineer}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Engineered system integration between backend microservices and hardware simulators, improving validation coverage by 30\%.}
+        \resumeItem{Developed automated monitoring tools using TypeScript to trace error logs and system anomalies, reducing debugging time by 35\%.}
+        \resumeItem{Enhanced firmware validation using PCIe and RPC protocol simulations, increasing test accuracy and fault isolation efficiency.}
+        \resumeItem{Optimized database operations supporting system diagnostics, improving data retrieval speed by 20\% for validation dashboards.}
+        \resumeItem{Collaborated on design and testing of FPGA and embedded system interfaces for complex data pipelines in distributed systems.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Developed Python-based automation for embedded system validation enabling continuous post-silicon testing and quicker bug identification.}
+        \resumeItem{Built firmware integration tests ensuring proper communication over I2C, SPI, and SERDES interfaces, reducing system defects by 25\%.}
+        \resumeItem{Implemented automated test environments simulating multi-protocol system bring-up reducing hardware bring-up delays by 30\%.}
+        \resumeItem{Created monitoring solutions analyzing ASIC and FPGA logs using \textbf{Splunk}, decreasing incident response time by 20\%.}
+        \resumeItem{Led CI/CD initiatives deploying automated hardware-software validation pipelines on AWS EC2 and Docker containers.}
+        \resumeItem{Collaborated with cross-functional teams globally to validate embedded firmware and system software across multiple communication standards.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{GPA: 4.0/4.0}
+  \resumeSubHeadingListEnd
+\vspace{-10pt}
+%%%%%%
+  
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Automated Post-Silicon Validation Framework} | Python, Jenkins, FPGA Integration}{}
+          \resumeItemListStart
+              \resumeItem{Developed an automated validation framework integrating multi-interface hardware tests, reducing silicon validation cycles by 35\%.}
+              \resumeItem{Designed scripts to automate FPGA and embedded firmware tests, improving post-silicon defect detection by 40\%.}
+          \resumeItemListEnd
+          \vspace{-12pt}
+      \resumeProjectHeading
+          {\textbf{AI-Driven System Debugging Assistant} | Python, LLM API, Log Analysis}{}
+          \resumeItemListStart
+              \resumeItem{Engineered an AI assistant that analyzes system logs and error traces, accelerating issue isolation in complex ASIC and firmware environments by 30\%.}
+              \resumeItem{Integrated natural language processing with test automation to streamline debugging workflows and reduce manual analysis effort by 25\%.}
+          \resumeItemListEnd
+          \vspace{-12pt}
+      \resumeProjectHeading
+          {\textbf{Secure Virtual Machine Bootstrapping} | PXE Boot, Virtualization, Network Security}{}
+          \resumeItemListStart
+              \resumeItem{Implemented secure PXE boot workflows for virtual machines supporting system bring-up, improving deployment consistency and reducing failures by 20\%.}
+              \resumeItem{Automated network protocol validation for secure remote boot and communication over encrypted Ethernet-over-InfiniBand channels.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+
+\end{document}
