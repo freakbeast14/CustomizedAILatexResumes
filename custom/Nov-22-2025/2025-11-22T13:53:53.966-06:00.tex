@@ -1,0 +1,229 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}      
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Shahil Mohammed}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (832) 620-5379 ~ | ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ | ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ | ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ | ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+Resourceful software engineer with over 3 years experience in developing and optimizing C++ and GPU-centric solutions for high-performance machine learning and computing. Proven expertise in kernel development, modern C++ libraries, and deep learning primitives, complemented by strong collaboration skills and a commitment to advancing ROCm and AI ecosystems.
+ \vspace{-5pt}
+ 
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & C++, C, Python, Java, Shell Scripting, Assembly \\
+                \textbf{GPU \& Parallel Computing:} & ROCm, CUDA, OpenCL, SIMD Vectorization, GPU Kernel Optimization \\
+                \textbf{Development \& Build Tools:} & CMake, Jenkins, Git, JUnit, Profiling, Debugging, Version Control \\
+                \textbf{Frameworks \& Libraries:} & TensorFlow, PyTorch, ROCm Math Libraries, Spring Boot, React.js \\
+                \textbf{Operating Systems \& Cloud:} & Linux/Unix, AWS, Docker, Kubernetes, EC2 \\
+                \textbf{Other Technologies:} & REST API, JSON, JIRA, Documentation, OpenAI API \\
+            \end{tabular}
+        \end{table}
+ \vspace{-15pt}
+ 
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Engineered \textbf{C++} GPU kernels optimizing tensor operations, improving machine learning performance by 30\% across key models.}
+        \resumeItem{Implemented modern \textbf{build systems} using \textbf{CMake} and \textbf{Jenkins}, reducing integration times by 40\%.}
+        \resumeItem{Collaborated with cross-functional teams to enhance ROCm libraries, achieving 25\% performance gains in fused layer executions.}
+        \resumeItem{Authored detailed documentation and test suites ensuring 95\% coverage and adherence to open-source contributions best practices.}
+        \resumeItem{Applied low-level \textbf{vectorization} and assembly optimizations, accelerating kernel throughput by 20\% on AMD GPUs.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Designed and optimized \textbf{GPU-accelerated} components to improve AI-driven analytics platform responsiveness by 30\%.}
+        \resumeItem{Built \textbf{C++} microservices interfacing machine learning models, cutting data processing latency by 25\%.}
+        \resumeItem{Enhanced continuous integration pipelines with \textbf{Jenkins} automations, reducing deployment errors by 35\%.}
+        \resumeItem{Automated \textbf{Python} data workflows for machine learning dataset preparation, accelerating data readiness by 40\%.}
+        \resumeItem{Developed and deployed AI-based bots leveraging \textbf{LLMs} to automate market data extraction, improving efficiency by 50\%.}
+        \resumeItem{Profiling and optimized server-side APIs to reduce cloud resource usage by 15\%, improving cost-efficiency.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Maintained secure \textbf{Linux} environments supporting GPU-accelerated machine learning workflows for student projects.}
+        \resumeItem{Facilitated debugging and deployment of parallel computing assignments, increasing student success rates by 22\%.}
+        \resumeItem{Automated grading pipelines using scripting, reducing manual work by 30\% and increasing grading accuracy and feedback speed.}
+        \resumeItem{Hosted workshops on GPU programming and optimization techniques using \textbf{C++} and parallel libraries for over 50 participants.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{01/2023 – 08/2023}
+        {Software Engineer}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Developed high-performance backend services in \textbf{C\#} and \textbf{.NET}, reducing data retrieval latency by 35\%.}
+        \resumeItem{Implemented efficient \textbf{TypeScript} APIs with average response times under 75ms, improving application responsiveness.}
+        \resumeItem{Refactored front-end using \textbf{Angular.js}, enhancing user interactions and increasing engagement by 22\%.}
+        \resumeItem{Optimized \textbf{PostgreSQL} queries, improving data throughput and reducing load on database by 18\%.}
+        \resumeItem{Designed and deployed distributed messaging with \textbf{Kafka}, reducing message loss by 90\% across multiple services.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Developed \textbf{Java Spring Boot} microservices enabling concurrent user handling with response times under 180ms.}
+        \resumeItem{Designed and optimized \textbf{Oracle} SQL schemas to improve query efficiency by 22\%.}
+        \resumeItem{Built scalable Docker \textbf{CI/CD} pipelines orchestrated with \textbf{Jenkins} for seamless AWS EC2 deployments.}
+        \resumeItem{Created React.js UIs improving usability and decreasing load time by 28\% for project management applications.}
+        \resumeItem{Applied unit testing with \textbf{JUnit} achieving over 90\% test coverage on critical backend components.}
+        \resumeItem{Investigated and debugged production issues using \textbf{Splunk}, reducing resolution time by 25\%.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{GPA: 4.0/4.0}
+  \resumeSubHeadingListEnd
+\vspace{-10pt}
+%%%%%%
+  
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{GPU Kernel Fusion Library} | C++, ROCm, Assembly}{}
+          \resumeItemListStart
+              \resumeItem{Developed a GPU kernel fusion library optimizing tensor operations, resulting in 35\% performance improvements for machine learning workloads.}
+              \resumeItem{Implemented assembly-level optimizations and integration tests ensuring robust, maintainable kernels across AMD GPU architectures.}
+          \resumeItemListEnd
+          \vspace{-12pt}
+      \resumeProjectHeading
+          {\textbf{AI-Powered Code Refactoring Bot} | Python, OpenAI API, GitHub Actions}{}
+          \resumeItemListStart
+              \resumeItem{Engineered an AI bot that autonomously detects code inefficiencies and recommends refactoring, reducing review times by 45\%.}
+              \resumeItem{Integrated bot with CI/CD pipelines to automate code quality enhancements and generate comprehensive documentation coverage.}
+          \resumeItemListEnd
+          \vspace{-12pt}
+      \resumeProjectHeading
+          {\textbf{High-Performance Machine Learning Primitives} | C++, TensorFlow, ROCm}{}
+          \resumeItemListStart
+              \resumeItem{Designed and implemented core ML mathematical primitives accelerating layer fusion on AMD GPUs, improving training throughput by 30\%.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\end{document}
