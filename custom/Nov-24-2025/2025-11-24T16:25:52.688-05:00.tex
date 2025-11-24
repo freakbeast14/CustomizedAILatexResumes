@@ -1,0 +1,231 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}      
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Shahil Mohammed}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (832) 620-5379 ~ | ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ | ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ | ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ | ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+Detail-oriented Junior Data Analyst with 3+ years of software engineering expertise and strong proficiency in \textbf{Python} and \textbf{Pandas}. Experienced in data manipulation, pipeline automation, and insightful reporting with solid SQL skills and foundational accounting knowledge. Fluent in French and English, adept at generating reliable tax and financial data solutions for transformative business outcomes.
+ \vspace{-5pt}
+ 
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & Python, SQL, Java, JavaScript, Shell Scripting \\
+                \textbf{Data Analysis \& Tools:} & Pandas, DataFrame Operations, GroupBy Aggregations, Excel, Data Cleaning, Data Visualization \\
+                \textbf{Web \& API:} & REST APIs, Flask, Django, React.js \\
+                \textbf{Databases:} & MySQL, PostgreSQL, SQL Server, NoSQL, Database Design \\
+                \textbf{Cloud \& DevOps:} & AWS, Docker, Jenkins, Git, CI/CD Pipelines \\
+                \textbf{Languages \& Communication:} & French (Fluent), English (Fluent), Microsoft Office Suite \\
+            \end{tabular}
+        \end{table}
+ \vspace{-15pt}
+ 
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Automated extraction and cleansing of financial datasets with \textbf{Python} and \textbf{Pandas}, increasing data processing speed by 45\%.}
+        \resumeItem{Developed \textbf{Python} scripts to reconcile tax records against accounting data, reducing errors by 30\%.}
+        \resumeItem{Constructed data pipelines integrating \textbf{SQL databases} and \textbf{Excel} sources for seamless data flow and reporting.}
+        \resumeItem{Produced dynamic visual reports to present financial insights, improving stakeholder decision-making efficiency by 20\%.}
+        \resumeItem{Collaborated in bilingual team meetings, documenting technical workflows and contributing to process standardization initiatives.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Implemented automated \textbf{Python} routines to clean and consolidate large accounting datasets, cutting manual work by 70\%.}
+        \resumeItem{Engineered robust \textbf{data pipelines} linking \textbf{SQL} sources with API data to support tax data analysis.}
+        \resumeItem{Utilized \textbf{Pandas} DataFrame grouping and merging to aggregate financial data for clear taxation reconciliation.}
+        \resumeItem{Collaborated on bilingual documentation and reports translating complex data findings into actionable tax technology insights.}
+        \resumeItem{Enhanced Excel dashboards integrating Python-extracted data, raising report accuracy and timeliness by 25\%.}
+        \resumeItem{Optimized backend data workflows to align accounting and tax records, improving reconciliation accuracy by 35\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Supported secure Linux environments for lab data experiments, ensuring reliable execution of financial data manipulation scripts.}
+        \resumeItem{Assisted students in programming \textbf{Python} for data cleaning and aggregation relevant to financial datasets.}
+        \resumeItem{Automated grading systems handling \textbf{Python} script correctness and dataset validation, enhancing grading speed by 25\%.}
+        \resumeItem{Presented foundational data manipulation and accounting principles in bilingual interactive sessions.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{01/2023 – 08/2023}
+        {Software Engineer}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Built \textbf{SQL} queries and optimized stored procedures to streamline reconciliation of financial and tax data.}
+        \resumeItem{Developed backend services in \textbf{C\#} to automate data validation and integration for accounting datasets, reducing processing time 30\%.}
+        \resumeItem{Enhanced API efficiency for tax data retrieval, achieving sub-second response times crucial for real-time analysis.}
+        \resumeItem{Coordinated data consistency checks between financial statements and tax records, improving report accuracy by 20\%.}
+        \resumeItem{Implemented automated logging and alerting to flag discrepancies in tax- accounting data streams, reducing manual review by 40\%.} 
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Led back-end data pipeline development with \textbf{Java Spring Boot} to aggregate financial datasets from multiple sources for audit readiness.}
+        \resumeItem{Designed efficient \textbf{SQL} schemas and queries to support tax data analysis, reducing latency by 20\%.}
+        \resumeItem{Constructed automated batch processes to cleanse and merge accounting datasets with tax records using \textbf{Python} and \textbf{Pandas}.}
+        \resumeItem{Built front-end dashboards to visualize tax reconciliations and financial summaries, improving transparency for auditors.}
+        \resumeItem{Established CI/CD pipelines with \textbf{Docker} and \textbf{Jenkins}, accelerating deployment and increasing process reliability.}
+        \resumeItem{Utilized \textbf{Splunk} for monitoring pipeline logs, enabling faster fault diagnosis and minimizing downtime by 15\%.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{GPA: 4.0/4.0}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+          \resumeProjectHeading
+              {\textbf{Python Automation for Tax Data Reconciliation} | GitHub, Pandas, SQL, Excel}{}
+        \resumeItemListStart
+            \resumeItem{Developed automated Python scripts using \textbf{Pandas} to cleanse, merge, and reconcile tax and accounting datasets, improving accuracy by 30\%.}
+            \resumeItem{Created SQL integration pipelines to dynamically refresh reports, reducing manual update time by 60\%.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+    \resumeProjectHeading
+        {\textbf{AI-Assisted Financial Data Insights} | OpenAI API, Python, Pandas, Data Visualization}{}
+        \resumeItemListStart
+            \resumeItem{Implemented an AI-driven pipeline utilizing \textbf{OpenAI API} to generate financial data summaries and anomaly detection, supporting tax audit processes.}
+            \resumeItem{Enhanced reporting workflows by creating visual dashboards from analyzed datasets, increasing stakeholder understanding by 25\%.}
+        \resumeItemListEnd
+          \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{Data Pipeline for Tax Technology Integration} | Flask, Python, SQL, REST API}{}
+          \resumeItemListStart
+              \resumeItem{Engineered a RESTful service in \textbf{Flask} integrating SQL and Excel data sources to automate data ingestion and cleansing for tax analysis.}
+              \resumeItem{Implemented error detection and logging features reducing data pipeline failures and minimizing manual intervention by 40\%.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+
+\end{document}
