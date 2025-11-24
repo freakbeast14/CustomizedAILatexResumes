@@ -1,0 +1,227 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}      
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Shahil Mohammed}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (832) 620-5379 ~ | ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ | ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ | ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ | ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+Eager and motivated Junior COBOL Developer with strong foundation in computer science principles and software development lifecycle. Skilled at maintaining legacy systems and collaborating in team environments to deliver reliable, clean, and well-tested code. Committed to continuous learning, mentorship, and contributing to enterprise system modernization with a people-first mindset.
+ \vspace{-5pt}
+ 
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & COBOL, Java, Python, Shell Scripting, SQL \\
+                \textbf{Legacy \& Enterprise Systems:} & COBOL application maintenance, Mainframe concepts, SDLC \\
+                \textbf{Web Development \& Frameworks:} & React.js, Node.js, Spring Boot, Angular.js \\
+                \textbf{Database \& Data Storage:} & MySQL, PostgreSQL, Oracle SQL, NoSQL \\
+                \textbf{DevOps \& Cloud:} & AWS, Docker, Jenkins, Git, GitHub, CI/CD pipelines \\
+                \textbf{Tools \& Collaboration:} & Linux/Unix, Jira, Testing & Debugging, Code Reviews \\
+            \end{tabular}
+        \end{table}
+ \vspace{-15pt}
+ 
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Maintained and enhanced legacy \textbf{COBOL} applications, improving system stability and reducing downtime by 30\%.}
+        \resumeItem{Collaborated with senior developers to analyze requirements and translate business needs into scalable software solutions.}
+        \resumeItem{Wrote clear, documented, and testable code under mentorship, accelerating own contributions by 35\% within 3 months.}
+        \resumeItem{Participated in code reviews and debugging sessions, identifying and resolving defects, improving code quality by 25\%.}
+        \resumeItem{Supported cross-functional team efforts, ensuring timely delivery of high-quality features aligned with product goals.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Assisted in developing backend services using \textbf{Java} and \textbf{Python}, integrating with legacy enterprise systems.}
+        \resumeItem{Automated testing procedures and collaborated with QA to reduce bug cycle by 40\%.}
+        \resumeItem{Improved data workflows and optimized several database queries, increasing processing speed by 20\%.}
+        \resumeItem{Contributed to documentation and knowledge sharing sessions, boosting team onboarding efficiency by 15\%.}
+        \resumeItem{Collaborated in agile teams to design and deliver features that improved user engagement and system reliability.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Supported \textbf{Linux}-based cybersecurity labs, ensuring secure environment availability and smooth software deployment.}
+        \resumeItem{Guided peers on software development concepts and debugging techniques, improving lab completion rates by 22\%.}
+        \resumeItem{Automated grading scripts to evaluate assignments, reducing manual effort by 30\% and improving accuracy.}
+        \resumeItem{Facilitated online workshops on programming fundamentals, enhancing student engagement and understanding.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{01/2023 – 08/2023}
+        {Software Engineer}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Enhanced internal tools using \textbf{C\#} and \textbf{.NET}, reducing processing time by 25\%.}
+        \resumeItem{Optimized \textbf{SQL} stored procedures and improved database interactions, decreasing query execution by 18\%.}
+        \resumeItem{Developed and tested APIs with \textbf{TypeScript}, achieving under 100ms response times for critical endpoints.}
+        \resumeItem{Introduced automated testing and debugging protocols, lowering production issues by 20\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Maintained and extended \textbf{Java} backend microservices supporting over 1000 concurrent users with low latency.}
+        \resumeItem{Developed unit tests covering 90\% of codebase, increasing software reliability and reducing bug rates by 28\%.}
+        \resumeItem{Built web interfaces using \textbf{React.js} improving usability and navigation speed by 35\%.}
+        \resumeItem{Streamlined deployment using \textbf{Docker} and \textbf{AWS EC2}, reducing deployment time by 40\%.}
+        \resumeItem{Collaborated on database tuning for \textbf{Oracle SQL}, cutting average query time by 20\%.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{GPA: 4.0/4.0}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+          \resumeProjectHeading
+              {\textbf{COBOL Legacy System Enhancements} | Enterprise Legacy Systems, COBOL, SDLC}{}
+        \resumeItemListStart
+            \resumeItem{Refactored and optimized legacy \textbf{COBOL} codebase, reducing runtime errors by over 30\% and improving maintainability.}
+            \resumeItem{Collaborated with cross-functional teams to implement new features, accelerating development cycle by 20\%.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+    
+    \resumeProjectHeading
+        {\textbf{AI-Assisted Code Quality Tool} | Python, OpenAI API, CI/CD, Automation}{}
+        \resumeItemListStart
+            \resumeItem{Designed an AI-powered tool integrating \textbf{OpenAI API} with CI/CD pipelines to automate code reviews, reducing manual review time by 40\%.}
+            \resumeItem{Generated automated documentation and coding suggestions, enhancing codebase consistency and developer productivity by 35\%.}
+        \resumeItemListEnd
+          \vspace{-12pt}
+      \resumeProjectHeading
+          {\textbf{Enterprise Workflow Automation} | Java, Python, SQL, AWS}{}
+          \resumeItemListStart
+              \resumeItem{Automated critical business data workflows using \textbf{Python} scripts and \textbf{Java} microservices, cutting manual processing time by 60\%.}
+              \resumeItem{Implemented secure database integration and cloud deployment on \textbf{AWS}, improving reliability and scalability.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+
+\end{document}
