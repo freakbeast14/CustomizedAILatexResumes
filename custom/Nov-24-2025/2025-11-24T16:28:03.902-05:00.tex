@@ -1,0 +1,230 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}      
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Shahil Mohammed}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (832) 620-5379 ~ | ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ | ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ | ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ | ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+Versatile software engineer specializing in embedded systems and scalable vehicle software updates, applying expertise in C/C++, Linux, and real-time operating systems. Proven track record delivering secure, OTA vehicle software enhancements, collaborating cross-functionally, and leveraging robust debugging skills to innovate automotive software solutions aimed at safety and efficiency improvements.
+ \vspace{-5pt}
+ 
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & \textbf{C, C++, Rust, Python, Java} \\
+                \textbf{Embedded Systems \& OS:} & QNX, Linux, RTOS, Android, Build Systems (Make, CMake, Gradle) \\
+                \textbf{Communication Protocols:} & CAN, TCP/IP, UDP, SomeIP, UDS over Ethernet (DoIP) \\
+                \textbf{DevOps \& Tools:} & Git, Jenkins, Docker, CI/CD pipelines, JTAG Debugging \\
+                \textbf{Software Architecture \& Security:} & Scalable architectures, Cybersecurity authentication, Encryption \\
+                \textbf{Methodologies \& Collaboration:} & Agile, Scrum, Code Reviews, System Engineering Interfaces \\
+            \end{tabular}
+        \end{table}
+ \vspace{-15pt}
+ 
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Engineered \textbf{C++} modules for embedded vehicle update functions, enhancing OTA update speed and reliability by 30\%.}
+        \resumeItem{Collaborated on cross-team reviews for system design and code, elevating software quality and reducing defect rates by 25\%.}
+        \resumeItem{Implemented automated verification testing for embedded software on \textbf{QNX} and \textbf{Linux}, increasing test coverage by 40\%.}
+        \resumeItem{Debugged complex vehicle system issues using \textbf{JTAG}, resolving critical failures under strict time constraints.}
+        \resumeItem{Streamlined build and deployment via \textbf{CMake} and \textbf{Jenkins}-based CI/CD pipelines, reducing integration time by 35\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Developed embedded features in \textbf{C} and \textbf{Python} to support secure vehicle data transmissions over \textbf{TCP/IP} and \textbf{UDP} protocols.}
+        \resumeItem{Designed and tested \textbf{Rust}-based microservices, improving system maintainability and reducing latency by 20\%.}
+        \resumeItem{Refined client-server integration using RESTful APIs, enhancing overall system responsiveness and security posture.}
+        \resumeItem{Led Agile sprint planning and retrospectives, improving delivery predictability and team velocity by 30\%.}
+        \resumeItem{Applied cybersecurity techniques to encrypted data streams, increasing authentication security across service layers.}
+        \resumeItem{Conducted detailed cause analysis of software bugs, decreasing critical defects reported post-release by 40\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Maintained secure \textbf{Linux} environments for embedded software testing, supporting 30+ users per semester.}
+        \resumeItem{Assisted students with debugging embedded code, improving academic success and reducing errors by 25\%.}
+        \resumeItem{Automated lab test scripts, speeding up verification processes and enhancing lab efficiency by 35\%.}
+        \resumeItem{Delivered interactive lectures on networking protocols and encrypted communications to enhance students' cybersecurity skills.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{01/2023 – 08/2023}
+        {Software Engineer}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Developed and optimized \textbf{C++} backend components in automotive telemetry platforms, improving data throughput by 25\%.}
+        \resumeItem{Implemented real-time diagnostics utilizing \textbf{UDS over Ethernet} protocols for robust vehicle fault detection.}
+        \resumeItem{Enhanced frontend components with \textbf{Angular.js}, boosting system usability and performance metrics by 20\%.}
+        \resumeItem{Utilized PostgreSQL to optimize database queries, reducing response latency by 15\%.}
+        \resumeItem{Designed event messaging solutions supporting 1000+ daily messages with \textbf{Kafka}, enhancing system reliability.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Developed embedded-focused microservices in \textbf{Java} using Spring Boot, improving update delivery scalability by 35\%.}
+        \resumeItem{Designed optimized \textbf{Oracle} database queries reducing latency by 20\% in high-volume transactional systems.}
+        \resumeItem{Implemented \textbf{CI/CD} pipelines with Docker and AWS, speeding container deployment by 40\%.}
+        \resumeItem{Authored comprehensive unit and integration tests, achieving over 90\% test coverage with \textbf{JUnit}.}
+        \resumeItem{Analyzed logs using \textbf{Splunk}, improving debugging efficiency and reducing mean-time-to-resolution by 25\%.}
+        \resumeItem{Collaborated using \textbf{Git} workflows with peer reviews and pull requests to elevate code quality and maintainability.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{GPA: 4.0/4.0}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+          \resumeProjectHeading
+              {\textbf{Secure OTA Vehicle Update System} | Embedded Linux, C++, QNX, CI/CD}{}
+        \resumeItemListStart
+            \resumeItem{Developed a secure OTA update module in \textbf{C++} for vehicle platforms, increasing update efficiency and maintaining strict system safety.}
+            \resumeItem{Integrated automated continuous testing and deployment pipelines to ensure seamless software updates while preserving vehicle security.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+    
+    \resumeProjectHeading
+        {\textbf{AI-Driven Embedded Debugging Assistant} | Python, Rust, Embedded Systems, AI}{}
+        \resumeItemListStart
+            \resumeItem{Created an AI-powered assistant to analyze embedded system logs and suggest debugging actions, reducing diagnosis time by 35\%.}
+            \resumeItem{Implemented multi-language support for \textbf{C++} and \textbf{Rust} embedded codebases, enhancing adaptability across automotive projects.}
+        \resumeItemListEnd
+          \vspace{-12pt}
+      \resumeProjectHeading
+          {\textbf{Scalable Real-Time CAN Network Monitor} | C, Linux, CAN Protocol, TCP/IP}{}
+          \resumeItemListStart
+              \resumeItem{Designed a real-time CAN bus network monitor in \textbf{C} that detects anomalies and streams data securely over \textbf{TCP/IP}, improving fault detection.}
+              \resumeItem{Developed user interfaces for remote diagnostics, increasing user efficiency and reducing error resolution times by 25\%.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+
+\end{document}
