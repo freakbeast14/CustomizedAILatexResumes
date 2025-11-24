@@ -1,0 +1,230 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}      
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Shahil Mohammed}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (832) 620-5379 ~ | ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ | ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ | ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ | ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+Dedicated Full Stack Software Engineer with 3+ years of experience building scalable, real-time collaborative web applications. Expert in driving cross-functional product development, optimizing backend performance, and delivering seamless user experiences. Passionate about security, scalability, and leveraging modern cloud and AI tools to accelerate product innovation.
+ \vspace{-5pt}
+ 
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Languages:} & Java, Python, JavaScript, TypeScript, Ruby, Go, C++, C, PHP \\
+                \textbf{Frontend Frameworks:} & React.js, Angular.js, FigJam API, WebAssembly, HTML, CSS \\
+                \textbf{Backend Technologies:} & Spring Boot, Ruby on Rails, Node.js, Django, .NET, PostgreSQL, MySQL \\
+                \textbf{Cloud \& DevOps:} & AWS (Lambda, EC2, S3), Docker, Kubernetes, Jenkins, GitHub Actions, CI/CD \\
+                \textbf{Databases \& Data Storage:} & PostgreSQL, MySQL, MongoDB, Redis, DynamoDB \\
+                \textbf{AI \& Automation Tools:} & OpenAI API, LangChain, LLM Integration, Zapier, n8n, AI Agents \\
+            \end{tabular}
+        \end{table}
+ \vspace{-15pt}
+ 
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Engineered scalable \textbf{Java Spring Boot} microservices improving API throughput by 35\%, enhancing real-time system performance and user experience.}
+        \resumeItem{Integrated \textbf{Spring Security} for enhanced authentication and role-based access control, cutting unauthorized access attempts by 40\%.}
+        \resumeItem{Implemented an \textbf{AI-assisted} code review tool leveraging LLMs, reducing manual reviews by 45\% and accelerating pull request cycles by 25\%.}
+        \resumeItem{Automated CI/CD pipelines using \textbf{Jenkins} and \textbf{Docker}, enabling 40\% faster deployment times and robust release processes.}
+        \resumeItem{Collaborated cross-functionally to design and launch scalable backend features, improving system reliability and expanding user capabilities globally.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Designed and developed a SaaS platform with \textbf{Laravel} and \textbf{React}, supporting 50+ concurrent users with seamless collaboration features.}
+        \resumeItem{Automated Python data pipelines processing 10,000+ daily records, reducing manual efforts by 80\% and improving data accuracy.}
+        \resumeItem{Built a multi-tier subscription e-commerce platform integrated with \textbf{Stripe} and role-based access control.}
+        \resumeItem{Implemented AI-powered broker data automation using \textbf{LLMs}, reducing manual processing by 80\% for regulatory compliance.}
+        \resumeItem{Developed an AI-driven LinkedIn outreach tool automating content posting and lead generation, increasing qualified leads by 40\%.}
+        \resumeItem{Optimized \textbf{AWS CloudWatch} monitoring, cutting cloud resource waste by 10\% and improving platform reliability across environments.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Supported and secured \textbf{Linux}-based cybersecurity lab environments ensuring reliable, secure software execution for over 200 students.}
+        \resumeItem{Guided students in debugging and deploying software, improving assignment pass rates and comprehension by 20\%.}
+        \resumeItem{Automated grading scripts increasing accuracy by 25\% and reducing manual workload for professors in cybersecurity courses.}
+        \resumeItem{Conducted 15+ technical sessions explaining cryptography, networking protocols, and web security for student engagement.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{01/2023 – 08/2023}
+        {Software Engineer}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Developed high-performance backend using \textbf{C\#} and \textbf{.NET}, reducing data retrieval latency by 30\% for real estate applications.}
+        \resumeItem{Implemented fast API calls in \textbf{TypeScript}, achieving sub-100ms response time for seamless frontend-backend communication.}
+        \resumeItem{Redesigned UI with \textbf{Angular.js}, increasing user engagement and satisfaction metrics by 25\%.}
+        \resumeItem{Improved \textbf{PostgreSQL} stored procedures optimizing query efficiency, decreasing frontend load by 15\%.}
+        \resumeItem{Built a reliable \textbf{Kafka}-based event messaging system to handle 1000+ daily events, reducing message loss by 95\%.} 
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Developed \textbf{Java Spring Boot} microservices supporting 1000+ concurrent users with sub-200ms response time and high availability.}
+        \resumeItem{Designed an \textbf{Oracle} SQL database optimizing queries, reducing response times by 20\% in production workloads.}
+        \resumeItem{Built project tracking UI in \textbf{React.js}, improving feature usability and decreasing page load times by 30\%.}
+        \resumeItem{Configured CI/CD pipelines deploying microservices on \textbf{AWS EC2} using \textbf{Docker}, accelerating release cycles.}
+        \resumeItem{Implemented unit tests using \textbf{JUnit} with 90\% coverage, raising code quality and reliability.}
+        \resumeItem{Analyzed production logs with \textbf{Splunk}, improving debugging efficiency and reducing incident resolution time by 20\%.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{GPA: 4.0/4.0}
+  \resumeSubHeadingListEnd
+\vspace{-10pt}
+%%%%%%
+  
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{AI-Powered Code Review Assistant} | GitHub Actions, OpenAI API, LLMs}{}
+          \resumeItemListStart
+              \resumeItem{Implemented a CI/CD bot using \textbf{GitHub Actions} and \textbf{LLMs} to analyze pull requests, reducing manual review time by 40\%.}
+              \resumeItem{Automated documentation generation ensuring 100\% code coverage and consistency, increasing developer productivity on large codebases.}
+          \resumeItemListEnd
+          \vspace{-12pt}
+      \resumeProjectHeading
+          {\textbf{Real-Time Collaborative Design Platform} | React, Node.js, WebSockets, PostgreSQL}{}
+          \resumeItemListStart
+              \resumeItem{Built a real-time collaborative editing feature using \textbf{WebSockets} and \textbf{React}, supporting simultaneous multi-user interactions with minimal latency.}
+              \resumeItem{Optimized backend data sync architecture with \textbf{PostgreSQL}, achieving high reliability and scalability for thousands of concurrent sessions.}
+          \resumeItemListEnd
+          \vspace{-12pt}
+      \resumeProjectHeading
+          {\textbf{Automated AI Chatbot Agent} | n8n, OpenAI API, Gmail API, Python}{}
+          \resumeItemListStart
+              \resumeItem{Developed an AI-driven automated email agent that classifies customer intent and reduces average first-response time by 40\% through HITL workflows.}
+              \resumeItem{Integrated \textbf{Gmail API} and automation tools to manage 60\% of common support queries autonomously, enhancing customer satisfaction.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+
+\end{document}
