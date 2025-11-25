@@ -1,0 +1,230 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}      
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Shahil Mohammed}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (832) 620-5379 ~ | ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ | ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ | ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ | ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+Experienced full-stack developer specializing in modern \textbf{React} and \textbf{.NET} applications with expertise in cloud infrastructure and automation. Adept at building scalable APIs and services using containerization, GitOps, and Linux environments. Strong background in infrastructure provisioning with \textbf{Ansible} and \textbf{Terraform}, and focused on secure, event-driven system integrations using \textbf{RabbitMQ} and \textbf{Redis}. Passionate about continuous integration, monitoring, and deploying robust systems aligned with best practices in software delivery and security.
+ \vspace{-5pt}
+ 
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Languages \& Frameworks:} & C\#, .NET, React.js, JavaScript, TypeScript, SQL, Entity Framework, OData \\
+                \textbf{Databases:} & SQL Server, PostgreSQL, Redis, RabbitMQ, NoSQL \\
+                \textbf{DevOps \& CI/CD:} & Docker, GitLab CI/CD, GitHub Actions, Ansible, Terraform, Linux, SSH \\
+                \textbf{Cloud Platforms:} & AWS, Azure, EC2, S3, Managed Cloud Services \\
+                \textbf{Monitoring \& Logging:} & Prometheus, Grafana, AlertManager, Splunk \\
+                \textbf{Authentication \& Security:} & SSO, OAuth, JWT, Principle of Least Privilege, Encryption, Cryptography \\
+            \end{tabular}
+        \end{table}
+ \vspace{-15pt}
+ 
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Engineered \textbf{.NET} services and microservices with \textbf{Entity Framework} improving data efficiency and reducing query time by 30\%.}
+        \resumeItem{Deployed and maintained \textbf{Docker}-based applications using \textbf{GitLab CI/CD} pipelines facilitating 50\% faster delivery cycles.}
+        \resumeItem{Managed infrastructure provisioning using \textbf{Ansible} and \textbf{Terraform} to automate deployments across multiple Linux servers.}
+        \resumeItem{Designed and maintained \textbf{RabbitMQ} and \textbf{Redis} clusters, improving event-driven automation workflows by 40\%.}
+        \resumeItem{Collaborated on public cloud adoption strategies integrating \textbf{AWS} managed services to optimize operational costs and scalability.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Developed scalable full-stack solutions using \textbf{React} and \textbf{.NET} APIs, increasing platform responsiveness by 25\%.}
+        \resumeItem{Implemented \textbf{GitLab CI/CD} pipelines improving deployment success rate by 35\% and reducing downtime.}
+        \resumeItem{Automated infrastructure configuration and app deployment using \textbf{Ansible} and \textbf{Docker} containers across Linux servers.}
+        \resumeItem{Integrated \textbf{SSO} authentication and authorization mechanisms following best security practices, reducing access breaches by 30\%.}
+        \resumeItem{Enhanced database persistence using \textbf{Entity Framework} with \textbf{SQL Server} and \textbf{PostgreSQL} achieving 20\% faster query performance.}
+        \resumeItem{Monitored system health with \textbf{Prometheus} and \textbf{Grafana} dashboards, reducing alert response time by 40\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Maintained secure, Linux-based cybersecurity lab environments, ensuring 99\% uptime for student practical exercises.}
+        \resumeItem{Assisted in deploying and troubleshooting \textbf{Docker} containers hosting lab applications, reducing downtime by 25\%.}
+        \resumeItem{Led configuration management with \textbf{Ansible} to automate lab setup, saving 30 hours monthly on manual tasks.}
+        \resumeItem{Educated students on security best practices including \textbf{SSO} concepts and cryptographic fundamentals for data protection.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{01/2023 – 08/2023}
+        {Software Engineer}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Developed and optimized \textbf{.NET} backend services, improving API latency by 30\% and enhancing system reliability.}
+        \resumeItem{Implemented event-driven architecture using \textbf{RabbitMQ} and \textbf{Redis} to reduce message loss by 90\% across distributed services.}
+        \resumeItem{Configured and maintained PostgreSQL databases with \textbf{Entity Framework}, increasing query efficiency by 15\%.}
+        \resumeItem{Integrated \textbf{SSO} authentication modules adhering to principle of least privilege, enhancing security compliance.}
+        \resumeItem{Automated deployment pipelines using \textbf{Docker} and \textbf{GitLab CI}, reducing manual intervention by 40\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Built and maintained full-stack \textbf{.NET} applications integrating \textbf{OData} and \textbf{Entity Framework} for database interactions.}
+        \resumeItem{Developed CI/CD processes using \textbf{GitLab} and \textbf{Docker} automations, improving release velocity by 30\%.}
+        \resumeItem{Provisioned infrastructure via \textbf{Terraform} and configured servers using \textbf{Ansible}, achieving 50\% reduction in setup time.}
+        \resumeItem{Designed and optimized \textbf{PostgreSQL} and \textbf{SQL Server} databases, accelerating query performance by 20\%.}
+        \resumeItem{Implemented scalable message queues with \textbf{RabbitMQ} and caching with \textbf{Redis}, supporting real-time workflows.}
+        \resumeItem{Monitored systems using \textbf{Prometheus} and \textbf{Grafana}, detecting issues early and reducing outages by 35\%.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{GPA: 4.0/4.0}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+          \resumeProjectHeading
+              {\textbf{AI-Powered Continuous Integration Advisor} | GitLab CI, LLMs, Docker, .NET}{}
+        \resumeItemListStart
+            \resumeItem{Implemented an AI-driven advisor integrated with \textbf{GitLab CI/CD} to optimize pipeline efficiency, reducing build failures by 25\%.}
+            \resumeItem{Developed automation scripts in \textbf{.NET} and containerized with \textbf{Docker} to enable seamless multi-service coordination.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+    
+    \resumeProjectHeading
+        {\textbf{Cloud-Native Event Bus System} | RabbitMQ, Redis, Kubernetes, Azure}{}
+        \resumeItemListStart
+            \resumeItem{Designed and deployed a scalable event bus with \textbf{RabbitMQ} and \textbf{Redis} for asynchronous microservice communication, reducing latency by 40\%.}
+            \resumeItem{Leveraged \textbf{Azure Kubernetes Service} for container orchestration, improving fault tolerance and load balancing across clusters.}
+        \resumeItemListEnd
+          \vspace{-12pt}
+      \resumeProjectHeading
+          {\textbf{Infrastructure Automation Framework} | Terraform, Ansible, AWS, Linux}{}
+          \resumeItemListStart
+              \resumeItem{Architected an infrastructure-as-code framework using \textbf{Terraform} and \textbf{Ansible} to automate cloud provisioning on \textbf{AWS}, decreasing setup time by 50\%.}
+              \resumeItem{Enhanced system security with automated configuration management enforcing strict access controls and \textbf{SSO} integrations.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+
+\end{document}
