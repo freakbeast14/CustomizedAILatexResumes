@@ -1,0 +1,230 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}      
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Shahil Mohammed}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (832) 620-5379 ~ | ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ | ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ | ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ | ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+Passionate software engineer experienced in software-defined networking and cloud platforms, developing scalable, secure, and automated network-centric solutions. Skilled in advancing networking stacks, monitoring, and troubleshooting to enhance Azure integrations and large-scale datacenter operations efficiently.
+ \vspace{-5pt}
+ 
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & C, C++, C\#, Java, JavaScript, Python, TypeScript, Shell Scripting \\
+                \textbf{Networking \& Protocols:} & TCP/IP, Software-Defined Networking (SDN), Network Switches, Data Center Networking, Monitoring and Logging Platforms \\
+                \textbf{Cloud \& DevOps:} & Azure, AWS, Docker, Jenkins, Kubernetes, CI/CD, Terraform \\
+                \textbf{Databases \& Storage:} & SQL, KQL, MySQL, PostgreSQL, Redis \\
+                \textbf{Frameworks \& Tools:} & Spring Boot, React.js, Node.js, .NET, Splunk, Git, GitHub, REST API \\
+                \textbf{AI \& Automation:} & LangChain, RAG, OpenAI API, AI Agents, Prompt Engineering, Automation Pipelines \\
+            \end{tabular}
+        \end{table}
+ \vspace{-15pt}
+ 
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Engineered \textbf{C\#} microservices on Azure to optimize Software-Defined Networking features, increasing throughput by 30\% for mission-critical workloads.}
+        \resumeItem{Designed control plane components for SDN platforms improving connectivity consistency across heterogeneous cloud environments by 25\%.}
+        \resumeItem{Built diagnostic tools using \textbf{Python} to monitor network datapath behavior, reducing fault resolution time by 40\%.}
+        \resumeItem{Collaborated with cross-functional teams to integrate telemetry and logging, enhancing monitoring and reducing operational cost by 15\%.}
+        \resumeItem{Automated testing suites using \textbf{JavaScript} and \textbf{Jenkins} pipelines, improving release cycle efficiency and deployment reliability by 35\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Developed SDN features using \textbf{Java} integrated with cloud platforms, enhancing network scalability by 20\% for high-demand workloads.}
+        \resumeItem{Automated data processing pipelines with \textbf{Python} to support network traffic analysis, reducing manual processing by 75\%.}
+        \resumeItem{Implemented network monitoring dashboards with \textbf{React} increasing real-time insights and alerts by 30\%.}
+        \resumeItem{Created AI agents that automated network configuration validation, reducing misconfiguration incidents by 40\%.}
+        \resumeItem{Enhanced cloud resource monitoring using \textbf{AWS CloudWatch}, decreasing wasted resource usage by 12\%.}
+        \resumeItem{Refined authentication modules with \textbf{Laravel}, boosting platform security and reducing unauthorized access by 35\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Managed secure \textbf{Linux}-based network lab infrastructure, ensuring compliance with cybersecurity best practices and uptime > 99\%.}
+        \resumeItem{Assisted students in coding, debugging, and testing \textbf{networking protocols}, improving assignment success rate by 25\%.}
+        \resumeItem{Developed automated grading scripts in \textbf{Python}, raising evaluation accuracy by 20\% while lowering manual workload.}
+        \resumeItem{Led interactive sessions on TCP/IP and network security concepts, increasing student engagement and lab attendance by 15\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{01/2023 – 08/2023}
+        {Software Engineer}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Developed high-performance backend services in \textbf{C\#} and \textbf{.NET}, reducing data access latency by 30\% across network workflows.}
+        \resumeItem{Implemented efficient API integrations in \textbf{TypeScript}, achieving average response times under 100ms for network-centric applications.}
+        \resumeItem{Upgraded Angular.js frontend improving UI for network monitoring, boosting user satisfaction by 30\%.}
+        \resumeItem{Optimized database queries in \textbf{PostgreSQL}, enhancing network data processing and decreasing query time by 22\%.}
+        \resumeItem{Designed \textbf{Kafka}-based event messaging for network logs, decreasing message loss rates by 95\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Developed \textbf{Java Spring Boot} microservices supporting network and cloud integrations, reducing response times by 25\%.}
+        \resumeItem{Designed and optimized \textbf{Oracle SQL} database queries to improve network data retrieval efficiency by 18\%.}
+        \resumeItem{Established CI/CD pipelines with \textbf{Docker} and \textbf{AWS EC2} for continuous deployment of network service components.}
+        \resumeItem{Built web interfaces using \textbf{React.js} to simplify network configuration, improving user experience by 30\%.}
+        \resumeItem{Wrote unit tests using \textbf{JUnit}, achieving 90\% coverage for critical network modules, enhancing software reliability.}
+        \resumeItem{Analyzed operational logs through \textbf{Splunk}, reducing network incident resolution time by 20\%.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{GPA: 4.0/4.0}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+          \resumeProjectHeading
+              {\textbf{AI-driven Network Anomaly Detection} | Python, LangChain, Azure, OpenAI API}{}
+        \resumeItemListStart
+            \resumeItem{Implemented an AI system leveraging \textbf{LangChain} and \textbf{OpenAI API} to detect network anomalies, reducing incident response time by 30\%.}
+            \resumeItem{Integrated Azure monitoring data with AI models for real-time predictive analytics on network performance and security threats.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+    
+    \resumeProjectHeading
+        {\textbf{Scalable SDN Control Plane Module} | C\#, Azure, Docker, Jenkins}{}
+        \resumeItemListStart
+            \resumeItem{Developed control plane components in \textbf{C\#} for SDN platforms supporting Azure workloads, enhancing network connectivity scalability by 25\%.}
+            \resumeItem{Automated testing and deployment pipelines using \textbf{Jenkins} and \textbf{Docker}, improving code delivery speed by 35\%.}
+        \resumeItemListEnd
+          \vspace{-12pt}
+      \resumeProjectHeading
+          {\textbf{Network Monitoring and Diagnostic Dashboard} | React.js, Python, Azure, Splunk}{}
+          \resumeItemListStart
+              \resumeItem{Built interactive dashboards to visualize network logs and metrics using \textbf{React.js} and \textbf{Splunk}, aiding rapid fault identification and resolution.}
+              \resumeItem{Implemented backend data aggregation in \textbf{Python} to support real-time network status and telemetry for cloud services.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+
+\end{document}
