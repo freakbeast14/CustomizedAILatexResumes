@@ -1,0 +1,227 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}      
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Shahil Mohammed}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (832) 620-5379 ~ | ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ | ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ | ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ | ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+Dedicated IT professional skilled in technical support for software and hardware, with experience providing first-level assistance and troubleshooting in global environments. Adept in Pro WFM time/attendance software, wireless device administration, and user training. Excels in communication, problem isolation, and procedural documentation, fostering efficiency and customer satisfaction in dynamic operational contexts.
+ \vspace{-5pt}
+ 
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Operating Systems:} & Windows (all current/prior versions), Linux/Unix \\
+                \textbf{IT Support \& Tools:} & Pro WFM, Wireless Device Configuration, Remote Desktop Support, Ticketing Systems (Jira) \\
+                \textbf{Software Suites:} & Microsoft Office Suite (Word, Excel, Outlook, PowerPoint), Email Clients \\
+                \textbf{Hardware:} & Desktop PCs, Laptops, Tablets, Mobile Devices, Physical Time Clocks \\
+                \textbf{Programming \& Scripting:} & Shell Scripting, Basic SQL, Python (for automation/support tasks) \\
+                \textbf{Communication \& Documentation:} & SOP Creation, Knowledge Base Articles, User Training \\
+            \end{tabular}
+        \end{table}
+ \vspace{-15pt}
+ 
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Provided front-line IT support, resolving over 90\% of Pro WFM application issues within the first contact, improving user productivity.}
+        \resumeItem{Configured and maintained wireless devices and physical time clocks for over 100 remote and facility users, ensuring uninterrupted attendance tracking.}
+        \resumeItem{Authored detailed troubleshooting guides and knowledge base articles increasing team resolution efficiency by 30\%.}
+        \resumeItem{Monitored IPA ticketing system, prioritizing and responding timely to 25+ user tickets daily for USA and global users.}
+        \resumeItem{Conducted training sessions on Pro WFM web and mobile versions, improving system adoption and reducing repeat support requests by 20\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Delivered remote and in-person IT support, diagnosing hardware/software issues with 95\% user satisfaction across multiple global facilities.}
+        \resumeItem{Managed user account setup and permissions in Pro WFM application, streamlining onboarding and access control processes.}
+        \resumeItem{Configured wireless device settings and managed mobile deployments, reducing device downtime by 25\%.}
+        \resumeItem{Collaborated on updating software configurations and attendance schedules, maintaining compliance with operational policies.}
+        \resumeItem{Created user-friendly documentation and online tutorials to facilitate self-service support and decrease help desk volume by 15\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Supported multi-user lab environments by troubleshooting Windows and Linux OS issues to maintain 99\% lab uptime for cybersecurity coursework.}
+        \resumeItem{Assisted students with software deployment and access to cloud resources, enhancing learning outcomes by 20\%.}
+        \resumeItem{Automated repetitive IT support tasks using \textbf{Python} scripts, reducing manual workload by 35\%.}
+        \resumeItem{Documented support procedures and maintained knowledge base to optimize lab technical support continuity.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{01/2023 – 08/2023}
+        {Software Engineer}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Provided hardware and software troubleshooting for remote and onsite employees, resolving 85\% of issues at first contact.}
+        \resumeItem{Enhanced ticketing response and documentation standards, improving team communication and issue tracking accuracy by 25\%.}
+        \resumeItem{Configured mobile and wireless devices for secure access to enterprise applications, decreasing setup time by 20\%.}
+        \resumeItem{Supported software deployment and updates including OS and productivity suites, increasing operational efficiency by 15\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Delivered technical support for software and hardware, achieving 90\% issue resolution rate through effective troubleshooting and communication.}
+        \resumeItem{Assisted with user account management and system configuration for internal applications, improving access control reliability by 30\%.}
+        \resumeItem{Managed wireless devices and physical clock configurations, supporting attendance tracking for over 200 employees globally.}
+        \resumeItem{Created and maintained comprehensive user manuals and SOP documentation, enhancing knowledge sharing and training effectiveness.}
+        \resumeItem{Collaborated with cross-functional teams to escalate and resolve complex technical issues, reducing average resolution time by 25\%.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{GPA: 4.0/4.0}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+          \resumeProjectHeading
+              {\textbf{Pro WFM Application Support Bot} $|$ Python, Shell Scripting, Ticketing System APIs}{}
+        \resumeItemListStart
+            \resumeItem{Developed an automated support bot to classify and prioritize Pro WFM issues, reducing average ticket handling time by 30\%.}
+            \resumeItem{Implemented troubleshooting scripts to assist frontline agents, boosting first-contact resolution rates by 25\%.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+    
+    \resumeProjectHeading
+        {\textbf{AI-driven Knowledge Base Assistant} $|$ LangChain, OpenAI API, Web Integration}{}
+        \resumeItemListStart
+            \resumeItem{Engineered an AI assistant integrated into support portals to answer Pro WFM and IT queries, increasing self-service support by 40\%.}
+            \resumeItem{Configured continuous learning workflows to update knowledge base articles based on user interactions, improving accuracy over time.}
+        \resumeItemListEnd
+          \vspace{-12pt}
+      \resumeProjectHeading
+          {\textbf{Wireless Device Configuration Tool} $|$ Python, Mobile Device Management (MDM), REST APIs}{}
+          \resumeItemListStart
+              \resumeItem{Built a configuration tool to remotely administer wireless devices and physical clocks, reducing manual configuration time by 50\%.}
+              \resumeItem{Integrated device status monitoring and alerting features to ensure 99\% operational uptime in multi-location environments.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+
+\end{document}
