@@ -1,0 +1,227 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}      
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Shahil Mohammed}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (832) 620-5379 ~ | ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ | ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ | ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ | ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+Innovative software engineer specializing in designing and implementing scalable web solutions and AI-powered tools. Proven expertise in full-stack development with \textbf{Angular}, \textbf{React}, \textbf{Node.js}, and cloud automation. Committed to enhancing clinical workflows with AI voice assistants and migrating legacy systems to modern frameworks. Strong foundation in computer science principles, ready to drive impactful dental AI platform innovations.
+ \vspace{-5pt}
+ 
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & JavaScript, TypeScript, Python, Java, Go, C++ \\
+                \textbf{Web Development \& Frameworks:} & Angular, React, Node.js, NestJS, Electron, HTML, CSS \\
+                \textbf{Cloud \& DevOps:} & AWS (EC2, Lambda, S3), Docker, Kubernetes, CI/CD Pipelines, Cloud Infrastructure Automation \\
+                \textbf{Databases \& Messaging:} & PostgreSQL, MongoDB, Redis, WebSocket, Kafka \\
+                \textbf{AI \& Automation:} & Large Language Models (LLMs), OpenAI API, AI Voice Assistants, RAG, LangChain, Prompt Engineering \\
+                \textbf{Tools \& Others:} & Git, Linux/Unix, REST APIs, Jenkins, Splunk, Jira \\
+            \end{tabular}
+        \end{table}
+ \vspace{-15pt}
+ 
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Designed and deployed scalable \textbf{Node.js} microservices to improve platform throughput by 30\%, enhancing user experience and system reliability.}
+        \resumeItem{Engineered AI-driven voice assistant features integrating \textbf{LLMs}, lowering clinical documentation time by 25\%.}
+        \resumeItem{Automated cloud infrastructure provisioning using \textbf{AWS} and \textbf{Docker}, reducing deployment time by 40\%.}
+        \resumeItem{Migrated legacy \textbf{Electron/Angular} desktop apps to \textbf{Electron/React}, boosting frontend performance by 20\%.}
+        \resumeItem{Enhanced real-time data flow using \textbf{WebSocket} infrastructure, improving system responsiveness by 35\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Developed scalable UI features with \textbf{Angular} and \textbf{React}, increasing customer engagement by 30\%.}
+        \resumeItem{Architected \textbf{Node.js}-based backend services with \textbf{NestJS}, supporting 1000+ concurrent users and cutting latency by 25\%.}
+        \resumeItem{Automated cloud deployment pipelines on \textbf{AWS}, accelerating release cycles by 35\%.}
+        \resumeItem{Integrated AI voice assistants into web products to streamline clinical workflows, reducing user task time by 20\%.}
+        \resumeItem{Refined legacy WebSocket infrastructure to improve real-time communication stability, decreasing disconnects by 40\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Maintained secure \textbf{Linux} environments for lab users, ensuring 100\% system uptime and compliance with security protocols.}
+        \resumeItem{Supported student projects in debugging and deploying \textbf{web applications} built on \textbf{React} and \textbf{Node.js} stacks.}
+        \resumeItem{Automated grading scripts for code submissions, boosting grading efficiency by 30\%.}
+        \resumeItem{Hosted workshops to explain advanced computing concepts, improving overall course comprehension by 15\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{01/2023 – 08/2023}
+        {Software Engineer}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Developed and maintained \textbf{Angular.js} frontends, enhancing user engagement metrics by 25\%.}
+        \resumeItem{Built highly responsive APIs using \textbf{TypeScript} and \textbf{Node.js}, reducing average response time to under 100ms.}
+        \resumeItem{Implemented database optimizations in \textbf{PostgreSQL} to speed up queries by 20\%.}
+        \resumeItem{Integrated \textbf{Kafka}-based messaging, ensuring reliable event processing with 95\% reduction in message loss.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Led migration of legacy systems to \textbf{React} and \textbf{Node.js}, improving application load times by 30\%.}
+        \resumeItem{Built scalable \textbf{Java Spring Boot} microservices for SaaS products, decreasing response time below 200ms for 1000 users.}
+        \resumeItem{Developed and deployed cloud infrastructure automation scripts on \textbf{AWS}, reducing manual interventions by 40\%.}
+        \resumeItem{Integrated AI models for documentation automation, cutting manual editing efforts by 35\%.}
+        \resumeItem{Optimized SQL queries in \textbf{Oracle}, improving database performance and reducing latency by 18\%.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{GPA: 4.0/4.0}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+          \resumeProjectHeading
+              {\textbf{AI-powered Clinical Voice Assistant} | OpenAI API, LLM Integration, React, Node.js}{}
+        \resumeItemListStart
+            \resumeItem{Developed a voice assistant tool leveraging \textbf{LLMs} to automate clinical documentation, reducing data entry time by 30\%.}
+            \resumeItem{Integrated assistant into web workflows with \textbf{React} frontends and \textbf{Node.js} backend, improving user efficiency by 25\%.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+    
+    \resumeProjectHeading
+        {\textbf{Scalable Dental AI Platform Architecture} | NestJS, AWS, Docker, WebSocket}{}
+        \resumeItemListStart
+            \resumeItem{Architected backend services with \textbf{NestJS} and \textbf{WebSocket} communications, enabling real-time updates with 99.9\% uptime.}
+            \resumeItem{Automated deployment using \textbf{Docker} on \textbf{AWS}, reducing deployment duration by 35\%.}
+        \resumeItemListEnd
+          \vspace{-12pt}
+      \resumeProjectHeading
+          {\textbf{Legacy Application Migration to Electron/React} | Electron, React, TypeScript}{}
+          \resumeItemListStart
+              \resumeItem{Led migration of a legacy \textbf{Electron/Angular} desktop app to \textbf{Electron/React}, increasing performance and maintainability by 40\%.}
+              \resumeItem{Refactored WebSocket-based infrastructure to enhance real-time data flow and reduce latency by 20\%.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+
+\end{document}
