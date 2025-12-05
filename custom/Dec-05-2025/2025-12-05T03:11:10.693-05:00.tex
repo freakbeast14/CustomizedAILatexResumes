@@ -1,0 +1,231 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}      
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Shahil Mohammed}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (832) 620-5379 ~ | ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ | ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ | ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ | ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+Innovative software engineer with 3+ years focused on developing autonomous AI agents and systems leveraging LLMs, strong Python and C++ expertise, and deep integration with GPU platforms. Proven track record designing robust, scalable AI-driven workflows with safety and observability in mind. Skilled in collaborating cross-functionally to deliver advanced intelligent automation solutions in fast-paced environments.
+ \vspace{-5pt}
+ 
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & Python, C++, Go, Rust, Java, TypeScript, Shell Scripting \\
+                \textbf{AI Frameworks \& Tools:} & LangChain, CrewAI, OpenAI API, LLM Integration, AI Agents, Prompt Engineering \\
+                \textbf{Systems \& GPU Computing:} & CUDA, PyTorch, Triton, Compiler Toolchains, Linux/Unix \\
+                \textbf{Web \& API Technologies:} & REST API, gRPC, Flask, Node.js \\
+                \textbf{Cloud \& DevOps:} & AWS (EC2, S3, Lambda), Docker, Kubernetes, Jenkins \\
+                \textbf{Databases \& Data Storage:} & PostgreSQL, MySQL, MongoDB, Redis \\
+            \end{tabular}
+        \end{table}
+ \vspace{-15pt}
+ 
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented autonomous agents using \textbf{Python} and \textbf{async runtimes} to automate complex workflows, improving task efficiency by 40\%.}
+        \resumeItem{Integrated agentic AI systems with \textbf{NVIDIA CUDA} and \textbf{GPU runtime engines}, boosting computational performance by 30\% for critical model tasks.}
+        \resumeItem{Developed robust API orchestration layers using \textbf{Go} for scalable agent communication, reducing latency by 25\%.}
+        \resumeItem{Engineered observability features for autonomous agents leveraging logging and monitoring tools, increasing fault detection and recovery speed by 35\%.}
+        \resumeItem{Collaborated on code generation and performance optimization tools using LLMs, enhancing developer productivity by 20\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Built AI-driven agents with \textbf{LangChain} and \textbf{LLMs} to automate FINRA broker data processing, reducing manual input by 80\%.}
+        \resumeItem{Developed AI-powered outreach automation using \textbf{Python} and custom agent frameworks, increasing lead quality by 40\%.}
+        \resumeItem{Implemented asynchronous APIs in \textbf{Python} for real-time data synchronization, improving data freshness by 50\%.}
+        \resumeItem{Optimized cloud monitoring with \textbf{AWS CloudWatch}, cutting operational costs by 10\% through agent-enabled resource management.}
+        \resumeItem{Enhanced platform robustness by designing safety checks and fallback mechanisms in autonomous workflows, reducing service interruptions by 30\%.}
+        \resumeItem{Collaborated on integrating LLM-based reactive agents for dynamic customer support, improving first-contact resolution by 25\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Maintained secure Linux environments supporting autonomous agent experiments and AI software testing, improving uptime by 15\%.}
+        \resumeItem{Automated grading scripts in \textbf{Python} which validated student code, increasing grading accuracy by 25\%.}
+        \resumeItem{Supported student projects involving AI workflows and agent training, facilitating 20\% higher project completion rates.}
+        \resumeItem{Conducted workshops on AI safety and observability principles for autonomous systems to enhance student understanding.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{01/2023 – 08/2023}
+        {Software Engineer}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Implemented \textbf{C++} backend optimizations to reduce data processing latency by 30\%, supporting agent-based feedback loops.}
+        \resumeItem{Developed asynchronous \textbf{TypeScript} APIs to enable real-time data exchange in autonomous workflows, lowering response time by 20\%.}
+        \resumeItem{Enhanced user experience by integrating reactive agent components in the frontend, increasing engagement metrics by 25\%.}
+        \resumeItem{Optimized \textbf{PostgreSQL} queries for agent logs, accelerating diagnostics and reducing downtime by 15\%.}
+        \resumeItem{Built reliable event-driven messaging using \textbf{Kafka}, supporting 1000+ daily autonomous events with 95\% delivery accuracy.} 
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Developed AI-assisted microservices in \textbf{Java} with \textbf{Spring Boot} to automate SDLC tasks, improving deployment efficiency by 35\%.}
+        \resumeItem{Designed backend systems integrating LLM APIs to support interactive autonomous coding assistants, raising developer productivity by 20\%.}
+        \resumeItem{Implemented \textbf{CI/CD} pipelines using \textbf{Docker} for agent platform deployment on AWS, reducing setup time by 40\%.}
+        \resumeItem{Optimized \textbf{Oracle SQL} queries for large agent data sets, cutting response time by 20\%.}
+        \resumeItem{Built intuitive user interfaces in \textbf{React.js} for agent monitoring and control dashboards, improving usability by 30\%.}
+        \resumeItem{Monitored system logs with \textbf{Splunk} to enhance fault detection accuracy by 20\% in autonomous agent operations.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{GPA: 4.0/4.0}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+          \resumeProjectHeading
+              {\textbf{Autonomous Code Generation Agent} | Python, LLMs, LangChain, OpenAI API}{}
+        \resumeItemListStart
+            \resumeItem{Engineered an autonomous agent integrating LLMs and APIs to generate and optimize Python code, reducing developer iteration time by 35\%.}
+            \resumeItem{Implemented safety and observability features, increasing reliability and preventing faulty code execution in 100+ test cycles.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+    
+    \resumeProjectHeading
+        {\textbf{AI-Powered Task Planner with GPU Acceleration} | CUDA, PyTorch, LLMs, Python}{}
+        \resumeItemListStart
+            \resumeItem{Built an AI task planner leveraging PyTorch and CUDA for efficient GPU execution, achieving 2x speedup over CPU-only baselines.}
+            \resumeItem{Designed an interactive agent framework to autonomously schedule and run multi-step workflows across compute environments.}
+        \resumeItemListEnd
+          \vspace{-12pt}
+      
+      \resumeProjectHeading
+          {\textbf{Reactive Customer Support Agent} | LangChain, RAG, Gmail API, Python}{}
+          \resumeItemListStart
+              \resumeItem{Developed a reactive AI support agent using LangChain and RAG that classifies inbox emails and autonomously responds to 60\% of queries.}
+              \resumeItem{Reduced average response time by 40\% and improved customer satisfaction through automated, context-sensitive workflows.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+
+\end{document}
