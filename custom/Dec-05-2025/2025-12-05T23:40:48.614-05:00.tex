@@ -1,0 +1,227 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}      
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Shahil Mohammed}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (832) 620-5379 ~ | ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ | ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ | ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ | ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+Dynamic Full Stack Developer with 3+ years of experience creating scalable onboarding solutions in financial services. Expert in leveraging \textbf{Java/J2EE}, \textbf{Azure/MKS}, and modern front-end frameworks like \textbf{ReactJS} and \textbf{Angular} to enhance operational efficiency. Skilled in integrating AI tools, including \textbf{Copilot}, to automate workflows and improve client satisfaction. Proven record of delivering secure, compliant onboarding systems with cross-team collaboration and agile methodologies.
+ \vspace{-5pt}
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Languages \& Frameworks:} & Java, J2EE, Python, JavaScript, Angular, ReactJS, HTML/CSS, SQL \\
+                \textbf{Cloud \& DevOps:} & Azure, MKS, Docker, Kubernetes, Git, Jenkins, Agile Methodologies \\
+                \textbf{Backend \& APIs:} & Microservices, Node.js, REST APIs, Spring Boot \\
+                \textbf{Databases:} & MySQL, PostgreSQL, MongoDB, Oracle \\
+                \textbf{AI \& Automation:} & Copilot, GPT-based AI tools, LangChain, RAG, LLM Integration \\
+                \textbf{Tools \& Platforms:} & GitHub, Splunk, JUnit, AWS, Lambda \\
+            \end{tabular}
+        \end{table}
+ \vspace{-15pt}
+
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Implemented scalable \textbf{Java Spring Boot} microservices to streamline client onboarding, increasing throughput by 30\% and reducing latency across APIs.}
+        \resumeItem{Integrated \textbf{Copilot}-powered AI assistants to automate compliance checks, reducing manual review time by 50\% and ensuring regulatory adherence.}
+        \resumeItem{Developed secure onboarding workflows with \textbf{Spring Security}, improving data integrity and decreasing unauthorized access attempts by 35\%.}
+        \resumeItem{Built and maintained cloud infrastructure on \textbf{Azure/MKS}, automating deployment pipelines that cut release cycles by 40\%.}
+        \resumeItem{Collaborated across teams using \textbf{Agile} methodologies, accelerating delivery of onboarding solutions and increasing client satisfaction rates by 20\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Engineered responsive onboarding front-ends with \textbf{React} and \textbf{Angular}, boosting user engagement by 25\% through enhanced UI performance.}
+        \resumeItem{Automated data workflows using \textbf{Python}, accelerating account setup for 15,000+ users and reducing processing time by 60\%.}
+        \resumeItem{Designed microservices integrated with \textbf{Node.js} and \textbf{REST APIs} to support financial client onboarding, increasing system scalability by 40\%.}
+        \resumeItem{Leveraged \textbf{AI agents} to customize client journeys, improving onboarding completion rates by 35\%.}
+        \resumeItem{Optimized cloud resource usage on \textbf{AWS} and \textbf{Azure}, cutting operational costs by 15\% while maintaining performance.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Secured \textbf{Linux}-based environments for cybersecurity research, reducing configuration errors by 30\% and ensuring lab availability.}
+        \resumeItem{Automated software deployment and testing scripts, cutting manual intervention by 40\% and increasing validation accuracy.}
+        \resumeItem{Guided students on debugging and security best practices, improving their code success rate by 25\%.}
+        \resumeItem{Conducted workshops on network protocols and cryptography, increasing peer understanding and engagement by 20\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{01/2023 – 08/2023}
+        {Software Engineer}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Developed high-throughput backend services using \textbf{C\#} and \textbf{.NET}, reducing data retrieval latency by 30\%.}
+        \resumeItem{Implemented scalable event-driven systems with \textbf{Kafka}, improving message reliability by 95\% in distributed architecture.}
+        \resumeItem{Enhanced frontend responsiveness using \textbf{Angular.js}, increasing user satisfaction scores by 25\%.}
+        \resumeItem{Optimized \textbf{PostgreSQL} queries and stored procedures, reducing database load by 20\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Developed \textbf{Java Spring Boot} microservices with \textbf{MySQL}, supporting 1000+ concurrent users and improving response times below 200ms.}
+        \resumeItem{Built secure, cloud-native onboarding tools deployed on \textbf{AWS EC2} using \textbf{Docker} containers, reducing deployment errors by 30\%.}
+        \resumeItem{Created responsive front-end interfaces using \textbf{React.js}, enhancing usability and increasing page load speeds by 30\%.}
+        \resumeItem{Established CI/CD pipelines to automate builds and testing, cutting integration times by 25\%.}
+        \resumeItem{Analyzed logs with \textbf{Splunk} to quickly identify and resolve production issues, decreasing resolution times by 20\%.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{GPA: 4.0/4.0}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+          \resumeProjectHeading
+              {\textbf{AI-Powered Onboarding Automation} | Copilot, Java, Azure, Microservices}{}
+        \resumeItemListStart
+            \resumeItem{Developed an AI-driven onboarding system using \textbf{Copilot} and \textbf{Azure}, streamlining account setup and reducing onboarding time by 35\%.}
+            \resumeItem{Implemented event-driven \textbf{microservices} architecture for secure financial client processing, achieving over 99.9\% uptime in production.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+    
+    \resumeProjectHeading
+        {\textbf{Cloud-Native Financial Dashboard} | ReactJS, Node.js, Azure, REST APIs}{}
+        \resumeItemListStart
+            \resumeItem{Engineered a responsive front-end dashboard using \textbf{ReactJS} that visualizes real-time client onboarding metrics, improving operational insights by 40\%.}
+            \resumeItem{Developed backend RESTful APIs with \textbf{Node.js} on \textbf{Azure}, achieving 30\% faster data retrieval for client accounts.}
+        \resumeItemListEnd
+          \vspace{-12pt}
+      \resumeProjectHeading
+          {\textbf{Compliance Automation Agent} | AI, Python, LangChain, Financial APIs}{}
+          \resumeItemListStart
+              \resumeItem{Built an AI agent using \textbf{LangChain} and \textbf{Python} to automate compliance verification in financial onboarding, reducing manual review by 50\%.}
+              \resumeItem{Integrated real-time financial data APIs to ensure continuous regulatory compliance and accurate client information flow.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+
+\end{document}
