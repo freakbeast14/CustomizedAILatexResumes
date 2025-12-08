@@ -1,0 +1,230 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}      
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Shahil Mohammed}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (832) 620-5379 ~ | ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ | ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ | ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ | ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+Dynamic software developer specializing in Angular and Form.io for creating responsive, scalable web applications. Experienced in building complex forms, managing Form.io roles, and integrating APIs. Adept at collaborating with cross-functional teams, ensuring robust application performance and maintainability while enforcing accessibility and best practices.
+ \vspace{-5pt}
+ 
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Frontend Technologies:} & Angular (v10+), TypeScript, HTML5, CSS3, RxJS, Form.io, JSON Schema \\
+                \textbf{Backend \& APIs:} & RESTful APIs, Node.js, Java Spring Boot, Express.js \\
+                \textbf{Version Control \& DevOps:} & Git, GitHub, Jenkins, Docker, CI/CD pipelines \\
+                \textbf{Databases:} & MySQL, PostgreSQL, MongoDB, NoSQL \\
+                \textbf{Cloud Platforms:} & AWS (EC2, Lambda, S3), Azure \\
+                \textbf{Other Tools \& Techniques:} & Responsive Design, Accessibility Best Practices, Agile \\
+            \end{tabular}
+        \end{table}
+ \vspace{-15pt}
+ 
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Developed and configured complex forms using \textbf{Form.io} JSON schema, enhancing data collection efficiency by 30\%.}
+        \resumeItem{Implemented \textbf{Angular v10+} components integrating with backend services, improving UI responsiveness by 25\%.}
+        \resumeItem{Configured Form.io form actions and access roles that reduced unauthorized form submissions by 35\%.}
+        \resumeItem{Collaborated with backend and QA teams to troubleshoot and resolve form validation issues, decreasing bug reports by 40\%.}
+        \resumeItem{Wrote maintainable, documented code following best practices, facilitating faster onboarding and reducing technical debt by 20\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Designed and deployed dynamic Angular web apps integrating \textbf{RESTful APIs}, reducing data fetch latency by 30\%.}
+        \resumeItem{Built complex Form.io workflows and stage settings for automated client onboarding, increasing process speed by 40\%.}
+        \resumeItem{Configured Form.io access roles to enforce strict data security, resulting in a 50\% reduction in access violations.}
+        \resumeItem{Collaborated on cross-functional teams to ensure cross-browser compatibility and mobile responsiveness of applications.}
+        \resumeItem{Troubleshot frontend performance issues using \textbf{RxJS} observables, improving load times by 20\%.}
+        \resumeItem{Implemented asynchronous programming patterns in Angular to enhance user experience and responsiveness.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Supported and secured \textbf{Linux} infrastructure ensuring reliable lab environments with zero critical downtime.}
+        \resumeItem{Assisted students in debugging and deploying \textbf{TypeScript} and Angular apps, improving success rates by 18\%.}
+        \resumeItem{Automated validation of student lab assignments, reducing manual workload by 30\%.}
+        \resumeItem{Conducted sessions emphasizing security best practices within web app development using modern frameworks.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{01/2023 – 08/2023}
+        {Software Engineer}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Enhanced frontend with \textbf{Angular.js}, increasing user engagement by 25\% through optimized data binding and rendering.}
+        \resumeItem{Executed asynchronous API calls in \textbf{TypeScript} promoting efficient data exchange with sub-150ms response times.}
+        \resumeItem{Developed and optimized \textbf{PostgreSQL} stored procedures improving query speed by 20\%.}
+        \resumeItem{Implemented Kafka-based messaging system to ensure reliable event processing, reducing message loss by 95\%.}
+        \resumeItem{Collaborated with backend teams to integrate UI workflows with APIs, increasing form submission success by 35\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented \textbf{Form.io} forms and resource management features to streamline user inputs for SaaS product.}
+        \resumeItem{Built \textbf{Spring Boot} microservices integrated with MySQL, achieving response times below 200ms under load.}
+        \resumeItem{Created reusable Angular components enhancing UI consistency and maintainability across multiple product modules.}
+        \resumeItem{Developed CI/CD pipelines with \textbf{Docker} on AWS EC2, reducing deployment errors by 25\%.}
+        \resumeItem{Enhanced application accessibility and responsive design, increasing usability across devices and browsers.}
+        \resumeItem{Analyzed logs with \textbf{Splunk}, accelerating bug tracking and reducing issue resolution time by 20\%.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{GPA: 4.0/4.0}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+          \resumeProjectHeading
+              {\textbf{Dynamic Form.io Workflow Builder} | Angular, Form.io, JSON Schema}{}
+        \resumeItemListStart
+            \resumeItem{Implemented dynamic form configurations with Form.io actions and stages enhancing form customization for 100+ users.}
+            \resumeItem{Integrated Angular frontend with backend APIs to enable real-time form validation and data submission with 99\% accuracy.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+    
+    \resumeProjectHeading
+        {\textbf{AI-Powered Form Data Validator} | OpenAI API, Angular, TypeScript}{}
+        \resumeItemListStart
+            \resumeItem{Developed AI-assisted form validation using OpenAI API that identifies user errors and suggests corrections, reducing validation errors by 45\%.}
+            \resumeItem{Automated error feedback asynchronously within Angular forms improving overall user input quality and form completion rates by 35\%.}
+        \resumeItemListEnd
+          \vspace{-12pt}
+      \resumeProjectHeading
+          {\textbf{Responsive Multi-Role Access Portal} | Angular, REST API, Form.io}{}
+          \resumeItemListStart
+              \resumeItem{Engineered a role-based access portal using Form.io and Angular, increasing secure user management efficiency for 500+ users.}
+              \resumeItem{Ensured cross-browser mobile responsiveness and accessibility compliance boosting user satisfaction by 30\%.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+
+\end{document}
