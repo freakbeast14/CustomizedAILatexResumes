@@ -1,0 +1,227 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}      
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Shahil Mohammed}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (832) 620-5379 ~ | ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ | ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ | ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ | ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+Innovative data engineer with 3+ years of experience designing and optimizing scalable data pipelines and ETL processes. Proficient in Python, SQL, and big data tools like \textbf{Spark} and \textbf{Airflow}, delivering reliable data solutions that enhance business reporting, analytics, and operational insights. Skilled at collaborating cross-functionally to meet evolving data requirements.
+ \vspace{-5pt}
+ 
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & Python, Java, SQL, Shell Scripting, TypeScript \\
+                \textbf{Data Processing \& Management:} & Apache Spark, Apache Kafka, Apache Airflow, Snowflake, Google BigQuery, OLAP, Relational Databases \\
+                \textbf{Cloud Platforms \& DevOps:} & AWS (EC2, S3), Docker, Jenkins, Kubernetes, CI/CD Pipelines \\
+                \textbf{Web Technologies \& Frameworks:} & React.js, Spring Boot, Django, Node.js \\
+                \textbf{Tools \& Others:} & Git, Linux, REST API, JSON, JUnit, Splunk \\
+                \textbf{AI \& Automation:} & LangChain, OpenAI API, AI Agents, Automation Scripts \\
+            \end{tabular}
+        \end{table}
+ \vspace{-15pt}
+ 
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Developed and optimized \textbf{Python}-based ETL pipelines, improving data processing speed by 30\% across distributed cloud systems.}
+        \resumeItem{Implemented automated data validation and cleaning tools, resulting in a 25\% increase in data accuracy for business reporting.}
+        \resumeItem{Collaborated with teams to design scalable \textbf{Airflow} workflows, reducing data pipeline failures by 40\% and improving maintainability.}
+        \resumeItem{Integrated and maintained \textbf{SQL} queries to extract, transform, and load data into \textbf{Snowflake} and local databases efficiently.}
+        \resumeItem{Monitored pipeline performance and resolved complex data bottlenecks, enhancing operational insights delivered to management by 20\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Engineered \textbf{Apache Kafka}-based streaming solutions to handle real-time event data, reducing latency by 35\% for client dashboards.}
+        \resumeItem{Automated data ingestion jobs in \textbf{Python} to streamline 15,000+ daily records, cutting manual workload by 75\%.}
+        \resumeItem{Maintained \textbf{Google BigQuery} datasets and optimized SQL queries to improve report generation speed by 40\%.}
+        \resumeItem{Developed data transformation pipelines using \textbf{Spark}, enhancing data reliability and scaling to support growing datasets.}
+        \resumeItem{Collaborated with Data Scientists to validate data models and integrated their results into cloud storage for business use.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Supported \textbf{Linux}-based environments and implemented scripts automating data processing, achieving 20\% reduction in manual intervention.}
+        \resumeItem{Maintained lab databases and assisted in data pipeline monitoring, improving system uptime by 15\%.}
+        \resumeItem{Educated students on debugging and data validation techniques, boosting assignment success rates by 25\%.}
+        \resumeItem{Automated grading workflows with Python scripts, increasing grading consistency and speeding evaluation by 30\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{01/2023 – 08/2023}
+        {Software Engineer}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Designed and deployed \textbf{Kafka} pipelines processing over 1000 daily messages, improving data flow reliability by 95\%.}
+        \resumeItem{Optimized \textbf{PostgreSQL} queries to reduce latency by 20\%, enhancing data access for analytics teams.}
+        \resumeItem{Enhanced backend services in \textbf{C\#} and \textbf{.NET}, decreasing response time by 30\% and improving system stability.}
+        \resumeItem{Developed and maintained \textbf{SQL}-driven data pipelines supporting business intelligence dashboards and operational monitoring.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Built \textbf{Python}-based ETL pipelines integrated with \textbf{AWS EC2}, automating data processing for 1000+ users daily.}
+        \resumeItem{Established scalable microservices using \textbf{Java Spring Boot} and \textbf{MySQL}, increasing data throughput by 25\%.}
+        \resumeItem{Configured \textbf{CI/CD} pipelines using \textbf{Docker} and Jenkins, reducing deployment time by 40\% across key services.}
+        \resumeItem{Improved database performance through \textbf{Oracle SQL} query tuning, lowering average query time by 20\%.}
+        \resumeItem{Analyzed logs with \textbf{Splunk} to quickly detect data inconsistencies and reduced issue resolution time by 30\%.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{GPA: 4.0/4.0}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+          \resumeProjectHeading
+              {\textbf{Automated Data Pipeline with Airflow} | Python, Apache Airflow, Snowflake}{}
+        \resumeItemListStart
+            \resumeItem{Designed modular \textbf{Airflow} DAGs automating ETL processes, reducing manual data pipeline errors by 45\% and improving team efficiency.}
+            \resumeItem{Developed data validation and retry mechanisms, achieving 99\% pipeline reliability and faster issue detection for operational teams.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+    
+    \resumeProjectHeading
+        {\textbf{AI-Powered Data Quality Agent} | LangChain, OpenAI API, Python}{}
+        \resumeItemListStart
+            \resumeItem{Developed an AI agent using \textbf{LangChain} and \textbf{OpenAI API} to automatically detect anomalies in datasets, improving data accuracy by 30\%.}
+            \resumeItem{Built a feedback loop enabling continuous model refinement and integrated the agent into existing data workflows for real-time monitoring.}
+        \resumeItemListEnd
+          \vspace{-12pt}
+      \resumeProjectHeading
+          {\textbf{Real-Time Data Streaming Platform} | Apache Kafka, Spark, AWS EC2}{}
+          \resumeItemListStart
+              \resumeItem{Engineered a high-throughput \textbf{Kafka} and \textbf{Spark} streaming platform on \textbf{AWS EC2}, reducing data processing latency by 35\%.}
+              \resumeItem{Implemented scalable data ingestion and transformation pipelines supporting near real-time dashboards and business analytics.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+
+\end{document}
