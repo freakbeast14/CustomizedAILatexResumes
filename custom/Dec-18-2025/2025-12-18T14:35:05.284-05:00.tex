@@ -1,0 +1,227 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}      
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Shahil Mohammed}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (832) 620-5379 ~ | ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ | ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ | ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ | ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+Detail-oriented software engineer with over 3 years of experience building modern, responsive web applications leveraging \textbf{Angular 15+}, \textbf{TypeScript}, and HTML/CSS. Skilled at delivering iterative feature enhancements in Agile teams, ensuring secure, scalable frontend solutions with micro frontend architectures. Strong collaboration and communication skills with a focus on code quality and continuous improvement.
+ \vspace{-5pt}
+ 
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & JavaScript, TypeScript, Java, Python, PHP, C\#, Go, Shell Scripting \\
+                \textbf{Frontend Frameworks \& Libraries:} & Angular 15+, React.js, Node.js, HTML5, CSS3, SASS, LESS, Micro Frontends \\
+                \textbf{Web \& Security:} & Responsive Design, Web Security Best Practices, REST APIs, OAuth, JWT \\
+                \textbf{Databases:} & MySQL, PostgreSQL, MongoDB, Redis \\
+                \textbf{DevOps \& Cloud:} & Docker, Jenkins, AWS (Lambda, EC2, S3), Git, CI/CD Pipelines \\
+                \textbf{Tools \& Other:} & GitHub, Jira, Splunk, JUnit, Agile Methodologies \\
+            \end{tabular}
+        \end{table}
+ \vspace{-15pt}
+ 
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Architected and implemented new responsive \textbf{Angular 15+} features, increasing application modularity and user engagement by 30\%.}
+        \resumeItem{Enhanced existing frontend codebases with \textbf{TypeScript} refactoring to improve maintainability and reduce bugs by 25\%.}
+        \resumeItem{Led micro frontend integration, enabling faster releases and concurrent development by distributed teams, shortening delivery time by 20\%.}
+        \resumeItem{Collaborated in Agile sprint planning and provided accurate feature estimations, improving workflow transparency and team delivery by 15\%.}
+        \resumeItem{Monitored and troubleshot web security vulnerabilities, implementing mitigation strategies that cut risk exposure by over 35\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Developed scalable frontend modules using \textbf{Angular} with \textbf{SASS} styling, resulting in 40\% faster load times and enhanced UX.}
+        \resumeItem{Implemented secure authentication flows and role-based access controls within SPA, decreasing unauthorized access by 30\%.}
+        \resumeItem{Developed and maintained micro frontend applications, reducing feature delivery cycles by 25\%.}
+        \resumeItem{Optimized CSS and HTML for cross-device responsiveness, improving mobile user retention by 20\%.}
+        \resumeItem{Integrated web security best practices, including CSP headers and JWT token validation, enhancing overall application protection.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Supported and configured responsive \textbf{HTML5} and \textbf{CSS3} web interfaces for cybersecurity lab tools, improving student usability by 15\%.}
+        \resumeItem{Assisted in educating peers on modern web security vulnerabilities and countermeasures, raising security awareness by 25\%.}
+        \resumeItem{Automated testing scripts for frontend components, cutting manual validation effort by 30\%.}
+        \resumeItem{Maintained lab systems with an emphasis on secure configurations, minimizing downtime and security incidents by 20\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{01/2023 – 08/2023}
+        {Software Engineer}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Developed and enhanced \textbf{Angular.js} frontend components, resulting in a 25\% increase in user satisfaction and interface responsiveness.}
+        \resumeItem{Executed \textbf{TypeScript} API integrations to streamline data flows, achieving sub-100ms response times and improved UX consistency.}
+        \resumeItem{Refined frontend CSS using \textbf{SASS}, improving layout responsiveness and browser compatibility across devices.}
+        \resumeItem{Collaborated on implementing web security standards, mitigating XSS and CSRF vulnerabilities, decreasing incident rate by 30\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Engineered frontend UI using \textbf{Angular} and \textbf{TypeScript} for SaaS applications, boosting user engagement by 35\%.}
+        \resumeItem{Implemented responsive designs with \textbf{HTML5} and \textbf{SASS}, ensuring consistent experience across multiple devices and screen sizes.}
+        \resumeItem{Designed and integrated micro frontend solutions, enhancing modularity and reducing development time by 20\%.}
+        \resumeItem{Conducted thorough security assessments of frontend components, reducing vulnerabilities by 40\%.}
+        \resumeItem{Automated regression tests for UI features, improving deployment confidence and reducing rollback incidents by 30\%.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{GPA: 4.0/4.0}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+          \resumeProjectHeading
+              {\textbf{AI-Powered Code Quality Assistant} | GitHub Actions, TypeScript, OpenAI API}{}
+        \resumeItemListStart
+            \resumeItem{Developed AI tool integrating \textbf{LLMs} to review \textbf{TypeScript} code and recommend improvements, reducing manual review time by 40\%.}
+            \resumeItem{Automated generation of documentation and code comments, improving project maintainability and developer onboarding efficiency by 30\%.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+    
+    \resumeProjectHeading
+        {\textbf{Micro Frontend Architecture Implementation} | Angular 15, Webpack, CSS, SASS}{}
+        \resumeItemListStart
+            \resumeItem{Engineered scalable micro frontend system with \textbf{Angular} and \textbf{SASS}, decreasing feature delivery cycles by 25\% and improving maintainability.}
+            \resumeItem{Coordinated cross-team integration and deployment to streamline independent module releases and reduce system downtime by 15\%.}
+        \resumeItemListEnd
+          \vspace{-12pt}
+      \resumeProjectHeading
+          {\textbf{Secure Responsive Web Portal} | HTML5, CSS3, Angular, OAuth}{}
+          \resumeItemListStart
+              \resumeItem{Designed responsive web portal adopting \textbf{OAuth} for secure authentication, increasing user trust and reducing unauthorized access by 35\%.}
+              \resumeItem{Implemented frontend security enhancements including CSP policies and secure cookie handling, achieving compliance with industry best practices.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+
+\end{document}
