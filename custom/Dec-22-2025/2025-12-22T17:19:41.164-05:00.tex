@@ -1,0 +1,227 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}      
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Shahil Mohammed}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (832) 620-5379 ~ | ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ | ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ | ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ | ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+Results-oriented software engineer with 3+ years designing and developing full-stack applications using \textbf{C\#}, \textbf{.NET}, and Java technologies. Skilled in creating robust user interfaces and backend services for clinical and medical device applications. Adept at Agile methodologies, code reviews, and collaborative problem-solving, prioritizing quality, security, and customer-focused innovation.
+ \vspace{-5pt}
+ 
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming Languages:} & \textbf{C\#}, Java, C++, C, Python, JavaScript, TypeScript \\
+                \textbf{Frameworks \& Technologies:} & \textbf{.NET}, WPF, Spring Boot, React.js, Angular.js, Android Development \\
+                \textbf{Databases:} & SQL Server, MySQL, PostgreSQL, MongoDB, Oracle \\
+                \textbf{Development Tools:} & Git, Jira, Jenkins, Docker, CI/CD pipelines, Visual Studio \\
+                \textbf{Methodologies:} & Agile, Scrum, Continuous Integration, Software Risk Assessment (FMEA) \\
+                \textbf{Additional Skills:} & Secure coding principles, Medical Imaging basics, DICOM/HL7 familiarity, Debugging and Troubleshooting \\
+            \end{tabular}
+        \end{table}
+ \vspace{-15pt}
+ 
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Implemented \textbf{C\#} and \textbf{.NET} features enhancing medical data visualization, improving clinical user experience by 30\%.}
+        \resumeItem{Led debugging and troubleshooting efforts for critical backend components, reducing issue resolution time by 40\%.}
+        \resumeItem{Automated unit and integration tests under an Agile environment, increasing product stability and code coverage by 35\%.}
+        \resumeItem{Collaborated with product managers and domain experts to define new features, boosting customer satisfaction scores by 20\%.}
+        \resumeItem{Optimized \textbf{CI/CD} pipelines using \textbf{Jenkins} to accelerate deployment frequency by 25\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Developed full-stack applications in \textbf{Java} and \textbf{React} supporting 50+ healthcare users with seamless performance.}
+        \resumeItem{Created automation scripts to handle large data sets, reducing manual entry time by 70\%.}
+        \resumeItem{Built AI-based workflow tools improving clinical task automation, reducing manual effort by 60\%.}
+        \resumeItem{Enhanced frontend responsiveness and UI in \textbf{React}, improving patient data accessibility and user engagement by 25\%.}
+        \resumeItem{Monitored and optimized AWS resources, lowering operational costs by 12\% via targeted provisioning.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Supported \textbf{Linux}-based environments and secured lab networks, ensuring 99\% uptime and compliance with security standards.}
+        \resumeItem{Facilitated student debugging sessions that improved software deployment success rates by 22\%.}
+        \resumeItem{Created automated validation tools improving grading accuracy and reducing manual workload by 30\%.}
+        \resumeItem{Conducted workshops to explain complex security protocols, increasing peer retention of concepts by 35\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{01/2023 – 08/2023}
+        {Software Engineer}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Developed \textbf{C\#} \textbf{.NET} backend modules, cutting server response time by 28\% and enhancing data processing.}
+        \resumeItem{Executed efficient \textbf{TypeScript} API interactions, maintaining response times below 100ms.}
+        \resumeItem{Refined user interfaces in \textbf{Angular.js}, lifting client satisfaction metrics by over 20\%.}
+        \resumeItem{Optimized \textbf{PostgreSQL} queries reducing query execution time by 18\%, improving data retrieval.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Created \textbf{Java Spring Boot} microservices supporting 1000+ concurrent users, decreasing latency to under 200ms.}
+        \resumeItem{Designed efficient SQL queries on \textbf{Oracle} databases, cutting response times by 20\%.}
+        \resumeItem{Implemented \textbf{CI/CD} pipelines using \textbf{Docker} and \textbf{AWS EC2}, speeding deployment frequency by 30\%.}
+        \resumeItem{Developed frontend interfaces using \textbf{React.js}, enhancing application usability and load speed by 25\%.}
+        \resumeItem{Utilized \textbf{JUnit} to implement unit tests achieving 90\% coverage, improving overall code reliability.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{GPA: 4.0/4.0}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+          \resumeProjectHeading
+              {\textbf{AI-Assisted Medical Software Tester} | Python, OpenAI API, Continuous Integration}{}
+        \resumeItemListStart
+            \resumeItem{Developed an AI-driven testing tool integrating \textbf{OpenAI API} to auto-generate test cases and detect bugs, improving testing coverage by 45\%.}
+            \resumeItem{Implemented CI pipelines triggering AI-assisted analysis, reducing manual QA time by 35\% and improving release speed.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+    
+    \resumeProjectHeading
+        {\textbf{Full-Stack Clinical Imaging Dashboard} | .NET, WPF, SQL Server}{}
+        \resumeItemListStart
+            \resumeItem{Built a \textbf{WPF} desktop app for clinical imaging management with \textbf{.NET}, enhancing workflow efficiency by 30\%.}
+            \resumeItem{Designed robust backend data services integrating \textbf{SQL Server} for storing and retrieving medical imaging data efficiently.}
+        \resumeItemListEnd
+          \vspace{-12pt}
+      \resumeProjectHeading
+          {\textbf{Secure Medical Device Communication Protocol} | C\#, Networking, Agile}{}
+          \resumeItemListStart
+              \resumeItem{Engineered secure communication modules in \textbf{C\#} implementing encrypted data transfer, enhancing device data safety by 50\%.}
+              \resumeItem{Collaborated with cross-functional teams under \textbf{Agile} framework ensuring timely delivery and compliance with industry standards.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+
+\end{document}
