@@ -1,0 +1,230 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}      
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Shahil Mohammed}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (832) 620-5379 ~ | ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ | ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ | ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ | ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+Data-driven Senior Analyst with 3+ years experience in informatics and healthcare analytics, skilled in SQL, Python, SAS, and cloud platforms AWS/GCP. Expert in Medicare risk adjustment, ETL process design, and advanced data interpretation. Adept at creating impactful reports and facilitating cross-team collaboration to elevate Medicare compliance and program efficiency.
+ \vspace{-5pt}
+ 
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & \textbf{Python}, \textbf{SQL}, \textbf{R}, \textbf{SAS}, Bash, Java \\
+                \textbf{Data Analytics \& Visualization:} & Tableau, Power BI, Pandas, NumPy, Matplotlib \\
+                \textbf{Cloud Platforms:} & AWS (S3, EC2, Lambda), Google Cloud Platform (BigQuery, Dataflow), Databricks \\
+                \textbf{ETL \& Data Integration:} & Pyspark, Apache Airflow, Informatica, Data Pipeline Design \\
+                \textbf{Databases:} & MySQL, PostgreSQL, Oracle, NoSQL \\
+                \textbf{Other Tools \& Technologies:} & Git, JIRA, Docker, ML Basics, Business Intelligence (BI) Tools \\
+            \end{tabular}
+        \end{table}
+ \vspace{-15pt}
+ 
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Analyzed complex datasets using \textbf{Python} and \textbf{SQL} to support Medicare compliance, improving data accuracy by 30\%.}
+        \resumeItem{Led ETL pipeline development on \textbf{AWS} to streamline Medicare reconciliation, reducing manual processing time by over 40\%.}
+        \resumeItem{Collaborated with pricing teams to model PMPM financial impacts using \textbf{SAS}, leading to informed 2026 goal setting.}
+        \resumeItem{Built interactive dashboards and reports with \textbf{Tableau} to visually communicate risk adjustment insights to leadership.}
+        \resumeItem{Troubleshot data integration issues across multiple sources, enhancing data consistency and analytical reliability by 25\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Developed \textbf{Pyspark} ETL workflows migrating legacy data, boosting processing efficiency by 50\% for healthcare datasets.}
+        \resumeItem{Created \textbf{Power BI} dashboards tracking Medicare program KPIs, accelerating decision-making for compliance teams.}
+        \resumeItem{Automated data validation processes via \textbf{Python} scripts, decreasing errors in claims data by 35\%.}
+        \resumeItem{Coordinated with cross-functional teams to identify data gaps and designed \textbf{SQL}-based fixes that enhanced data integrity.}
+        \resumeItem{Utilized \textbf{AWS} cloud services to deploy scalable reporting solutions for ad hoc Medicare analytics requests.}
+        \resumeItem{Implemented \textbf{Databricks} analytics solutions, integrating machine learning workflows to improve risk adjustment predictions.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Supported secure data environments helping researchers conduct healthcare informatics analyses under HIPAA guidelines.}
+        \resumeItem{Assisted in development of analytical scripts in \textbf{Python} and \textbf{R} for medical datasets, boosting research output.}
+        \resumeItem{Maintained Linux infrastructure used for sensitive healthcare data processing, ensuring 99.9\% lab uptime.}
+        \resumeItem{Conducted technical training sessions on data privacy and proper use of medical analytics tools for 30+ students.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{01/2023 – 08/2023}
+        {Software Engineer}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Optimized \textbf{SQL} queries and \textbf{ETL} workflows managing healthcare data, reducing latency by 20\%.}
+        \resumeItem{Developed automated data quality checks using \textbf{Python}, raising accuracy of EHR data pipelines by 35\%.}
+        \resumeItem{Created \textbf{Power BI} visualizations to track claims processing metrics, driving operational improvements by 15\%.}
+        \resumeItem{Engineered \textbf{Kafka}-based data ingestion solution improving real-time data flow reliability by 25\%.}
+        \resumeItem{Collaborated with data scientists to deploy ML models on \textbf{Databricks} for predictive healthcare risk analytics.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Built \textbf{ETL} pipelines in \textbf{Python} integrating healthcare datasets from multiple sources, increasing data throughput 30\%.}
+        \resumeItem{Designed \textbf{Oracle SQL} databases supporting risk adjustment analytics, improving query performance by 20\%.}
+        \resumeItem{Developed \textbf{data visualization} modules using React and \textbf{Tableau} to summarize healthcare trends for clients.}
+        \resumeItem{Automated deployment processes on \textbf{AWS} with \textbf{Docker}, reducing release cycles by 35\%.}
+        \resumeItem{Implemented \textbf{SAS} statistical scripts supporting Medicare program evaluations, accelerating report generation by 25\%.}
+        \resumeItem{Led data quality review and gap analyses, improving Medicare claims dataset reliability by 30\%.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{GPA: 4.0/4.0}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+          \resumeProjectHeading
+              {\textbf{Medicare Analytics Report Automation} | Python, SQL, AWS, Tableau}{}
+        \resumeItemListStart
+            \resumeItem{Automated Medicare claims reconciliation reporting using \textbf{Python} and \textbf{SQL}, reducing report generation time by 60\%.}
+            \resumeItem{Deployed dynamic dashboards with \textbf{Tableau} on \textbf{AWS}, enabling leadership to visualize compliance KPIs in real time.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+    
+    \resumeProjectHeading
+        {\textbf{AI-driven Healthcare Data Gap Detection} | Python, ML, Databricks, Pandas}{}
+        \resumeItemListStart
+            \resumeItem{Developed an AI tool in \textbf{Databricks} to detect data gaps and inconsistencies in medical datasets, improving data quality by 30\%.}
+            \resumeItem{Integrated \textbf{Pandas} and ML libraries to automate healthcare anomaly detection workflows, reducing manual reviews by 50\%.}
+        \resumeItemListEnd
+          \vspace{-12pt}
+      \resumeProjectHeading
+          {\textbf{Cloud-based Risk Adjustment Dashboard} | AWS, GCP, Power BI, SQL}{}
+          \resumeItemListStart
+              \resumeItem{Built a cloud-hosted dashboard using \textbf{Power BI} on \textbf{AWS} and \textbf{GCP} to track and analyze risk adjustment metrics.}
+              \resumeItem{Designed SQL data pipelines integrating multiple sources to enable seamless, timely Medicare program evaluation insights.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+
+\end{document}
