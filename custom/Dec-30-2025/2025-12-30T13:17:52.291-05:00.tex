@@ -1,0 +1,230 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}      
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Shahil Mohammed}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (832) 620-5379 ~ | ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ | ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ | ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ | ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+Experienced software engineer skilled in designing and deploying scalable, high-availability systems tailored for telecom and network environments. Proficient in Perl, SQL, scripting, and microservices architecture with a strong focus on protocol compliance and data integrity. Adept at technical collaboration, documentation, and driving innovation supporting business goals and operational efficiency.
+ \vspace{-5pt}
+ 
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & Perl, SQL, Python, Shell Scripting, Java, JavaScript \\
+                \textbf{Frameworks \& APIs:} & Spring Boot, Maven, RESTful APIs, Microservices architecture, Angular, Vaadin \\
+                \textbf{Containerization \& Orchestration:} & Docker, Kubernetes, Helm \\
+                \textbf{Databases \& Data Platforms:} & Oracle, PostgreSQL, MySQL, Snowflake, Ocient \\
+                \textbf{Telecom Protocols \& Standards:} & 3GPP, GSMA, ASN.1, SIP, IMS \\
+                \textbf{Tools \& Processes:} & Git, Jenkins, Agile methodologies, Technical writing, Analytics \\
+            \end{tabular}
+        \end{table}
+ \vspace{-15pt}
+ 
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Engineered scalable \textbf{Java Spring Boot} microservices improving system throughput by 30\% and ensuring compliance with telecom data mediation standards.}
+        \resumeItem{Enhanced \textbf{SQL} database queries to boost billing data accuracy, reducing errors by 25\% and improving data flow integrity.}
+        \resumeItem{Developed automated \textbf{Perl} scripts to validate network usage records, increasing processing speed by 40\% for Retail and Wholesale billing.}
+        \resumeItem{Collaborated with cross-functional teams adopting \textbf{Agile} methods to deliver middleware software solutions meeting customer and regulatory requirements.}
+        \resumeItem{Documented complex system designs and data flows, facilitating technical onboarding and reducing project ramp-up time by 20\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Designed \textbf{microservices} with \textbf{Java Spring} and REST APIs to support scalable customer data mediation services, improving efficiency 30\%.}
+        \resumeItem{Created \textbf{Python} and \textbf{Shell} automation scripts to streamline data pipeline processes, reducing manual error by 50\%.}
+        \resumeItem{Implemented orchestration solutions using \textbf{Docker} and \textbf{Kubernetes} to enhance deployment consistency and environment scalability.}
+        \resumeItem{Contributed to \textbf{SQL} database schema design supporting high-volume telecom datasets, enhancing query performance by 35\%.}
+        \resumeItem{Researched and integrated telecommunications standards \textbf{(3GPP, GSMA)} for protocol compliance and improving software interoperability.}
+        \resumeItem{Produced clear technical documentation and process guides, improving team knowledge share and client reporting accuracy by 25\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Maintained \textbf{Linux} environments for secure lab operations supporting software development and protocol testing exercises by 99\% uptime.}
+        \resumeItem{Assisted students in debugging and deploying complex network protocol implementations, increasing course success rates by 20\%.}
+        \resumeItem{Developed \textbf{Python} scripts automating grading and validation for lab assignments, cutting manual review time by 30\%.}
+        \resumeItem{Prepared technical whitepapers on \textbf{network security} and protocol compliance, aiding curriculum and research initiatives.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{01/2023 – 08/2023}
+        {Software Engineer}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Developed backend services in \textbf{C\# .NET} handling large-scale data processing, reducing latency by 30\% for enterprise clients.}
+        \resumeItem{Optimized \textbf{PostgreSQL} queries streamlining data mediation workflows, improving retrieval times by 25\%.}
+        \resumeItem{Enhanced front-end features via \textbf{Angular.js} aligning with microservices architecture, increasing client user engagement by 20\%.}
+        \resumeItem{Created automated message brokers through \textbf{Kafka}, ensuring reliable event delivery across distributed systems with 98\% efficiency.}
+        \resumeItem{Performed code reviews and wrote detailed documentation to support long-term maintainability and scalability of telecom billing modules.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Built \textbf{Java Spring Boot} microservices integrated with \textbf{Oracle} and \textbf{MySQL} databases supporting 1000+ concurrent users efficiently.}
+        \resumeItem{Automated \textbf{Perl} scripts for network usage mediation improving processing speed 40\% and ensuring data accuracy for telecommunications clients.}
+        \resumeItem{Deployed containerized applications using \textbf{Docker} on AWS EC2, enabling faster release cycles and reducing downtime by 35\%.}
+        \resumeItem{Collaborated in CI/CD pipelines using Jenkins automating build and test phases, accelerating software delivery by 30\%.}
+        \resumeItem{Designed and implemented REST APIs aligning with telecom standards, facilitating seamless integration among internal and external services.}
+        \resumeItem{Monitored logs using Splunk and refined system performance, reducing incident resolution times by 25\% for mission-critical apps.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{GPA: 4.0/4.0}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+          \resumeProjectHeading
+              {\textbf{AI-Powered Telecom Data Validator} | Python, Perl, OpenAI APIs, Microservices}{}
+        \resumeItemListStart
+            \resumeItem{Developed an AI-assisted tool using \textbf{OpenAI} for validating network usage data with 95\% accuracy, reducing manual mediation errors by 40\%.}
+            \resumeItem{Implemented \textbf{Python} and \textbf{Perl} microservices automating compliance checks aligned with telecom protocols, cutting validation time by 35\%.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+    
+    \resumeProjectHeading
+        {\textbf{Telecom Billing Microservices Suite} | Java, Spring Boot, Docker, Kubernetes}{}
+        \resumeItemListStart
+            \resumeItem{Designed scalable billing microservices handling multi-provider data mediation, increasing processing throughput by 50\% and improving billing accuracy.}
+            \resumeItem{Containerized and orchestrated services with \textbf{Docker} and \textbf{Kubernetes}, achieving seamless deployment and 99.9\% service uptime.}
+        \resumeItemListEnd
+          \vspace{-12pt}
+      \resumeProjectHeading
+          {\textbf{Network Protocol Compliance Analyzer} | Java, SQL, ASN.1, SIP}{}
+          \resumeItemListStart
+              \resumeItem{Constructed a protocol compliance analyzer verifying ASN.1 and SIP message flows, reducing faults in telecom signaling processes by 30\%.}
+              \resumeItem{Developed detailed documentation and visualization dashboards to support system audits and improve technical team training efficiency by 25\%.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+
+\end{document}
