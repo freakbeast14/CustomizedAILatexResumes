@@ -1,0 +1,230 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}      
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Shahil Mohammed}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (832) 620-5379 ~ | ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ | ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ | ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ | ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+Resourceful PHP Web Developer with 3+ years in translating wireframes and designs into dynamic web applications. Skilled in PHP, JavaScript, REST API integration, and troubleshooting complex technical issues efficiently. Passionate about collaboration and continuous learning in fast-paced environments with strong time management to meet deadlines. 
+ \vspace{-5pt}
+ 
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming Languages:} & PHP, JavaScript, HTML, CSS, SQL, JSON, Ajax, JQuery \\
+                \textbf{Web Services \& APIs:} & REST, SOAP, API Integration, JSON \\
+                \textbf{Frameworks \& Libraries:} & Laravel, jQuery, Bootstrap, React.js \\
+                \textbf{Databases:} & MySQL, SQL Server, PostgreSQL \\
+                \textbf{Tools \& Platforms:} & Git, Docker, Linux, Jenkins, Jira \\
+                \textbf{Soft Skills:} & Communication, Time Management, Troubleshooting, Team Collaboration \\
+            \end{tabular}
+        \end{table}
+ \vspace{-15pt}
+ 
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Implemented \textbf{PHP} modules translating wireframes into functional interfaces, enhancing user engagement by 30\%.}
+        \resumeItem{Managed integration of new web content using \textbf{REST APIs}, reducing deployment time by 25\%.}
+        \resumeItem{Troubleshot escalated customer issues, resulting in 40\% faster resolution and improved customer satisfaction.}
+        \resumeItem{Collaborated with project management team to report progress and technical barriers, facilitating timely decision making.}
+        \resumeItem{Adapted quickly in fast-paced environment to meet tight deadlines, improving delivery success by 20\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Developed dynamic \textbf{PHP} web applications employing \textbf{Laravel} and frontend \textbf{JavaScript} frameworks, increasing site traffic by 35\%.}
+        \resumeItem{Created and integrated \textbf{SOAP} and \textbf{RESTful} web services reducing API response times by 30\%.}
+        \resumeItem{Maintained and enhanced SQL \textbf{MySQL} databases, improving query efficiency and reducing load time by 20\%.}
+        \resumeItem{Troubleshot and resolved 50+ client support issues monthly, improving average resolution time by 35\%.}
+        \resumeItem{Led UI improvements with \textbf{HTML/CSS} and \textbf{jQuery}, boosting user satisfaction scores by 25\%.}
+        \resumeItem{Streamlined codebase by refactoring legacy \textbf{PHP} scripts, enhancing maintainability and reducing bug rates by 15\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Supported \textbf{Linux} infrastructure and assisted in debugging software, improving lab efficiency by 20\%.}
+        \resumeItem{Automated grading scripts with \textbf{Python} and shell, reducing manual workload by 30\%.}
+        \resumeItem{Provided technical support to students to troubleshoot web applications built on \textbf{HTML}, \textbf{PHP}, and \textbf{JavaScript}.}
+        \resumeItem{Conducted training sessions on best practices for web security, raising student awareness by 40\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{01/2023 – 08/2023}
+        {Software Engineer}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Improved backend \textbf{C\# .NET} APIs to support web integrations, increasing data throughput by 30\%.}
+        \resumeItem{Optimized frontend with \textbf{Angular.js} and \textbf{JavaScript}, resulting in 25\% faster load times.}
+        \resumeItem{Refined \textbf{SQL Server} queries to reduce latency and enhanced database performance by 20\%.}
+        \resumeItem{Implemented secure \textbf{REST} API endpoints aligning with compliance, reducing vulnerabilities by 35\%.}
+        \resumeItem{Led cross-team code reviews, improving code quality and reducing defect rates by 40\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Developed \textbf{PHP Laravel} applications integrating \textbf{RESTful APIs}, increasing efficiency by 30\%.}
+        \resumeItem{Designed and maintained \textbf{MySQL} databases with optimized queries, reducing query time by 20\%.}
+        \resumeItem{Collaborated with designers to implement responsive \textbf{HTML/CSS} layouts, enhancing UX and accessibility.}
+        \resumeItem{Implemented AJAX and \textbf{jQuery} to create dynamic content, improving page interactivity by 25\%.}
+        \resumeItem{Provided technical support resolving web application issues, boosting uptime to 99.8\%.}
+        \resumeItem{Worked in Agile teams to gather requirements and deliver features under tight deadlines, increasing delivery speed by 15\%.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{GPA: 4.0/4.0}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+          \resumeProjectHeading
+              {\textbf{AI-Driven Web Content Management Tool} | PHP, JavaScript, REST APIs}{}
+        \resumeItemListStart
+            \resumeItem{Developed a PHP-based content management system integrated with AI suggestions to automate page updates, reducing editing time by 35\%.}
+            \resumeItem{Implemented RESTful API endpoints to fetch and update dynamic content with a 99\% uptime and scalability for 100+ concurrent users.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+    
+    \resumeProjectHeading
+        {\textbf{Customer Support Chatbot} | LangChain, OpenAI API, JavaScript}{}
+        \resumeItemListStart
+            \resumeItem{Created an AI chatbot using LangChain and OpenAI API to automate FAQs and troubleshoot common issues, reducing support tickets by 40\%.}
+            \resumeItem{Integrated chatbot responses within the web portal via \textbf{JavaScript}, enhancing user accessibility and decreasing average resolution time by 25\%.}
+        \resumeItemListEnd
+          \vspace{-12pt}
+      \resumeProjectHeading
+          {\textbf{Dynamic E-commerce Platform} | PHP, MySQL, AJAX, jQuery}{}
+          \resumeItemListStart
+              \resumeItem{Built a feature-rich e-commerce site using \textbf{PHP} and \textbf{MySQL}, implementing AJAX for seamless updates and reducing page reloads by 50\%.}
+              \resumeItem{Enhanced product search and filtering with \textbf{jQuery}, improving customer navigation and boosting conversion rates by 20\%.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+
+\end{document}
