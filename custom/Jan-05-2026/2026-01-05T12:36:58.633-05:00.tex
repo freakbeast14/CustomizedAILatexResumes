@@ -1,0 +1,230 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}      
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Shahil Mohammed}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (832) 620-5379 ~ | ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ | ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ | ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ | ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+Experienced Site Reliability Engineer skilled in automating infrastructure, enhancing system availability, and resolving incidents swiftly. Proficient in cloud platforms, container orchestration, and monitoring tools. Adept at collaborating cross-functionally to optimize performance and scalability while ensuring operational excellence and continuous improvement in dynamic environments.
+ \vspace{-5pt}
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & Java, Python, Go, Bash, Spring Boot, PySpark \\
+                \textbf{Cloud \& Infrastructure:} & AWS, Azure, Google Cloud, Linux/Unix Administration, EKS, Docker, Kubernetes \\
+                \textbf{Observability \& Monitoring:} & Elastic Observability, Elastic APM, OpenTelemetry, Splunk, CloudWatch \\
+                \textbf{Databases \& Data Management:} & MongoDB, Snowflake, SQL, PostgreSQL, NoSQL \\
+                \textbf{DevOps \& Automation:} & Jenkins, Ansible, Terraform, CI/CD Pipelines, Configuration Management \\
+                \textbf{Networking \& Distributed Systems:} & Networking Protocols, Kafka, Distributed Tracing, Microservices Architecture \\
+            \end{tabular}
+        \end{table}
+ \vspace{-15pt}
+
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Engineered \textbf{Spring Boot} microservices to improve reliability and scalability, resulting in 35\% better uptime and 25\% faster API responses.}
+        \resumeItem{Developed automation scripts in \textbf{Python} and \textbf{Bash} to support production deployments, reducing manual errors by 40\%.}
+        \resumeItem{Integrated enhanced monitoring using \textbf{Elastic APM} and \textbf{OpenTelemetry} to proactively identify and resolve 30+ system incidents monthly.}
+        \resumeItem{Refined CI/CD pipelines with \textbf{Jenkins} and \textbf{Docker}, speeding deployment frequency by 40\% while maintaining stability.}
+        \resumeItem{Collaborated with DevOps team to implement fault-tolerant architectures, boosting system uptime to 99.9\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Orchestrated multi-region container deployments via \textbf{Kubernetes} and \textbf{EKS}, enabling seamless scaling for 50+ concurrent users.}
+        \resumeItem{Automated cloud resource provisioning with \textbf{Terraform} and \textbf{Ansible}, cutting setup time by 60\%.}
+        \resumeItem{Enhanced observability by configuring \textbf{Elastic Observability}, reducing downtime events by 15\%.}
+        \resumeItem{Built and optimized Python ETL pipelines for high-volume data ingestion, decreasing processing time by 50\%.}
+        \resumeItem{Led incident response protocols, handling production outages and conducting post-mortems to prevent recurrence.}
+        \resumeItem{Implemented AI-driven monitoring alerts leveraging \textbf{OpenTelemetry}, improving issue detection accuracy by 35\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Maintained secure \textbf{Linux} servers supporting cybersecurity labs, ensuring 99.5\% uptime and secure configurations.}
+        \resumeItem{Automated environment setup and test case execution scripts, improving lab efficiency by 30\%.}
+        \resumeItem{Supported students troubleshooting and debugging complex networks and security protocols, elevating lab success rates by 20\%.}
+        \resumeItem{Documented detailed procedures for system monitoring and incident handling to standardize lab operations and reduce downtime.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{01/2023 – 08/2023}
+        {Software Engineer}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Developed backend services in \textbf{C\#}/.NET optimizing data access and cutting latency by 30\% in distributed environments.}
+        \resumeItem{Implemented fault-tolerant event processing with \textbf{Kafka} handling 1000+ events daily, reducing message loss by 95\%.}
+        \resumeItem{Refined API communication with \textbf{TypeScript} for sub-100ms responses, enhancing data flow efficiency.}
+        \resumeItem{Optimized \textbf{PostgreSQL} queries and maintained database health, boosting overall system throughput by 20\%.}
+        \resumeItem{Automated monitoring with \textbf{Splunk} and improved alerting to proactively address infrastructure bottlenecks.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Designed CI/CD pipeline automation using \textbf{Jenkins} and \textbf{Docker}, reducing deployment times by 50\%.}
+        \resumeItem{Developed scalable microservices with \textbf{Java Spring Boot} and \textbf{MySQL}, supporting 1000+ concurrent users reliably.}
+        \resumeItem{Integrated logging and monitoring with \textbf{Elastic APM} and \textbf{Splunk}, accelerating issue resolution by 20\%.}
+        \resumeItem{Implemented infrastructure as code using \textbf{Terraform} on \textbf{AWS EC2}, streamlining resource management.}
+        \resumeItem{Created responsive front-end components in \textbf{React.js}, improving user load times by 30\%.}
+        \resumeItem{Authored comprehensive unit tests using \textbf{JUnit} achieving 90\% coverage and improving code quality.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{GPA: 4.0/4.0}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+          \resumeProjectHeading
+              {\textbf{AI-Driven Incident Management Assistant} | Python, Elastic APM, OpenTelemetry, AWS}{}
+        \resumeItemListStart
+            \resumeItem{Developed an AI assistant to automate incident triage and post-mortem documentation, reducing resolution times by 30\%.}
+            \resumeItem{Integrated Elastic Observability and OpenTelemetry for end-to-end monitoring visibility, improving incident detection accuracy by 40\%.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+    
+    \resumeProjectHeading
+        {\textbf{Scalable Kubernetes Monitoring Platform} | EKS, Prometheus, Grafana, Terraform}{}
+        \resumeItemListStart
+            \resumeItem{Implemented centralized metrics collection with Prometheus and Grafana on EKS clusters, enhancing alerting and performance insights.}
+            \resumeItem{Automated infrastructure provisioning via Terraform, reducing manual cloud setup time by 60\%.}
+        \resumeItemListEnd
+          \vspace{-12pt}
+      \resumeProjectHeading
+          {\textbf{Automated Cloud Resource Optimization Bot} | AWS Lambda, Python, Jenkins, CloudWatch}{}
+          \resumeItemListStart
+              \resumeItem{Created a Lambda-based bot to analyze and optimize AWS resource usage, decreasing costs by 15\% monthly.}
+              \resumeItem{Incorporated Jenkins CI/CD workflows to deploy automated fixes for over-provisioned services, improving system efficiency.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+
+\end{document}
