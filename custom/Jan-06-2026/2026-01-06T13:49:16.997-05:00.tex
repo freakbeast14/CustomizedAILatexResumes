@@ -1,0 +1,230 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}      
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Shahil Mohammed}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (832) 620-5379 ~ | ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ | ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ | ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ | ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+Innovative software engineer with over 3 years designing and deploying cloud-native backend services, IoT platforms, and scalable APIs. Adept in TypeScript, Python, and AWS technologies with strong experience integrating connected devices and mobile ecosystems. Passionate about driving consumer-friendly, AI-enhanced product experiences through collaborative and cross-functional teamwork.
+ \vspace{-5pt}
+ 
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming Languages:} & TypeScript, Python, Java, Go, C++, Rust, C\# \\
+                \textbf{Cloud \& Infrastructure:} & AWS Lambda, AWS IoT Core, DynamoDB, CloudWatch, SNS, SQS, Docker, CDK, EC2, S3 \\
+                \textbf{Web \& Backend Frameworks:} & Node.js, Spring Boot, Flask, React.js, Angular.js \\
+                \textbf{IoT \& Connectivity:} & MQTT, HTTP/REST, WebSockets, BLE, WiFi Protocols \\
+                \textbf{DevOps \& Tools:} & Jenkins, Kubernetes, Git, CI/CD Pipelines, Jenkins, Infrastructure as Code \\
+                \textbf{AI \& Automation:} & AI Agents, LLM Integration, LangChain, Prompt Engineering, OpenAI API \\
+            \end{tabular}
+        \end{table}
+ \vspace{-15pt}
+ 
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented cloud-native microservices with \textbf{TypeScript} and \textbf{Python}, enhancing backend scalability by 40\%.}
+        \resumeItem{Developed and deployed \textbf{AWS Lambda} functions to automate IoT device data processing, improving processing speed by 30\%.}
+        \resumeItem{Built robust APIs to integrate connected devices with mobile apps, resulting in 25\% better user engagement.}
+        \resumeItem{Collaborated with hardware and embedded teams to ensure seamless cloud-to-device communication using \textbf{AWS IoT Core} services.}
+        \resumeItem{Automated monitoring alerts and performance tuning using \textbf{CloudWatch}, reducing platform downtime by 20\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Engineered scalable SaaS platforms with \textbf{Python} and \textbf{TypeScript}, supporting multi-tenant cloud environments and 50+ concurrent users.}
+        \resumeItem{Implemented \textbf{AWS IoT Core} protocols for device-to-cloud message routing, increasing message reliability by 35\%.}
+        \resumeItem{Integrated distributed system components using \textbf{Lambda}, \textbf{Docker}, and \textbf{SNS/SQS} for resilient event handling architecture.}
+        \resumeItem{Collaborated cross-functionally with product and embedded teams to refine cloud service APIs that boosted end-to-end device connectivity.}
+        \resumeItem{Optimized monitoring dashboards using \textbf{CloudWatch} for proactive issue detection reducing incident response time by 15\%.}
+        \resumeItem{Developed websocket-based communication layers for real-time device status updates, enhancing consumer experience by 20\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Maintained and secured \textbf{Linux} cloud lab infrastructure supporting IoT and cloud-native development projects for 100+ students.}
+        \resumeItem{Assisted students in debugging and testing cloud-connected device applications, boosting lab project success by 25\%.}
+        \resumeItem{Developed automated validation scripts to verify IoT communication protocols, improving lab grading accuracy by 20\%.}
+        \resumeItem{Conducted instructional sessions explaining cloud-to-device architectures and security best practices to enhance learning outcomes.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{01/2023 – 08/2023}
+        {Software Engineer}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Refactored backend services in \textbf{C\#} and \textbf{TypeScript} to improve API latency by 30\% for cloud-connected real estate solutions.}
+        \resumeItem{Implemented real-time event streaming using \textbf{Kafka} and \textbf{AWS SNS/SQS}, reducing message loss by 90\%.}
+        \resumeItem{Enhanced frontend communication efficiency through \textbf{Angular.js} by optimizing cloud API integrations.}
+        \resumeItem{Revamped database queries in \textbf{PostgreSQL} to support large-scale IoT data throughput, decreasing load by 20\%.}
+        \resumeItem{Deployed scalable containerized services using \textbf{Docker} and AWS infrastructure, increasing platform resilience and uptime.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Developed \textbf{microservices} integrating \textbf{Spring Boot}, \textbf{AWS EC2}, and \textbf{DynamoDB}, achieving 30\% faster response times under high load.}
+        \resumeItem{Led API design and development in \textbf{TypeScript} for IoT device communication supporting cloud-native deployment strategies.}
+        \resumeItem{Orchestrated CI/CD pipelines deploying containerized apps with \textbf{Docker} and \textbf{Jenkins}, accelerating delivery by 35\%.}
+        \resumeItem{Optimized cloud monitoring by configuring \textbf{CloudWatch} alarms and analytics, reducing production issues by 20\%.}
+        \resumeItem{Collaborated on system architecture for multi-device connectivity using \textbf{MQTT} and \textbf{WebSockets}, improving reliability by 25\%.}
+        \resumeItem{Enhanced frontend interfaces using \textbf{React.js} for device management dashboards, increasing usability scores by 30\%.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{GPA: 4.0/4.0}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+          \resumeProjectHeading
+              {\textbf{AI-Powered Cloud Code Reviewer} | GitHub Actions, OpenAI API, Python, TypeScript}{}
+        \resumeItemListStart
+            \resumeItem{Built AI-driven code review bot automating Python and TypeScript style enforcement, reducing manual review times by 40\%.}
+            \resumeItem{Integrated advanced prompt engineering with LLMs to auto-generate documentation, achieving 100\% codebase documentation coverage.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+    
+    \resumeProjectHeading
+        {\textbf{Scalable IoT Device Management Platform} | AWS IoT Core, Lambda, DynamoDB, MQTT}{}
+        \resumeItemListStart
+            \resumeItem{Designed a scalable platform using \textbf{AWS IoT Core} and \textbf{Lambda} to handle real-time device communication for 1M+ connected devices.}
+            \resumeItem{Implemented secure device provisioning and managed message queues with \textbf{SNS/SQS}, improving system reliability by 30\%.}
+        \resumeItemListEnd
+          \vspace{-12pt}
+      \resumeProjectHeading
+          {\textbf{Connected Home Automation API} | TypeScript, Node.js, Docker, WebSockets}{}
+          \resumeItemListStart
+              \resumeItem{Developed RESTful APIs and WebSocket services in \textbf{TypeScript} to enable seamless communication between smart home devices and mobile apps.}
+              \resumeItem{Containerized and deployed backend services using \textbf{Docker}, improving scalability and reducing deployment time by 25\%.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+
+\end{document}
