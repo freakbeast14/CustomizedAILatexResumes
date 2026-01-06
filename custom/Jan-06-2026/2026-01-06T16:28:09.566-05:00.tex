@@ -1,0 +1,230 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}      
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Shahil Mohammed}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (832) 620-5379 ~ | ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ | ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ | ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ | ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+Proactive software engineer specializing in tooling and development infrastructure with 3+ years’ experience in automation, CI/CD pipelines, and test frameworks. Expert in building scalable developer productivity tools, integrating AI-based testing solutions, and fostering quality culture across teams. Adept at improving software reliability and observability through strategic automation and collaboration.
+ \vspace{-5pt}
+ 
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & Python, Java, JavaScript, Shell Scripting, TypeScript, Go \\
+                \textbf{Automation \& Testing:} & Pytest, JUnit, Test Automation Frameworks, OpenAI API Integration \\
+                \textbf{DevOps \& CI/CD:} & Jenkins, GitHub Actions, GitLab CI, Docker, Kubernetes, Infrastructure-as-Code (IaC) \\
+                \textbf{Cloud \& Platforms:} & AWS (EC2, Lambda, S3), Azure, Linux, Windows \\
+                \textbf{Observability \& Monitoring:} & Splunk, CloudWatch, Telemetry, Log Analysis \\
+                \textbf{AI \& Machine Learning Tools:} & LangChain, RAG, LLMs, AI Agents, Machine Learning Integration \\
+            \end{tabular}
+        \end{table}
+ \vspace{-15pt}
+ 
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Engineered \textbf{Python}-based automation frameworks improving end-to-end test coverage by 40\% and reducing manual testing by 30\%.}
+        \resumeItem{Designed \textbf{CI/CD} pipelines using \textbf{Jenkins} and \textbf{Docker}, accelerating deployment cycles by 35\%.}
+        \resumeItem{Integrated AI-driven bug detection tools leveraging \textbf{OpenAI API}, uncovering 25\% more non-deterministic software issues pre-release.}
+        \resumeItem{Collaborated with cross-functional teams to standardize telemetry and observability using \textbf{Splunk}, improving incident triage by 20\%.}
+        \resumeItem{Implemented reusable test utilities empowering engineers to scale automated testing and improve code quality consistency across projects.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Developed and expanded automated integration tests in \textbf{Python} improving stability of backend APIs with 30\% fewer production defects.}
+        \resumeItem{Optimized \textbf{AWS CloudWatch} monitoring and alerting, reducing system downtime by 15\% through proactive observability enhancements.}
+        \resumeItem{Built Infrastructure-as-Code solutions using \textbf{Terraform} to standardize environment provisioning and accelerate onboarding by 40\%.}
+        \resumeItem{Designed AI-powered test case generation pipelines integrating \textbf{LangChain} boosting test diversity and uncovering edge-case failures effectively.}
+        \resumeItem{Led adoption of \textbf{Pytest} and test automation best practices, increasing team automated test coverage by 50\%.}
+        \resumeItem{Collaborated with QA and product teams to integrate non-deterministic AI testing, driving increased test rigor and software quality.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Automated grading scripts and test validators in \textbf{Python} improving evaluation efficiency by 25\% in cybersecurity coursework.}
+        \resumeItem{Maintained secure \textbf{Linux}-based lab environments ensuring reliable deployment of student projects and exercises.}
+        \resumeItem{Created documentation and troubleshooting guides simplifying complex system logs interpretation for less experienced users.}
+        \resumeItem{Conducted labs and training sessions on automated testing, debugging, and secure systems increasing student pass rates by 20\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{01/2023 – 08/2023}
+        {Software Engineer}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Developed scalable backend test frameworks in \textbf{C\#} .NET, reducing data processing errors by 30\% in mission-critical services.}
+        \resumeItem{Enhanced observability by integrating \textbf{Splunk} log analytics, cutting mean time to detect issues by 25\%.}
+        \resumeItem{Automated deployment pipelines with \textbf{GitHub Actions}, decreasing release times by 35\% and improving system reliability.}
+        \resumeItem{Refactored \textbf{PostgreSQL} queries and stored procedures, achieving 20\% improvement in database transaction speeds.}
+        \resumeItem{Built \textbf{Kafka}-based asynchronous testing infrastructure to simulate high message throughput handling with 95\% reliability.} 
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Developed comprehensive \textbf{Java Spring Boot} microservices with automated CI/CD workflows on \textbf{AWS EC2} using \textbf{Docker}.}
+        \resumeItem{Designed and implemented reusable automation test suites reducing release regression time by 40\%.}
+        \resumeItem{Enhanced system observability through \textbf{Splunk} log analysis, accelerating incident resolution time by 20\%.}
+        \resumeItem{Introduced Infrastructure-as-Code practices, enabling consistent environment builds and reducing setup errors by 30\%.}
+        \resumeItem{Collaborated on API test automation using \textbf{Pytest}, increasing API test coverage by 50\%.}
+        \resumeItem{Led integration of continuous monitoring and alerting tools, boosting production system stability and uptime significantly.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{GPA: 4.0/4.0}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+          \resumeProjectHeading
+              {\textbf{AI-powered Automated Test Suite} | Python, Pytest, OpenAI API, Jenkins}{}
+        \resumeItemListStart
+            \resumeItem{Developed an AI-enhanced test automation framework that integrates \textbf{OpenAI API} for predictive bug detection improving coverage by 35\%.}
+            \resumeItem{Implemented continuous testing pipelines using \textbf{Jenkins}, reducing release cycle time by 30\% while enhancing reliability.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+    
+    \resumeProjectHeading
+        {\textbf{Infrastructure-as-Code Deployment Engine} | Terraform, AWS, Docker}{}
+        \resumeItemListStart
+            \resumeItem{Architected scalable \textbf{Terraform}-based IaC pipelines to standardize cloud environment provisioning, reducing manual setup time by 45\%.}
+            \resumeItem{Automated microservice deployments on \textbf{AWS EC2} with container orchestration, cutting provisioning errors by 35\%.}
+        \resumeItemListEnd
+          \vspace{-12pt}
+      \resumeProjectHeading
+          {\textbf{Log Analytics and Monitoring Dashboard} | Splunk, AWS CloudWatch, Python}{}
+          \resumeItemListStart
+              \resumeItem{Built a centralized observability dashboard combining \textbf{Splunk} and \textbf{CloudWatch} data, enhancing system monitoring and fault detection by 40\%.}
+              \resumeItem{Automated alert workflows using \textbf{Python} scripts, decreasing incident response time by 25\%.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+
+\end{document}
