@@ -1,0 +1,230 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}      
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Shahil Mohammed}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (832) 620-5379 ~ | ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ | ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ | ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ | ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+Resourceful software developer with 3+ years’ experience applying AI/ML techniques to automate and optimize complex analytics workflows. Skilled in Python programming and large-scale text processing to enhance patent and technical document evaluation. Adept at collaborating with cross-functional teams to build scalable, high-throughput tools integrating state-of-the-art machine learning models for patent categorization and prior art analysis.
+ \vspace{-5pt}
+ 
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & Python, Java, TypeScript, C\#, Shell Scripting, JavaScript \\
+                \textbf{AI/ML Frameworks:} & PyTorch, TensorFlow, scikit-learn, Hugging Face Transformers, LangChain \\
+                \textbf{Data Storage \& Processing:} & SQL, NoSQL, PostgreSQL, MongoDB, Elasticsearch, Vector Databases \\
+                \textbf{Web \& Software Development:} & Spring Boot, React.js, Django, Angular.js, .NET, Flask \\
+                \textbf{DevOps \& Cloud Platforms:} & AWS (EC2, S3, Lambda), Docker, Kubernetes, Jenkins, GitHub Actions \\
+                \textbf{Tools \& Technologies:} & REST APIs, NLP, Semantic Search, Distributed Processing, OCR Post-Processing \\
+            \end{tabular}
+        \end{table}
+ \vspace{-15pt}
+ 
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Optimized \textbf{Python}-based patent analytics microservices, improving high-throughput processing performance by 30\% across multiple technical document datasets.}
+        \resumeItem{Enhanced \textbf{AI/ML} model integration for semantic search and classification, increasing the accuracy of patent categorization workflows by 25\%.}
+        \resumeItem{Developed \textbf{automated} patent evaluation tools using NLP techniques on approved platforms, accelerating prior art relevance assessments by 40\%.}
+        \resumeItem{Collaborated with data scientists to refine \textbf{embedding} models, boosting search relevance for large-scale patent collections by 20\%.}
+        \resumeItem{Implemented claim format and IPC classification parsers, enabling workflow automation and reducing manual review time by 35\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Architected and optimized \textbf{Python} data pipelines for processing 50K+ scientific documents daily, improving ingestion efficiency by 45\%.}
+        \resumeItem{Built AI-powered tools using Hugging Face Transformers to classify and cluster technical content, raising categorization accuracy by 38\%.}
+        \resumeItem{Integrated \textbf{Elasticsearch} and vector embeddings to enable semantic search capabilities across large patent and literature datasets.}
+        \resumeItem{Collaborated with patent experts to develop automated workflows for patent acquisition analysis, reducing manual steps by 50\%.}
+        \resumeItem{Developed OCR post-processing scripts to enhance multimodal patent data extraction, increasing data accuracy by 30\%.}
+        \resumeItem{Optimized \textbf{AWS Lambda} functions to process standards documents, improving batch workflow throughput by 35\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Maintained \textbf{Linux}-based secure environments supporting lab automation and text processing pipelines for large technical datasets.}
+        \resumeItem{Developed \textbf{Python} scripts to validate and analyze patent claim formats, increasing grading efficiency by 20\%.}
+        \resumeItem{Supported debugging and deployment of NLP models utilized in semantic search and classification experiments with academic teams.}
+        \resumeItem{Conducted technical sessions on text processing, classification schemes, and data-driven document analysis to enhance student learning outcomes.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{01/2023 – 08/2023}
+        {Software Engineer}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Developed scalable backend services in \textbf{C\#} and \textbf{TypeScript}, optimizing data retrieval handling of 1000+ patent-related events daily.}
+        \resumeItem{Enhanced \textbf{PostgreSQL} queries for patent metadata analysis, reducing response times by 20\%.}
+        \resumeItem{Built distributed event messaging solutions with \textbf{Kafka}, ensuring consistent delivery of patent workflow notifications and reducing errors by 90\%.}
+        \resumeItem{Upgraded \textbf{Angular.js} frontends to improve user interactions with patent search tools, boosting engagement by 22\%.}
+        \resumeItem{Implemented API integrations with \textbf{Elasticsearch}, enabling semantic search and classification features that increased document retrieval accuracy by 27\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Developed \textbf{Python} microservices integrating \textbf{ML} models for document classification and semantic analysis, decreasing workflow durations by 25\%.}
+        \resumeItem{Engineered \textbf{Spring Boot} APIs supporting large-scale patent document processing for 1000+ concurrent users with sub-200ms response time.}
+        \resumeItem{Designed and optimized SQL/NoSQL databases for storing patent metadata, enhancing query efficiency by 30\%.}
+        \resumeItem{Automated deployment pipelines using \textbf{Docker} on AWS EC2, reducing downtime during upgrades by 40\%.}
+        \resumeItem{Built front-end interfaces with \textbf{React.js} to facilitate patent document visualization and classification, increasing usability scores by 28\%.}
+        \resumeItem{Created toolchains for batch patent data ingestion and OCR post-processing, improving accuracy and speed by 35\%.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{GPA: 4.0/4.0}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+          \resumeProjectHeading
+              {\textbf{AI-Enhanced Patent Categorization System} | Python, Hugging Face Transformers, Elasticsearch}{}
+        \resumeItemListStart
+            \resumeItem{Developed a scalable AI-powered categorization system leveraging NLP models to improve patent classification accuracy by 35\% on large patent datasets.}
+            \resumeItem{Integrated semantic search using \textbf{Elasticsearch} and vector embeddings to accelerate prior art retrieval, reducing search times by 40\%.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+    
+    \resumeProjectHeading
+        {\textbf{Automated Patent Document Processing Workflow} | Python, OCR, AWS Lambda}{}
+        \resumeItemListStart
+            \resumeItem{Built automated document processing workflows combining OCR and NLP to extract structured patent claim data, improving throughput by 50\%.}
+            \resumeItem{Deployed scalable AWS Lambda pipelines to process multi-format patent data, reducing processing time by 45\%.}
+        \resumeItemListEnd
+          \vspace{-12pt}
+      \resumeProjectHeading
+          {\textbf{AI-Driven Prior Art Relevance Assessment Tool} | PyTorch, SQL, Flask}{}
+          \resumeItemListStart
+              \resumeItem{Implemented an AI model using \textbf{PyTorch} for semantic similarity to automatically assess prior art relevance, increasing review speed by 30\%.}
+              \resumeItem{Developed REST APIs in \textbf{Flask} for seamless integration with patent acquisition workflows, supporting analysis of millions of documents efficiently.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+
+\end{document}
