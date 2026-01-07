@@ -1,0 +1,230 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}      
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Shahil Mohammed}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (832) 620-5379 ~ | ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ | ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ | ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ | ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+Experienced software engineer specializing in container technologies, toolchain development, and scalable infrastructure automation. Proven track record in designing high-quality, robust systems using Go and Infrastructure as Code. Skilled in collaborating cross-functionally to deliver innovative, secure solutions enhancing product features and operational reliability.
+ \vspace{-5pt}
+ 
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Toolchains:} & Go, Java, Python, Shell Scripting, Makefiles, Compilers \\
+                \textbf{Container \& Orchestration:} & Docker, Kubernetes, Container Registries, Chainguard Images \\
+                \textbf{Infrastructure as Code:} & Terraform, AWS, Azure, Module Development, Resource Organization \\
+                \textbf{DevOps \& CI/CD:} & Jenkins, GitHub Actions, Docker, Kubernetes, CI/CD Pipeline Automation \\
+                \textbf{Databases \& Messaging:} & PostgreSQL, MySQL, Redis, Kafka \\
+                \textbf{Collaboration \& Tools:} & Git, Jira, REST API, gRPC, Linux/Unix \\
+            \end{tabular}
+        \end{table}
+ \vspace{-15pt}
+ 
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Developed \textbf{Go}-based tooling to improve container image build scalability, increasing build efficiency by 30\%.}
+        \resumeItem{Collaborated with cross-functional teams to design new container features, enhancing core product capabilities used by 1000+ customers.}
+        \resumeItem{Defined and automated product quality standards, reducing image vulnerabilities by 40\% and boosting compliance consistency.}
+        \resumeItem{Architected microservices with \textbf{Docker} and \textbf{Kubernetes} to streamline deployment pipelines, accelerating release cycles by 35\%.}
+        \resumeItem{Led initiatives improving build infrastructure reliability, resulting in 25\% decrease in build failures across environments.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Engineered reusable \textbf{Terraform} modules organizing infrastructure resources logically, reducing provisioning time by 40\%.}
+        \resumeItem{Built robust container orchestration workflows leveraging \textbf{Kubernetes} to support scalable e-commerce operations with 99.9\% uptime.}
+        \resumeItem{Implemented automation tooling in \textbf{Go} and \textbf{Python} to enhance image build system performance, cutting build times by 30\%.}
+        \resumeItem{Collaborated with product teams to plan and execute technical goals, resulting in improved feature rollout predictability by 20\%.}
+        \resumeItem{Ensured continuous improvement of CI/CD pipelines integrating \textbf{Docker} and \textbf{Jenkins}, reducing build failures by 35\%.}
+        \resumeItem{Optimized monitoring of container registries and cloud resources, minimizing infrastructure waste by 15\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Supported \textbf{Linux}-based containerized environments, enhancing security and stability for over 50 cybersecurity lab users.}
+        \resumeItem{Automated validation scripts for software builds, improving test accuracy and reducing manual grading time by 30\%.}
+        \resumeItem{Facilitated student debugging sessions focused on container toolchains and \textbf{Makefiles}, increasing assignment success rates by 20\%.}
+        \resumeItem{Managed secure deployment of software modules, ensuring compliance with lab quality standards and reducing rework by 25\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{01/2023 – 08/2023}
+        {Software Engineer}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Implemented \textbf{Kubernetes}-orchestrated microservices in \textbf{C\#} and \textbf{TypeScript}, reducing API latency by 20\%.}
+        \resumeItem{Optimized container registry integrations and automated deployments, improving CI/CD throughput by 30\%.}
+        \resumeItem{Refined \textbf{PostgreSQL} queries and storage procedures, enhancing database efficiency and reducing frontend load by 20\%.}
+        \resumeItem{Developed \textbf{Kafka}-based event streaming pipelines handling 1500+ daily messages, cutting message loss by 95\%.}
+        \resumeItem{Collaborated to implement container build system improvements, increasing image build reliability by 25\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Created scalable containerized microservices with \textbf{Java Spring Boot} and \textbf{Docker}, supporting 1000+ concurrent users.}
+        \resumeItem{Designed and automated \textbf{Terraform} infrastructure provisioning, reducing setup time by 40\%.}
+        \resumeItem{Developed tooling enforcing product quality standards for container images, improving security posture by 30\%.}
+        \resumeItem{Implemented unit and integration tests using \textbf{JUnit}, achieving 90\% coverage and reducing bugs by 25\%.}
+        \resumeItem{Optimized build and deployment pipelines using \textbf{Jenkins} and \textbf{Docker}, accelerating release speed by 35\%.}
+        \resumeItem{Analyzed logs with \textbf{Splunk} to troubleshoot performance issues, shortening incident resolution by 20\%.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{GPA: 4.0/4.0}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+          \resumeProjectHeading
+              {\textbf{Automated Container Quality Enforcement Tool} | Go, Docker, Kubernetes, CI/CD Pipelines}{}
+        \resumeItemListStart
+            \resumeItem{Developed a \textbf{Go}-based CLI tool to enforce container image quality standards, reducing build-time errors by 30\% in CI/CD pipelines.}
+            \resumeItem{Integrated the tool with \textbf{Kubernetes} clusters to automatically validate container images, improving deployment reliability by 25\%.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+    
+    \resumeProjectHeading
+        {\textbf{AI-Driven Container Build Optimization} | OpenAI API, LangChain, Docker, Terraform}{}
+        \resumeItemListStart
+            \resumeItem{Engineered an AI assistant using \textbf{LangChain} and \textbf{OpenAI API} to suggest container build optimizations, cutting average build time by 35\%.}
+            \resumeItem{Automated infrastructure provisioning with \textbf{Terraform} for generating optimized container build environments, reducing manual setup overhead by 40\%.}
+        \resumeItemListEnd
+          \vspace{-12pt}
+      \resumeProjectHeading
+          {\textbf{Scalable Kubernetes Monitoring Dashboard} | Kubernetes, Prometheus, Grafana, Go}{}
+          \resumeItemListStart
+              \resumeItem{Built a \textbf{Go}-powered dashboard integrating \textbf{Prometheus} metrics for Kubernetes clusters, enabling real-time monitoring of 50+ services.}
+              \resumeItem{Implemented alerting and reporting features, reducing infrastructure downtime by 20\% and improving response times.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+
+\end{document}
