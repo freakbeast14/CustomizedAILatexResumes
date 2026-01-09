@@ -1,0 +1,231 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}      
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Shahil Mohammed}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (832) 620-5379 ~ | ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ | ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ | ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ | ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+Test Automation Engineer with over 3 years' experience crafting efficient automated test frameworks to enhance system reliability and performance. Skilled in scripting, API testing, CI/CD pipelines, and Agile practices, driving quality improvements and early defect identification in complex software environments. Collaborative team player focused on continuous testing innovation and robustness.
+
+ \vspace{-5pt}
+ 
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & TypeScript, PowerShell, C\#, Python, Java \\
+                \textbf{Testing \& Automation Tools:} & Selenium, JUnit, Postman, Jenkins, GitHub Actions \\
+                \textbf{Backend \& API Testing:} & REST API, Microservices, SQL, NoSQL, Mocking Services \\
+                \textbf{DevOps \& CI/CD:} & Jenkins, GitHub Actions, Docker, Kubernetes, AWS EC2 \\
+                \textbf{Software Development Lifecycle \& Methodologies:} & Agile, Scrum, Shift-Left Testing, Continuous Integration \\
+                \textbf{Collaboration \& Bug Tracking:} & Jira, Confluence, Git, Code Review Automation \\
+            \end{tabular}
+        \end{table}
+ \vspace{-15pt}
+ 
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Developed and maintained automated test scripts in \textbf{C\#} and \textbf{PowerShell} improving test coverage by 35\% and defect detection early in cycle.}
+        \resumeItem{Integrated automated tests into \textbf{Jenkins} CI/CD pipelines, accelerating release cycles by 30\% and reducing manual testing effort substantially.}
+        \resumeItem{Collaborated with cross-functional teams to define test scenarios and simulate complex user environments, enhancing system reliability by 20\%.}
+        \resumeItem{Enhanced backend \textbf{API} tests focusing on \textbf{microservices} using \textbf{TypeScript} to ensure robustness across services and detect integration faults early.}
+        \resumeItem{Improved bug reporting process through detailed documentation and effective communication with developers, leading to 40\% faster issue resolution.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented test automation for web applications using \textbf{TypeScript} and \textbf{Selenium}, improving regression testing speed by 50\%.}
+        \resumeItem{Developed and configured multiple test environments replicating real-user scenarios enhancing defect detection prior to production releases by 30\%.}
+        \resumeItem{Contributed to continuous integration pipelines using \textbf{GitHub Actions} ensuring automated tests ran on every build, reducing deployment risks.}
+        \resumeItem{Implemented backend testing strategies for \textbf{REST APIs} and database integration, increasing fault coverage and system stability by 25\%.}
+        \resumeItem{Collaborated in Agile ceremonies and retrospectives, promoting shift-left testing mindset and enhancing team quality focus and responsiveness.}
+        \resumeItem{Authored clear and concise bug reports and worked closely with developers to confirm fixes, shortening bug turnaround time by 35\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Automated setup of \textbf{Linux} based test environments to simulate multiple cybersecurity scenarios, improving lab availability and consistency by 40\%.}
+        \resumeItem{Guided students on test scripting and debugging using \textbf{Python} and \textbf{shell scripting}, increasing practical skills comprehension by 30\%.}
+        \resumeItem{Developed and maintained test validation scripts for grading, improving accuracy and reducing manual grading efforts by 25\%.}
+        \resumeItem{Supported the lab environment's security and usability, ensuring up-to-date configurations and smooth daily operations.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{01/2023 – 08/2023}
+        {Software Engineer}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Built automated backend tests in \textbf{C\#} for microservices with \textbf{.NET}, reducing production defects by 30\%.}
+        \resumeItem{Created \textbf{TypeScript}-based API tests with low latency ensuring reliable data exchange and integration across distributed services.}
+        \resumeItem{Refined front-end automated test suites using \textbf{Angular.js}, boosting UI test reliability by 25\%.}
+        \resumeItem{Optimized database testing focusing on \textbf{PostgreSQL} stored procedures, increasing query validation coverage and test execution speed by 20\%.}
+        \resumeItem{Implemented event-driven testing for \textbf{Kafka} messaging system, reducing message loss incidents by 95\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Developed automation frameworks in \textbf{Java Spring Boot} validating microservices, improving test coverage and reducing manual tests by 40\%.}
+        \resumeItem{Configured \textbf{CI/CD} pipelines using \textbf{Docker} and \textbf{AWS EC2}, enabling automated testing and deployment of microservices smoothly.}
+        \resumeItem{Executed backend and API testing strategies using \textbf{SQL} and stored procedure verification, increasing testing reliability by 25\%.}
+        \resumeItem{Built user-friendly test management dashboards with \textbf{React.js}, reducing test planning effort by 30\%.}
+        \resumeItem{Implemented unit and integration tests using \textbf{JUnit} achieving 90\% coverage and reducing production bugs by 35\%.}
+        \resumeItem{Analyzed logs with \textbf{Splunk} improving debugging and reducing issue resolution times in test phases by 20\%.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{GPA: 4.0/4.0}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+          \resumeProjectHeading
+              {\textbf{CI/CD Automated Test Integration} | Jenkins, GitHub Actions, Selenium, TypeScript}{}
+        \resumeItemListStart
+            \resumeItem{Built an automated testing framework integrated into \textbf{Jenkins} pipelines, accelerating deployment cycles and increasing test coverage by 50\%.}
+            \resumeItem{Streamlined test execution and reporting, improving defect detection and reducing manual intervention by 40\%.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+    
+    \resumeProjectHeading
+        {\textbf{AI-Powered Automated Bug Reporting Assistant} | Python, OpenAI API, Jira API}{}
+        \resumeItemListStart
+            \resumeItem{Developed an \textbf{AI} assistant using \textbf{OpenAI API} to generate detailed bug reports from test logs, increasing reporting accuracy by 35\%.}
+            \resumeItem{Automated Jira ticket creation and classification based on severity, reducing manual reporting workload by 60\%.}
+        \resumeItemListEnd
+          \vspace{-12pt}
+      \resumeProjectHeading
+          {\textbf{Backend API Testing Framework} | TypeScript, Postman, REST API, Microservices}{}
+          \resumeItemListStart
+              \resumeItem{Designed REST API automated tests using \textbf{Postman} and \textbf{TypeScript} for microservices, achieving 90\% endpoint test coverage.}
+              \resumeItem{Implemented environment simulations to mimic production use cases, enhancing early defect detection and system stability.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+
+\end{document}
