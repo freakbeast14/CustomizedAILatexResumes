@@ -1,0 +1,231 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}      
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9.5pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{10pt}{14pt}\selectfont #3}, \textbf{\fontsize{10pt}{14pt}\selectfont #1}, \fontsize{10pt}{14pt}\selectfont #4 & \textbf{\fontsize{10pt}{14pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Shahil Mohammed}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (832) 620-5379 ~ | ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ | ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ | ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ | ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\fontsize{9pt}{10pt}\selectfont
+Versatile software engineer with over 3 years’ experience in designing and delivering scalable cloud-agnostic SaaS solutions. Adept at tackling complex identity resolution challenges with innovative technologies, emphasizing data privacy, security, and compliance. Skilled collaborator with a product-focused mindset, proficient in multiple cloud platforms and big data tools, committed to driving impactful customer-centric innovations.
+ \vspace{-5pt}
+ 
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{9pt}{10pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming Languages:} & Java, Python, Go, Kotlin, TypeScript, C\# \\
+                \textbf{Cloud Platforms \& Tools:} & AWS, GCP, Azure, Docker, Kubernetes, Helm, Terraform, AWS CloudFormation \\
+                \textbf{Big Data \& Analytics:} & Spark, Airflow, Dataflow, BigQuery, Snowflake, Databricks \\
+                \textbf{Frameworks \& APIs:} & Spring Boot, React.js, Node.js, REST API, gRPC \\
+                \textbf{Databases \& Storage:} & MySQL, PostgreSQL, MongoDB, Redis, SnowSQL, Cloud Storage \\
+                \textbf{DevOps \& Automation:} & Jenkins, Git, CI/CD, Infrastructure as Code, Testing frameworks \\
+            \end{tabular}
+        \end{table}
+ \vspace{-15pt}
+ 
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Developed scalable \textbf{Java Spring Boot} microservices for identity resolution, improving system throughput by 30\% under peak loads.}
+        \resumeItem{Engineered cloud-agnostic SaaS platform components using \textbf{Docker} and \textbf{Kubernetes}, enhancing deployment efficiency by 40\%.}
+        \resumeItem{Collaborated with product and data science teams to deliver API solutions meeting strict privacy and compliance standards.}
+        \resumeItem{Implemented infrastructure as code using \textbf{Terraform} and \textbf{AWS CloudFormation}, reducing provisioning times by 50\%.}
+        \resumeItem{Constructed robust automation and testing frameworks, increasing test coverage by 35\% and reducing deployment errors.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Designed customizable data matching engines with \textbf{Python} to support localized client data challenges, raising accuracy by 25\%.}
+        \resumeItem{Optimized \textbf{React} interfaces for identity data visualization, improving user engagement by 30\%.}
+        \resumeItem{Implemented batch and stream processing workflows utilizing \textbf{Airflow} and \textbf{Dataflow}, automating 80\% of data jobs.}
+        \resumeItem{Enhanced cloud resource monitoring and cost control with \textbf{AWS CloudWatch}, cutting cloud spend by 15\%.}
+        \resumeItem{Partnered with external teams to integrate identity resolution APIs, accelerating delivery and reducing partner integration issues by 30\%.}
+        \resumeItem{Led role-based access and security improvements using \textbf{Spring Security} within SaaS applications, improving compliance consistency.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Maintained and secured \textbf{Linux} lab infrastructure, ensuring consistent uptime and compliance with security policies.}
+        \resumeItem{Developed automation scripts for lab environment setups, reducing student onboarding time by 20\%.}
+        \resumeItem{Assisted in debugging and deploying identity-oriented network services, improving lab assignment pass rates by 15\%.}
+        \resumeItem{Created instructional material explaining identity resolution and security principles, enhancing student understanding and engagement.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{01/2023 – 08/2023}
+        {Software Engineer}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Developed \textbf{C\# .NET} backend services optimized for high-volume API traffic, decreasing latency by 28\%.}
+        \resumeItem{Integrated Kafka messaging systems to handle 1000+ events daily, achieving 95\% reliable event delivery across microservices.}
+        \resumeItem{Refined Angular.js frontend components to improve user experience and API responsiveness by 20\%.}
+        \resumeItem{Optimized \textbf{PostgreSQL} queries and procedures, reducing server load by 18\% and enhancing data throughput.}
+        \resumeItem{Collaborated with cross-functional teams to implement secure API interfaces supporting large data volumes and compliance.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Built \textbf{Java Spring Boot} microservices supporting scalable identity resolution with sub-200ms response times for 1000+ users.}
+        \resumeItem{Orchestrated deployment pipelines with \textbf{Docker} and \textbf{AWS EC2}, enabling continuous delivery and zero downtime releases.}
+        \resumeItem{Designed and optimized \textbf{Oracle} and \textbf{MySQL} schemas, improving query performance and data integrity by 22\%.}
+        \resumeItem{Developed front-end dashboards with \textbf{React.js}, boosting user metrics by 30\% and simplifying complex configuration workflows.}
+        \resumeItem{Automated log analysis processes using \textbf{Splunk}, reducing production debugging times by 25\%.}
+        \resumeItem{Implemented unit tests covering 90\% of critical components leveraging \textbf{JUnit}, improving software quality and reliability.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%%%% DON'T TOUCH THIS SECTION
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science in Computer Science}{GPA: 4.0/4.0}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+          \resumeProjectHeading
+              {\textbf{AI-Powered Identity Graph Builder} | AWS, Python, Graph Databases, Kubernetes}{}
+        \resumeItemListStart
+            \resumeItem{Developed a scalable identity graph construction engine using \textbf{Kubernetes}, improving customer identity linkage accuracy by 35\%.}
+            \resumeItem{Automated regional deployment and configuration to support data sovereignty requirements, enabling 4 international client rollouts.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+    \resumeProjectHeading
+        {\textbf{Privacy-First Data Matching Platform} | Java, Spring Boot, Terraform, Snowflake}{}
+        \resumeItemListStart
+            \resumeItem{Engineered end-to-end matching algorithms with \textbf{Java Spring Boot} and \textbf{Snowflake}, achieving 30\% faster processing of large datasets.}
+            \resumeItem{Implemented infrastructure as code using \textbf{Terraform}, reducing environment setup times by 50\% and ensuring compliance.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+
+      \resumeProjectHeading
+          {\textbf{Automated AI Incident Response Assistant} | Python, LangChain, RAG, AWS Lambda}{}
+          \resumeItemListStart
+              \resumeItem{Designed an AI assistant leveraging \textbf{RAG} and \textbf{LangChain} to triage security incidents, reducing mean response time by 40\%.}
+              \resumeItem{Integrated with cloud monitoring APIs and human-in-the-loop workflows to enhance automation without sacrificing accuracy.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+
+\end{document}
