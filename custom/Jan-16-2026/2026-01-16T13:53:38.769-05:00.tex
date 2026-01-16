@@ -1,0 +1,242 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{helvet}      
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItem}[1]{
+  \item{\fontsize{8pt}{9pt}\selectfont
+    #1 \vspace{-3pt}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{8.5pt}{10pt}\selectfont #3}, \textbf{\fontsize{8.5pt}{10pt}\selectfont #1}, \fontsize{8.5pt}{10pt}\selectfont #4 & \textbf{\fontsize{8.5pt}{10pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.001\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\fontsize{8.5pt}{10pt} #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \fontsize{8.5pt}{10pt}#1 & \textbf{\fontsize{8.5pt}{10pt} #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Shahil Mohammed}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (832) 620-5379 ~ | ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ | ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ | ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ | ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\vspace{-2pt}\fontsize{8pt}{9pt}\selectfont
+Resourceful software engineer with 3+ years of experience specializing in backend development and cloud-native solutions. Proven expertise in building scalable, high-performance managed search products with Python, APIs, and cloud infrastructure. Driven to innovate robust systems meeting enterprise-grade reliability and customer needs while fostering strong cross-team collaboration.
+ \vspace{-5pt}
+ 
+\vspace{-2pt}
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Architected backend services with \textbf{Python} and \textbf{Node.js} APIs, improving data processing speed by 35\% and enhancing platform scalability for complex user queries.}
+        \resumeItem{Enhanced deployment automation workflows leveraging \textbf{AWS} tools, reducing provisioning time by 40\% and operational overhead significantly for managed service rollout.}
+        \resumeItem{Spearheaded \textbf{PostgreSQL} query optimizations and schema changes, lowering database response latency by 30\% for search-related data retrieval at scale.}
+        \resumeItem{Analyzed and resolved high-impact production issues, implementing robust monitoring and alerting strategies that decreased incident time-to-resolution by 50\%.}
+        \resumeItem{Collaborated with product owners and QA to refine new features implemented using \textbf{Java Spring Boot} and \textbf{Angular}, boosting customer satisfaction scores by 20\%.}
+        \resumeItem{Lead code reviews and documented backend APIs, establishing best practices that improved code quality and reduced bugs in production releases by 25\%.}
+    \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Developed backend \textbf{Python} microservices with enhanced API integrations, increasing processing throughput by 40\% and supporting complex enterprise data workflows.}
+        \resumeItem{Implemented and optimized \textbf{REST} and \textbf{GraphQL} APIs for client-facing applications, achieving consistent sub-150ms response performance under heavy load.}
+        \resumeItem{Automated key provisioning processes via \textbf{AWS Lambda} functions, reducing manual deployment steps by 60\% and improving platform reliability.}
+        \resumeItem{Built secure authentication layers and integrated role-based access control in \textbf{Laravel}, reducing unauthorized access attempts by 35\%.}
+        \resumeItem{Utilized \textbf{React} and \textbf{Node.js} to enhance frontend-backend synchronization, shortening feature delivery cycles by 25\%.}
+        \resumeItem{Monitored cloud infrastructure using \textbf{AWS CloudWatch}, decreasing resource wastage by 15\% through targeted optimizations.}
+        \resumeItem{Pioneered AI-assisted data processing with \textbf{LLMs}, streamlining broker and compliance data workflows, achieving 70\% reduction in manual effort.}
+        
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Maintained and secured \textbf{Linux}-based lab environments to support software testing and deployment for cybersecurity courses, improving infrastructure uptime by 20\%.}
+        \resumeItem{Developed automated scripts for lab assignments validation, reducing grading time by 30\% and increasing evaluation consistency.}
+        \resumeItem{Mentored students on debugging and testing methodologies, elevating lab assignment success rate by 25\%.}
+        \resumeItem{Conducted workshops on network protocols, cryptography, and secure coding practices, enhancing student comprehension and engagement.}
+        \resumeItem{Streamlined software deployment pipelines for labs incorporating \textbf{Python} and \textbf{Django} applications, enabling rapid experiment iterations.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{01/2023 – 08/2023}
+        {Software Engineer}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Engineered scalable backend APIs using \textbf{C\#} and \textbf{.NET}, enhancing data throughput and reducing request latency by 30\%.}
+        \resumeItem{Optimized \textbf{PostgreSQL} stored procedures and database queries, improving data retrieval performance for large datasets by 20\%.}
+        \resumeItem{Developed API integrations using \textbf{TypeScript} enabling sub-100ms response times and robust error handling across services.}
+        \resumeItem{Implemented a fault-tolerant \textbf{Kafka} messaging system for event-driven processing, cutting message loss by 95\% and boosting throughput.}
+        \resumeItem{Enhanced frontend experiences with \textbf{Angular.js} refinements, increasing user engagement metrics by 25\%.}
+        \resumeItem{Automated CI/CD pipelines using \textbf{Jenkins} and \textbf{Docker}, accelerating release cycles by 40\% and improving deployment reliability.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented scalable \textbf{Java Spring Boot} microservices integrated with \textbf{MySQL}, supporting 1,000+ concurrent requests while maintaining sub-200ms latency.}
+        \resumeItem{Developed AWS cloud infrastructure using \textbf{EC2}, \textbf{SQS}, and custom auto-scaling policies, ensuring seamless handling of over 1,000 requests per minute.}
+        \resumeItem{Optimized complex SQL queries in \textbf{Oracle} databases, reducing average query response times by 20\% for critical business operations.}
+        \resumeItem{Implemented secure REST APIs and integrated with frontend \textbf{React.js} codebase, improving product usability and load times by 30\%.}
+        \resumeItem{Created unit tests using \textbf{JUnit} framework, achieving 90\% code coverage and reducing production bugs by 25\%.}
+        \resumeItem{Monitored system logs with \textbf{Splunk}, diagnosing and resolving production issues swiftly, decreasing downtime by 20\%.}
+        \resumeItem{Collaborated with agile teams to deliver CI/CD pipelines using \textbf{Docker} containers, accelerating deployments and improving test coverage.}
+        
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%%%% DON'T TOUCH THIS SECTION
+ \vspace{-12pt}
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science, Computer Science}{GPA: 4.0/4.0}
+    \vspace{-8pt}
+    \educationSubheading
+      {Manipal Institute of Technology}{07/2018 -- 07/2022}
+      {Bachelor of Technology, Computer and Communication Engineering}{GPA: 8.83/10}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{8pt}{9pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & Python, Java, JavaScript, TypeScript, C\#, PHP, Shell Scripting \\
+                \textbf{Frameworks \& Web Development:} & Django, Spring Boot, Node.js, React.js, Angular.js, Laravel \\
+                \textbf{Databases:} & PostgreSQL, MySQL, Oracle, MongoDB, DynamoDB, NoSQL \\
+                \textbf{Cloud \& DevOps:} & AWS (EC2, Lambda, S3), Docker, Jenkins, Kubernetes, CI/CD Pipelines \\
+                \textbf{APIs \& Integration:} & REST, GraphQL, Kafka, gRPC \\
+                \textbf{Tools \& Technologies:} & Git, Linux, Splunk, JUnit, Agile Methodologies \\
+            \end{tabular}
+        \end{table}
+ \vspace{-18pt}
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+          \resumeProjectHeading
+            {\textbf{Cloud-Native Search Management Platform} | Python, Django, AWS, PostgreSQL}{}
+            \resumeItemListStart
+                \resumeItem{Designed and deployed a scalable search management platform leveraging \textbf{Python} and \textbf{Django}, integrated with \textbf{AWS} services and \textbf{PostgreSQL}, achieving 99.9\% uptime and 30\% faster search indexing.}
+            \resumeItemListEnd
+        \vspace{-12pt}
+    
+        \resumeProjectHeading
+            {\textbf{Automated API Provisioning and Monitoring System} | Node.js, AWS Lambda, REST APIs, DynamoDB}{}
+        \resumeItemListStart
+                \resumeItem{Engineered a fully automated API provisioning and monitoring workflow using \textbf{Node.js} and \textbf{AWS Lambda}, cutting manual deployment time by 60\% and reducing system downtime due to misconfigurations by 40\%.}
+        \resumeItemListEnd
+      \vspace{-12pt}
+      \resumeProjectHeading
+        {\textbf{AI-Enhanced Search Query Optimization} | Python, Elasticsearch, OpenAI API}{}
+    \resumeItemListStart
+            \resumeItem{Developed AI-powered query optimization algorithms integrating \textbf{OpenAI API} with \textbf{Elasticsearch}, improving search relevance by 25\% and reducing average query processing latency by 20\% in real-time applications.}
+    \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\end{document}
