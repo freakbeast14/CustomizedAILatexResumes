@@ -1,0 +1,244 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{helvet}      
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItem}[1]{
+  \item{\fontsize{8pt}{9pt}\selectfont
+    #1 \vspace{-3pt}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{8.5pt}{10pt}\selectfont #3}, \textbf{\fontsize{8.5pt}{10pt}\selectfont #1}, \fontsize{8.5pt}{10pt}\selectfont #4 & \textbf{\fontsize{8.5pt}{10pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.001\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\fontsize{8.5pt}{10pt} #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \fontsize{8.5pt}{10pt}#1 & \textbf{\fontsize{8.5pt}{10pt} #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Shahil Mohammed}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (832) 620-5379 ~ | ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ | ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ | ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ | ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\vspace{-2pt}\fontsize{8pt}{9pt}\selectfont
+Experienced Software Engineer with over 3 years delivering robust cloud-native applications using \textbf{Java}, \textbf{Spring Boot}, and \textbf{AWS} services. Skilled in designing secure Identity and Access Management solutions, implementing modern authentication protocols, and containerized systems with \textbf{Docker} and \textbf{Kubernetes}. Passionate about integrating IAM platforms and optimizing distributed systems for enterprises.
+ \vspace{-5pt}
+ 
+\vspace{-2pt}
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Developed \textbf{Java Spring Boot} microservices and secure REST APIs deployed on containerized \textbf{Docker/ECS} infrastructure, cutting API latency by 30\% and improving platform scalability on AWS cloud.}
+        \resumeItem{Designed and integrated IAM features leveraging \textbf{Spring Security} to enhance authentication and authorization, resulting in 40\% reduction of unauthorized access incidents.}
+        \resumeItem{Implemented end-to-end CI/CD pipelines with \textbf{Jenkins} and \textbf{Docker}, automating deployments and reducing release cycles by 35\%.}
+        \resumeItem{Configured and managed \textbf{AWS Lambda}, \textbf{EC2}, and \textbf{CloudFormation} templates to support infrastructure automation and rapid provisioning.}
+        \resumeItem{Collaborated with security and product teams to implement \textbf{OAuth 2.0} and \textbf{OIDC} protocols for single sign-on integration with enterprise SaaS applications, improving user experience and security compliance.}
+        \resumeItem{Troubleshot distributed system performance issues using \textbf{CloudWatch} and application logging, enhancing system reliability by 25\%.}
+        \resumeItem{Participated in design discussions and contributed to IAM architectural roadmap, fostering adoption of modern security standards and best practices.}
+    \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Engineered a scalable \textbf{Java Spring Boot} backend with \textbf{AWS} cloud-native services, supporting 10,000+ daily active users with 99.9\% uptime and secure authentication workflows.}
+        \resumeItem{Built and maintained reusable \textbf{Docker} containers and \textbf{Kubernetes} orchestration for microservices deployment, reducing service downtime by 20\%.}
+        \resumeItem{Implemented scripting automation via \textbf{Python} and \textbf{Shell} to streamline IAM configuration and lifecycle management tasks, decreasing manual effort by 50\%.}
+        \resumeItem{Integrated \textbf{Okta} authentication platform to enable secure identity federation and multi-factor authentication, improving compliance with industry standards.}
+        \resumeItem{Developed granular role-based access control using \textbf{Spring Security}, cutting privilege escalations and enforcing least privilege principles.}
+        \resumeItem{Created automated test suites with \textbf{JUnit} and behavior-driven frameworks to verify security and API workflows, increasing test coverage to 90\%.}
+        \resumeItem{Enhanced observability by configuring \textbf{AWS CloudWatch} metrics and alarms for identity services, facilitating proactive incident response.}
+        \resumeItem{Led collaboration with cross-functional teams to document and improve IAM policies and cloud security posture, enhancing governance and audit readiness.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Supported secure \textbf{Linux} lab environments, managing authentication services and access controls to maintain confidential cybersecurity experiment setups.}
+        \resumeItem{Automated security validation scripts in \textbf{Python} to assess IAM implementations and streamline grading of hands-on assignments, increasing grading speed by 25\%.}
+        \resumeItem{Mentored students on integrating \textbf{SAML}, \textbf{OAuth}, and \textbf{JWT} standards into applications, improving student project success rates by 20\%.}
+        \resumeItem{Collaborated on research projects analyzing IAM platform vulnerabilities and performance tuning of distributed identity systems.}
+        \resumeItem{Organized interactive tutorials covering cloud security concepts and IAM protocols, positively impacting student engagement and outcomes.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{01/2023 – 08/2023}
+        {Software Engineer}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Implemented \textbf{Java Spring Boot} services with integration to enterprise IAM systems, reducing authentication delays by 35\% and enforcing secure access policies.}
+        \resumeItem{Developed and maintained containerized workloads using \textbf{Docker} and \textbf{Kubernetes}, boosting deployment efficiency and system scalability.}
+        \resumeItem{Automated CI/CD pipelines via \textbf{Jenkins}, decreasing production deployment times by 40\% and improving reliability.}
+        \resumeItem{Optimized \textbf{PostgreSQL} queries and data indexing, increasing data retrieval speeds by 25\% for identity-related transactions.}
+        \resumeItem{Built message streaming solutions with \textbf{Kafka}, processing 1,000+ identity events daily and ensuring robust event delivery mechanisms.}
+        \resumeItem{Developed TypeScript \textbf{API} integrations enforcing OAuth 2.0 compliance across services, enhancing security and data privacy.}
+        \resumeItem{Investigated and resolved cloud infrastructure issues using monitoring tools, improving overall IAM service up-time by 15\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Architected and developed \textbf{Java Spring Boot} microservices deployed on \textbf{AWS EC2} with Docker containers, supporting cloud-native IAM capabilities with 99.5\% reliability.}
+        \resumeItem{Designed fine-grained access controls and integrated \textbf{LDAP} authentication for enterprise clients, enhancing security and user management efficiency.}
+        \resumeItem{Constructed scalable \textbf{CI/CD} workflows using \textbf{Docker}, \textbf{Jenkins}, and \textbf{AWS} services, streamlining microservice deployments and infrastructure provisioning.}
+        \resumeItem{Created RESTful APIs with built-in support for \textbf{OAuth 2.0} and \textbf{JWT}-based token authentication, improving secure communication between services.}
+        \resumeItem{Optimized \textbf{Oracle} SQL queries and database schema to reduce latency by 20\%, improving identity data retrieval performance.}
+        \resumeItem{Instrumented logging and monitoring using \textbf{Splunk} for IAM microservices, cutting incident resolution times by 30\%.}
+        \resumeItem{Enhanced frontend functionality for project management UI using \textbf{React.js}, reducing page load times by 30\% and improving user engagement.}
+        \resumeItem{Led integration efforts with third-party IAM platforms like \textbf{Ping Identity}, enabling seamless enterprise authentication experiences.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%%%% DON'T TOUCH THIS SECTION
+ \vspace{-12pt}
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science, Computer Science}{GPA: 4.0/4.0}
+    \vspace{-8pt}
+    \educationSubheading
+      {Manipal Institute of Technology}{07/2018 -- 07/2022}
+      {Bachelor of Technology, Computer and Communication Engineering}{GPA: 8.83/10}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{8pt}{9pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & Java, Python, Shell Scripting, Groovy, TypeScript, C\#, JavaScript, PHP \\
+                \textbf{Web Frameworks \& APIs:} & Spring Boot, Spring Security, React.js, Angular.js, REST API, OAuth 2.0, JWT, SAML \\
+                \textbf{Cloud \& DevOps:} & AWS (Lambda, EC2, ECS, CloudFormation, S3), Docker, Kubernetes, Jenkins, GitLab, Azure DevOps \\
+                \textbf{Databases \& Directory Services:} & MySQL, PostgreSQL, Oracle, LDAP, OpenDJ, MongoDB, DynamoDB, Redis \\
+                \textbf{Identity \& Access Management:} & Okta, Ping Identity, OpenAM, Azure AD, AWS IAM, OAuth 2.0, OIDC, SAML, JWT \\
+                \textbf{Tools \& Others:} & Linux/Unix, Git, Splunk, JUnit, CI/CD pipelines, Kafka, JSON, gRPC \\
+            \end{tabular}
+        \end{table}
+ \vspace{-18pt}
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+          \resumeProjectHeading
+            {\textbf{Cloud-Native IAM Microservices Platform} $|$ Java, Spring Boot, Docker, Kubernetes, AWS}{}
+            \resumeItemListStart
+                \resumeItem{Developed a scalable IAM microservices platform on \textbf{AWS} using \textbf{Spring Boot}, \textbf{Docker}, and \textbf{Kubernetes}, implementing OAuth 2.0 and JWT for secure access control, which reduced authentication latency by 30\%.}
+            \resumeItemListEnd
+        \vspace{-12pt}
+    
+        \resumeProjectHeading
+            {\textbf{AI-Driven Access Anomaly Detection System} $|$ Python, AWS Lambda, OpenAI, CloudWatch}{}
+        \resumeItemListStart
+                \resumeItem{Built an AI-based anomaly detection tool using \textbf{Python}, \textbf{AWS Lambda}, and \textbf{OpenAI} to analyze IAM logs and flag suspicious access patterns, improving security incident detection by 40\%.}
+        \resumeItemListEnd
+      \vspace{-12pt}
+      \resumeProjectHeading
+        {\textbf{Enterprise SSO Integration Using Okta} $|$ Java, Spring Security, OAuth 2.0, Okta, React.js}{}
+    \resumeItemListStart
+            \resumeItem{Implemented seamless Single Sign-On integration with \textbf{Okta} and \textbf{Spring Security}, enabling secure authorization flows with \textbf{OAuth 2.0} and \textbf{OIDC}, increasing user login efficiency by 50\%.}
+    \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\end{document}
