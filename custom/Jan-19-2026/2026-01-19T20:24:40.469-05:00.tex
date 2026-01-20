@@ -1,0 +1,240 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{helvet}      
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItem}[1]{
+  \item{\fontsize{8pt}{9pt}\selectfont
+    #1 \vspace{-3pt}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{8.5pt}{10pt}\selectfont #3}, \textbf{\fontsize{8.5pt}{10pt}\selectfont #1}, \fontsize{8.5pt}{10pt}\selectfont #4 & \textbf{\fontsize{8.5pt}{10pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.001\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\fontsize{8.5pt}{10pt} #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \fontsize{8.5pt}{10pt}#1 & \textbf{\fontsize{8.5pt}{10pt} #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Shahil Mohammed}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (832) 620-5379 ~ | ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ | ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ | ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ | ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\vspace{-2pt}\fontsize{8pt}{9pt}\selectfont
+Experienced software developer specializing in compliance-driven applications for regulated sectors such as finance, healthcare, and government. Proficient in system design, regulatory requirements, record retention laws, and telecommunications standards to build scalable, secure, and compliant solutions.
+ \vspace{-5pt}
+ 
+\vspace{-2pt}
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Developed compliance-driven web applications using \textbf{C\#} and \textbf{.NET} frameworks, improving data regulation adherence and reducing audit issues by 30\% in financial industry projects.}
+        \resumeItem{Engineered backend services with \textbf{MS SQL Server} and \textbf{MySQL} to enforce record retention policies, boosting system reliability and regulatory compliance by 25\%.}
+        \resumeItem{Designed modular integrations for telecom compliance including TCPA and state laws, enhancing system accuracy by 20\% and streamlining carrier interactions.}
+        \resumeItem{Implemented secure API endpoints and data validation rules using \textbf{ASP.NET} and \textbf{XML}, minimizing non-compliance risks and reducing error rates by 35\%.}
+        \resumeItem{Collaborated on system design to meet A2P 10 DLC and carrier best practices, cutting incident response times by 15\% through proactive compliance alerts.}
+        \resumeItem{Led development of Windows Forms tools for compliance monitoring, reducing manual compliance checks by 40\% and accelerating issue detection workflows.}
+    \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Automated compliance data processing pipelines with \textbf{Python} and \textbf{PHP}, enhancing record retention accuracy for telecom clients by 30\% while reducing manual data handling.}
+        \resumeItem{Developed scalable SaaS tools incorporating regulatory TCPA and telecommunications rules using \textbf{Laravel} and \textbf{React}, improving platform compliance coverage by 20\%.}
+        \resumeItem{Implemented multi-tier backend services with role-based access control, securing sensitive health and financial data and reducing unauthorized access incidents by 25\%.}
+        \resumeItem{Configured telecommunication regulatory workflows for A2P 10 DLC compliance, increasing automated validations and cutting regulatory review times by 35\%.}
+        \resumeItem{Designed front-end components that enforced state-specific compliance laws using \textbf{JavaScript} and \textbf{TypeScript}, improving user input accuracy and reducing errors by 15\%.}
+        \resumeItem{Optimized cloud resource usage and logging with \textbf{AWS CloudWatch}, lowering operating costs by 10\% and facilitating compliance audit readiness.}
+        \resumeItem{Spearheaded AI automation to monitor FINRA broker data, reducing compliance reporting delays by 50\% and improving data quality through error detection algorithms.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Maintained secure \textbf{Linux}-based lab infrastructure supporting compliance software testing and development, increasing lab uptime reliability by 15\%.}
+        \resumeItem{Guided students on debugging and validating compliance-related software modules, improving assignment success and understanding of record retention laws by 20\%.}
+        \resumeItem{Automated grading and software validation scripts, accelerating evaluation processes by 30\% while ensuring compliance testing standards were met consistently.}
+        \resumeItem{Developed and delivered lectures on regulatory standards and secure software development, enhancing student performance in compliance and cybersecurity topics.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{01/2023 – 08/2023}
+        {Software Engineer}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Implemented backend services in \textbf{C\#} with \textbf{.NET} to ensure compliance with data retention and telecommunication laws, reducing latency by 30\%.}
+        \resumeItem{Optimized \textbf{MS SQL Server} queries and stored procedures, increasing data retrieval speed and regulatory reporting accuracy by 20\%.}
+        \resumeItem{Designed secure message pipelines using distributed systems to support compliance event tracking, reducing message loss by 95\% in daily operations.}
+        \resumeItem{Enhanced \textbf{Angular.js} front-end with improved workflows to meet regulatory UI requirements, increasing user task completion rates by 25\%.}
+        \resumeItem{Automated build, test, and deployment processes with \textbf{Jenkins} and \textbf{Docker}, accelerating release cycles by 40\% while ensuring compliance standards.}
+        \resumeItem{Integrated secure APIs for data exchanges compliant with telecommunication regulations, reducing unauthorized data exposure by 35\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Developed compliance-centric SaaS solutions adhering to financial and telecom regulations using \textbf{Java Spring Boot} and \textbf{MySQL}, improving system uptime by 15\%.}
+        \resumeItem{Tuned \textbf{MySQL} queries for transactional compliance data, reducing response latency by 20\% and increasing database integrity.}
+        \resumeItem{Architected cloud-based microservices on \textbf{AWS EC2} with auto-scaling for regulated environments, successfully handling 1,000+ requests per minute reliably.}
+        \resumeItem{Implemented CI/CD pipelines using \textbf{Docker} and \textbf{Jenkins}, decreasing deployment errors and accelerating production rollouts by 30\%.}
+        \resumeItem{Designed user interfaces with \textbf{React.js} focusing on compliance data entry accuracy, reducing user errors by 25\%.}
+        \resumeItem{Monitored system logs with \textbf{Splunk} to detect compliance anomalies, cutting incident response times by 20\%.}
+        \resumeItem{Collaborated on requirement analysis and integrations to ensure conformance with record retention and telecommunication rules, improving audit readiness.}
+        
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%%%% DON'T TOUCH THIS SECTION
+ \vspace{-12pt}
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science, Computer Science}{GPA: 4.0/4.0}
+    \vspace{-8pt}
+    \educationSubheading
+      {Manipal Institute of Technology}{07/2018 -- 07/2022}
+      {Bachelor of Technology, Computer and Communication Engineering}{GPA: 8.83/10}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{8pt}{9pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming Languages:} & C\#, C, C++, SQL, Java, Python, TypeScript \\
+                \textbf{Frameworks \& Platforms:} & .NET, ASP.NET, Windows Forms, Spring Boot, Angular, React, Laravel \\
+                \textbf{Databases:} & MS SQL Server, MySQL, PostgreSQL, Oracle, NoSQL \\
+                \textbf{Compliance \& Regulations:} & TCPA, A2P 10 DLC, Record Retention Laws, Telecommunication & Financial Compliance Best Practices \\
+                \textbf{DevOps \& Cloud:} & AWS (EC2, SQS, Lambda), Docker, Jenkins, CI/CD Pipelines \\
+                \textbf{Tools \& Technologies:} & Linux/Unix, Git, XML, REST API, Splunk, Jira \\
+            \end{tabular}
+        \end{table}
+ \vspace{-18pt}
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+          \resumeProjectHeading
+            {\textbf{Compliance Automation Suite} | C\#, .NET, MS SQL Server, XML, REST APIs}{}
+            \resumeItemListStart
+                \resumeItem{Developed an automated compliance monitoring platform that enforces record retention policies and telecommunication rules, reducing manual compliance audits by 50\% and improving regulatory adherence.}
+            \resumeItemListEnd
+        \vspace{-12pt}
+    
+        \resumeProjectHeading
+            {\textbf{AI-Driven Regulatory Chatbot} | Python, OpenAI API, Machine Learning, SQL}{}
+        \resumeItemListStart
+                \resumeItem{Implemented an AI chatbot using \textbf{OpenAI API} to assist users in navigating complex telecommunication compliance requirements, increasing query resolution speed by 40\% and aiding regulatory education.}
+        \resumeItemListEnd
+      \vspace{-12pt}
+      \resumeProjectHeading
+        {\textbf{Telecom Record Retention Manager} | Java, Spring Boot, MySQL, AWS}{}
+    \resumeItemListStart
+            \resumeItem{Built a telecom record retention management system that automates legal data retention workflows using \textbf{Spring Boot} and \textbf{MySQL}, reducing compliance violations by 35\% and streamlining audits.}
+    \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\end{document}
