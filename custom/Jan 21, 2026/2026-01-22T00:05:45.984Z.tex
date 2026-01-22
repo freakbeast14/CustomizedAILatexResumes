@@ -1,0 +1,244 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{helvet}      
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItem}[1]{
+  \item{\fontsize{8pt}{9pt}\selectfont
+    #1 \vspace{-3pt}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{8.5pt}{10pt}\selectfont #3}, \textbf{\fontsize{8.5pt}{10pt}\selectfont #1}, \fontsize{8.5pt}{10pt}\selectfont #4 & \textbf{\fontsize{8.5pt}{10pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.001\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\fontsize{8.5pt}{10pt} #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \fontsize{8.5pt}{10pt}#1 & \textbf{\fontsize{8.5pt}{10pt} #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Shahil Mohammed}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (832) 620-5379 ~ | ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ | ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ | ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ | ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\vspace{-2pt}\fontsize{8pt}{9pt}\selectfont
+Results-driven Data Engineer with over 3 years of experience in developing robust data pipelines and managing cloud-based data platforms. Proven expertise in utilizing Snowflake and Azure Data Factory for data ingestion and transformation, ensuring data integrity and operational excellence to support analytics and business decision-making effectively.
+ \vspace{-5pt}
+ 
+\vspace{-2pt}
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented data ingestion processes using \textbf{Snowflake} and \textbf{Azure Data Factory}, resulting in a 40% increase in data availability for business analytics and reporting across multiple departments.}
+        \resumeItem{Migrated on-premises data processes to \textbf{Azure}, enhancing scalability and performance, achieving a 30% reduction in data processing time and improving long-term maintainability of datasets.}
+        \resumeItem{Integrated automated workflows with \textbf{Snowflake} for data extraction and transformation, reducing manual intervention by 50% and increasing overall data processing efficiency.}
+        \resumeItem{Developed and maintained complex \textbf{SQL} scripts and stored procedures, ensuring accurate data processing and reducing query execution time by 25% through optimization techniques.}
+        \resumeItem{Established data governance standards for data creation and maintenance, improving data quality and usability across analytics platforms, leading to a 20% increase in user satisfaction.}
+        \resumeItem{Built telemetry and alerting systems for data pipelines, proactively identifying and resolving issues, which reduced downtime by 35% and improved operational reliability.}
+        \resumeItem{Mentored junior developers in best practices for data engineering, enhancing team capability and consistency, resulting in a 15% increase in project delivery speed.}
+    \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Engineered a scalable data processing system using \textbf{Python} and \textbf{AWS}, automating data ingestion for over 10,000 records daily, which reduced manual effort by 80%.}
+        \resumeItem{Developed a multi-tier architecture for a data visualization platform using \textbf{React} and \textbf{Laravel}, improving real-time analytics capabilities for over 50 concurrent users.}
+        \resumeItem{Implemented \textbf{CI/CD} pipelines with \textbf{Jenkins} for automated deployment, reducing release time by 40% and enhancing the reliability of software updates.}
+        \resumeItem{Created data integration solutions leveraging \textbf{SQL} and \textbf{PostgreSQL}, achieving a 30% improvement in data retrieval times for reporting purposes.}
+        \resumeItem{Optimized cloud resource utilization on \textbf{AWS}, achieving a 10% reduction in operational costs while maintaining performance standards.}
+        \resumeItem{Collaborated with cross-functional teams to gather requirements and translate them into effective data solutions, leading to a 25% increase in project alignment with business needs.}
+        \resumeItem{Utilized \textbf{AI} technologies to automate data processing tasks, cutting manual workflows by 80% and enhancing overall system efficiency.}
+        \resumeItem{Improved observability of the data pipeline by integrating monitoring tools, resulting in a 15% increase in issue detection and resolution speed.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Maintained and optimized \textbf{Linux}-based systems for cybersecurity labs, ensuring secure configurations and enhancing execution environments, resulting in a 20% increase in lab efficiency.}
+        \resumeItem{Automated grading processes using \textbf{Python} scripts, reducing manual grading time by 30% and increasing accuracy in evaluation workflows.}
+        \resumeItem{Developed interactive online sessions covering data security topics, improving student engagement and understanding by 25% through hands-on learning experiences.}
+        \resumeItem{Mentored students in data analysis and software testing, leading to a 15% improvement in assignment success rates and overall performance.}
+        \resumeItem{Implemented monitoring scripts for system health checks, reducing downtime incidents by 40% through proactive maintenance.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{01/2023 – 08/2023}
+        {Software Engineer}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Developed high-performance data processing applications using \textbf{C\#} and \textbf{.NET}, achieving a 30% reduction in data retrieval latency for critical business operations.}
+        \resumeItem{Executed and maintained \textbf{TypeScript}-based API integrations, consistently delivering sub-100ms response times for data exchange across services.}
+        \resumeItem{Refactored \textbf{PostgreSQL} stored procedures to enhance query performance, resulting in a 20% increase in overall database efficiency and reduced load times.}
+        \resumeItem{Architected a distributed messaging system using \textbf{Kafka}, ensuring reliable event processing and reducing message loss by 95% through fault-tolerant design.}
+        \resumeItem{Automated build and deployment processes using \textbf{Docker} and \textbf{Jenkins}, leading to a 40% decrease in release cycle times and improved software quality.}
+        \resumeItem{Collaborated with cross-functional teams to troubleshoot data integration issues, enhancing data accuracy and reliability across systems by 25%.}
+        \resumeItem{Implemented telemetry solutions for monitoring data pipelines, improving issue detection and resolution speed by 30% through proactive alerts.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Developed scalable \textbf{Java} microservices integrated with \textbf{MySQL}, supporting 1,000 concurrent users while maintaining sub-200ms response times for critical applications.}
+        \resumeItem{Engineered a cloud-based system on \textbf{AWS EC2}, implementing auto-scaling to handle 1,000+ requests in under 60 seconds, ensuring high availability and performance.}
+        \resumeItem{Designed and optimized a high-performance \textbf{Oracle} SQL database, achieving a 20% reduction in response latency through query optimization techniques.}
+        \resumeItem{Collaborated with a 5-member team to deliver a \textbf{SaaS} platform that automated key stages of the software development life cycle, improving efficiency by 30%.}
+        \resumeItem{Implemented \textbf{CI/CD} pipelines with \textbf{Docker}, ensuring reliable deployment of microservices and reducing downtime during updates.}
+        \resumeItem{Validated pipeline functionality through unit testing with \textbf{JUnit}, achieving approximately 90% test coverage and enhancing software reliability.}
+        \resumeItem{Investigated production issues using \textbf{Splunk}, improving debugging efficiency and reducing incident resolution time by 20%.}
+        \resumeItem{Mentored junior developers on best practices in data management and cloud technologies, enhancing team capability and project delivery speed.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%%%% DON'T TOUCH THIS SECTION
+ \vspace{-12pt}
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science, Computer Science}{GPA: 4.0/4.0}
+    \vspace{-8pt}
+    \educationSubheading
+      {Manipal Institute of Technology}{07/2018 -- 07/2022}
+      {Bachelor of Technology, Computer and Communication Engineering}{GPA: 8.83/10}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{8pt}{9pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Data Engineering \& Platforms:} & Snowflake, Azure Data Factory, SQL Server, Azure Synapse, Databricks, DBT, ETL/ELT processes, Data Warehousing \\
+                \textbf{Programming \& Scripting:} & Java, Python, TypeScript, SQL, C\#, C++, Shell Scripting, Go, PHP \\
+                \textbf{Web Development \& Frameworks:} & Spring Boot, React.js, Angular.js, Laravel, Node.js, Django, HTML, CSS \\
+                \textbf{DevOps \& Cloud:} & Amazon Web Services (AWS), Azure, Docker, Jenkins, Kubernetes, CI/CD pipelines, Lambda, EC2 \\
+                \textbf{Database \& Data Storage:} & MySQL, PostgreSQL, Oracle, NoSQL, MongoDB, Redis, DynamoDB \\
+                \textbf{Tools \& Other Technologies:} & Git, GitHub, REST API, gRPC, JSON, Splunk, Jira, JUnit \\
+            \end{tabular}
+        \end{table}
+ \vspace{-18pt}
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+          \resumeProjectHeading
+            {\textbf{Automated Data Ingestion System} $|$ Snowflake, Azure Data Factory, Python}{}
+            \resumeItemListStart
+                \resumeItem{Developed an automated data ingestion system using \textbf{Snowflake} and \textbf{Azure Data Factory}, enabling seamless data integration from multiple sources, resulting in a 40% increase in reporting efficiency and data accuracy.}
+            \resumeItemListEnd
+        \vspace{-12pt}
+    
+        \resumeProjectHeading
+            {\textbf{AI-Driven Data Quality Monitoring Tool} $|$ Python, AWS, SQL}{}
+        \resumeItemListStart
+                \resumeItem{Engineered an AI-driven data quality monitoring tool that utilized machine learning algorithms to detect anomalies in datasets, improving data integrity by 30% and reducing manual data validation efforts significantly.}
+        \resumeItemListEnd
+      \vspace{-12pt}
+      \resumeProjectHeading
+        {\textbf{Scalable ETL Pipeline} $|$ Azure Data Factory, Snowflake, SQL}{}
+    \resumeItemListStart
+            \resumeItem{Designed and implemented a scalable ETL pipeline using \textbf{Azure Data Factory} and \textbf{Snowflake}, enabling efficient data transformation and loading processes, resulting in a 35% reduction in processing time for large datasets.}
+    \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\end{document}
