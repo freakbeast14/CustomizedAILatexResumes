@@ -1,0 +1,245 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{helvet}      
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItem}[1]{
+  \item{\fontsize{8pt}{9pt}\selectfont
+    #1 \vspace{-3pt}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{8.5pt}{10pt}\selectfont #3}, \textbf{\fontsize{8.5pt}{10pt}\selectfont #1}, \fontsize{8.5pt}{10pt}\selectfont #4 & \textbf{\fontsize{8.5pt}{10pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.001\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\fontsize{8.5pt}{10pt} #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \fontsize{8.5pt}{10pt}#1 & \textbf{\fontsize{8.5pt}{10pt} #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Shahil Mohammed}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (832) 620-5379 ~ | ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ | ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ | ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ | ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\vspace{-2pt}\fontsize{8pt}{9pt}\selectfont
+Dynamic Application Engineer with over 3 years of experience in developing and integrating applications that enhance legal and compliance workflows. Proficient in designing scalable solutions, leveraging RESTful APIs, and collaborating with cross-functional teams. Committed to delivering innovative solutions that streamline operations and ensure data integrity, enhancing organizational efficiency.
+
+\vspace{-5pt}
+ 
+\vspace{-2pt}
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Engineered integrations between \textbf{Jira} and compliance systems, enhancing data synchronization and reducing manual entry errors by 40\% while improving overall workflow efficiency.}
+        \resumeItem{Developed custom \textbf{automation tools} for legal processes, achieving a 30\% reduction in processing time and ensuring adherence to compliance standards.}
+        \resumeItem{Collaborated with legal teams to translate requirements into technical specifications, resulting in the successful deployment of 5+ scalable applications that improved data integrity.}
+        \resumeItem{Evaluated and implemented integration patterns using \textbf{REST APIs} and \textbf{webhooks}, streamlining data flow between internal and third-party systems by 50\%.}
+        \resumeItem{Automated request intake processes, empowering self-service operations and reducing response times by 25\% through effective system integrations.}
+        \resumeItem{Troubleshot complex technical issues related to application performance, achieving a 35\% improvement in system reliability and user satisfaction.}
+        \resumeItem{Contributed to architectural decisions for legal tech initiatives, aligning technical roadmaps with business goals and enhancing project outcomes.}
+    \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented a scalable \textbf{SaaS} platform for legal data visualization, improving access to analytics for 50+ users and enhancing decision-making capabilities.}
+        \resumeItem{Built robust \textbf{Python} data pipelines to automate compliance reporting, reducing manual effort by 80\% and ensuring timely data delivery.}
+        \resumeItem{Developed secure integration solutions for legal systems using \textbf{PHP} and \textbf{Stripe}, enhancing transaction efficiency and user experience significantly.}
+        \resumeItem{Implemented AI-driven automation for compliance workflows, cutting processing times by 70\% and increasing overall operational efficiency.}
+        \resumeItem{Engineered a user-friendly interface in \textbf{React}, optimizing component rendering and improving load times by 25\% for enhanced user engagement.}
+        \resumeItem{Optimized cloud resource utilization on \textbf{AWS}, achieving a 10\% reduction in costs while maintaining service quality and performance.}
+        \resumeItem{Collaborated with cross-functional teams to ensure alignment of technology solutions with legal requirements, resulting in successful project deliverables.}
+        \resumeItem{Enhanced application security and compliance through the implementation of best practices, reducing vulnerabilities by 40\% and ensuring data protection.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Maintained and secured \textbf{Linux}-based systems for cybersecurity labs, ensuring compliance with security protocols and enhancing system reliability.}
+        \resumeItem{Mentored students in software testing and debugging practices, improving their technical skills and assignment success rates by 20\%.}
+        \resumeItem{Automated evaluation scripts for lab assignments, reducing manual grading effort by 60\% while increasing accuracy and efficiency in results.}
+        \resumeItem{Delivered engaging sessions on Cybersecurity topics, enhancing student understanding and performance in key areas such as Networking and Web Security.}
+        \resumeItem{Assisted in the integration of new tools and technologies, improving lab capabilities and providing students with hands-on experience in cybersecurity.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{01/2023 – 08/2023}
+        {Software Engineer}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Developed a high-performance backend in \textbf{C\#} using the \textbf{.NET} framework, achieving a 30\% reduction in data retrieval latency for legal applications.}
+        \resumeItem{Executed and maintained \textbf{TypeScript}-based API integrations, consistently delivering sub-100ms response times and improving data exchange efficiency.}
+        \resumeItem{Enhanced existing platforms by improving component architecture in \textbf{Angular.js}, resulting in a 25\% increase in user engagement and satisfaction.}
+        \resumeItem{Refactored \textbf{PostgreSQL} queries to optimize performance, reducing frontend load times by 15\% and increasing overall system efficiency.}
+        \resumeItem{Architected a \textbf{Kafka}-based messaging system for real-time data processing, ensuring reliable delivery and reducing message loss by 95\% across applications.}
+        \resumeItem{Automated deployment pipelines using \textbf{Jenkins} and \textbf{Docker}, reducing release times by 40\% and enhancing development workflow efficiency.}
+        \resumeItem{Collaborated with stakeholders to align technical solutions with business needs, resulting in successful project outcomes and improved user experiences.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Collaborated in a team to deliver a \textbf{SaaS} platform that automated key legal workflows, enhancing operational efficiency for users.}
+        \resumeItem{Implemented scalable \textbf{Java Spring Boot} microservices integrated with \textbf{MySQL}, supporting 1,000 concurrent users while maintaining high performance.}
+        \resumeItem{Designed and optimized a \textbf{PostgreSQL} database through query tuning, achieving a 20\% reduction in response latency for legal applications.}
+        \resumeItem{Engineered a cloud-based system on \textbf{AWS EC2}, implementing auto-scaling to handle 1,000+ requests efficiently and reliably.}
+        \resumeItem{Developed a project management interface in \textbf{React.js}, enhancing usability and reducing page load times by 30\% for better user experience.}
+        \resumeItem{Implemented unit tests with \textbf{JUnit}, achieving approximately 90\% test coverage and improving software reliability across the platform.}
+        \resumeItem{Investigated production issues using \textbf{Splunk}, enhancing debugging efficiency and reducing incident resolution time by 20\%.}
+        \resumeItem{Contributed to the development of CI/CD pipelines using \textbf{Docker}, ensuring reliable deployments and maintaining high software quality standards.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%%%% DON'T TOUCH THIS SECTION
+ \vspace{-12pt}
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science, Computer Science}{GPA: 4.0/4.0}
+    \vspace{-8pt}
+    \educationSubheading
+      {Manipal Institute of Technology}{07/2018 -- 07/2022}
+      {Bachelor of Technology, Computer and Communication Engineering}{GPA: 8.83/10}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{8pt}{9pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & Java, Python, TypeScript, C\#, JavaScript, PHP, Go \\
+                \textbf{Web Development \& Frameworks:} & Spring Boot, React.js, Angular.js, Laravel, Node.js, Django \\
+                \textbf{Integration \& Automation:} & REST APIs, Webhooks, Zapier, Workato, Middleware, CI/CD \\
+                \textbf{Database \& Data Storage:} & PostgreSQL, MySQL, MongoDB, DynamoDB, Redis, NoSQL \\
+                \textbf{DevOps \& Cloud:} & Amazon Web Services (AWS), Docker, Jenkins, Azure, Kubernetes \\
+                \textbf{AI \& Security:} & AI Integration, Machine Learning, Data Privacy, Security Best Practices, Compliance Automation \\
+            \end{tabular}
+        \end{table}
+ \vspace{-18pt}
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+          \resumeProjectHeading
+            {\textbf{Legal Workflow Automation} $|$ Python, Flask, PostgreSQL, REST APIs}{}
+            \resumeItemListStart
+                \resumeItem{Developed a robust legal workflow automation tool using \textbf{Python} and \textbf{Flask}, streamlining compliance processes and reducing manual effort by 70\% across various legal operations.}
+            \resumeItemListEnd
+        \vspace{-12pt}
+    
+        \resumeProjectHeading
+            {\textbf{AI-Driven Compliance Checker} $|$ Java, Spring Boot, Machine Learning}{}
+        \resumeItemListStart
+                \resumeItem{Engineered an AI-driven compliance checker that analyzes legal documents for adherence to regulations, improving compliance accuracy by 60\% and significantly reducing review times.}
+        \resumeItemListEnd
+      \vspace{-12pt}
+      \resumeProjectHeading
+        {\textbf{Data Integration Platform} $|$ Node.js, Express, MongoDB}{}
+    \resumeItemListStart
+            \resumeItem{Built a data integration platform that connects various legal systems using \textbf{Node.js} and \textbf{Express}, enhancing data flow and reducing integration time by 50\%.}
+    \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\end{document}
