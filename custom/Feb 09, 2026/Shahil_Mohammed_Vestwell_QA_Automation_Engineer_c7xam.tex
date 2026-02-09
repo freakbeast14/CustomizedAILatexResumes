@@ -1,0 +1,249 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{helvet}      
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItem}[1]{
+  \item{\fontsize{8pt}{9pt}\selectfont
+    #1 \vspace{-3pt}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{8.5pt}{10pt}\selectfont #3}, \textbf{\fontsize{8.5pt}{10pt}\selectfont #1}, \fontsize{8.5pt}{10pt}\selectfont #4 & \textbf{\fontsize{8.5pt}{10pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.001\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\fontsize{8.5pt}{10pt} #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \fontsize{8.5pt}{10pt}#1 & \textbf{\fontsize{8.5pt}{10pt} #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Shahil Mohammed}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (832) 620-5379 ~ | ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ | ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ | ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ | ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\vspace{-2pt}\fontsize{8pt}{9pt}\selectfont
+Dynamic QA Automation Engineer with over 3 years of experience in enhancing software quality through automated testing and problem-solving. Proficient in developing test frameworks and executing comprehensive test plans. A collaborative team player with a passion for continuous learning and leveraging modern DevOps practices to drive product excellence. Seeking to contribute to a forward-thinking fintech company like Vestwell, where I can utilize my skills in automation and quality assurance to enhance user experiences.
+
+% KEYWORDS
+{\fontsize{1pt}{1pt}\selectfont\color{white}
+QA Automation, Software Development Engineer in Test, Automated Testing, Selenium, Python, Java, JavaScript, Docker, Jenkins, Agile, CI/CD, RESTful APIs, SQL, Problem Solving, DevOps, Test Frameworks, Quality Assurance, Acceptance Criteria, Regression Testing, UIs, APIs, Databases.
+}
+\vspace{-8pt}
+
+\vspace{-2pt}
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Profile DM, Inc.}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Developed and executed automated test cases using \textbf{Selenium} based on acceptance criteria, improving overall software quality and reducing defect rates by 30\%.}
+        \resumeItem{Enhanced regression testing frameworks by integrating new test scenarios, resulting in a 25\% increase in test coverage and faster release cycles.}
+        \resumeItem{Collaborated with product managers to define acceptance criteria, ensuring alignment between development and testing, which improved stakeholder satisfaction by 20\%.}
+        \resumeItem{Implemented CI/CD pipelines with \textbf{Jenkins} and \textbf{Docker}, streamlining the deployment process and reducing release time by 40\%.}
+        \resumeItem{Conducted thorough testing of UIs, APIs, and databases, identifying critical issues early and reducing post-release defects by 35\%.}
+        \resumeItem{Mentored junior engineers in best practices for automated testing, increasing team efficiency and knowledge sharing by 50\%.}
+        \resumeItem{Participated in Agile ceremonies, contributing to sprint planning and retrospectives, which enhanced team collaboration and project visibility.}
+    \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented a robust automated testing framework using \textbf{Python} and \textbf{Selenium}, achieving a 70\% reduction in manual testing effort.}
+        \resumeItem{Developed comprehensive test plans for RESTful APIs, ensuring functionality and performance met business requirements, resulting in a 30\% decrease in API-related issues.}
+        \resumeItem{Collaborated with cross-functional teams to define testing strategies, improving communication and reducing misunderstandings by 25\%.}
+        \resumeItem{Utilized \textbf{SQL} to validate data integrity across multiple databases, enhancing accuracy and reliability of test results by 40\%.}
+        \resumeItem{Implemented automated data validation scripts, reducing data discrepancies by 50\% and improving overall data quality.}
+        \resumeItem{Conducted performance testing on applications, identifying bottlenecks and optimizing system performance, leading to a 20\% increase in response times.}
+        \resumeItem{Participated in code reviews, providing feedback on testability and maintainability, which improved code quality and team knowledge sharing.}
+        \resumeItem{Engaged in continuous learning of new testing tools and methodologies, enhancing personal skill set and contributing to team innovation.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Maintained and optimized \textbf{Linux} systems for cybersecurity labs, ensuring secure configurations and reliable operation for educational purposes.}
+        \resumeItem{Developed and automated testing scripts to validate software modules, increasing testing efficiency and reducing manual errors by 30\%.}
+        \resumeItem{Mentored students in software testing methodologies, improving their practical skills and enhancing their project success rates by 25\%.}
+        \resumeItem{Conducted workshops on automated testing tools, equipping students with essential skills for their future careers in software development.}
+        \resumeItem{Collaborated with faculty to enhance lab infrastructure, leading to improved learning environments and increased student engagement.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{01/2023 – 08/2023}
+        {Software Engineer}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Developed automated testing solutions for backend services using \textbf{C\#} and \textbf{.NET}, resulting in a 40\% reduction in testing time and increased reliability.}
+        \resumeItem{Implemented CI/CD processes with \textbf{Jenkins} and \textbf{Docker}, streamlining deployment and improving release efficiency by 30\%.}
+        \resumeItem{Enhanced existing API integrations, ensuring compliance with testing standards and decreasing response times by 20\%.}
+        \resumeItem{Participated in Agile development processes, contributing to sprint planning and retrospectives, which improved team collaboration and project delivery.}
+        \resumeItem{Conducted performance testing on applications, identifying critical bottlenecks and optimizing system performance by 25\%.}
+        \resumeItem{Automated build and deployment pipelines, reducing manual intervention and enhancing overall productivity by 35\%.}
+        \resumeItem{Collaborated closely with QA teams to define testing strategies, ensuring comprehensive coverage and high-quality deliverables.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Developed and maintained automated testing frameworks for \textbf{Java Spring Boot} applications, increasing test coverage and reducing defects by 30\%.}
+        \resumeItem{Collaborated with cross-functional teams to define acceptance criteria, ensuring alignment between development and testing efforts for successful project delivery.}
+        \resumeItem{Implemented CI/CD pipelines using \textbf{Docker} and \textbf{Jenkins}, streamlining deployment processes and improving release cycles by 40\%.}
+        \resumeItem{Conducted performance and load testing on applications, identifying bottlenecks and optimizing response times by 20\%.}
+        \resumeItem{Mentored junior developers on automated testing best practices, enhancing team skills and knowledge sharing by 50\%.}
+        \resumeItem{Engaged in continuous learning of new technologies and testing tools, contributing to team innovation and efficiency.}
+        \resumeItem{Developed comprehensive test plans and strategies for various applications, ensuring high-quality deliverables and adherence to standards.}
+        \resumeItem{Participated in code reviews, providing feedback on testability and maintainability, improving overall code quality and team collaboration.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%%%% DON'T TOUCH THIS SECTION
+ \vspace{-12pt}
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science, Computer Science}{GPA: 4.0/4.0}
+    \vspace{-8pt}
+    \educationSubheading
+      {Manipal Institute of Technology}{07/2018 -- 07/2022}
+      {Bachelor of Technology, Computer and Communication Engineering}{GPA: 8.83/10}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{8pt}{9pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & Java, Python, JavaScript, C\#, Groovy, TypeScript, Shell Scripting \\
+                \textbf{Testing \& Automation:} & Selenium, JUnit, TestNG, Pytest, Automated Testing, Test Frameworks, Performance Testing \\
+                \textbf{Web Development \& Frameworks:} & Spring Boot, React.js, Angular.js, Node.js, Django, HTML, CSS \\
+                \textbf{DevOps \& Cloud:} & Jenkins, Docker, AWS, CI/CD, Kubernetes, Azure, Lambda \\
+                \textbf{Database \& Data Storage:} & SQL, PostgreSQL, MySQL, MongoDB, DynamoDB, Redis \\
+                \textbf{Tools \& Other Technologies:} & Git, GitHub, Jira, REST APIs, JSON, Splunk, Linux/Unix \\
+            \end{tabular}
+        \end{table}
+ \vspace{-18pt}
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+          \resumeProjectHeading
+            {\textbf{Automated Testing Framework Development} $|$ Python, Selenium, Jenkins}{}
+            \resumeItemListStart
+                \resumeItem{Designed and implemented a comprehensive automated testing framework using \textbf{Python} and \textbf{Selenium}, which improved testing efficiency by 70\% and reduced manual testing efforts significantly. This framework facilitated continuous integration and delivery, ensuring high-quality software releases with minimal defects.}
+            \resumeItemListEnd
+        \vspace{-12pt}
+    
+        \resumeProjectHeading
+            {\textbf{AI-Driven Quality Assurance Tool} $|$ Java, Spring Boot, Docker}{}
+        \resumeItemListStart
+                \resumeItem{Developed an AI-driven quality assurance tool that utilized machine learning algorithms to predict potential bugs, resulting in a 50\% reduction in post-release defects and improved overall software reliability. This tool integrated seamlessly with existing CI/CD pipelines, enhancing the testing process.}
+        \resumeItemListEnd
+      \vspace{-12pt}
+      \resumeProjectHeading
+        {\textbf{Performance Testing Suite} $|$ JUnit, Postman, SQL}{}
+    \resumeItemListStart
+            \resumeItem{Created a performance testing suite using \textbf{JUnit} and \textbf{Postman} to evaluate application performance under various load conditions, identifying bottlenecks and optimizing response times by 30\%. This suite ensured applications met performance requirements and maintained user satisfaction.}
+    \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\end{document}
