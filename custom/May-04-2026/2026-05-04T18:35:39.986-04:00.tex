@@ -1,0 +1,242 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{helvet}      
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItem}[1]{
+  \item{\fontsize{8pt}{9pt}\selectfont
+    #1 \vspace{-3pt}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{8.5pt}{10pt}\selectfont #3}, \textbf{\fontsize{8.5pt}{10pt}\selectfont #1}, \fontsize{8.5pt}{10pt}\selectfont #4 & \textbf{\fontsize{8.5pt}{10pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.001\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\fontsize{8.5pt}{10pt} #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \fontsize{8.5pt}{10pt}#1 & \textbf{\fontsize{8.5pt}{10pt} #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Shahil Mohammed}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (832) 620-5379 ~ | ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ | ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ | ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ | ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\vspace{-2pt}\fontsize{8pt}{9pt}\selectfont
+Detail-oriented software engineer with 3+ years developing and automating system-level tests for mobile, web, and API platforms. Skilled in Python, Java, and automated frameworks to ensure design verification and product quality. Proven collaborator with strong communication and problem-solving skills focusing on thorough test coverage and reliability.
+ \vspace{-5pt}
+ 
+\vspace{-2pt}
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Insight Global}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Engineered \textbf{Python} and \textbf{Java} automated tests using \textbf{JUnit}, improving system test coverage by 40\% and enabling faster detection of defects pre-release.}
+        \resumeItem{Developed and maintained RESTful \textbf{Spring Boot} APIs supporting cross-functional test automation, reducing regression testing time by 35\%.}
+        \resumeItem{Collaborated with engineering teams to draft and review test protocols, securing stakeholder approval and closing gaps in automated test plans.}
+        \resumeItem{Integrated continuous integration pipelines with \textbf{Jenkins} for automated test execution, boosting pipeline efficiency and reducing manual intervention by 50\%.}
+        \resumeItem{Assessed and fine-tuned \textbf{PostgreSQL} queries which decreased data fetch times by 30\%, positively impacting API response testing accuracy.}
+        \resumeItem{Implemented role-based access testing using \textbf{Spring Security}, identifying and resolving 15+ vulnerabilities to strengthen system security.}
+    \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Built scalable test automation suites in \textbf{Python} for \textbf{Web Services} and \textbf{API} endpoints, increasing automated test coverage by 60\%.}
+        \resumeItem{Automated manual test workflows for subscription management features, reducing repetitive efforts by 75\% and improving release cycle velocity.}
+        \resumeItem{Developed secure role-based access control tests with \textbf{PHP} and integrated with \textbf{Stripe}, enhancing validation of payment workflows by 30\%.}
+        \resumeItem{Created exploratory and scripted test cases for Android and iOS apps, uncovering critical edge cases and improving app stability by 25\%.}
+        \resumeItem{Collaborated across teams to verify system requirements and maintained up-to-date test documentation complying with industry standards.}
+        \resumeItem{Enhanced platform monitoring by optimizing \textbf{AWS CloudWatch} setup, decreasing false alarms by 20\% and raising incident detection accuracy.}
+        \resumeItem{Optimized \textbf{React} frontend test suites improving execution speed by 20\% and enhancing feedback for UI changes in release builds.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Automated testing and validation scripts on \textbf{Linux} infrastructure, improving reliability of cybersecurity lab exercises and student project deployment.}
+        \resumeItem{Guided students in debugging and executing automated tests, increasing their test success rates and software comprehension by 20\%.}
+        \resumeItem{Created manual and automated test cases for new lab tools, supporting both coverage and exploratory approaches to security validation.}
+        \resumeItem{Hosted knowledge sessions on networking protocols and test automation principles, facilitating improved student engagement and comprehension in practical labs.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{01/2023 – 08/2023}
+        {Software Engineer}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Designed and maintained \textbf{C\# .NET} backend services with integrated automated tests, achieving a 30\% reduction in bug incidence post-deployment.}
+        \resumeItem{Implemented automated \textbf{TypeScript} REST API test suites ensuring sub-100ms consistent response times and reliable service health reporting.}
+        \resumeItem{Improved Angular.js client testing coverage through structured component tests, increasing frontend test completeness by 25\%.}
+        \resumeItem{Refined \textbf{PostgreSQL} queries and stored procedures supporting backend with enhanced test automation, reducing query bottlenecks by 15\%.}
+        \resumeItem{Engineered robust \textbf{Kafka} message pipelines and test stubs to simulate fault conditions, verifying 95\% message delivery integrity under load.}
+        \resumeItem{Automated full build and test cycles using \textbf{Jenkins} and \textbf{Docker}, shortening deployment timeframes by 40\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Developed automated test frameworks with \textbf{Java Spring Boot} and \textbf{JUnit} covering microservices APIs, increasing regression test coverage by 80\%.}
+        \resumeItem{Executed integration tests on \textbf{MySQL} databases and application layers, improving data integrity validation and system reliability.}
+        \resumeItem{Built and maintained microservices in \textbf{Java} with extensive unit and system tests, reducing production incidents by 30\%.}
+        \resumeItem{Orchestrated containerized test environments on \textbf{AWS EC2} using \textbf{Docker} and \textbf{SQS}, enabling repeatable and scalable automated test runs.}
+        \resumeItem{Developed \textbf{React.js} UI components with integrated front-end tests to improve user interface functionality and reduce bugs.}
+        \resumeItem{Created detailed test documentation and reported bugs using \textbf{Splunk} logs, accelerating development team resolutions by 20\%.}
+        \resumeItem{Collaborated in CI/CD pipeline setup, automating deployment and test execution to reduce manual errors and speed releases.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%%%% DON'T TOUCH THIS SECTION
+ \vspace{-12pt}
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science, Computer Science}{GPA: 4.0/4.0}
+    \vspace{-8pt}
+    \educationSubheading
+      {Manipal Institute of Technology}{07/2018 -- 07/2022}
+      {Bachelor of Technology, Computer and Communication Engineering}{GPA: 8.83/10}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{8pt}{9pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & Java, Python, TypeScript, C\#, PHP, JavaScript, Shell Scripting \\
+                \textbf{Test Automation \& Frameworks:} & JUnit, TestNG, Selenium, Postman, REST API Testing, Mobile Testing \\
+                \textbf{Web Development \& Platforms:} & Spring Boot, React.js, Angular.js, Laravel, Node.js, iOS/Android Technologies \\
+                \textbf{Database \& Storage:} & MySQL, PostgreSQL, MongoDB, Redis, SQL Optimization \\
+                \textbf{DevOps \& Cloud:} & AWS (EC2, S3, Lambda), Docker, Jenkins, Git, Bitbucket \\
+                \textbf{Tools \& Other Technologies:} & Linux/Unix, GitHub, REST/SOAP, Splunk, Jira, API Automation, Manual Testing \\
+            \end{tabular}
+        \end{table}
+ \vspace{-18pt}
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+          \resumeProjectHeading
+            {\textbf{Automated System Test Framework} | Python, JUnit, REST API, Android Testing}
+            {}
+            \resumeItemListStart
+                \resumeItem{Developed a cross-platform automated test framework utilizing \textbf{Python} and \textbf{JUnit} to validate API endpoints and mobile apps, increasing test coverage by 65\% and detecting critical defects early.}
+            \resumeItemListEnd
+        \vspace{-12pt}
+    
+        \resumeProjectHeading
+            {\textbf{AI-Driven Test Case Generator} | Python, OpenAI API, Test Automation}
+            {}
+            \resumeItemListStart
+                \resumeItem{Designed an intelligent test case generation tool using \textbf{OpenAI API} to automate scripted and exploratory testing, reducing manual test design effort by 70\% and improving test effectiveness.}
+            \resumeItemListEnd
+      \vspace{-12pt}
+      \resumeProjectHeading
+        {\textbf{Mobile Application Verification Suite} | Android, iOS, Selenium, REST API}
+        {}
+        \resumeItemListStart
+            \resumeItem{Implemented comprehensive automated verification tests for \textbf{Android} and \textbf{iOS} applications integrating \textbf{Selenium} and API validation, identifying 40+ edge case failures pre-release.}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\end{document}
