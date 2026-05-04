@@ -1,0 +1,240 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{helvet}      
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItem}[1]{
+  \item{\fontsize{8pt}{9pt}\selectfont
+    #1 \vspace{-3pt}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{8.5pt}{10pt}\selectfont #3}, \textbf{\fontsize{8.5pt}{10pt}\selectfont #1}, \fontsize{8.5pt}{10pt}\selectfont #4 & \textbf{\fontsize{8.5pt}{10pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.001\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\fontsize{8.5pt}{10pt} #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \fontsize{8.5pt}{10pt}#1 & \textbf{\fontsize{8.5pt}{10pt} #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Shahil Mohammed}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (832) 620-5379 ~ | ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ | ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ | ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ | ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\vspace{-2pt}\fontsize{8pt}{9pt}\selectfont
+Detail-oriented software engineer with 3+ years of experience in test automation, debugging, and software validation. Skilled in Python, AI tools, and network protocols with strong collaboration and troubleshooting expertise to enhance product quality and accelerate delivery in hybrid work environments.
+ \vspace{-5pt}
+ 
+\vspace{-2pt}
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Insight Global}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Developed and maintained automated test suites using \textbf{Python} and \textbf{Robot} framework, increasing test coverage by 30\% while reducing manual testing effort by 40\%.}
+        \resumeItem{Collaborated closely with PLM and development teams to clarify feature specifications, reducing defect rates by 25\% and enhancing release quality.}
+        \resumeItem{Diagnosed and troubleshot complex software issues using log analysis, leading to 20\% faster root cause identification and issue resolution.}
+        \resumeItem{Created Jira tickets and managed bug lifecycle, contributing to a 35\% faster bug fix turnaround by maintaining effective developer collaboration.}
+        \resumeItem{Implemented AI-assisted test automation tools to validate newly designed features, improving testing efficiency and regression accuracy by 30\%.}
+        \resumeItem{Participated in regular QA meetings, providing status updates and suggestions for continuous product improvements that enhanced user experience.}
+    \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Automated validation processes through \textbf{Python} scripts integrated with AI tools, reducing manual verification time by 50\% and increasing test reliability.}
+        \resumeItem{Engineered AI-driven workflows leveraging \textbf{LLM} models, achieving 70\% reduction in manual data processing and improving accuracy of FINRA broker data management.}
+        \resumeItem{Designed scalable software components with \textbf{React} and \textbf{Laravel}, supporting real-time data analytics for 50+ concurrent users with 99.9\% uptime.}
+        \resumeItem{Optimized cloud observability using \textbf{AWS CloudWatch}, reducing cloud resource wastage by 15\% while proactively detecting system anomalies.}
+        \resumeItem{Enhanced frontend UX by refactoring \textbf{React} component state management, decreasing load times by 25\% and increasing user engagement metrics.}
+        \resumeItem{Developed secure e-commerce subscription systems with \textbf{PHP}, \textbf{Stripe}, and integrated role-based access control to improve customer retention by 20\%.}
+        \resumeItem{Implemented AI automation for LinkedIn outreach, increasing qualified lead generation by 40\% through targeted content scheduling and engagement tracking.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Maintained and updated \textbf{Linux} lab environments to ensure secure and stable settings, improving lab session reliability by 15\%.}
+        \resumeItem{Automated grading and software validation scripts using \textbf{Python}, raising grading accuracy and reducing manual review time by 25\%.}
+        \resumeItem{Assisted students in debugging and testing cybersecurity modules, increasing assignment pass rates by 20\% through targeted guidance.}
+        \resumeItem{Conducted over 15 training sessions covering cryptography, network protocols including \textbf{OSPF, BGP}, and security principles, positively impacting student learning outcomes.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{01/2023 – 08/2023}
+        {Software Engineer}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Developed backend microservices using \textbf{C\#} and \textbf{.NET} to reduce data retrieval latency by 30\%, enhancing overall system responsiveness.}
+        \resumeItem{Integrated and maintained APIs using \textbf{TypeScript}, achieving consistent sub-100ms response times and improving data exchange efficiency.}
+        \resumeItem{Improved platform frontend with \textbf{Angular.js}, increasing user engagement by 25\% through streamlined component architecture.}
+        \resumeItem{Optimized database queries and redesigned \textbf{PostgreSQL} procedures, cutting frontend load by 15\% and enhancing transaction performance.}
+        \resumeItem{Built reliable \textbf{Kafka}-based messaging pipelines handling 1,000+ daily events, reducing message loss by 95\% and ensuring data integrity.}
+        \resumeItem{Automated CI/CD pipelines with \textbf{Jenkins} and \textbf{Docker}, accelerating release cycles by 40\% and reducing deployment errors.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Delivered scalable \textbf{Java Spring Boot} microservices with optimized \textbf{MySQL} queries, reducing response latency by 20\% for 1,000+ concurrent users.}
+        \resumeItem{Engineered cloud infrastructure on \textbf{AWS EC2} using \textbf{SQS} and custom auto-scaling, managing 1,000+ requests in under 60 seconds reliably.}
+        \resumeItem{Developed and enhanced \textbf{React.js} interfaces, reducing page load times by 30\% and improving overall user experience.}
+        \resumeItem{Implemented unit testing using \textbf{JUnit}, achieving 90\% code coverage and significantly reducing post-deployment defects.}
+        \resumeItem{Collaborated on AI feature integration using \textbf{Python} and external \textbf{LLM} APIs, improving automation and validation efficiency by 40\%.}
+        \resumeItem{Used \textbf{Linux} commands and shell scripting to automate routine tasks, increasing team operational efficiency by 25\%.}
+        \resumeItem{Investigated and resolved production issues via \textbf{Splunk} log analytics, reducing incident resolution time by 20\%.}
+        
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%%%% DON'T TOUCH THIS SECTION
+ \vspace{-12pt}
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science, Computer Science}{GPA: 4.0/4.0}
+    \vspace{-8pt}
+    \educationSubheading
+      {Manipal Institute of Technology}{07/2018 -- 07/2022}
+      {Bachelor of Technology, Computer and Communication Engineering}{GPA: 8.83/10}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{8pt}{9pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & Python, Java, TypeScript, C\#, Shell Scripting, PHP \\
+                \textbf{Test Automation \& Tools:} & Robot Framework, Jenkins, Docker, Jira, JUnit \\
+                \textbf{Networking Protocols:} & OSPF, BGP, ISIS, VLAN, DHCP, STP \\
+                \textbf{Cloud \& Containerization:} & AWS (EC2, CloudWatch, SQS), Kubernetes, Docker \\
+                \textbf{Operating Systems \& Databases:} & Linux/Unix, PostgreSQL, MySQL, Oracle, MongoDB \\
+                \textbf{AI \& Machine Learning:} & Large Language Models (LLM), OpenAI API, AI Automation, LangChain \\
+            \end{tabular}
+        \end{table}
+ \vspace{-18pt}
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+          \resumeProjectHeading
+            {\textbf{AI-Driven Test Automation Framework} $|$ Python, Robot Framework, OpenAI API}{}
+            \resumeItemListStart
+                \resumeItem{Designed and implemented an AI-driven test automation framework using \textbf{Python} and \textbf{Robot Framework} with \textbf{OpenAI API}, increasing regression test coverage by 40\% and reducing manual effort by 50\%.}
+            \resumeItemListEnd
+        \vspace{-12pt}
+    
+        \resumeProjectHeading
+            {\textbf{Network Protocol Validation Suite} $|$ Python, Linux, Wireshark, OSPF, BGP}{}
+        \resumeItemListStart
+                \resumeItem{Developed a comprehensive validation suite for \textbf{OSPF} and \textbf{BGP} protocols using \textbf{Python} and \textbf{Linux} tools, improving protocol compliance testing accuracy by 35\%.}
+        \resumeItemListEnd
+      \vspace{-12pt}
+      \resumeProjectHeading
+        {\textbf{Hybrid Cloud-Based Log Analysis Tool} $|$ Kubernetes, AWS, Python, ELK Stack}{}
+    \resumeItemListStart
+            \resumeItem{Engineered a hybrid cloud log analysis platform using \textbf{Kubernetes}, \textbf{AWS}, and \textbf{Python}, enabling rapid root cause identification and reducing mean time to repair by 25\%.}
+    \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\end{document}
