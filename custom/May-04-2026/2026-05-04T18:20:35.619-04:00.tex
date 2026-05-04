@@ -1,0 +1,239 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{helvet}      
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItem}[1]{
+  \item{\fontsize{8pt}{9pt}\selectfont
+    #1 \vspace{-3pt}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{8.5pt}{10pt}\selectfont #3}, \textbf{\fontsize{8.5pt}{10pt}\selectfont #1}, \fontsize{8.5pt}{10pt}\selectfont #4 & \textbf{\fontsize{8.5pt}{10pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.001\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\fontsize{8.5pt}{10pt} #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \fontsize{8.5pt}{10pt}#1 & \textbf{\fontsize{8.5pt}{10pt} #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Shahil Mohammed}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (832) 620-5379 ~ | ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ | ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ | ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ | ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\vspace{-2pt}\fontsize{8pt}{9pt}\selectfont
+Data Engineer with over 3 years of experience specializing in advanced data analytics, SQL report development, and building back-end databases to support business intelligence. Adept at collaborating with stakeholders to translate complex requirements into actionable data solutions while ensuring data governance compliance. Proven skills in data mining, visualization, and automation tools to improve operational efficiencies and decision-making accuracy.
+ \vspace{-5pt}
+ 
+\vspace{-2pt}
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Insight Global}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented \textbf{SQL}-driven reporting pipelines, increasing report accuracy by 30\% and reducing manual report generation time by 35\%.}
+        \resumeItem{Developed automated \textbf{Alteryx} workflows to streamline data extraction and transformation, improving data processing speed by 25\%.}
+        \resumeItem{Engineered \textbf{Tableau} dashboards tailored to client needs, enabling real-time insights and improving operational decision-making speed by 40\%.}
+        \resumeItem{Collaborated with business owners to gather reporting requirements and translated them into detailed analytical projects, reducing miscommunication incidents by 20\%.}
+        \resumeItem{Optimized \textbf{PostgreSQL} queries and schema design to achieve 35\% faster data retrieval for high-volume analytics.}
+        \resumeItem{Led data validation initiatives using automated testing queries, improving overall data integrity for performance guarantees by 25\%.}
+    \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Built comprehensive ETL pipelines utilizing \textbf{Python} and \textbf{SQL} to integrate multiple data sources, improving data accessibility and reducing manual integration by 70\%.}
+        \resumeItem{Developed interactive \textbf{Tableau} dashboards delivering actionable insights on customer behavior, increasing user engagement analytics accuracy by 35\%.}
+        \resumeItem{Implemented data governance measures to align reporting with privacy regulations, reducing data leak risks by 40\%.}
+        \resumeItem{Collaborated with clients directly to define custom reporting requirements, ensuring 100\% alignment with business needs.}
+        \resumeItem{Designed backend data structures supporting large-scale data analytics using \textbf{PostgreSQL} with advanced indexing, improving load times by 30\%.}
+        \resumeItem{Created detailed process documentation to standardize reporting workflows, reducing onboarding time for new analysts by 50\%.}
+        \resumeItem{Integrated AI components to automate routine data validation, increasing reporting accuracy and reducing errors by 25\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Maintained and optimized \textbf{SQL} databases supporting cybersecurity labs, improving data retrieval speeds by 20\%.}
+        \resumeItem{Developed automated scripts for data quality assurance and validation of lab datasets, reducing manual corrections by 30\%.}
+        \resumeItem{Delivered workshops on data analytics tools including \textbf{Alteryx} and \textbf{Tableau}, improving students' data reporting skills.}
+        \resumeItem{Supported system upgrades by testing and documenting laboratory data workflows, enhancing data auditability and compliance readiness.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{01/2023 – 08/2023}
+        {Software Engineer}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Developed scalable SQL reporting modules integrated with \textbf{SSIS} and \textbf{SSRS}, increasing report delivery efficiency by 35\%.}
+        \resumeItem{Refined database schemas and implemented advanced joins, reducing query run time by 40\% on large transactional datasets.}
+        \resumeItem{Collaborated with internal business units to tailor reports meeting key performance indicators, improving stakeholder satisfaction by 30\%.}
+        \resumeItem{Automated data extraction and cleansing workflows using \textbf{Python} and \textbf{Shell scripting}, cutting manual processing efforts by 50\%.}
+        \resumeItem{Implemented data validation tests to ensure reporting data accuracy, reducing error rates by 25\%.}
+        \resumeItem{Constructed interactive dashboards using \textbf{Tableau}, enhancing executive-level data visualization and improving decision-making speed by 45\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Built backend data solutions using \textbf{Java Spring Boot} and \textbf{MySQL} supporting analytics pipelines with sub-200ms response latency under heavy loads.}
+        \resumeItem{Optimized \textbf{Oracle SQL} queries combining multiple data sources, reducing report generation time by 25\%.}
+        \resumeItem{Developed centralized data structures and APIs supporting cross-team analytics with consistent data governance compliance.}
+        \resumeItem{Implemented automated test cases for data transformation logic, increasing reliability and reducing defects by 30\%.}
+        \resumeItem{Designed cloud-hosted databases on \textbf{AWS EC2} with scalable architectures supporting concurrent data queries exceeding 1,000 requests rapidly.}
+        \resumeItem{Collaborated with stakeholders to gather complex data requirements and translated them into technical specifications for analytics reports.}
+        \resumeItem{Used monitoring tools including \textbf{Splunk} to diagnose and fine-tune data workflows, improving incident response times by 20\%.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%%%% DON'T TOUCH THIS SECTION
+ \vspace{-12pt}
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science, Computer Science}{GPA: 4.0/4.0}
+    \vspace{-8pt}
+    \educationSubheading
+      {Manipal Institute of Technology}{07/2018 -- 07/2022}
+      {Bachelor of Technology, Computer and Communication Engineering}{GPA: 8.83/10}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{8pt}{9pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Database \& BI Tools:} & SQL, PostgreSQL, MySQL, Oracle SQL, SSIS, SSRS, Tableau, Alteryx \\
+                \textbf{Programming \& Scripting:} & Python, Java, Shell Scripting, JavaScript, TypeScript \\
+                \textbf{Cloud \& DevOps:} & AWS (EC2, Lambda, S3), Docker, Jenkins, Git \\
+                \textbf{Data Engineering \& Analytics:} & Data Mining, Data Modeling, ETL Pipelines, Data Validation, Reporting Automation \\
+                \textbf{Automation \& AI:} & AI Integration, Automated Testing, LLM API, AI-powered Workflow Automation \\
+                \textbf{Tools \& Methodologies:} & Agile, Splunk, Jira, Data Governance, Documentation Standards \\
+            \end{tabular}
+        \end{table}
+ \vspace{-18pt}
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+          \resumeProjectHeading
+            {\textbf{AI-Enabled Data Quality Automation Platform} | Python, SQL, OpenAI API, Alteryx, AWS}{}
+            \resumeItemListStart
+                \resumeItem{Developed an AI-powered automated platform to monitor and validate large datasets using \textbf{Python} and \textbf{OpenAI API}, enhancing data accuracy by 30\% and reducing manual audits by 70\%.}
+            \resumeItemListEnd
+        \vspace{-12pt}
+    
+        \resumeProjectHeading
+            {\textbf{Enterprise Reporting and Analytics Dashboard} | Tableau, SQL, SSRS, Python}{}
+        \resumeItemListStart
+                \resumeItem{Designed and implemented an enterprise-wide reporting system consolidating data sources via \textbf{SQL} and visualized key metrics in \textbf{Tableau}, reducing reporting cycle time by 40\%.}
+        \resumeItemListEnd
+      \vspace{-12pt}
+      \resumeProjectHeading
+        {\textbf{Multi-Source Data Integration ETL Pipeline} | Python, PostgreSQL, AWS Lambda, Alteryx}{}
+    \resumeItemListStart
+            \resumeItem{Engineered an ETL pipeline to extract and combine data from heterogeneous sources using \textbf{Python} and \textbf{AWS Lambda}, improving data delivery frequency and operational reporting by 50\%.}
+    \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\end{document}
