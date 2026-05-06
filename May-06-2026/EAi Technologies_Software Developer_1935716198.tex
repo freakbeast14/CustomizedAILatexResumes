@@ -1,0 +1,229 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{helvet}      
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItem}[1]{
+  \item{\fontsize{8pt}{9pt}\selectfont
+    #1 \vspace{-3pt}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{8.5pt}{10pt}\selectfont #3}, \textbf{\fontsize{8.5pt}{10pt}\selectfont #1}, \fontsize{8.5pt}{10pt}\selectfont #4 & \textbf{\fontsize{8.5pt}{10pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.001\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\fontsize{8.5pt}{10pt} #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \fontsize{8.5pt}{10pt}#1 & \textbf{\fontsize{8.5pt}{10pt} #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Shahil Mohammed}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (832) 620-5379 ~ | ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ | ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ | ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ | ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\vspace{-2pt}\fontsize{8pt}{9pt}\selectfont
+Accomplished software engineer with 3+ years of experience developing and deploying scalable applications. Skilled in full-stack development, automation, and AI integration, leveraging modern frameworks and cloud platforms to deliver impactful solutions. Proven ability to collaborate across teams and apply best practices in software engineering, security, and DevOps to drive efficiency and innovation.
+ \vspace{-5pt}
+ 
+\vspace{-2pt}
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Insight Global}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Developed reusable \textbf{Angular} components and improved state management, enhancing UI performance by 30\%.}
+        \resumeItem{Built \textbf{Java Spring Boot} APIs with pagination and validation, reducing response times by 25\%.}
+        \resumeItem{Created an \textbf{AI-driven} \textbf{Python} matching solver, increasing match accuracy by 20\%.}
+        \resumeItem{Optimized \textbf{PostgreSQL} queries and indexing, lowering data retrieval latency by 40\%.}
+        \resumeItem{Enhanced \textbf{Spring Security} to enforce role controls, preventing unauthorized access by 35\%.}
+    \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Designed a scalable \textbf{React} frontend and \textbf{Laravel} backend serving 50+ users simultaneously.}
+        \resumeItem{Built \textbf{Python} automation scripts processing 10,000+ daily records, reducing manual work by 75\%.}
+        \resumeItem{Developed secure subscription system integrating \textbf{PHP Stripe} and role-based access for ecommerce.}
+        \resumeItem{Implemented AI-powered \textbf{LLM} agents to automate broker data workflows, cutting processes by 80\%.}
+        \resumeItem{Optimized \textbf{React} components, improving user experience and reducing load time by 20\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Maintained secure \textbf{Linux} lab environments, ensuring reliable operation and configuration compliance.}
+        \resumeItem{Trained students in debugging and deployment, improving their assignment success by 15\%.}
+        \resumeItem{Automated grading scripts, accelerating evaluation speed and enhancing accuracy by 20\%.}
+        \resumeItem{Conducted interactive sessions covering web and network security, boosting student engagement.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{01/2023 – 08/2023}
+        {Software Engineer}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Developed \textbf{C\# .NET} backend services, decreasing data retrieval time by 30\%.}
+        \resumeItem{Integrated \textbf{TypeScript} APIs with monitoring, achieving sub-100ms response times.}
+        \resumeItem{Refactored \textbf{Angular.js} workflows, raising user engagement by 25\%.}
+        \resumeItem{Created a fault-tolerant \textbf{Kafka} messaging pipeline, reducing message loss by 90\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Developed \textbf{Java Spring Boot} microservices supporting 1,000+ users with sub-200ms latency.}
+        \resumeItem{Optimized \textbf{Oracle SQL} queries, reducing response times by 20\%.}
+        \resumeItem{Built cloud system on \textbf{AWS EC2} with \textbf{SQS}, improving scalability and throughput.}
+        \resumeItem{Created \textbf{React.js} UI enhancements, cutting load times by 25\%.}
+        \resumeItem{Wrote \textbf{JUnit} tests to ensure 90\% coverage and improved system reliability.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%%%% DON'T TOUCH THIS SECTION
+ \vspace{-12pt}
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science, Computer Science}{GPA: 4.0/4.0}
+    \vspace{-8pt}
+    \educationSubheading
+      {Manipal Institute of Technology}{07/2018 -- 07/2022}
+      {Bachelor of Technology, Computer and Communication Engineering}{GPA: 8.83/10}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{8pt}{9pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming Languages:} & Java, JavaScript, TypeScript, Python, PHP, C\#, SQL, NoSQL \\
+                \textbf{Frameworks \& Libraries:} & Spring Boot, React.js, Angular.js, Laravel, Node.js, .NET \\
+                \textbf{Databases:} & MySQL, PostgreSQL, Oracle, MongoDB, DynamoDB, Redis \\
+                \textbf{Cloud \& DevOps:} & AWS (EC2, SQS, Lambda), Docker, Jenkins, Kubernetes \\
+                \textbf{Web Technologies:} & REST APIs, gRPC, HTML, CSS, APIs \\
+                \textbf{Tools \& Other:} & Git, Splunk, Jira, JUnit, Shell Scripting \\
+            \end{tabular}
+        \end{table}
+ \vspace{-18pt}
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+          \resumeProjectHeading
+            {\textbf{Client-Focused Full Stack Portal} $|$ \textbf{Java}, \textbf{Spring Boot}, \textbf{React.js}, \textbf{PostgreSQL}}{}
+            \resumeItemListStart
+                \resumeItem{Built a responsive portal for client projects enabling real-time updates and user access control, increasing client satisfaction by 30\%.}
+                \resumeItem{Integrated secure APIs with validation and pagination, reducing average API response times by 25\%.}
+            \resumeItemListEnd
+        \vspace{-12pt}
+    
+        \resumeProjectHeading
+            {\textbf{API-Driven Inventory Management System} $|$ \textbf{JavaScript}, \textbf{Node.js}, \textbf{NoSQL}, \textbf{REST APIs}}{}
+        \resumeItemListStart
+                \resumeItem{Developed a full-stack inventory system with robust API integration, decreasing data errors by 20\% and improving tracking accuracy.}
+                \resumeItem{Implemented role-based access and client-specific views, enhancing security and user experience.}
+        \resumeItemListEnd
+      \vspace{-12pt}
+    \resumeSubHeadingListEnd
+
+\end{document}
