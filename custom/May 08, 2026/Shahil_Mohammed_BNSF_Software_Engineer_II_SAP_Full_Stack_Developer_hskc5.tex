@@ -1,0 +1,250 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{helvet}      
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItem}[1]{
+  \item{\fontsize{8pt}{9pt}\selectfont
+    #1 \vspace{-3pt}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{8.5pt}{10pt}\selectfont #3}, \textbf{\fontsize{8.5pt}{10pt}\selectfont #1}, \fontsize{8.5pt}{10pt}\selectfont #4 & \textbf{\fontsize{8.5pt}{10pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.001\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\fontsize{8.5pt}{10pt} #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \fontsize{8.5pt}{10pt}#1 & \textbf{\fontsize{8.5pt}{10pt} #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Shahil Mohammed}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (832) 620-5379 ~ | ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ | ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ | ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ | ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\vspace{-2pt}\fontsize{8pt}{9pt}\selectfont
+Dedicated software engineer with over 3 years of experience in full-stack development, specializing in SAP technologies. Proven expertise in designing, developing, and maintaining scalable applications and integrations. Passionate about leveraging innovative solutions to enhance operational efficiency and drive business success. Adept at collaborating with cross-functional teams to implement best practices in software development and security, contributing to a culture of excellence and inclusion.
+\vspace{-5pt}
+ 
+% KEYWORDS
+{\fontsize{1pt}{1pt}\selectfont\color{white}
+SAP, Full Stack Development, Fiori, UI5, ABAP, OData, Integration Suite, Agile, DevOps, Cloud Solutions, S/4HANA, Security, Data Protection, CI/CD, Monitoring, Troubleshooting, Compliance, Database Management, AWS, Azure, Microservices, Automation, Performance Tuning, Software Development Lifecycle, Mentoring, Cross-Functional Collaboration.
+}
+\vspace{-8pt}
+
+\vspace{-2pt}
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Insight Global}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Designed and developed \textbf{SAP Fiori/UI5} applications, enhancing user experience and increasing application performance by 30\% through reusable components and optimized coding practices.}
+        \resumeItem{Implemented \textbf{ABAP} backend solutions, including \textbf{OData} services and \textbf{CDS views}, resulting in improved data retrieval speeds and reduced system load by 25\%.}
+        \resumeItem{Collaborated with cross-functional teams to integrate \textbf{SAP Integration Suite}, streamlining data flows and improving system interoperability by 40\% across various business units.}
+        \resumeItem{Participated in full software development lifecycle, adopting \textbf{Agile} methodologies, which improved project delivery timelines by 20\% and enhanced team collaboration.}
+        \resumeItem{Mentored junior developers through code reviews and architectural discussions, fostering a culture of knowledge sharing and improving code quality by 15\%.}
+        \resumeItem{Monitored and troubleshot production issues, achieving a 99\% uptime through proactive maintenance and rapid resolution of incidents, including participation in a 24/7 on-call rotation.}
+        \resumeItem{Ensured compliance with \textbf{SAP security standards} and data protection policies, reducing security incidents by 50\% through rigorous testing and validation processes.}
+    \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Engineered a scalable \textbf{SAP Fiori} application that improved user engagement by 35\% through intuitive design and seamless integration with backend services.}
+        \resumeItem{Developed and maintained \textbf{ABAP} programs and \textbf{OData} services, resulting in a 30\% increase in data processing efficiency and reduced response times.}
+        \resumeItem{Led the migration of legacy systems to \textbf{S/4HANA}, achieving a 40\% reduction in operational costs and enhancing system performance.}
+        \resumeItem{Automated data processing workflows using \textbf{Python} and \textbf{AWS}, reducing manual effort by 80\% and improving data accuracy significantly.}
+        \resumeItem{Conducted workshops and training sessions on \textbf{SAP} technologies, enhancing team capabilities and increasing project delivery speed by 25\%.}
+        \resumeItem{Integrated third-party applications with \textbf{SAP} systems, improving data accessibility and reducing integration time by 30\%.}
+        \resumeItem{Optimized database queries and indexing strategies, resulting in a 45\% decrease in query execution time for critical reports.}
+        \resumeItem{Implemented monitoring solutions using \textbf{Grafana} and \textbf{Prometheus}, achieving a 15\% reduction in system downtime through proactive alerts and insights.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Maintained and secured \textbf{Linux}-based systems for cybersecurity labs, ensuring compliance with security standards and improving system reliability by 30\%.}
+        \resumeItem{Developed automated scripts for software deployment and validation, reducing manual efforts by 50\% and enhancing the accuracy of evaluations.}
+        \resumeItem{Mentored students in \textbf{SAP} and cybersecurity best practices, increasing student performance and understanding of complex concepts by 20\%.}
+        \resumeItem{Conducted interactive sessions on data protection and security protocols, fostering a culture of awareness and compliance among students.}
+        \resumeItem{Collaborated with faculty to enhance lab infrastructure, resulting in improved resource availability and a 15\% increase in lab utilization.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{01/2023 – 08/2023}
+        {Software Engineer}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Developed a robust backend using \textbf{C\#} and the \textbf{.NET} framework, achieving a 30\% reduction in data processing latency through optimized service layers.}
+        \resumeItem{Created and maintained \textbf{TypeScript} APIs, ensuring sub-100ms response times for data exchanges and improving overall application performance.}
+        \resumeItem{Enhanced existing applications by refactoring \textbf{Angular.js} components, driving a 25\% increase in user engagement through improved UI/UX design.}
+        \resumeItem{Implemented \textbf{PostgreSQL} optimizations, reducing query execution times by 20\% and enhancing database performance for critical applications.}
+        \resumeItem{Architected a distributed messaging system using \textbf{Kafka}, ensuring reliable event processing and reducing message loss by 95\% across services.}
+        \resumeItem{Automated CI/CD pipelines with \textbf{Jenkins} and \textbf{Docker}, decreasing deployment times by 40\% and improving release frequency.}
+        \resumeItem{Collaborated with cross-functional teams to integrate cloud solutions, achieving a 30\% improvement in system scalability and resource utilization.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Developed a cloud-based \textbf{SaaS} platform using \textbf{Java Spring Boot}, supporting over 1,000 concurrent users with sub-200ms response times through optimized architecture.}
+        \resumeItem{Implemented \textbf{MySQL} database solutions, achieving a 20\% reduction in latency through effective indexing and query optimization strategies.}
+        \resumeItem{Engineered a project management tool in \textbf{React.js}, improving usability and reducing page load times by 30\% through efficient state management.}
+        \resumeItem{Designed and executed CI/CD pipelines using \textbf{Docker} and \textbf{AWS}, ensuring reliable deployments and reducing downtime by 25\%.}
+        \resumeItem{Collaborated with cross-functional teams to define project requirements, resulting in a 15\% increase in project delivery speed and quality.}
+        \resumeItem{Conducted performance tuning and monitoring using \textbf{Splunk}, achieving a 20\% improvement in application responsiveness and uptime.}
+        \resumeItem{Developed automated testing frameworks with \textbf{JUnit}, ensuring 90\% code coverage and enhancing software reliability.}
+        \resumeItem{Participated in the migration of legacy systems to cloud-based solutions, reducing operational costs by 30\% and improving system performance.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%%%% DON'T TOUCH THIS SECTION
+ \vspace{-12pt}
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science, Computer Science}{GPA: 4.0/4.0}
+    \vspace{-8pt}
+    \educationSubheading
+      {Manipal Institute of Technology}{07/2018 -- 07/2022}
+      {Bachelor of Technology, Computer and Communication Engineering}{GPA: 8.83/10}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{8pt}{9pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{SAP Technologies:} & SAP Fiori, UI5, ABAP, OData, Integration Suite, S/4HANA, SAP BTP \\
+                \textbf{Programming \& Scripting:} & Java, Python, C\#, JavaScript, TypeScript, PHP, Shell Scripting \\
+                \textbf{Web Development \& Frameworks:} & Spring Boot, React.js, Angular.js, Laravel, Node.js, Django \\
+                \textbf{Database \& Data Storage:} & MySQL, PostgreSQL, Oracle SQL, MongoDB, DynamoDB, Redis \\
+                \textbf{DevOps \& Cloud:} & AWS, Azure, Docker, Jenkins, Kubernetes, CI/CD \\
+                \textbf{Monitoring \& Security:} & Grafana, Prometheus, Splunk, Security Standards, Compliance, Data Protection \\
+            \end{tabular}
+        \end{table}
+ \vspace{-18pt}
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+          \resumeProjectHeading
+            {\textbf{AI-Powered SAP Integration} $|$ SAP BTP, ABAP, OData, Python}{}
+            \resumeItemListStart
+                \resumeItem{Developed an AI-powered integration solution using \textbf{SAP BTP} and \textbf{ABAP} to automate data processing workflows, reducing manual effort by 80\% and improving data accuracy significantly.}
+            \resumeItemListEnd
+        \vspace{-12pt}
+    
+        \resumeProjectHeading
+            {\textbf{Real-Time Monitoring Dashboard} $|$ Grafana, Prometheus, AWS, Node.js}{}
+        \resumeItemListStart
+                \resumeItem{Engineered a real-time monitoring dashboard using \textbf{Grafana} and \textbf{Prometheus} on \textbf{AWS}, providing insights into system performance and reducing downtime by 30\% through proactive alerts.}
+        \resumeItemListEnd
+      \vspace{-12pt}
+      \resumeProjectHeading
+        {\textbf{SAP Fiori Application for Logistics} $|$ SAP Fiori, UI5, JavaScript}{}
+    \resumeItemListStart
+            \resumeItem{Designed and implemented a logistics management application using \textbf{SAP Fiori} and \textbf{UI5}, enhancing user experience and improving operational efficiency by 25\% through streamlined workflows.}
+    \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\end{document}
