@@ -1,0 +1,250 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{helvet}      
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItem}[1]{
+  \item{\fontsize{8pt}{9pt}\selectfont
+    #1 \vspace{-3pt}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{8.5pt}{10pt}\selectfont #3}, \textbf{\fontsize{8.5pt}{10pt}\selectfont #1}, \fontsize{8.5pt}{10pt}\selectfont #4 & \textbf{\fontsize{8.5pt}{10pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.001\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\fontsize{8.5pt}{10pt} #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \fontsize{8.5pt}{10pt}#1 & \textbf{\fontsize{8.5pt}{10pt} #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Shahil Mohammed}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (832) 620-5379 ~ | ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ | ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ | ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ | ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\vspace{-2pt}\fontsize{8pt}{9pt}\selectfont
+Detail-oriented software tester with a strong foundation in computer science and a passion for ensuring software quality. Equipped with hands-on experience in testing methodologies and tools, I excel in identifying defects and collaborating with development teams. Eager to contribute to a dynamic team, leveraging my analytical skills and technical knowledge to enhance software reliability and performance while driving continuous improvement in testing processes.
+ \vspace{-5pt}
+ 
+% KEYWORDS
+{\fontsize{1pt}{1pt}\selectfont\color{white}
+Software Testing, Quality Assurance, Defect Tracking, Test Case Design, Mobile Technologies, Network QA, Analytical Skills, Problem Solving, Team Collaboration, Time Management, Communication Skills, CI/CD, Automation Testing, Agile Methodologies, Test Documentation, Software Development Life Cycle (SDLC).
+}
+\vspace{-8pt}
+
+\vspace{-2pt}
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Insight Global}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Identified and reported software defects during testing phases, enhancing overall software quality and reducing post-release issues by 30\% through rigorous analysis and documentation.}
+        \resumeItem{Collaborated with cross-functional teams to develop comprehensive test plans, ensuring alignment with project requirements and improving test coverage by 25\%.}
+        \resumeItem{Created detailed test cases and executed functional, regression, and performance tests, resulting in a 40\% reduction in critical bugs before deployment.}
+        \resumeItem{Analyzed testing results and provided actionable feedback to development teams, facilitating timely resolutions and improving product reliability by 20\%.}
+        \resumeItem{Participated in Agile ceremonies, contributing to sprint planning and retrospectives, which fostered a culture of continuous improvement and enhanced team dynamics.}
+        \resumeItem{Developed automated test scripts using \textbf{Selenium} and \textbf{JUnit}, achieving a 50\% increase in testing efficiency and reducing manual testing efforts.}
+        \resumeItem{Maintained and updated test documentation to reflect changes in requirements, ensuring compliance with industry standards and improving knowledge sharing across teams.}
+    \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Executed thorough testing of software applications, identifying and documenting defects, which led to a 35\% decrease in user-reported issues post-launch.}
+        \resumeItem{Collaborated with developers to establish testing standards and protocols, improving the overall quality of deliverables and enhancing team efficiency by 30\%.}
+        \resumeItem{Designed and implemented automated testing frameworks using \textbf{Python} and \textbf{Selenium}, streamlining the testing process and reducing testing time by 40\%.}
+        \resumeItem{Conducted performance and load testing, ensuring application stability under high user demand, which improved system reliability by 25\%.}
+        \resumeItem{Participated in code reviews and provided constructive feedback, fostering a collaborative environment that enhanced code quality and team performance.}
+        \resumeItem{Created and maintained comprehensive test documentation, including test plans and reports, ensuring transparency and facilitating knowledge transfer among team members.}
+        \resumeItem{Trained junior team members on testing methodologies and tools, improving team skill sets and enhancing overall testing capabilities.}
+        \resumeItem{Engaged in continuous learning of emerging testing tools and technologies, contributing to the team's ability to adapt and implement innovative solutions.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Assisted in maintaining secure testing environments for software applications, ensuring compliance with industry standards and enhancing the integrity of testing processes.}
+        \resumeItem{Mentored students in software testing methodologies, improving their understanding and application of testing principles, which led to a 20\% increase in assignment success rates.}
+        \resumeItem{Automated testing scripts for lab exercises, reducing manual effort and increasing the accuracy of testing outcomes by 25\%.}
+        \resumeItem{Conducted hands-on workshops on software testing tools and techniques, enhancing students' practical skills and boosting their confidence in testing roles.}
+        \resumeItem{Collaborated with faculty to develop curriculum materials focused on software testing best practices, contributing to a more robust learning experience for students.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{01/2023 – 08/2023}
+        {Software Engineer}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Conducted comprehensive testing of software applications, identifying critical defects and ensuring timely resolutions to enhance overall product quality by 30\%.}
+        \resumeItem{Collaborated with the development team to establish testing protocols, which improved the efficiency of the testing process and reduced time-to-market by 20\%.}
+        \resumeItem{Developed automated testing scripts using \textbf{C\#} and \textbf{Selenium}, achieving a 40\% increase in testing efficiency and minimizing manual testing efforts.}
+        \resumeItem{Analyzed test results and provided actionable insights to the development team, facilitating timely fixes and improving software reliability by 25\%.}
+        \resumeItem{Participated in Agile ceremonies, contributing to sprint planning and retrospectives, which fostered a culture of continuous improvement within the team.}
+        \resumeItem{Maintained detailed test documentation, ensuring compliance with industry standards and facilitating knowledge sharing among team members.}
+        \resumeItem{Trained junior testers on best practices in software testing, enhancing team capabilities and improving overall testing outcomes.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Collaborated within a 5-member engineering team to deliver a robust software testing framework that automated key stages of the testing life cycle.}
+        \resumeItem{Implemented comprehensive test plans for \textbf{Java} \textbf{Spring Boot} applications, achieving a 30\% reduction in defects and improving overall software quality.}
+        \resumeItem{Designed and executed manual and automated tests for web applications, ensuring functionality and performance met established standards, resulting in a 25\% decrease in user-reported issues.}
+        \resumeItem{Engineered a scalable cloud testing environment on \textbf{AWS}, enabling efficient testing processes and reducing resource costs by 20\%.}
+        \resumeItem{Developed a project tracking and management tool in \textbf{React.js}, improving usability and reducing page load times by 30\%.}
+        \resumeItem{Validated software functionality through rigorous testing and debugging processes, achieving approximately 90\% test coverage across multiple projects.}
+        \resumeItem{Investigated production logs to diagnose system issues, improving debugging efficiency and reducing incident resolution time by 20\%.}
+        \resumeItem{Engaged in continuous learning of emerging testing tools and technologies, contributing to the team's ability to adapt and implement innovative solutions.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%%%% DON'T TOUCH THIS SECTION
+ \vspace{-12pt}
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science, Computer Science}{GPA: 4.0/4.0}
+    \vspace{-8pt}
+    \educationSubheading
+      {Manipal Institute of Technology}{07/2018 -- 07/2022}
+      {Bachelor of Technology, Computer and Communication Engineering}{GPA: 8.83/10}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{8pt}{9pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Software Testing:} & Test Case Design, Defect Tracking, Regression Testing, Performance Testing, Automation Testing, Network QA, Mobile Testing \\
+                \textbf{Programming \& Scripting:} & Java, Python, JavaScript, C\#, TypeScript, SQL, Shell Scripting \\
+                \textbf{Web Development \& Frameworks:} & Spring Boot, React.js, Angular.js, Laravel, Node.js, HTML, CSS \\
+                \textbf{DevOps \& Cloud:} & Amazon Web Services (AWS), Docker, Jenkins, Kubernetes, CI/CD, Lambda \\
+                \textbf{Tools \& Other Technologies:} & Git, GitHub, Jira, Selenium, JUnit, Splunk, Linux/Unix \\
+                \textbf{AI \& Automation:} & OpenAI API, AI Testing, Machine Learning Integration, Automation Frameworks, Continuous Improvement \\
+            \end{tabular}
+        \end{table}
+ \vspace{-18pt}
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+          \resumeProjectHeading
+            {\textbf{Automated Testing Framework} | Python, Selenium, JUnit}{}
+            \resumeItemListStart
+                \resumeItem{Developed a robust automated testing framework using \textbf{Python} and \textbf{Selenium}, which streamlined the testing process, reduced manual efforts by 50\%, and improved overall software quality significantly.}
+            \resumeItemListEnd
+        \vspace{-12pt}
+    
+        \resumeProjectHeading
+            {\textbf{Mobile Application Testing Suite} | Java, Appium, JUnit}{}
+        \resumeItemListStart
+                \resumeItem{Engineered a comprehensive mobile application testing suite using \textbf{Java} and \textbf{Appium}, ensuring cross-platform compatibility and enhancing user experience by identifying critical defects early in the development cycle.}
+        \resumeItemListEnd
+      \vspace{-12pt}
+      \resumeProjectHeading
+        {\textbf{AI-Driven Quality Assurance Tool} | Python, Machine Learning, OpenAI}{}
+    \resumeItemListStart
+            \resumeItem{Created an AI-driven quality assurance tool utilizing \textbf{Python} and \textbf{Machine Learning} models, which automated defect detection and significantly reduced testing time by 60\%, enhancing overall software reliability.}
+    \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\end{document}
