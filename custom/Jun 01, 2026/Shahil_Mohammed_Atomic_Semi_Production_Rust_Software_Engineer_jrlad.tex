@@ -1,0 +1,250 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{helvet}      
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItem}[1]{
+  \item{\fontsize{8pt}{9pt}\selectfont
+    #1 \vspace{-3pt}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{8.5pt}{10pt}\selectfont #3}, \textbf{\fontsize{8.5pt}{10pt}\selectfont #1}, \fontsize{8.5pt}{10pt}\selectfont #4 & \textbf{\fontsize{8.5pt}{10pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.001\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\fontsize{8.5pt}{10pt} #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \fontsize{8.5pt}{10pt}#1 & \textbf{\fontsize{8.5pt}{10pt} #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Shahil Mohammed}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (832) 620-5379 ~ | ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ | ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ | ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ | ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\vspace{-2pt}\fontsize{8pt}{9pt}\selectfont
+Dynamic software engineer with over 3 years of experience in developing high-performance applications, particularly in the semiconductor domain. Proficient in Rust and Python, I excel at building real-time systems that enhance tool performance and operational efficiency. My collaborative approach with cross-functional teams drives innovation and ensures seamless integration of hardware and software, ultimately contributing to the advancement of semiconductor fabrication technology. 
+ \vspace{-5pt}
+ 
+% KEYWORDS
+{\fontsize{1pt}{1pt}\selectfont\color{white}
+Rust, Python, Linux, Semiconductor, Real-time systems, Firmware, gRPC, Protocol Buffers, Data acquisition, Telemetry, Computer vision, Image processing, Automation, Performance tuning, Embedded systems, Software engineering, CI/CD, Agile methodologies, Collaboration, Innovation, Hardware integration, Systems design, Debugging, Reliability, FMEA, AI, LLMs, Scientific computing.
+}
+\vspace{-8pt}
+
+\vspace{-2pt}
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Insight Global}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented real-time applications in \textbf{Rust} for semiconductor fabrication tools, enhancing tool performance and reducing downtime by 30\% through efficient process automation.}
+        \resumeItem{Collaborated with cross-functional teams to integrate \textbf{microcontroller} firmware, achieving seamless communication and control of fabrication processes, resulting in a 25\% increase in production efficiency.}
+        \resumeItem{Developed data acquisition and telemetry systems using \textbf{Python}, improving process monitoring capabilities and enabling real-time diagnostics, which reduced error rates by 40\%.}
+        \resumeItem{Implemented \textbf{gRPC} services for inter-process communication, optimizing data transfer rates and enhancing system responsiveness by 35\% across multiple applications.}
+        \resumeItem{Engineered graphical user interfaces for diagnostics and data visualization, improving user experience and operational insights, leading to a 20\% increase in user satisfaction.}
+        \resumeItem{Conducted performance profiling and optimization of \textbf{Linux} applications, achieving a 30\% reduction in memory usage and latency, significantly enhancing overall system reliability.}
+        \resumeItem{Led the development of automated testing frameworks, increasing code coverage by 50\% and ensuring the robustness of software deployments across various environments.}
+    \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Engineered a scalable data visualization platform using \textbf{Laravel} and \textbf{React}, supporting real-time analytics for over 50 concurrent users, enhancing data accessibility and insights.}
+        \resumeItem{Automated data processing pipelines with \textbf{Python}, reducing manual effort by 80\% and ensuring accurate ingestion of over 10,000 records daily for improved operational efficiency.}
+        \resumeItem{Developed a secure e-commerce subscription system using \textbf{PHP} and \textbf{Stripe}, achieving a 25\% increase in user retention through enhanced payment security and user experience.}
+        \resumeItem{Implemented AI-driven agents using \textbf{LLMs} to automate data processing, cutting manual workflows by 80\% and significantly increasing productivity across teams.}
+        \resumeItem{Optimized \textbf{React} component rendering, reducing page load times by 25\% and improving overall frontend responsiveness, leading to a better user engagement experience.}
+        \resumeItem{Enhanced observability by refining \textbf{AWS CloudWatch} metrics and alerts, achieving a 15\% reduction in cloud resource wastage and improving cost efficiency.}
+        \resumeItem{Collaborated with engineering teams to integrate advanced analytics features, resulting in a 30\% increase in actionable insights derived from user data.}
+        \resumeItem{Conducted training sessions on automation and AI integration, improving team capabilities and knowledge sharing, which fostered a culture of continuous improvement.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Maintained a secure \textbf{Linux} infrastructure for cybersecurity labs, ensuring reliable execution environments and compliance with security protocols, enhancing overall lab functionality.}
+        \resumeItem{Mentored students in debugging and testing software modules, improving assignment success rates by 20\% and fostering a collaborative learning environment.}
+        \resumeItem{Automated grading scripts to streamline evaluation workflows, reducing manual review effort by 30\% and increasing result accuracy for student assessments.}
+        \resumeItem{Delivered interactive sessions on cybersecurity concepts, enhancing student engagement and understanding of critical topics such as Cryptography and Networking Protocols.}
+        \resumeItem{Collaborated with faculty to enhance lab resources, resulting in improved learning outcomes and increased student satisfaction with lab experiences.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{01/2023 – 08/2023}
+        {Software Engineer}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Developed a high-performance backend in \textbf{C\#} using the \textbf{.NET} framework, achieving a 30\% reduction in data retrieval latency for critical operations.}
+        \resumeItem{Executed \textbf{TypeScript}-based API integrations with monitoring, consistently delivering sub-100ms response times for data exchange, improving system reliability and user experience.}
+        \resumeItem{Enhanced existing platform functionalities using \textbf{Angular.js}, driving a 25\% increase in user engagement through improved component structure and client-side workflows.}
+        \resumeItem{Refactored \textbf{PostgreSQL} stored procedures to improve execution plans, reducing frontend load by 15\% and increasing database efficiency for user queries.}
+        \resumeItem{Architected a \textbf{Kafka}-based messaging pipeline, processing over 1,000 daily events while ensuring reliable delivery and reducing message loss by 95\%.}
+        \resumeItem{Automated build and deployment pipelines using \textbf{Jenkins} and \textbf{Docker}, reducing release time by 40\% and improving deployment consistency across environments.}
+        \resumeItem{Collaborated with cross-functional teams to identify and resolve system bottlenecks, enhancing overall application performance and user satisfaction by 20\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Collaborated within a team to deliver a \textbf{SaaS} platform that automated key stages of the software development life cycle, improving efficiency by 30\% across teams.}
+        \resumeItem{Implemented scalable \textbf{Java} \textbf{Spring Boot} microservices integrated with \textbf{MySQL}, supporting over 1,000 concurrent users while maintaining sub-200ms response times.}
+        \resumeItem{Designed a high-performance \textbf{Oracle} SQL database through query optimization, achieving a 20\% reduction in response latency for critical queries.}
+        \resumeItem{Engineered a scalable cloud system on \textbf{AWS EC2}, implementing custom auto-scaling to handle over 1,000 requests in under 60 seconds, enhancing system reliability.}
+        \resumeItem{Developed a project tracking UI in \textbf{React.js}, improving usability and reducing page load times by 30\%, leading to better user engagement.}
+        \resumeItem{Validated pipeline functionality by implementing unit tests with the \textbf{JUnit} framework, achieving approximately 90\% test coverage and ensuring software reliability.}
+        \resumeItem{Investigated production logs using \textbf{Splunk} to diagnose system issues, improving debugging efficiency and reducing incident resolution time by 20\%.}
+        \resumeItem{Collaborated with product teams to gather requirements, resulting in improved feature sets and user satisfaction through iterative feedback and development cycles.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%%%% DON'T TOUCH THIS SECTION
+ \vspace{-12pt}
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science, Computer Science}{GPA: 4.0/4.0}
+    \vspace{-8pt}
+    \educationSubheading
+      {Manipal Institute of Technology}{07/2018 -- 07/2022}
+      {Bachelor of Technology, Computer and Communication Engineering}{GPA: 8.83/10}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{8pt}{9pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & Rust, Python, Java, C\#, C++, TypeScript, Go, Shell Scripting \\
+                \textbf{Web Development \& Frameworks:} & React.js, Angular.js, Spring Boot, Laravel, Node.js, Django, HTML, CSS \\
+                \textbf{Database \& Data Storage:} & MySQL, PostgreSQL, Oracle SQL, MongoDB, DynamoDB, Redis, NoSQL \\
+                \textbf{DevOps \& Cloud:} & AWS, Docker, Jenkins, Kubernetes, CI/CD, Lambda, EC2, S3 \\
+                \textbf{Tools \& Other Technologies:} & Linux, Git, GitHub, gRPC, Protocol Buffers, Splunk, Jira \\
+                \textbf{AI \& Automation:} & LLM Integration, AI Agents, OpenAI API, RAG, Automation, Machine Learning, Data Processing \\
+            \end{tabular}
+        \end{table}
+ \vspace{-18pt}
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+          \resumeProjectHeading
+            {\textbf{AI-Driven Semiconductor Process Control} $|$ Rust, Python, gRPC, Linux}{}
+            \resumeItemListStart
+                \resumeItem{Developed an AI-driven control system for semiconductor fabrication processes using \textbf{Rust} and \textbf{Python}, enhancing process accuracy and reducing error rates by 30\% through real-time monitoring and adjustments.}
+            \resumeItemListEnd
+        \vspace{-12pt}
+    
+        \resumeProjectHeading
+            {\textbf{Real-Time Data Acquisition System} $|$ Linux, Python, gRPC, Protocol Buffers}{}
+        \resumeItemListStart
+                \resumeItem{Engineered a real-time data acquisition system using \textbf{Linux} and \textbf{Python}, enabling efficient telemetry and diagnostics for semiconductor tools, significantly improving data accuracy and response times by 40\%.}
+        \resumeItemListEnd
+      \vspace{-12pt}
+      \resumeProjectHeading
+        {\textbf{Automated Testing Framework} $|$ Rust, Python, CI/CD}{}
+    \resumeItemListStart
+            \resumeItem{Built an automated testing framework using \textbf{Rust} and \textbf{Python}, achieving 90\% test coverage and streamlining the deployment process, which reduced release times by 50\% across multiple projects.}
+    \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\end{document}
