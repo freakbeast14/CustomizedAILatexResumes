@@ -1,0 +1,232 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{helvet}      
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItem}[1]{
+  \item{\fontsize{8pt}{9pt}\selectfont
+    #1 \vspace{-3pt}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{8.5pt}{10pt}\selectfont #3}, \textbf{\fontsize{8.5pt}{10pt}\selectfont #1}, \fontsize{8.5pt}{10pt}\selectfont #4 & \textbf{\fontsize{8.5pt}{10pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.001\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\fontsize{8.5pt}{10pt} #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \fontsize{8.5pt}{10pt}#1 & \textbf{\fontsize{8.5pt}{10pt} #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Shahil Mohammed}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (832) 620-5379 ~ | ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ | ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ | ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ | ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\vspace{-2pt}\fontsize{8pt}{9pt}\selectfont
+Accomplished software engineer with 3+ years of experience developing and deploying scalable applications. Skilled in full-stack development, automation, and AI integration, leveraging modern frameworks and cloud platforms to deliver impactful solutions. Proven ability to collaborate across teams and apply best practices in software engineering, security, and DevOps to drive efficiency and innovation.
+ \vspace{-5pt}
+ 
+\vspace{-2pt}
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Insight Global}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Developed \textbf{Angular} and \textbf{TypeScript} components, improving UI consistency and reducing bugs by 35\%.}
+        \resumeItem{Implemented \textbf{Java Spring Boot} APIs with pagination, reducing response latency by 30\%.}
+        \resumeItem{Engineered \textbf{Python}-based AI ranking solver, improving precision of matches by 25\%.}
+        \resumeItem{Optimized \textbf{PostgreSQL} queries and schema, lowering latency by 45\%.}
+        \resumeItem{Enhanced access control using \textbf{Spring Security}, reducing unauthorized access by 40\%.}
+    \resumeItemListEnd
+    
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Built scalable SaaS dashboard with \textbf{Laravel} and \textbf{React}, supporting 50+ real-time analytics users.}
+        \resumeItem{Automated stock data pipelines using \textbf{Python}, cutting manual work by 80\%.}
+        \resumeItem{Developed \textbf{React} optimizations that improved page load speed by 25\%.}
+        \resumeItem{Integrated \textbf{AI agents} and LLM workflows to automate FINRA broker data processing, reducing manual tasks by 80\%.}
+        \resumeItem{Optimized AWS \textbf{CloudWatch} metrics, cutting cloud costs by 10\%.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Configured \textbf{Linux} systems and secured lab infrastructure for cybersecurity research and instruction.}
+        \resumeItem{Mentored students in debugging, deployment, and testing, raising success rates by 20\%.}
+        \resumeItem{Automated grading scripts to improve evaluation accuracy and reduce manual review by 25\%.}
+        \resumeItem{Led 15+ interactive sessions on cryptography, networking, and web security concepts.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Amrock, LLC.}{01/2023 – 08/2023}
+        {Software Engineer}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Built \textbf{.NET} backend services with efficient abstractions, reducing data latency by 30\%.}
+        \resumeItem{Maintained \textbf{TypeScript} API integrations with consistent sub-100ms responses.}
+        \resumeItem{Enhanced \textbf{Angular.js} frontend components, boosting engagement by 25\%.}
+        \resumeItem{Automated builds and deployments with \textbf{Jenkins} and \textbf{Docker}, cutting release time by 40\%.}
+      \resumeItemListEnd
+    
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Designed \textbf{Java Spring Boot} microservices handling 1,000+ users with sub-200ms responses.}
+        \resumeItem{Built scalable \textbf{AWS EC2} deployments with \textbf{SQS} and auto-scaling, handling 1,000+ requests per minute.}
+        \resumeItem{Created and tuned \textbf{React.js} UI, reducing load times by 30\%.}
+        \resumeItem{Automated CI/CD pipelines with \textbf{Docker} to deploy microservices reliably.}
+        \resumeItem{Optimized \textbf{Oracle SQL} queries to reduce latency by 20\%.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%%%% DON'T TOUCH THIS SECTION
+ \vspace{-12pt}
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science, Computer Science}{GPA: 4.0/4.0}
+    \vspace{-8pt}
+    \educationSubheading
+      {Manipal Institute of Technology}{07/2018 -- 07/2022}
+      {Bachelor of Technology, Computer and Communication Engineering}{GPA: 8.83/10}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{8pt}{9pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & TypeScript, JavaScript, Python, Java, C\#, PHP, Go \\
+                \textbf{Frontend Frameworks:} & React, Angular, Svelte, Vue, SvelteKit \\
+                \textbf{Backend Technologies:} & FastAPI, Spring Boot, Node.js, Laravel, .NET \\
+                \textbf{Databases:} & MongoDB, PostgreSQL, MySQL, SQL, NoSQL, DynamoDB \\
+                \textbf{Cloud \& DevOps:} & AWS, Azure, Google Cloud, Docker, Jenkins, Kubernetes, CI/CD \\
+                \textbf{Tools \& Other:} & Git, REST APIs, Testing (Jest, Playwright), Security Best Practices \\
+            \end{tabular}
+        \end{table}
+ \vspace{-18pt}
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+          \resumeProjectHeading
+            {\textbf{AI-Driven Real-Time Threat Detection Platform} | Svelte, FastAPI, MongoDB, AI Integration}{}
+            \resumeItemListStart
+                \resumeItem{Built full-stack AI threat detection app using \textbf{Svelte} frontend and \textbf{FastAPI} backend integrating real-time AI insights.}
+                \resumeItem{Optimized database operations with \textbf{MongoDB}, reducing query latency by 40\%.}
+            \resumeItemListEnd
+        \vspace{-12pt}
+    
+        \resumeProjectHeading
+            {\textbf{Adaptive Security Dashboard for AI Labs} | React, TypeScript, Node.js, MongoDB}{}
+        \resumeItemListStart
+                \resumeItem{Developed a user-friendly interface using \textbf{React} and \textbf{TypeScript} to visualize adaptive defenses and AI safety metrics.}
+                \resumeItem{Collaborated with ML researchers to integrate AI security models, improving threat response time by 30\%.}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\end{document}
