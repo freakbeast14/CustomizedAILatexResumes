@@ -1,0 +1,242 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{helvet}      
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItem}[1]{
+  \item{\fontsize{8pt}{9pt}\selectfont
+    #1 \vspace{-3pt}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{8.5pt}{10pt}\selectfont #3}, \textbf{\fontsize{8.5pt}{10pt}\selectfont #1}, \fontsize{8.5pt}{10pt}\selectfont #4 & \textbf{\fontsize{8.5pt}{10pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.001\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\fontsize{8.5pt}{10pt} #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \fontsize{8.5pt}{10pt}#1 & \textbf{\fontsize{8.5pt}{10pt} #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Shahil Mohammed}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (832) 620-5379 ~ | ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ | ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ | ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ | ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\vspace{-2pt}\fontsize{8pt}{9pt}\selectfont
+Driven software engineer with 3+ years hands-on experience supporting scalable cloud infrastructure and developing efficient solutions. Skilled in AWS and Azure platforms, infrastructure as code, automation, and cross-functional collaboration. Dedicated to advancing technical proficiency while enhancing cloud reliability, security, and performance in healthcare and enterprise environments.
+ \vspace{-5pt}
+ 
+\vspace{-2pt}
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Insight Global}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Deployed and monitored \textbf{AWS} and \textbf{Azure} cloud resources, improving system uptime by 20\% and assisting in disaster recovery readiness under senior team guidance.}
+        \resumeItem{Automated \textbf{Terraform} scripts for infrastructure provisioning, reducing manual setup time by 40\% and increasing environment consistency across deployments.}
+        \resumeItem{Managed access control using \textbf{AWS IAM}, enhancing security compliance and reducing unauthorized access attempts by 35\%.}
+        \resumeItem{Collaborated with application teams to provision virtual machines and storage solutions, improving deployment speed and operational efficiency by 30\%.}
+        \resumeItem{Troubleshot cloud networking and storage issues, resolving 95\% of incidents within SLA and escalating complex problems effectively.}
+        \resumeItem{Documented cloud environment configurations and support procedures, facilitating knowledge sharing and reducing onboarding time by 25\%.}
+    \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Implemented cloud-based infrastructure automation using \textbf{Ansible} and \textbf{Terraform}, cutting deployment errors by 50\% and accelerating release cycles by 35\%.}
+        \resumeItem{Optimized \textbf{Azure} virtual machine configurations and managed secure \textbf{storage} accounts, improving resource utilization and reducing costs by 15\%.}
+        \resumeItem{Developed monitoring dashboards integrating \textbf{AWS CloudWatch} for system performance metrics, enabling proactive issue detection and a 20\% reduction in downtime.}
+        \resumeItem{Assisted in backup and recovery testing processes to ensure \textbf{disaster recovery} readiness, contributing to successful simulated recovery drills.}
+        \resumeItem{Streamlined security compliance through effective identity and access management, leveraging cloud-native tools to enforce policies and reduce vulnerabilities.}
+        \resumeItem{Automated routine operational tasks with \textbf{Python} scripts, decreasing manual workload by 40\% and improving consistency in cloud environment management.}
+        \resumeItem{Enhanced inter-team collaboration by coordinating environment setups and troubleshooting sessions, speeding issue resolution by 30\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Maintained \textbf{Linux} server infrastructure for cybersecurity labs, ensuring secure configurations and uninterrupted lab accessibility for 100+ students.}
+        \resumeItem{Automated lab backup and recovery scripts to minimize data loss risk, reducing manual intervention by 60\% and enhancing reliability.}
+        \resumeItem{Provided technical support in cloud infrastructure basics and troubleshooting, enabling smoother lab operations and student success.}
+        \resumeItem{Produced documentation and training materials on system setup and security best practices, raising student awareness and adherence to protocols.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{01/2023 – 08/2023}
+        {Software Engineer}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Administered \textbf{Windows} and \textbf{Linux} virtual machines in hybrid cloud environments, improving system stability and cut incident response times by 25\%.}
+        \resumeItem{Automated infrastructure provisioning with \textbf{CloudFormation} and \textbf{Jenkins}, accelerating deployment pipelines and reducing configuration errors by 50\%.}
+        \resumeItem{Monitored cloud resource performance and security compliance, implementing alerting for critical events and reducing downtime by 15\%.}
+        \resumeItem{Collaborated with cross-functional teams to support network, storage, and compute services, improving workflow efficiency and resource allocation.}
+        \resumeItem{Optimized PostgreSQL databases and query performance to support cloud applications, reducing latency by 20\%.}
+        \resumeItem{Enhanced messaging reliability by creating fault-tolerant distributed pipelines on \textbf{Kafka}, increasing message delivery success rate by 95\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Provisioned and managed \textbf{AWS EC2} instances and associated services using \textbf{Terraform} to automate scalable cloud infrastructure supporting 1000+ users.}
+        \resumeItem{Implemented secure access protocols with \textbf{AWS IAM}, reducing unauthorized access attempts by 30\% and boosting compliance.}
+        \resumeItem{Built cloud automation pipelines using \textbf{Docker} and \textbf{CI/CD} tools, decreasing manual deployment errors and release times by 40\%.}
+        \resumeItem{Optimized Oracle and MySQL databases for cloud-hosted microservices, improving response timings by 25\% under load.}
+        \resumeItem{Coordinated infrastructure support between cloud and application teams to improve environment stability, increasing uptime to 99.5\%.}
+        \resumeItem{Developed and executed system recovery plans and backups, enhancing disaster recovery preparedness and reducing recovery time objectives.}
+        \resumeItem{Analyzed production logs using \textbf{Splunk} for cloud infrastructure troubleshooting, reducing issue resolution time by 20\%.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%%%% DON'T TOUCH THIS SECTION
+ \vspace{-12pt}
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science, Computer Science}{GPA: 4.0/4.0}
+    \vspace{-8pt}
+    \educationSubheading
+      {Manipal Institute of Technology}{07/2018 -- 07/2022}
+      {Bachelor of Technology, Computer and Communication Engineering}{GPA: 8.83/10}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{8pt}{9pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Cloud Platforms \& Tools:} & Amazon Web Services (AWS), Microsoft Azure, Terraform, Ansible, CloudFormation, Jenkins, Docker \\
+                \textbf{Programming \& Scripting:} & Python, Java, TypeScript, JavaScript, Shell Scripting, C\# \\
+                \textbf{Operating Systems \& Infrastructure:} & Linux, Windows Server, Virtual Machines, Networking, Storage Solutions \\
+                \textbf{Database \& Data Storage:} & PostgreSQL, MySQL, Oracle, DynamoDB, Redis \\
+                \textbf{DevOps \& Automation:} & Infrastructure as Code (IaC), CI/CD Pipelines, Monitoring (CloudWatch), Backup and Disaster Recovery \\
+                \textbf{Security \& Compliance:} & Identity and Access Management (IAM), Security Best Practices, Compliance Monitoring \\
+            \end{tabular}
+        \end{table}
+ \vspace{-18pt}
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+          \resumeProjectHeading
+            {\textbf{Cloud Infrastructure Automation System} | Terraform, Ansible, AWS, Azure}
+            {}
+            \resumeItemListStart
+                \resumeItem{Developed an automated multi-cloud infrastructure provisioning system using \textbf{Terraform} and \textbf{Ansible}, reducing setup times by 50\% and ensuring consistent environment configuration across AWS and Azure.}
+            \resumeItemListEnd
+        \vspace{-12pt}
+    
+        \resumeProjectHeading
+            {\textbf{AI-Driven Cloud Monitoring Tool} | Python, AWS CloudWatch, OpenAI API}
+            {}
+            \resumeItemListStart
+                \resumeItem{Engineered an \textbf{AI}-powered cloud monitoring assistant integrating \textbf{OpenAI API} with \textbf{AWS CloudWatch} to predict anomalies and suggest optimizations, reducing alert fatigue and improving system uptime by 15\%.}
+            \resumeItemListEnd
+      \vspace{-12pt}
+      \resumeProjectHeading
+        {\textbf{Disaster Recovery Automation Framework} | AWS CloudFormation, Python, Linux}
+        {}
+        \resumeItemListStart
+            \resumeItem{Built an automated backup and disaster recovery framework using \textbf{AWS CloudFormation} and \textbf{Python}, enabling swift recovery of critical services and reducing potential downtime by over 60\%.}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\end{document}
