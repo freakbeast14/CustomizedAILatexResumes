@@ -1,0 +1,229 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{helvet}      
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItem}[1]{
+  \item{\fontsize{8pt}{9pt}\selectfont
+    #1 \vspace{-3pt}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{8.5pt}{10pt}\selectfont #3}, \textbf{\fontsize{8.5pt}{10pt}\selectfont #1}, \fontsize{8.5pt}{10pt}\selectfont #4 & \textbf{\fontsize{8.5pt}{10pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.001\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\fontsize{8.5pt}{10pt} #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \fontsize{8.5pt}{10pt}#1 & \textbf{\fontsize{8.5pt}{10pt} #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Shahil Mohammed}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (832) 620-5379 ~ | ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ | ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ | ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ | ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\vspace{-2pt}\fontsize{8pt}{9pt}\selectfont
+Accomplished software engineer with 3+ years of experience developing and deploying scalable applications. Skilled in full-stack development, automation, and AI integration, leveraging modern frameworks and cloud platforms to deliver impactful solutions. Proven ability to collaborate across teams and apply best practices in software engineering, security, and DevOps to drive efficiency and innovation.
+ \vspace{-5pt}
+ 
+\vspace{-2pt}
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Insight Global}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Developed \textbf{Python} ML training pipelines, improving model accuracy by 15\% and automating evaluation tasks.}
+        \resumeItem{Implemented data preprocessing tools to manage large datasets, reducing pipeline runtime by 30\%.}
+        \resumeItem{Collaborated cross-functionally to design statistical tests, enhancing model validation rigor and reliability.}
+        \resumeItem{Built monitoring dashboards for performance metrics across releases, enabling proactive identification of issues.}
+        \resumeItem{Optimized ML models using \textbf{PyTorch} and \textbf{scikit-learn}, boosting prediction precision by 20\%.}
+    \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Created scalable \textbf{Python} data pipelines processing 10,000+ records daily with 90\% automation efficiency.}
+        \resumeItem{Engineered supervised ML models for classification tasks, increasing predictive performance by 18\%.}
+        \resumeItem{Built internal analytics tools to visualize model calibration and performance statistics, accelerating insights delivery.}
+        \resumeItem{Incorporated workflow orchestration for model retraining, reducing manual intervention by 40\%.}
+        \resumeItem{Enhanced robustness in data handling, ensuring error-free pipeline operation on large heterogeneous datasets.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Maintained Linux infrastructure, supporting secure environments for ML and data processing experiments.}
+        \resumeItem{Automated validation scripts to ensure reproducibility and accuracy of research experiments by 25\%.}
+        \resumeItem{Mentored peers on statistical methods and supervised learning concepts, improving team competency.}
+        \resumeItem{Facilitated software testing workflows, reducing debugging time by 20\% through effective automation.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{01/2023 – 08/2023}
+        {Software Engineer}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Engineered \textbf{C\# .NET} backend services reducing query latency by 30\%, ensuring scalability and robustness.}
+        \resumeItem{Developed \textbf{TypeScript} API integrations with sub-100ms latencies, ensuring efficient data exchange workflows.}
+        \resumeItem{Designed \textbf{Kafka}-based messaging pipelines processing 1000+ events daily, increasing fault tolerance by 95\%.}
+        \resumeItem{Automated CI/CD using \textbf{Jenkins} and \textbf{Docker}, reducing deployment times by 40\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Developed \textbf{Java Spring Boot} microservices processing 1,000 concurrent users with sub-200ms latency.}
+        \resumeItem{Built scalable cloud solutions on \textbf{AWS EC2} and \textbf{SQS}, supporting auto-scaling for high request volumes.}
+        \resumeItem{Optimized \textbf{Oracle} SQL queries and tuned database performance, reducing latency by 20\%.}
+        \resumeItem{Implemented unit tests using \textbf{JUnit} achieving 90\%+ code coverage to ensure system reliability.}
+        \resumeItem{Enhanced observability via \textbf{Splunk} for faster debugging, cutting incident resolution by 20\%.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%%%% DON'T TOUCH THIS SECTION
+ \vspace{-12pt}
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science, Computer Science}{GPA: 4.0/4.0}
+    \vspace{-8pt}
+    \educationSubheading
+      {Manipal Institute of Technology}{07/2018 -- 07/2022}
+      {Bachelor of Technology, Computer and Communication Engineering}{GPA: 8.83/10}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{8pt}{9pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Frameworks:} & Python, Java, JavaScript, TypeScript, C\#, PyTorch, scikit-learn, Spring Boot \\
+                \textbf{Machine Learning \& Statistics:} & Supervised Learning, Probabilistic Forecasting, Model Calibration, Statistical Analysis \\
+                \textbf{Data Storage \& Processing:} & PostgreSQL, MySQL, Oracle SQL, Large Dataset Handling, Data Pipelines \\
+                \textbf{Cloud \& DevOps:} & AWS (EC2, SQS, Lambda), Docker, Jenkins, CI/CD, Workflow Orchestration \\
+                \textbf{Tools \& Technologies:} & Linux, Git, REST API, Kafka, Splunk, JUnit, Angular, React \\
+                \textbf{Communication \& Collaboration:} & Cross-functional Teamwork, Documentation, Mentoring, Agile Methodologies \\
+            \end{tabular}
+        \end{table}
+ \vspace{-18pt}
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+          \resumeProjectHeading
+            {\textbf{Autonomous Vehicle Performance Predictor} | Python, PyTorch, scikit-learn, AWS, Statistical Analysis}{}
+            \resumeItemListStart
+                \resumeItem{Built ML models predicting autonomous system performance, improving release quality by 20\%.}
+                \resumeItem{Created evaluation pipelines automating safety metric calculations over large time-series datasets.}
+            \resumeItemListEnd
+        \vspace{-12pt}
+    
+        \resumeProjectHeading
+            {\textbf{Safety-Critical Model Monitoring Tool} | Python, Docker, AWS, SQL, Workflow Orchestration}{}
+        \resumeItemListStart
+                \resumeItem{Developed tooling to track model calibration and drift for continuous safety validation across software releases.}
+                \resumeItem{Integrated data ingestion and alerting workflows, decreasing manual monitoring effort by 50\%.}
+        \resumeItemListEnd
+      \vspace{-12pt}
+    \resumeSubHeadingListEnd
+
+\end{document}
