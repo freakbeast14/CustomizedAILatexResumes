@@ -1,0 +1,230 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{helvet}      
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItem}[1]{
+  \item{\fontsize{8pt}{9pt}\selectfont
+    #1 \vspace{-3pt}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{8.5pt}{10pt}\selectfont #3}, \textbf{\fontsize{8.5pt}{10pt}\selectfont #1}, \fontsize{8.5pt}{10pt}\selectfont #4 & \textbf{\fontsize{8.5pt}{10pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.001\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\fontsize{8.5pt}{10pt} #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \fontsize{8.5pt}{10pt}#1 & \textbf{\fontsize{8.5pt}{10pt} #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Shahil Mohammed}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (832) 620-5379 ~ | ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ | ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ | ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ | ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\vspace{-2pt}\fontsize{8pt}{9pt}\selectfont
+Accomplished software engineer with 3+ years of experience developing and deploying scalable applications. Skilled in full-stack development, automation, and AI integration, leveraging modern frameworks and cloud platforms to deliver impactful solutions. Proven ability to collaborate across teams and apply best practices in software engineering, security, and DevOps to drive efficiency and innovation.
+ \vspace{-5pt}
+ 
+\vspace{-2pt}
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Insight Global}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Engineered scalable \textbf{Python} backend services following SOLID principles improving modularity and maintainability by 40\%.}
+        \resumeItem{Automated data quality checks and validation pipelines enhancing data reliability and reducing errors by 35\%.}
+        \resumeItem{Integrated \textbf{Kubernetes} deployments with \textbf{Docker} containers to streamline cloud infrastructure management and scalability.}
+        \resumeItem{Collaborated with ML and analytics teams to optimize data ingestion reducing processing latency by 30\% and cost by 20\%.}
+        \resumeItem{Developed internal tools for monitoring and alerting with \textbf{Grafana}, improving incident response time by 25\%.}
+    \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Built cloud-native data pipelines using \textbf{Python} and \textbf{Airflow} to process 10,000+ daily records with 99.9\% uptime.}
+        \resumeItem{Implemented streaming data ingestion with \textbf{Apache Beam} concepts ensuring low-latency analytics and temporal consistency.}
+        \resumeItem{Designed and deployed \textbf{dbt} models for robust data transformation and automated testing, reducing deployment errors by 30\%.}
+        \resumeItem{Enhanced security by applying least-privilege access and automating data anonymization workflows to safeguard sensitive data.}
+        \resumeItem{Optimized AWS cloud infrastructure with \textbf{Terraform} improving resource efficiency and reducing costs by 15\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Administered Linux lab infrastructure automating configurations to maintain secure, isolated testing environments 24/7.}
+        \resumeItem{Guided students in deploying and testing software with secure practices increasing lab success rates by 20\%.}
+        \resumeItem{Created automated grading scripts that improved workflow efficiency and reduced manual effort by 25\%.}
+        \resumeItem{Delivered interactive sessions on secure coding and system architecture improving student engagement and comprehension.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{01/2023 – 08/2023}
+        {Software Engineer}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Developed \textbf{Kubernetes}-based distributed messaging pipelines using \textbf{Kafka} reducing message loss by 95\%.}
+        \resumeItem{Automated CI/CD pipelines with \textbf{Jenkins} and \textbf{Docker}, achieving 40\% faster and safer releases.}
+        \resumeItem{Refined service-layer architecture in \textbf{C\#} enhancing backend performance reducing data retrieval latency by 30\%.}
+        \resumeItem{Optimized database queries and indexing lowering load times by 15\% and improving overall system efficiency.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Engineered \textbf{AWS EC2} cloud infrastructure with auto-scaling and \textbf{SQS} decoupling for 1,000+ requests.}
+        \resumeItem{Designed and implemented scalable \textbf{Java Spring Boot} microservices improving concurrency and response time by 20\%.}
+        \resumeItem{Built CI/CD pipelines using \textbf{Docker} enabling automated deployments with 98\% reliability.}
+        \resumeItem{Optimized complex SQL queries on \textbf{Oracle} DB, reducing response latency by 20\%.}
+        \resumeItem{Developed user-friendly \textbf{React.js} UI improving load time by 30\% and enhancing customer satisfaction.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%%%% DON'T TOUCH THIS SECTION
+ \vspace{-12pt}
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science, Computer Science}{GPA: 4.0/4.0}
+    \vspace{-8pt}
+    \educationSubheading
+      {Manipal Institute of Technology}{07/2018 -- 07/2022}
+      {Bachelor of Technology, Computer and Communication Engineering}{GPA: 8.83/10}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{8pt}{9pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming Languages:} & Python, Java, TypeScript, C\#, SQL, Bash \\
+                \textbf{Cloud \& Infrastructure:} & AWS, Kubernetes, Docker, Terraform, Helm \\
+                \textbf{Data Engineering:} & dbt, Airflow, Apache Beam, Kafka, SQL OLAP, MPP Systems (BigQuery, Redshift) \\
+                \textbf{Frameworks \& Tools:} & Spring Boot, React.js, Angular.js, Jenkins, GitHub Actions \\
+                \textbf{Monitoring \& Observability:} & Grafana, CloudWatch, Splunk \\
+                \textbf{Security \& DevOps:} & CI/CD Pipelines, Role-Based Access Control, Data Anonymization, Least-Privilege Access \\
+            \end{tabular}
+        \end{table}
+ \vspace{-18pt}
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+          \resumeProjectHeading
+            {\textbf{Cloud-Native Data Framework} | Python, Kubernetes, dbt, Airflow, Kafka}
+            {}
+            \resumeItemListStart
+                \resumeItem{Developed scalable data pipelines with \textbf{Airflow} and \textbf{Kafka} for streaming and batch processing, improving throughput by 50\%.}
+                \resumeItem{Built \textbf{dbt}-based testing and transformation frameworks ensuring data accuracy and robust observability across data products.}
+            \resumeItemListEnd
+        \vspace{-12pt}
+    
+        \resumeProjectHeading
+            {\textbf{Metadata Catalog Automation} | Python, Kubernetes, Helm, Grafana, Terraform}
+            {}
+        \resumeItemListStart
+                \resumeItem{Automated metadata ingestion, cataloging, and tracing to enable data discovery and lineage, improving developer efficiency by 30\%.}
+                \resumeItem{Integrated monitoring and alerting with \textbf{Grafana} to maintain service health and ensure data platform reliability.}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\end{document}
