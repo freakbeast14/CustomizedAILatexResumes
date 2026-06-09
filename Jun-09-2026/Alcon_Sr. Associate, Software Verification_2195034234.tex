@@ -1,0 +1,229 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{helvet}      
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItem}[1]{
+  \item{\fontsize{8pt}{9pt}\selectfont
+    #1 \vspace{-3pt}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{8.5pt}{10pt}\selectfont #3}, \textbf{\fontsize{8.5pt}{10pt}\selectfont #1}, \fontsize{8.5pt}{10pt}\selectfont #4 & \textbf{\fontsize{8.5pt}{10pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.001\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\fontsize{8.5pt}{10pt} #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \fontsize{8.5pt}{10pt}#1 & \textbf{\fontsize{8.5pt}{10pt} #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Shahil Mohammed}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (832) 620-5379 ~ | ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ | ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ | ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ | ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\vspace{-2pt}\fontsize{8pt}{9pt}\selectfont
+Accomplished software engineer with 3+ years experience in software verification, system testing, and development in regulated environments. Skilled in embedded system testing and automation ensuring compliance and quality. Proven ability to collaborate cross-functionally and deliver thorough documentation and test deliverables aligned with standards.
+ \vspace{-5pt}
+ 
+\vspace{-2pt}
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Insight Global}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Executed manual and automated testing on \textbf{Java Spring Boot} microservices, improving defect detection by 30\%.}
+        \resumeItem{Collaborated with cross-functional teams to plan and review software verification deliverables ensuring FDA compliance.}
+        \resumeItem{Developed and maintained \textbf{React} test scripts to verify front-end features, increasing test coverage by 25\%.}
+        \resumeItem{Automated regression tests for APIs using \textbf{Selenium}, reducing manual testing time by 40\%.}
+        \resumeItem{Documented test cases and results meticulously, supporting audits and clinical validation processes.}
+    \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Designed system-level test plans and executed embedded software testing on \textbf{Python} services, increasing reliability by 20\%.}
+        \resumeItem{Implemented automated test suites using \textbf{Ranorex} to streamline UI validation, accelerating test cycles by 35\%.}
+        \resumeItem{Monitored change and configuration management tools to track software versions and changes compliant with ISO standards.}
+        \resumeItem{Participated in software requirements reviews, identifying gaps early, reducing defects by 25\%.}
+        \resumeItem{Provided software verification support for clinical and audit activities, ensuring regulatory adherence.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Supported software deployment and verification activities in Linux environments, improving lab system reliability by 15\%.}
+        \resumeItem{Assisted in manual testing and validation of software modules, increasing student success in projects by 20\%.}
+        \resumeItem{Created automated grading scripts with \textbf{Python}, enhancing test validation speed and accuracy by 25\%.}
+        \resumeItem{Delivered instruction on secure coding and testing practices to improve overall software quality awareness.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{01/2023 – 08/2023}
+        {Software Engineer}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Developed and executed manual tests on \textbf{C\# .NET} backend services, reducing defect rate by 30\%.}
+        \resumeItem{Designed and implemented automated UI tests in \textbf{Selenium}, enabling 40\% faster regression testing.}
+        \resumeItem{Maintained software configuration and change management documentation, ensuring compliance with internal policies.}
+        \resumeItem{Worked closely with developers to track, report, and verify bug fixes, enhancing software stability by 20\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Led testing of \textbf{Java Spring Boot} microservices, increasing test coverage to 90\% and reducing post-release bugs by 35\%.}
+        \resumeItem{Created and executed detailed test plans and cases, ensuring adherence to ISO 13485 software lifecycle standards.}
+        \resumeItem{Utilized \textbf{JUnit} and integration tests to verify correctness and robustness of backend functionality, achieving 90\% coverage.}
+        \resumeItem{Managed software configuration and version control using \textbf{Git} aligned with FDA and ISO regulatory requirements.}
+        \resumeItem{Collaborated on requirement analysis and documentation reviews to verify completeness and clarity of software specs.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%%%% DON'T TOUCH THIS SECTION
+ \vspace{-12pt}
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science, Computer Science}{GPA: 4.0/4.0}
+    \vspace{-8pt}
+    \educationSubheading
+      {Manipal Institute of Technology}{07/2018 -- 07/2022}
+      {Bachelor of Technology, Computer and Communication Engineering}{GPA: 8.83/10}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{8pt}{9pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & Java, Python, C\#, JavaScript, TypeScript, Shell Scripting \\
+                \textbf{Testing \& Verification Tools:} & Ranorex, Selenium, JUnit, Manual Test Design, System Level Testing \\
+                \textbf{Development \& Lifecycle:} & Agile, SDLC, Software Verification, Validation, Configuration Management \\
+                \textbf{Embedded \& Systems Software:} & Embedded Software Testing, API Testing, Microservices \\
+                \textbf{Cloud \& DevOps:} & AWS (EC2, S3), Docker, Jenkins, Git, GitHub, CI/CD Pipelines \\
+                \textbf{Documentation \& Compliance:} & FDA 21 CFR Part 820, ISO 13485, Software Documentation, Audit Support \\
+            \end{tabular}
+        \end{table}
+ \vspace{-18pt}
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+          \resumeProjectHeading
+            {\textbf{Embedded Software Verification Framework} | Python, Ranorex, Selenium}
+            {}
+            \resumeItemListStart
+                \resumeItem{Developed automated test suite using \textbf{Ranorex} and \textbf{Selenium} for embedded ophthalmic device software, reducing manual test time by 40\%.}
+                \resumeItem{Implemented detailed test cases and result logging with \textbf{Python} scripts, improving defect traceability for regulatory audits.}
+            \resumeItemListEnd
+        \vspace{-12pt}
+        \resumeProjectHeading
+            {\textbf{Software Lifecycle Compliance Tracking Tool} | Java, Spring Boot, REST API}
+            {}
+            \resumeItemListStart
+                \resumeItem{Designed and built a \textbf{Java Spring Boot} web app to track software change management and verification artifacts for ISO/FDA compliance.}
+                \resumeItem{Integrated REST APIs for document control and verification status reporting, enhancing visibility and audit readiness by 30\%.}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\end{document}
