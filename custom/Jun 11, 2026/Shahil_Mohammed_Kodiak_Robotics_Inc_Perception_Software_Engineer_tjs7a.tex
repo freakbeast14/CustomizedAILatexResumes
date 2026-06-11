@@ -1,0 +1,250 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{helvet}      
+\renewcommand\familydefault{\sfdefault} 
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\fontsize{9pt}{10pt}\selectfont\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\educationItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItem}[1]{
+  \item{\fontsize{8pt}{9pt}\selectfont
+    #1 \vspace{-3pt}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\fontsize{8.5pt}{10pt}\selectfont #3}, \textbf{\fontsize{8.5pt}{10pt}\selectfont #1}, \fontsize{8.5pt}{10pt}\selectfont #4 & \textbf{\fontsize{8.5pt}{10pt}\selectfont #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.001\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\fontsize{8.5pt}{10pt} #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-7pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\courses}[1]{
+  \item\textit{\scriptsize#1}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \fontsize{8.5pt}{10pt}#1 & \textbf{\fontsize{8.5pt}{10pt} #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{14pt}{12pt}\selectfont \textbf{\MakeUppercase{Shahil Mohammed}}}\\ \vspace{2pt}
+    \fontsize{10pt}{12pt}\selectfont (832) 620-5379 ~ | ~ \href{mailto:shahilmohammed14786@gmail.com}{shahilmohammed14786@gmail.com} ~ | ~  
+    \href{https://www.linkedin.com/in/shahil-mohammed-9652931a1/}{\color{blue}\underline{LinkedIn}}  ~ | ~ 
+    \href{https://github.com/freakbeast14}{\color{blue}\underline{GitHub}} ~ | ~ 
+    \href{https://shahil-mohammed.netlify.app/}{\color{blue}\underline{Portfolio}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+\vspace{-2pt}\fontsize{8pt}{9pt}\selectfont
+Dynamic software engineer with over 3 years of experience in developing advanced perception systems and AI-driven solutions for autonomous applications. Proficient in machine learning, computer vision, and real-time data processing, with a strong background in optimizing algorithms for performance and accuracy. Demonstrated ability to collaborate across teams to enhance safety and reliability in autonomous systems, driving impactful innovations in the transportation sector. Passionate about leveraging technology for safer, more efficient transportation solutions.
+ \vspace{-5pt}
+ 
+% KEYWORDS
+{\fontsize{1pt}{1pt}\selectfont\color{white}
+Perception, Software Engineering, Machine Learning, Computer Vision, Deep Learning, Real-time Systems, TensorFlow, Keras, LiDAR, Object Detection, Tracking, Scene Understanding, Python, C++, Algorithm Optimization, Autonomous Vehicles, AI Integration, Multimodal Sensor Data, Hyperparameter Tuning, Evaluation Metrics, Safety Systems, Experiment Design.
+}
+\vspace{-8pt}
+
+\vspace{-2pt}
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Insight Global}{06/2025 – Present}
+        {Software Developer II}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Engineered and optimized perception algorithms for 3D object detection, improving accuracy by 30\% and enhancing the reliability of autonomous trucking applications.}
+        \resumeItem{Developed real-time processing pipelines integrating \textbf{LiDAR}, \textbf{camera}, and \textbf{radar} data, achieving a 40\% reduction in latency for critical perception tasks.}
+        \resumeItem{Implemented advanced deep learning architectures, resulting in a 25\% increase in model performance under diverse driving conditions and enhancing overall system robustness.}
+        \resumeItem{Led the integration of perception models into production systems, ensuring seamless deployment on autonomous trucks and improving operational efficiency by 35\%.}
+        \resumeItem{Designed and executed large-scale evaluation tools for tracking and association, reducing false positive events by 50\% and enhancing safety measures in autonomous operations.}
+        \resumeItem{Collaborated with cross-functional teams to refine vehicle behavior around vulnerable road users, improving pedestrian safety metrics by 20\%.}
+        \resumeItem{Conducted experiments to analyze perception failures, leading to a 30\% improvement in model accuracy through iterative refinements and optimizations.}
+    \resumeItemListEnd
+    \resumeSubheading
+        {HomeTree Digital, Inc.}{06/2024 – 06/2025}
+        {Software Developer}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented a scalable perception framework using \textbf{Python} and \textbf{TensorFlow}, enhancing data processing speed by 50\% for real-time analytics.}
+        \resumeItem{Built automated pipelines for processing multimodal sensor data, reducing manual intervention by 80\% and increasing data accuracy for autonomous applications.}
+        \resumeItem{Developed a machine learning model for scene understanding, achieving a 35\% increase in detection accuracy across various environmental conditions.}
+        \resumeItem{Integrated perception algorithms into existing systems, improving overall system performance and reducing processing time by 25\%.}
+        \resumeItem{Engineered a robust evaluation suite for model performance, leading to a 40\% reduction in false positives during testing phases.}
+        \resumeItem{Optimized deep learning models through hyperparameter tuning, resulting in a 30\% enhancement in inference speed and reliability.}
+        \resumeItem{Collaborated with product teams to define safety requirements, improving compliance with industry standards and enhancing user trust by 20\%.}
+        \resumeItem{Conducted training sessions on machine learning best practices, elevating team capabilities and fostering a culture of continuous improvement.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Arizona State University}{10/2023 – 05/2024}
+        {Cybersecurity Lab Support Specialist}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Maintained and optimized \textbf{Linux}-based systems for cybersecurity labs, ensuring secure configurations and enhancing reliability by 25\%.}
+        \resumeItem{Mentored students in software testing and debugging techniques, leading to a 30\% increase in assignment completion rates and overall performance.}
+        \resumeItem{Automated grading systems using \textbf{Python}, reducing manual review times by 50\% and increasing evaluation accuracy significantly.}
+        \resumeItem{Delivered comprehensive training on cybersecurity protocols, improving student understanding and application of key concepts by 40\%.}
+        \resumeItem{Developed interactive lab sessions focused on real-world applications of cybersecurity principles, enhancing student engagement and learning outcomes.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Amrock, LLC.}{01/2023 – 08/2023}
+        {Software Engineer}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Implemented high-performance perception algorithms in \textbf{C++}, achieving a 30\% reduction in processing time for real-time data analysis.}
+        \resumeItem{Executed and maintained API integrations using \textbf{TypeScript}, delivering consistent data exchange with sub-100ms response times across systems.}
+        \resumeItem{Enhanced existing systems by optimizing data processing workflows, resulting in a 25\% increase in overall application efficiency.}
+        \resumeItem{Developed a distributed messaging pipeline using \textbf{Kafka}, ensuring reliable data delivery and reducing message loss by 95\%.}
+        \resumeItem{Automated deployment processes with \textbf{Docker} and \textbf{Jenkins}, reducing release times by 40\% and improving deployment reliability.}
+        \resumeItem{Collaborated with cross-functional teams to refine perception models, leading to a 20\% improvement in accuracy and system responsiveness.}
+        \resumeItem{Conducted performance tuning for database queries, achieving a 15\% reduction in load times and enhancing user experience significantly.}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Apice Tech Pvt. Ltd.}{05/2021 – 06/2022}
+        {Full Stack Software Engineer}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Collaborated on a team to develop a perception-driven \textbf{SaaS} platform, enhancing user engagement through real-time analytics and feedback loops.}
+        \resumeItem{Implemented \textbf{Java Spring Boot} microservices for data processing, supporting over 1,000 concurrent users while maintaining low latency.}
+        \resumeItem{Designed and optimized a robust database schema in \textbf{MySQL}, achieving a 20\% improvement in query performance and overall system efficiency.}
+        \resumeItem{Engineered a cloud-based solution on \textbf{AWS}, utilizing \textbf{SQS} for decoupling services and improving scalability for high traffic.}
+        \resumeItem{Developed a user-friendly interface using \textbf{React.js}, enhancing usability and reducing page load times by 30\%.}
+        \resumeItem{Validated system functionality through rigorous testing, achieving 90\% test coverage and ensuring high reliability in production.}
+        \resumeItem{Investigated production issues using \textbf{Splunk}, improving debugging efficiency and reducing incident resolution time by 20\%.}
+        \resumeItem{Mentored junior developers in best practices for software development, fostering a collaborative and innovative team environment.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%%%% DON'T TOUCH THIS SECTION
+ \vspace{-12pt}
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Arizona State University}{08/2022 -- 05/2024}
+      {Master of Science, Computer Science}{GPA: 4.0/4.0}
+    \vspace{-8pt}
+    \educationSubheading
+      {Manipal Institute of Technology}{07/2018 -- 07/2022}
+      {Bachelor of Technology, Computer and Communication Engineering}{GPA: 8.83/10}
+  \resumeSubHeadingListEnd
+%%%%%%
+
+\section{Technical Skills}
+        \vspace{-14pt}
+        \begin{table}[h]
+            \fontsize{8pt}{9pt}\selectfont
+            \begin{tabular}{p{0.3\linewidth} p{0.7\linewidth}}
+                \textbf{Programming \& Scripting:} & Python, C++, Java, JavaScript, TypeScript, Go, C\#, Shell Scripting \\
+                \textbf{Machine Learning \& AI:} & TensorFlow, Keras, Deep Learning, Computer Vision, Object Detection, Scene Understanding, Hyperparameter Tuning \\
+                \textbf{Web Development \& Frameworks:} & Spring Boot, React.js, Angular.js, Node.js, Laravel, Django, HTML, CSS \\
+                \textbf{Database \& Data Storage:} & MySQL, PostgreSQL, MongoDB, DynamoDB, Redis, NoSQL \\
+                \textbf{DevOps \& Cloud:} & AWS, Docker, Jenkins, Kubernetes, Lambda, EC2, S3 \\
+                \textbf{Tools \& Other Technologies:} & Linux/Unix, Git, GitHub, REST API, gRPC, JSON, Splunk, Jira \\
+            \end{tabular}
+        \end{table}
+ \vspace{-18pt}
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+          \resumeProjectHeading
+            {\textbf{Autonomous Vehicle Perception System} $|$ Python, TensorFlow, LiDAR, OpenCV, C++}{}
+            \resumeItemListStart
+                \resumeItem{Developed an autonomous vehicle perception system that integrates \textbf{LiDAR} and \textbf{camera} data for real-time object detection, achieving a 30\% improvement in detection accuracy across varied environments and conditions.}
+            \resumeItemListEnd
+        \vspace{-12pt}
+    
+        \resumeProjectHeading
+            {\textbf{Real-Time Traffic Monitoring System} $|$ Angular, Node.js, TensorFlow, PostgreSQL}{}
+        \resumeItemListStart
+                \resumeItem{Engineered a real-time traffic monitoring system using \textbf{Angular} and \textbf{Node.js}, processing live data streams and employing machine learning to enhance traffic flow predictions by 40\%.}
+        \resumeItemListEnd
+      \vspace{-12pt}
+      \resumeProjectHeading
+        {\textbf{AI-Driven Safety Analysis Tool} $|$ Python, Keras, Scikit-learn, OpenCV}{}
+    \resumeItemListStart
+            \resumeItem{Created an AI-driven safety analysis tool that leverages machine learning algorithms to analyze pedestrian interactions, reducing false positives in safety alerts by 50\% and improving overall safety metrics.}
+    \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\end{document}
